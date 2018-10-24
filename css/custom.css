@@ -1,5 +1,9 @@
 /****** PLACE YOUR CUSTOM STYLES HERE ******/
 
+
+.icon-a {
+    zoom:1.5;
+}
 #new_text{
   color: white;
   text-decoration: bold;
