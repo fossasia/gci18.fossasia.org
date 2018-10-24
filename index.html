@@ -1,3 +1,5 @@
+---
+---
 <!doctype html>
 <html lang="en">
     <head>
@@ -926,20 +928,48 @@
                 <div class="container">
                     <div class="row mb64 mb-xs-24">
                         <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
-                            <h3>Get all this and more by purchasing
-                                <br /> a copy of Foundry today.</h3>
+                            <h3>Mentors Section
                         </div>
                     </div>
                     <!--end of row-->
                     <div class="row masonry masonryFlyIn">
                         <div class="col-md-4 col-sm-12 masonry-item mb30">
-                            <div class="feature boxed cast-shadow-light mb0">
-                                <h2 class=" color-primary mb0">80+</h2>
-                                <h6 class="uppercase color-primary">Page Templates</h6>
-                                <p>
-                                    Pre-made HTML page templates including fully realized shop, blog and portfolio layouts.
-                                </p>
-                            </div>
+                           
+                            <div class="col-sm-12 text-center spread-children-large">
+                                    {% for mentor in site.data.mentors limit:30 %}
+                                        <div class="card single-mentor">
+                                            {% if mentor.image %}
+                                                    <img src="img/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
+                                            {% else %}
+                                                <img src="img/mentors/member.png" alt="{{ mentor.name }}">
+                                            {% endif %}
+                                            <br>
+                                            <p class="person-name">{{ mentor.name }}</p><br>
+                                            <ul >
+                                                {% if mentor.github %}
+                                                <a href="https://github.com/{{mentor.github}}" class="icon-a"  >
+                                                     <i class="ti-github" ></i>
+                                                </a>
+                                                {% endif %}
+                                                {% if mentor.twitter %}
+                                                <a href="https://twitter.com/{{ mentor.twitter }}" class="icon-a">
+                                                    <i class="ti-twitter-alt"></i>
+                                                </a>
+                                                {% endif %}
+                                                {% if mentor.blog %}
+                                                <a href="https://{{ mentor.blog }}" class="icon-a">
+                                                    <i class="ti-rss" ></i>
+                                                </a>
+                                                {% endif %}
+                                                {% if mentor.facebook %}
+                                                <a href="https://facebook.com/{{ mentor.facebook }}" class="icon-a">
+                                                    <i class="ti-facebook" ></i>
+                                                </a>
+                                                {% endif %}
+                                            </ul>
+                                        </div>
+                                    {% endfor %}
+                                </div>
                         </div>
                         <div class="col-md-4 masonry-item mb30">
                             <div class="boxed feature cast-shadow-light mb0">
