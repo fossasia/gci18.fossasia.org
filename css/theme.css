@@ -5710,3 +5710,31 @@ footer.bg-dark a {
     padding-bottom: 240px !important;
   }
 }
+div.gallery {
+  margin-left: 5px;
+  margin-right: 20px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  width: 30%;
+  display: inline-block;
+  transition: 1s;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  text-align: center;
+}
+
+.social-icons{
+  padding: 15px;
+  font-size: 20px;
+}
