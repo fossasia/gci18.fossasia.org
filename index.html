@@ -81,6 +81,55 @@ layout: default
                             More</a>
                     </div>
                 </div>
+                <!--end of container-->
+            </section>
+            <section class="bg-secondary pb0">
+                <div class="container">
+                    <div class="row mb64 mb-xs-24">
+                        <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
+                            <h3> Students </h3>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                    <div class="row masonry masonryFlyIn">
+                        <div class="col-md-12 col-sm-12 masonry-item mb30">
+                           
+                            <div class="col-sm-12 text-center spread-children-large">
+                                    {% for student in site.data.students limit:30 %}
+                                        <div class="card single-mentor">
+                                            {% if student.image %}
+                                                    <img src="img/students/{{student.image}}" alt="{{ student.name }}">
+                                            {% else %}
+                                                <img src="img/students/member.png" alt="{{ student.name }}">
+                                            {% endif %}
+                                            <br>
+                                            <p class="person-name">{{ student.name }}</p><br>
+                                            <ul >
+                                                {% if student.github %}
+                                                <a href="https://github.com/{{student.github}}" class="icon-a"  >
+                                                     <i class="ti-github" ></i>
+                                                </a>
+                                                {% endif %}
+                                                {% if student.twitter %}
+                                                <a href="https://twitter.com/{{ student.twitter }}" class="icon-a">
+                                                    <i class="ti-twitter-alt"></i>
+                                                </a>
+                                                {% endif %}
+                                                {% if student.blog %}
+                                                <a href="https://{{ student.blog }}" class="icon-a">
+                                                    <i class="ti-rss" ></i>
+                                                </a>
+                                                {% endif %}
+                                                {% if student.facebook %}
+                                                <a href="https://facebook.com/{{ student.facebook }}" class="icon-a">
+                                                    <i class="ti-facebook" ></i>
+                                                </a>
+                                                {% endif %}
+                                            </ul>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                        </div>
                 <!--end of row-->
             </div>
             <!--end of container-->
