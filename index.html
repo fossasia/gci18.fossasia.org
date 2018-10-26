@@ -168,6 +168,44 @@ layout: default
     </div>
     <!--end of container-->
 </section>
+
+<!--Videos Section-->
+<section class="bg-secondary pb0">
+        <div class="container">
+            <div class="row mb64 mb-xs-24">
+                <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
+                    <h3> Videos </h3>
+                </div>
+            </div>
+            <!--end of row-->
+            <div class="row masonry masonryFlyIn">
+                <div class="col-md-12 col-sm-12 masonry-item mb30">
+    
+                    <div class="col-sm-12 text-center spread-children-large">
+                        {% for video in site.data.videos %}
+                        <a href="{{ video.link }}">
+                            <div class="card single-mentor" id="video">
+                                {% if video.image %}
+                                   <img src="img/videos/{{ video.image }}" width="200px" height="200px"/>
+                                {% endif %}
+                                <br>
+                                <h4 class="person-name">
+                                    <b>{{ video.name }}</b>
+                                </h4>
+                                <br>
+                                <h5 class="person-name">{{ video.user }}</h6>
+                            </div>
+                        </a>
+                        {% endfor %}
+                    </div>
+                </div>
+                <!--end of row-->
+            </div>
+            <!--end of container-->
+            </li>
+            </ul>
+    </section>
+<!--/Videos section-->
 <section class="bg-secondary">
     <div class="container">
         <div class="row mb64 mb-xs-24">
