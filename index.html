@@ -1,5 +1,3 @@
----
----
 <!doctype html>
 <html lang="en">
     <head>
@@ -569,6 +567,59 @@
                             </ul>
                         </div>
                         <!--end of menu module-->
+                        <div class="module widget-handle search-widget-handle left">
+                            <div class="search">
+                                <i class="ti-search"></i>
+                                <span class="title">Search Site</span>
+                            </div>
+                            <div class="function">
+                                <form class="search-form">
+                                    <input type="text" placeholder="Type Here" />
+                                </form>
+                            </div>
+                        </div>
+                        <div class="module widget-handle cart-widget-handle left">
+                            <div class="cart">
+                                <i class="ti-bag"></i>
+                                <span class="label number">2</span>
+                                <span class="title">Shopping Cart</span>
+                            </div>
+                            <div class="function">
+                                <div class="widget">
+                                    <h6 class="title">Shopping Cart</h6>
+                                    <hr>
+                                    <ul class="cart-overview">
+                                        <li>
+                                            <a href="#">
+                                                <img alt="Product" src="img/shop-widget-1.png" />
+                                                <div class="description">
+                                                    <span class="product-title">Canvas Backpack</span>
+                                                    <span class="price number">$39.90</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img alt="Product" src="img/shop-widget-2.png" />
+                                                <div class="description">
+                                                    <span class="product-title">Vintage Camera</span>
+                                                    <span class="price number">$249.50</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <hr>
+                                    <div class="cart-controls">
+                                        <a class="btn btn-sm btn-filled" href="#">Checkout</a>
+                                        <div class="list-inline pull-right">
+                                            <span class="cart-total">Total: </span>
+                                            <span class="number">$289.40</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end of widget-->
+                            </div>
+                        </div>
                         <div class="module widget-handle language left">
                             <ul class="menu">
                                 <li class="has-dropdown">
@@ -600,7 +651,7 @@
                             <div class="row">
                                 <div class="col-sm-10 col-sm-offset-1 text-center" id="new_text">
                                   <h1 class="mb40 mb-xs-16 large" id="new_text">We are
-                                      <br/>FOSSASIA</h1>
+                                      <br/>Fossasia</h1>
                                   <h6 class="uppercase mb16" id="new_text">Creating collaborative open-source technologies.</h6>
                                   <p class="lead mb40" id="new_text">
                                       Connecting Open Tech Communities all over Asia with Developers and Creators
@@ -620,7 +671,7 @@
                         <div class="container v-align-transform">
                             <div class="row">
                                 <div class="col-sm-offset-1 text-center col-sm-10">
-                                    <h1 class="mb40 mb-xs-16 large">Google Code-In with FOSSASIA 2018</h1>
+                                    <h1 class="mb40 mb-xs-16 large">Google Code-In with Fossasia 2018</h1>
                                     <h6 class="uppercase mb16">Offering a range of exciting tasks involving</h6>
                                     <p class="lead mb40">
                                         Coding, Documentation, Outreach, Design, Quality Control
@@ -640,7 +691,7 @@
                         <div class="container v-align-transform">
                             <div class="row">
                                 <div class="col-sm-offset-1 text-center col-sm-10">
-                                    <h1 class="mb40 mb-xs-16 large" id="new_text">FOSSASIA builds exciting Projects</h1>
+                                    <h1 class="mb40 mb-xs-16 large" id="new_text">Fossasia builds exciting Projects</h1>
                                     <h6 class="uppercase mb16">All open source</h6>
                                     <p class="lead mb40">
                                         Even you can contribute
@@ -663,7 +714,7 @@
                                     <h1 class="mb40 mb-xs-16 large" id="new_text">Last Year, we broke Google Code-In records</h1>
                                     <h6 class="uppercase mb16" id="new_text">With over 900 students and 90 mentors</h6>
                                     <p class="lead mb40" id="new_text">
-                                        FOSSASIA had over 1500 completed tasks... stunning isn't it?!
+                                        Fossasia had over 1500 completed tasks... stunning isn't it?!
                                         <br/>
                                     </p>
                                     <a class="btn btn-lg btn-white" href="https://opensource.googleblog.com/2018/01/google-code-in-2017-winners.html">Learn More</a>
@@ -676,26 +727,34 @@
                 </ul>
             </section>
             <section>
-                <div class="container">
+                <div class="container" id="social_box">
                     <div class="row mb80 mb-xs-0">
                         <div class="col-md-8 col-md-offset-2 text-center">
-                            <h1>Sleek, Flexible & Stylish.</h1>
+                            <h1>Connect with Fossasia on Social Media</h1>
                             <p>
-                                Foundry is a remarkably complete template offering you a plethora of handcrafted design elements. Whether promoting a product, service or portfolio - Foundry's unique and flexible style has you covered.
+                              <a href="https://www.facebook.com/fossasia/" class="ti-facebook" id="social_icon"></a>
+                              <a href="https://twitter.com/fossasia" class="ti-twitter" id="social_icon"></a>
+                              <a href="https://github.com/fossasia" class="ti-github" id="social_icon"></a>
+                              <a href="https://www.flickr.com/photos/fossasia" class="ti-flickr" id="social_icon"></a>
+                              <a href="https://www.linkedin.com/groups/FOSSASIA-3762811" class="ti-linkedin" id="social_icon"></a>
+                              <a href="https://www.instagram.com/explore/tags/fossasia/" class="ti-instagram" id="social_icon"></a>
+
                             </p>
                         </div>
                     </div>
                     <!--end of row-->
                     <div class="row v-align-children">
                         <div class="col-md-7 col-sm-6 text-center mb-xs-24">
-                            <img class="cast-shadow" alt="Screenshot" src="img/screenshot.jpg" />
+                          <video controls="">
+                              <source src="video/fossasia.mp4" type="video/mp4">
+                          </video>
                         </div>
                         <div class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1">
-                            <h3>Build a slick, modern site faster than ever</h3>
+                            <h3>Fossasia Attracting Students</h3>
                             <p>
-                                Foundry is your complete design toolkit, built from the ground up to be flexible, extensible and stylish. Building slick, contemporary sites has never been this easy!
+                                The video is made is by one of our students during the competition itself!
                             </p>
-                            <a class="btn btn-lg" href="#">Explore Foundry</a>
+                            <a class="btn btn-lg" href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ">Our Youtube Channel</a>
                         </div>
                     </div>
                     <!--end of row-->
@@ -823,52 +882,61 @@
             </section>
             <section class="bg-secondary pb0">
                 <div class="container">
-                    <div class="row mb64 mb-xs-24">
-                        <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
-                            <h3> Students </h3>
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <h2 class="mb64 mb-xs-24">Flexible, Adaptable & Timeless.</h2>
                         </div>
-                    </div>
-                    <!--end of row-->
-                    <div class="row masonry masonryFlyIn">
-                        <div class="col-md-4 col-sm-12 masonry-item mb30">
-                           
-                            <div class="col-sm-12 text-center spread-children-large">
-                                    {% for student in site.data.students limit:30 %}
-                                        <div class="card single-mentor">
-                                            {% if student.image %}
-                                                    <img src="img/students/{{student.image}}" alt="{{ student.name }}">
-                                            {% else %}
-                                                <img src="img/students/member.png" alt="{{ student.name }}">
-                                            {% endif %}
-                                            <br>
-                                            <p class="person-name">{{ student.name }}</p><br>
-                                            <ul >
-                                                {% if student.github %}
-                                                <a href="https://github.com/{{student.github}}" class="icon-a"  >
-                                                     <i class="ti-github" ></i>
-                                                </a>
-                                                {% endif %}
-                                                {% if student.twitter %}
-                                                <a href="https://twitter.com/{{ student.twitter }}" class="icon-a">
-                                                    <i class="ti-twitter-alt"></i>
-                                                </a>
-                                                {% endif %}
-                                                {% if student.blog %}
-                                                <a href="https://{{ student.blog }}" class="icon-a">
-                                                    <i class="ti-rss" ></i>
-                                                </a>
-                                                {% endif %}
-                                                {% if student.facebook %}
-                                                <a href="https://facebook.com/{{ student.facebook }}" class="icon-a">
-                                                    <i class="ti-facebook" ></i>
-                                                </a>
-                                                {% endif %}
-                                            </ul>
+                        <div class="col-md-8 col-md-offset-2 col-sm-12 text-center">
+                            <div class="tabbed-content icon-tabs">
+                                <ul class="tabs">
+                                    <li class="active">
+                                        <div class="tab-title">
+                                            <i class="ti-layers icon"></i>
+                                            <span>History</span>
                                         </div>
-                                    {% endfor %}
-                                </div>
+                                        <div class="tab-content">
+                                            <p>
+                                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tab-title">
+                                            <i class="ti-package icon"></i>
+                                            <span>Approach</span>
+                                        </div>
+                                        <div class="tab-content">
+                                            <p>
+                                                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tab-title">
+                                            <i class="ti-stats-up icon"></i>
+                                            <span>Culture</span>
+                                        </div>
+                                        <div class="tab-content">
+                                            <p>
+                                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tab-title">
+                                            <i class="ti-layout-media-center-alt icon"></i>
+                                            <span>Method</span>
+                                        </div>
+                                        <div class="tab-content">
+                                            <p>
+                                                Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--end of icon tabs-->
                         </div>
-                      
                     </div>
                     <!--end of row-->
                 </div>
@@ -906,48 +974,20 @@
                 <div class="container">
                     <div class="row mb64 mb-xs-24">
                         <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
-                            <h3>Mentors Section
+                            <h3>Get all this and more by purchasing
+                                <br /> a copy of Foundry today.</h3>
                         </div>
                     </div>
                     <!--end of row-->
                     <div class="row masonry masonryFlyIn">
                         <div class="col-md-4 col-sm-12 masonry-item mb30">
-
-                            <div class="col-sm-12 text-center spread-children-large">
-                                    {% for mentor in site.data.mentors limit:30 %}
-                                        <div class="card single-mentor">
-                                            {% if mentor.image %}
-                                                    <img src="img/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
-                                            {% else %}
-                                                <img src="img/mentors/member.png" alt="{{ mentor.name }}">
-                                            {% endif %}
-                                            <br>
-                                            <p class="person-name">{{ mentor.name }}</p><br>
-                                            <ul >
-                                                {% if mentor.github %}
-                                                <a href="https://github.com/{{mentor.github}}" class="icon-a"  >
-                                                     <i class="ti-github" ></i>
-                                                </a>
-                                                {% endif %}
-                                                {% if mentor.twitter %}
-                                                <a href="https://twitter.com/{{ mentor.twitter }}" class="icon-a">
-                                                    <i class="ti-twitter-alt"></i>
-                                                </a>
-                                                {% endif %}
-                                                {% if mentor.blog %}
-                                                <a href="https://{{ mentor.blog }}" class="icon-a">
-                                                    <i class="ti-rss" ></i>
-                                                </a>
-                                                {% endif %}
-                                                {% if mentor.facebook %}
-                                                <a href="https://facebook.com/{{ mentor.facebook }}" class="icon-a">
-                                                    <i class="ti-facebook" ></i>
-                                                </a>
-                                                {% endif %}
-                                            </ul>
-                                        </div>
-                                    {% endfor %}
-                                </div>
+                            <div class="feature boxed cast-shadow-light mb0">
+                                <h2 class=" color-primary mb0">80+</h2>
+                                <h6 class="uppercase color-primary">Page Templates</h6>
+                                <p>
+                                    Pre-made HTML page templates including fully realized shop, blog and portfolio layouts.
+                                </p>
+                            </div>
                         </div>
                         <div class="col-md-4 masonry-item mb30">
                             <div class="boxed feature cast-shadow-light mb0">
@@ -1092,23 +1132,33 @@
                         <div class="col-sm-6 text-right">
                             <ul class="list-inline social-list">
                                 <li>
-                                    <a href="#">
+                                    <a href="https://www.twitter.com/fossasia/">
                                         <i class="ti-twitter-alt"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="https://www.facebook.com/fossasia/">
                                         <i class="ti-facebook"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <i class="ti-dribbble"></i>
+                                    <a href="https://github.com/fossasia">
+                                        <i class="ti-github"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <i class="ti-vimeo-alt"></i>
+                                    <a href="https://www.instagram.com/explore/tags/fossasia/">
+                                        <i class="ti-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/groups/FOSSASIA-3762811">
+                                        <i class="ti-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.flickr.com/photos/fossasia">
+                                        <i class="ti-flickr"></i>
                                     </a>
                                 </li>
                             </ul>

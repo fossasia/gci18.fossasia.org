@@ -1,11 +1,15 @@
 /****** PLACE YOUR CUSTOM STYLES HERE ******/
 
-
-.icon-a {
-    zoom:1.5;
-}
 #new_text{
   color: white;
   text-decoration: bold;
   font-weight: bold;
+}
+
+#social_icon{
+  width: 20px;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
 }
