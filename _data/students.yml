@@ -16,3 +16,7 @@
 - name: ploypiti
   github: ploypiti
   image: pfp.png
+  
+- name: Siddharth Sinha
+  github: Sid911
+  image: sid.png
