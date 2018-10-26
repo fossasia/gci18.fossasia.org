@@ -4,3 +4,4 @@ gem 'fastimage'
 gem 'img_checker'
 #gem 'jekyll-sitemap'
 #gem 'jekyll-paginate'
+

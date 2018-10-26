@@ -589,7 +589,6 @@
                 </div>
             </nav>
         </div>
-        
         <div class="main-container">
             <section class="cover fullscreen image-slider slider-all-controls controls-inside parallax">
                 <ul class="slides">
@@ -677,69 +676,7 @@
                 </ul>
             </section>
             <section>
-                
-                
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-8 col-md-offset-2 text-center">
-                                <h1>Mentors</h1>
-                                <p>
-                                    Here is the mentors who helping you!
-                                </p>
-                            </div>
-                        </div>
-                        <!--end of row-->
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="mentors">
-                                    {% for mentor in site.data.mentors limit:6 %}
-                                        <div class="gallery">
-                                            <a target="_blank" href="https://github.com/{{mentor.github}}">
-                                                {% if mentor.image %}
-                                                <img src="img/mentors/{{mentor.image}}" alt="{{ mentor.name }}" width="150" height="100">
-                                                {% else %}
-                                                <img src="img/mentors/mentor.jpg" alt="{{ mentor.name }}" width="300" height="200">
-                                                {% endif %}
-                                            </a>
-                                            <div class="desc">
-                                                <h4>{{ mentor.name }}</h2>
-                                            </div>
-                                            <div class="social-icons">
-                                                <center>
-                                                    {% if mentor.github %}
-                                                        <a href="https://github.com/{{mentor.github}}" class="icon-a">
-                                                            <i class="ti-github icon-i"></i>
-                                                        </a>
-                                                    {% endif %}
-                                                    {% if mentor.twitter %}
-                                                        <a href="https://twitter.com/{{ mentor.twitter }}" class="icon-a">
-                                                            <i class="ti-twitter-alt icon-i"></i>
-                                                        </a>
-                                                    {% endif %}
-                                                    {% if mentor.blog %}
-                                                        <a href="https://{{ mentor.blog }}" class="icon-a">
-                                                            <i class="ti-rss-alt icon-i"></i>
-                                                        </a>
-                                                    {% endif %}
-                                                    {% if mentor.facebook %}
-                                                        <a href="https://facebook.com/{{ mentor.facebook }}" class="icon-a">
-                                                            <i class="ti-facebook icon-i"></i>
-                                                        </a>
-                                                    {% endif %}
-                                                </center>
-                                            </div>
-                                        </div>
-                                    {% endfor %}
-                                </div>
-                                <!--end of lightbox gallery-->
-                            </div>
-                        </div>
-                        <!--end of row-->
-                    </div>
-                    <!--end of container-->
-                </section>
-            <section>
-                    <div class="container" id="social_box">
+                <div class="container" id="social_box">
                     <div class="row mb80 mb-xs-0">
                         <div class="col-md-8 col-md-offset-2 text-center">
                             <h1>Connect with Fossasia on Social Media</h1>
