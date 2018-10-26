@@ -9,3 +9,19 @@
   text-decoration: bold;
   font-weight: bold;
 }
+
+.ti-facebook{
+  width: 20px;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.ti-twitter{
+  width: 20px;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+}
