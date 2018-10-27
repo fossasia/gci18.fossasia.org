@@ -10,7 +10,7 @@
   font-weight: bold;
 }
 
-.large .ti-facebook{
+#social_icon{
   width: 20px;
   padding: 20px;
   font-size: 30px;
@@ -18,13 +18,7 @@
   text-decoration: none;
 }
 
-.large .ti-twitter{
-  width: 20px;
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-  text-decoration: none;
-}
+
 
 p.person-name {
   font-size: 16px;
@@ -71,4 +65,3 @@ p.person-name {
   filter: brightness(50%);
   transition: all .6s;
 }
-
