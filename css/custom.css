@@ -28,5 +28,9 @@
 }
 
 .seperator {
+  border-top: 1px solid #47b475 !important;
+  opacity: 1 !important;
+  height: 1px;
+  width: 60%;
   margin: 8px auto;
 }
