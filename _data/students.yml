@@ -20,3 +20,8 @@
 - name: ploypiti
   github: ploypiti
   image: pfp.png
+  
+- name: AppleCat
+  github: AppleC4T
+  image: applecat.png
+  
