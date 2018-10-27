@@ -10,7 +10,7 @@
   font-weight: bold;
 }
 
-.ti-facebook{
+.large .ti-facebook{
   width: 20px;
   padding: 20px;
   font-size: 30px;
@@ -18,7 +18,6 @@
   text-decoration: none;
 }
 .ti-google{
-
   width: 20px;
   padding: 20px;
   font-size: 30px;
@@ -26,10 +25,20 @@
   text-decoration: none;
 
 }
-.ti-twitter{
+.large .ti-twitter{
+
   width: 20px;
   padding: 20px;
   font-size: 30px;
   text-align: center;
   text-decoration: none;
+}
+
+p.person-name {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.single-mentor [class^="ti-"], [class*=" ti-"] {
+  font-size: 16px;
 }
