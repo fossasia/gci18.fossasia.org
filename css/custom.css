@@ -34,3 +34,12 @@
   width: 60%;
   margin: 8px auto;
 }
+
+p.person-name {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.single-mentor [class^="ti-"], [class*=" ti-"] {
+  font-size: 16px;
+}
