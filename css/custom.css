@@ -34,3 +34,39 @@ p.person-name {
 .single-mentor [class^="ti-"], [class*=" ti-"] {
   font-size: 16px;
 }
+
+.single-mentor {
+  position: relative;
+}
+
+.single-mentor .social-overlay-list {
+  position: relative;
+  top: -165px;
+  background: transparent;
+  padding: 5px 10px;
+  width: 100%;
+  opacity: 0;
+  transition: all .6s;
+}
+
+.single-mentor .social-overlay-list a {
+  color: white;
+}
+
+.single-mentor .social-overlay-list a:hover {
+  opacity: 0.5;
+}
+
+.single-mentor:hover .social-overlay-list {
+  opacity: 1;
+}
+
+.single-mentor img {
+  width: 100%;
+  max-width: 300px;
+}
+
+.single-mentor:hover > img {
+  filter: brightness(50%);
+  transition: all .6s;
+}
