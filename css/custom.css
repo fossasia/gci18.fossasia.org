@@ -17,7 +17,15 @@
   text-align: center;
   text-decoration: none;
 }
+.ti-google{
 
+  width: 20px;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+
+}
 .ti-twitter{
   width: 20px;
   padding: 20px;
