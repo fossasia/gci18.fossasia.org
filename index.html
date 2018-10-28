@@ -97,7 +97,7 @@ layout: default
                     {% for student in site.data.students limit:30 %}
                     <div class="card single-mentor">
                         {% if student.image %}
-                        <img src="img/students/{{student.image}}" alt="{{ student.name }}">
+                        <img src="img/students/{{student.image}}" alt="{{ student.name }}" class="student-img">
                         {% else %}
                         <img src="img/students/member.png" alt="{{ student.name }}">
                         {% endif %}
