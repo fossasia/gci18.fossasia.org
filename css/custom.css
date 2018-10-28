@@ -90,3 +90,10 @@ p.person-name {
   filter: brightness(50%);
   transition: all .6s;
 }
+
+#app{
+  background-color: #000;
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+}
