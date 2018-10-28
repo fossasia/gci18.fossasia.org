@@ -96,7 +96,7 @@ p.person-name {
   color: #fff;
   font-size: 50px;
   text-align: center;
-  height: 400px;
+  height: 300px;
   width: 100%;
-  padding-top: 200px;
+  margin-bottom: 40px;
 }
