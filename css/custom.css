@@ -92,8 +92,9 @@ p.person-name {
 }
 
 .thank_you{
-  background-color: #000;
+  background-color: #7E7E7E;
   color: #fff;
   font-size: 50px;
   text-align: center;
+  width: 100%;
 }
