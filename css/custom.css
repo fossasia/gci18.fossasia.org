@@ -2,15 +2,16 @@
 
 
 .icon-a {
-    zoom:1.5;
+  zoom:1.5;
 }
-#new_text{
-  color: white;
+
+#new_text {
+  color: #ffffff;
   text-decoration: bold;
   font-weight: bold;
 }
 
-.large .ti-facebook{
+.large .ti-facebook {
   width: 20px;
   padding: 20px;
   font-size: 30px;
@@ -18,12 +19,29 @@
   text-decoration: none;
 }
 
-.large .ti-twitter{
+.large .ti-twitter {
   width: 20px;
   padding: 20px;
   font-size: 30px;
   text-align: center;
   text-decoration: none;
+}
+
+.code-in-nav:before {
+  content: " ";
+  background-image: url("https://raw.githubusercontent.com/fossasia/gci17.fossasia.org/gh-pages/img/gci-logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 0 16px;
+  padding-top: 0px;
+  font-size: 1rem;
+
+.seperator {
+  border-top: 1px solid #47b475 !important;
+  opacity: 1 !important;
+  height: 1px;
+  width: 60%;
+  margin: 8px auto;
 }
 
 p.person-name {
@@ -71,4 +89,3 @@ p.person-name {
   filter: brightness(50%);
   transition: all .6s;
 }
-
