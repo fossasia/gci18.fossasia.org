@@ -4,24 +4,85 @@
 .icon-a {
     zoom:1.5;
 }
-#new_text{
-  color: white;
+#new_text {
+  color: #ffffff;
   text-decoration: bold;
   font-weight: bold;
 }
-
-.ti-facebook{
+.large .ti-facebook {
   width: 20px;
   padding: 20px;
   font-size: 30px;
   text-align: center;
   text-decoration: none;
 }
-
-.ti-twitter{
+.large .ti-twitter {
   width: 20px;
   padding: 20px;
   font-size: 30px;
   text-align: center;
   text-decoration: none;
+}
+.code-in-nav:before {
+  content: " ";
+  background-image: url("https://raw.githubusercontent.com/fossasia/gci17.fossasia.org/gh-pages/img/gci-logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 1px 16px;
+  padding-top: 0px;
+  font-size: 2rem;
+}
+
+.seperator {
+  border-top: 1px solid #47b475 !important;
+  opacity: 1 !important;
+  height: 1px;
+  width: 60%;
+  margin: 8px auto;
+}
+
+p.person-name {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.single-mentor [class^="ti-"], [class*=" ti-"] {
+  font-size: 16px;
+}
+.single-mentor {
+  position: relative;
+}
+.single-mentor .social-overlay-list {
+  position: relative;
+  top: -165px;
+  background: transparent;
+  padding: 5px 10px;
+  width: 100%;
+  opacity: 0;
+  transition: all .6s;
+}
+.single-mentor .social-overlay-list a {
+  color: white;
+}
+.single-mentor .social-overlay-list a:hover {
+  opacity: 0.5;
+}
+
+.single-mentor:hover .social-overlay-list {
+  opacity: 1;
+}
+/*
+.single-mentor img {
+  width: 100%;
+  max-width: 300px;
+}
+*/
+.single-mentor:hover > img {
+  filter: brightness(50%);
+  transition: all .6s;
+}
+.student-img{
+  width:240px;
+  height: 240px;
+  border-radius: 100%;
 }
