@@ -32,9 +32,9 @@
   background-image: url("https://raw.githubusercontent.com/fossasia/gci17.fossasia.org/gh-pages/img/gci-logo.png");
   background-size: contain;
   background-repeat: no-repeat;
-  padding: 0 16px;
+  padding: 1px 16px;
   padding-top: 0px;
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 .seperator {
@@ -80,13 +80,21 @@ p.person-name {
 .single-mentor:hover .social-overlay-list {
   opacity: 1;
 }
-
+/*
 .single-mentor img {
   width: 100%;
   max-width: 300px;
 }
+*/
 
 .single-mentor:hover > img {
   filter: brightness(50%);
   transition: all .6s;
+}
+
+
+.student-img{
+  width:240px;
+  height: 240px;
+  border-radius: 100%;
 }

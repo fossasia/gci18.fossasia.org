@@ -45,7 +45,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 13px;
   line-height: 24px;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "nova mono", Helvetica, Arial, sans-serif;
   color: #666;
   overflow-x: hidden;
 }
@@ -413,7 +413,7 @@ span {
   font-weight: 400;
 }
 p.lead {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 28px;
 }
@@ -554,7 +554,7 @@ ul.lead li {
   background: #fff;
 }
 .bg-dark {
-  background: #292929;
+  background: #673ab7;
 }
 .color-body {
   color: #666;
@@ -634,7 +634,7 @@ footer.bg-dark li,
   top: 0;
   left: 0;
   background: #292929;
-  opacity: 0.3;
+  opacity: 0.5 !important;
   z-index: 2;
 }
 .overlay-heavy:before {
@@ -647,7 +647,7 @@ footer.bg-dark li,
   height: 100%;
   top: 0;
   left: 0;
-  background: #ffffff;
+ /* background: #ffffff;*/
   opacity: 0.1;
   z-index: 2;
 }
@@ -951,7 +951,7 @@ nav.bg-dark .logo-dark {
   width: auto;
 }
 .menu li a {
-  font-size: 11px;
+  font-size: 12px;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
@@ -5052,6 +5052,7 @@ footer.bg-dark a {
 }
 .mb16 {
   margin-bottom: 16px;
+  font-size: 2em;
 }
 .mb24 {
   margin-bottom: 24px;
