@@ -62,7 +62,6 @@ layout: default
                 </div>
                 <!--end of row-->
             </div>
-            <!--end of container-->
         </li>
         <li class="overlay image-bg">
             <div class="background-image-holder">
@@ -84,56 +83,81 @@ layout: default
                 <!--end of container-->
 </section>
 <section class="bg-secondary pb0">
+        <div class="container">
+                <div class="row mb80 mb-xs-0">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <h1>What is open source?</h1>
+                        <p>
+                                In general, open source refers to any program whose source code is made available for use or modification as users or other developers see fit. Open source software is usually developed as a public collaboration and made freely available.
+                        </p>
+                    </div>
+                </div>
+                <!--end of row-->
+                <div class="row v-align-children">
+                    <div class="col-md-7 col-sm-6 text-center mb-xs-24">
+                        <img class="cast-shadow" alt="Screenshot" src="https://www.ost.agency/wp-content/uploads/2017/12/lg.png" />
+                    </div>
+                    <div class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1">
+                        <h3>What is FOSSASIA?</h3>
+                        <p>
+                                FOSSASIA develops software and hardware and cooperates with Open Tech projects. Please check out our Github and FOSSASIA Labs.
+                            </p>
+                        <a class="btn btn-lg" href="https://fossasia.org/" target="_blank">Explore Fossasia 🌏</a>
+                    </div>
+                </div>
+            </div>
+	<!--end of container-->
+	</section>
+	<section>
     <div class="container">
-        <div class="row mb64 mb-xs-24">
+        <div class="row mb64 mb-xs-24" style="margin-top: 50px">
             <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
                 <h3> Students </h3>
             </div>
-        </div>
-        <!--end of row-->
-        <div class="row masonry masonryFlyIn">
-            <div class="col-md-12 col-sm-12 masonry-item mb30">
-                <div class="col-sm-12 text-center spread-children-large">
-                    {% for student in site.data.students limit:30 %}
-                    <div class="card single-mentor">
-                        {% if student.image %}
-                        <img src="img/students/{{student.image}}" alt="{{ student.name }}">
-                        {% else %}
-                        <img src="img/students/member.png" alt="{{ student.name }}">
-                        {% endif %}
-                        <br>
-                        <p class="person-name">{{ student.name }}</p><br>
-                        <ul>
-                            {% if student.github %}
-                            <a href="https://github.com/{{student.github}}" class="icon-a" target="_blank">
-                                <i class="ti-github"></i>
-                            </a>
-                            {% endif %}
-                            {% if student.twitter %}
-                            <a href="https://twitter.com/{{ student.twitter }}" class="icon-a" target="_blank">
-                                <i class="ti-twitter-alt"></i>
-                            </a>
-                            {% endif %}
-                            {% if student.blog %}
-                            <a href="https://{{ student.blog }}" class="icon-a" target="_blank">
-                                <i class="ti-rss"></i>
-                            </a>
-                            {% endif %}
-                            {% if student.facebook %}
-                            <a href="https://facebook.com/{{ student.facebook }}" class="icon-a" target="_blank">
-                                <i class="ti-facebook"></i>
-                            </a>
-                            {% endif %}
-                        </ul>
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
             <!--end of row-->
-        </div>
-        <!--end of container-->
-        </li>
-        </ul>
+            <div class="row masonry masonryFlyIn">
+                <div class="col-md-12 col-sm-12 masonry-item mb30">
+                    <div class="col-sm-12 text-center spread-children-large">
+                        {% for student in site.data.students limit:30 %}
+                        <div class="card single-mentor">
+                            {% if student.image %}
+                            <img src="img/students/{{student.image}}" alt="{{ student.name }}">
+                            {% else %}
+                            <img src="img/students/member.png" alt="{{ student.name }}">
+                            {% endif %}
+                            <br>
+                            <p class="person-name">{{ student.name }}</p><br>
+                            <ul>
+                                {% if student.github %}
+                                <a href="https://github.com/{{student.github}}" class="icon-a" target="_blank">
+                                    <i class="ti-github"></i>
+                                </a>
+                                {% endif %}
+                                {% if student.twitter %}
+                                <a href="https://twitter.com/{{ student.twitter }}" class="icon-a" target="_blank">
+                                    <i class="ti-twitter-alt"></i>
+                                </a>
+                                {% endif %}
+                                {% if student.blog %}
+                                <a href="https://{{ student.blog }}" class="icon-a" target="_blank">
+                                    <i class="ti-rss"></i>
+                                </a>
+                                {% endif %}
+                                {% if student.facebook %}
+                                <a href="https://facebook.com/{{ student.facebook }}" class="icon-a" target="_blank">
+                                    <i class="ti-facebook"></i>
+                                </a>
+                                {% endif %}
+                            </ul>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <!--end of row-->
+            </div>
+            <!--end of container-->
+            </li>
+            </ul>
 </section>
 <section>
     <div class="container" id="social_box">
@@ -151,7 +175,11 @@ layout: default
 			<a href="https://codein.withgoogle.com/organizations/fossasia/" target="_blank" class="ti-settings lgi"></a>
                 </p>
             </div>
-        </div>
+         </div>
+     </div>
+</section>
+<section>
+    <div class="container" id="videos">
         <!--end of row-->
         <div class="row v-align-children">
             <div class="col-md-7 col-sm-6 text-center mb-xs-24">
