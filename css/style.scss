@@ -1,17 +1,12 @@
 // Jazz'd up v2 is in https://codepen.io/ronniechong/pen/PzVKOo
 
 @import url(https://fonts.googleapis.com/css?family=Prompt:900);
-html{
-  font-family: 'Prompt', sans-serif;
-  background-color:#000;
-  color:#fff;
-  font-size:5vw;
-}
 container{
   display: flex;
   align-items: center;
   justify-content: center;
-  height:100vh;
+  height:5vh;
+  font-size:2vw;
 }
 
 #app{
