@@ -93,7 +93,6 @@ layout: default
         <!--end of row-->
         <div class="row masonry masonryFlyIn">
             <div class="col-md-12 col-sm-12 masonry-item mb30">
-
                 <div class="col-sm-12 text-center spread-children-large">
                     {% for student in site.data.students limit:30 %}
                     <div class="card single-mentor">
@@ -106,22 +105,22 @@ layout: default
                         <p class="person-name">{{ student.name }}</p><br>
                         <ul>
                             {% if student.github %}
-                            <a href="https://github.com/{{student.github}}" class="icon-a">
+                            <a href="https://github.com/{{student.github}}" class="icon-a" target="_blank">
                                 <i class="ti-github"></i>
                             </a>
                             {% endif %}
                             {% if student.twitter %}
-                            <a href="https://twitter.com/{{ student.twitter }}" class="icon-a">
+                            <a href="https://twitter.com/{{ student.twitter }}" class="icon-a" target="_blank">
                                 <i class="ti-twitter-alt"></i>
                             </a>
                             {% endif %}
                             {% if student.blog %}
-                            <a href="https://{{ student.blog }}" class="icon-a">
+                            <a href="https://{{ student.blog }}" class="icon-a" target="_blank">
                                 <i class="ti-rss"></i>
                             </a>
                             {% endif %}
                             {% if student.facebook %}
-                            <a href="https://facebook.com/{{ student.facebook }}" class="icon-a">
+                            <a href="https://facebook.com/{{ student.facebook }}" class="icon-a" target="_blank">
                                 <i class="ti-facebook"></i>
                             </a>
                             {% endif %}
@@ -141,9 +140,9 @@ layout: default
         <div class="row mb80 mb-xs-0">
             <div class="col-md-8 col-md-offset-2 text-center">
                 <h1>Connect with Fossasia on Social Media</h1>
-                <p>
-                    <a href="https://www.facebook.com/fossasia/" class="ti-facebook"></a>
-                    <a href="https://twitter.com/fossasia" class="ti-twitter"></a>
+                <p class="large">
+                    <a href="https://www.facebook.com/fossasia/" class="ti-facebook" target="_blank"></a>
+                    <a href="https://twitter.com/fossasia" class="ti-twitter" target="_blank"></a>
 
                 </p>
             </div>
@@ -160,7 +159,7 @@ layout: default
                 <p>
                     The video is made is by one of our students during the competition itself!
                 </p>
-                <a class="btn btn-lg" href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ">Our Youtube
+                <a class="btn btn-lg" href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ" target="_blank">Our Youtube
                     Channel</a>
             </div>
         </div>
@@ -168,6 +167,44 @@ layout: default
     </div>
     <!--end of container-->
 </section>
+
+<!--Videos Section-->
+<section class="bg-secondary pb0">
+        <div class="container">
+            <div class="row mb64 mb-xs-24">
+                <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
+                    <h3> Videos </h3>
+                </div>
+            </div>
+            <!--end of row-->
+            <div class="row masonry masonryFlyIn">
+                <div class="col-md-12 col-sm-12 masonry-item mb30">
+
+                    <div class="col-sm-12 text-center spread-children-large">
+                        {% for video in site.data.videos %}
+                        <a href="{{ video.link }}">
+                            <div class="card single-mentor" id="video">
+                                {% if video.image %}
+                                   <img src="img/videos/{{ video.image }}" width="200px" height="200px"/>
+                                {% endif %}
+                                <br>
+                                <h4 class="person-name">
+                                    <b>{{ video.name }}</b>
+                                </h4>
+                                <br>
+                                <h5 class="person-name">{{ video.user }}</h6>
+                            </div>
+                        </a>
+                        {% endfor %}
+                    </div>
+                </div>
+                <!--end of row-->
+            </div>
+            <!--end of container-->
+            </li>
+            </ul>
+    </section>
+<!--/Videos section-->
 <section class="bg-secondary">
     <div class="container">
         <div class="row mb64 mb-xs-24">
@@ -294,276 +331,122 @@ layout: default
     </div>
     <!--end of container-->
 </section>
-<footer class="footer-1 bg-dark">
+
+<section class="bg-secondary">
     <div class="container">
-        <div class="row">
-            <div class="col-md-3 col-sm-6">
-                <img alt="Logo" class="logo" src="img/logo-light.png" />
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="widget">
-                    <h6 class="title">Recent Posts</h6>
-                    <hr>
-                    <ul class="link-list recent-posts">
-                        <li>
-                            <a href="#">Hugging pugs is super trendy</a>
-                            <span class="date">February
-                                <span class="number">14, 2015</span>
-                            </span>
-                        </li>
-                        <li>
-                            <a href="#">Spinning vinyl is oh so cool</a>
-                            <span class="date">February
-                                <span class="number">9, 2015</span>
-                            </span>
-                        </li>
-                        <li>
-                            <a href="#">Superior theme design by pros</a>
-                            <span class="date">January
-                                <span class="number">27, 2015</span>
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-                <!--end of widget-->
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="widget">
-                    <h6 class="title">Latest Updates</h6>
-                    <hr>
-                    <div class="twitter-feed">
-                        <div class="tweets-feed" data-feed-name="mrareweb">
-                        </div>
+        <div class="row v-align-children">
+            <div class="col-md-7 col-sm-6 text-center mb-xs-24">
+                <div class="local-video-container">
+                    <div class="background-image-holder">
+                        <img alt="Background Image" class="background-image" src="img/home3.jpg">
+
                     </div>
+                    <video controls="">
+                        <source src="video/video.webm" type="video/webm">
+                        <source src="video/video.mp4" type="video/mp4">
+                        <source src="video/video.ogv" type="video/ogg">
+                    </video>
+                    <div class="play-button"></div>
                 </div>
-                <!--end of widget-->
+                <!--end of local inline video-->
             </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="widget">
-                    <h6 class="title">Instagram</h6>
-                    <hr>
-                    <div class="instafeed" data-user-name="mrareweb">
-                        <ul></ul>
-                    </div>
-                </div>
-                <!--end of widget-->
+            <div class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1">
+                <h3>Design that looks less 'theme' and more you.</h3>
+                <p>
+                    Foundry offers you the modularity and ease-of-use of a template with the style and aesthetic of
+                    contemporary, bespoke web design.
+                </p>
+            </div>
+        </div>
+        <!--end of row-->
+    </div>
+    <!--end of container-->
+</section>
+<section>
+    <div class="container">
+        <div class="row mb64 mb-xs-24">
+            <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
+                <h3>Our Mentors</h3>
             </div>
         </div>
         <!--end of row-->
         <div class="row">
-            <div class="col-sm-6">
-                <span class="sub">&copy; Copyright 2016 - Medium Rare</span>
-            </div>
-            <div class="col-sm-6 text-right">
-                <ul class="list-inline social-list">
-                    <li>
-                        <a href="https://fossasia.org/" target="_blank">
-                            <i class="ti-world"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ" target="_blank">
-                            <i class="ti-youtube"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/fossasia/" target="_blank">
-                            <i class="ti-instagram"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/fossasia" target="_blank">
-                            <i class="ti-twitter-alt"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/fossasia/" target="_blank">
-                            <i class="ti-facebook"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://codein.withgoogle.com/organizations/fossasia/" target="_blank">
-                            <i class="ti-settings"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/fossasia" target="_blank">
+            {% for mentor in site.data.mentors limit:30 %}
+
+            <div class="col-lg-3 col-md-4 col-sm-12 text-center">
+
+                <div class="card single-mentor">
+                    {% if mentor.image %}
+                    <img src="img/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
+                    {% else %}
+                    <img src="img/mentors/member.png" alt="{{ mentor.name }}">
+                    {% endif %}
+                    <p class="person-name">{{ mentor.name }}</p>
+
+                    <ul class="list-inline social-list social-overlay-list">
+                        {% if mentor.github %}
+                        <a href="https://github.com/{{mentor.github}}" class="icon-a" target="_blank" rel="noopener">
+
                             <i class="ti-github"></i>
                         </a>
-                    </li>
-                </ul>
+                        {% endif %}
+                        {% if mentor.twitter %}
+
+                        <a href="https://twitter.com/{{ mentor.twitter }}" class="icon-a" target="_blank">
+
+                            <i class="ti-twitter-alt"></i>
+                        </a>
+                        {% endif %}
+                        {% if mentor.blog %}
+
+                        <a href="https://{{ mentor.blog }}" class="icon-a" target="_blank">
+
+                            <i class="ti-rss"></i>
+                        </a>
+                        {% endif %}
+                        {% if mentor.facebook %}
+
+                        <a href="https://facebook.com/{{ mentor.facebook }}" class="icon-a" target="_blank">
+
+                            <i class="ti-facebook"></i>
+                        </a>
+                        {% endif %}
+                    </ul>
+                </div>
             </div>
-
+            {% endfor %}
         </div>
-
-    </div>
-    <!--end of row-->
+        <!--end of row-->
     </div>
     <!--end of container-->
-    </section>
-    <section class="bg-secondary">
-        <div class="container">
-            <div class="row v-align-children">
-                <div class="col-md-7 col-sm-6 text-center mb-xs-24">
-                    <div class="local-video-container">
-                        <div class="background-image-holder">
-                            <img alt="Background Image" class="background-image" src="img/home3.jpg">
-
-                        </div>
-                        <video controls="">
-                            <source src="video/video.webm" type="video/webm">
-                            <source src="video/video.mp4" type="video/mp4">
-                            <source src="video/video.ogv" type="video/ogg">
-                        </video>
-                        <div class="play-button"></div>
-                    </div>
-                    <!--end of local inline video-->
-                </div>
-                <div class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1">
-                    <h3>Design that looks less 'theme' and more you.</h3>
-                    <p>
-                        Foundry offers you the modularity and ease-of-use of a template with the style and aesthetic of
-                        contemporary, bespoke web design.
-                    </p>
-                </div>
+</section>
+<section class="image-bg parallax overlay">
+    <div class="background-image-holder">
+        <img alt="Background Image" class="background-image" src="img/home2.jpg">
+    </div>
+    <div class="container">
+        <div class="row mb64 mb-xs-24">
+            <div class="col-sm-6 col-md-5 text-right text-center-xs">
+                <h1 class="large mb8">10,000+</h1>
+                <h6 class="uppercase">Customers using our templates</h6>
             </div>
-            <!--end of row-->
+            <div class="col-md-2 text-center hidden-sm hidden-xs">
+                <i class="ti-infinite icon icon-lg mt8 mt-xs-0"></i>
+            </div>
+            <div class="col-sm-6 col-md-5 text-center-xs">
+                <h1 class="large mb8">Limitless</h1>
+                <h6 class="uppercase">Layout potential using Foundry</h6>
+            </div>
         </div>
-        <!--end of container-->
-    </section>
-    <section>
-        <div class="container">
-            <div class="row mb64 mb-xs-24">
-                <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
-                    <h3>Mentors Section
-                </div>
+        <!--end of row-->
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h3 class="mb40 mb-xs-24">Authentic, handcrafted design that gives your
+                    <br /> site subtle, confident appeal.</h3>
+                <a class="btn btn-lg btn-filled" href="chooser.html">Check Out The Demos</a>
             </div>
-            <!--end of row-->
-            <div class="row masonry masonryFlyIn">
-                <div class="col-md-4 col-sm-12 masonry-item mb30">
-
-                    <div class="col-sm-12 text-center spread-children-large">
-                        {% for mentor in site.data.mentors limit:30 %}
-                        <div class="card single-mentor">
-                            {% if mentor.image %}
-                            <img src="img/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
-                            {% else %}
-                            <img src="img/mentors/member.png" alt="{{ mentor.name }}">
-                            {% endif %}
-                            <br>
-                            <p class="person-name">{{ mentor.name }}</p><br>
-                            <ul>
-                                {% if mentor.github %}
-                                <a href="https://github.com/{{mentor.github}}" class="icon-a">
-                                    <i class="ti-github"></i>
-                                </a>
-                                {% endif %}
-                                {% if mentor.twitter %}
-                                <a href="https://twitter.com/{{ mentor.twitter }}" class="icon-a">
-                                    <i class="ti-twitter-alt"></i>
-                                </a>
-                                {% endif %}
-                                {% if mentor.blog %}
-                                <a href="https://{{ mentor.blog }}" class="icon-a">
-                                    <i class="ti-rss"></i>
-                                </a>
-                                {% endif %}
-                                {% if mentor.facebook %}
-                                <a href="https://facebook.com/{{ mentor.facebook }}" class="icon-a">
-                                    <i class="ti-facebook"></i>
-                                </a>
-                                {% endif %}
-                            </ul>
-                        </div>
-                        {% endfor %}
-                    </div>
-                </div>
-                <div class="col-md-4 masonry-item mb30">
-                    <div class="boxed feature cast-shadow-light mb0">
-                        <i class="icon ti-infinite color-primary inline-block mb0"></i>
-                        <h6 class="uppercase color-primary">Layout Possibilities</h6>
-                        <p>
-                            With tons of purpose-built content blocks, colors and fonts, Foundry presents a
-                            mind-boggling
-                            number of combinations. Test drive the builder now!
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-4 masonry-item mb30">
-                    <div class="boxed feature cast-shadow-light mb0">
-                        <h2 class=" color-primary mb8">Concepts</h2>
-                        <h6 class="uppercase color-primary">Kickstart your project</h6>
-                        <p>
-                            Fresh and unique concepts included out of the box. From portfolio to property showcase,
-                            Foundry's adaptable look is perfect for your next project.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-4 masonry-item mb30">
-                    <div class="boxed feature cast-shadow-light mb0">
-                        <h2 class=" color-primary mb8">One / Multi</h2>
-                        <h6 class="uppercase color-primary">Suit Yourself</h6>
-                        <p>
-                            Capabilities for one and multi-page are built right in. Create a one page scrolling site
-                            with
-                            ease in Variant Page Builder.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-4 masonry-item mb30">
-                    <div class="boxed feature cast-shadow-light mb0">
-                        <h2 class=" color-primary mb8">Support</h2>
-                        <h6 class="uppercase color-primary">Timely & Personable</h6>
-                        <p>
-                            Receive included support with your purchase via our dedicated support forum. We aim to
-                            assist
-                            you in plain English as quickly as possible.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-4 masonry-item mb30">
-                    <div class="boxed feature cast-shadow-light mb0">
-                        <h2 class=" color-primary mb8">Page Builder</h2>
-                        <h6 class="uppercase color-primary">Intuitive & Powerful</h6>
-                        <p>
-                            We've worked hard to bring you a page builder that speeds up your workflow, leaving more
-                            time
-                            for your to experiment with layout combinations.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!--end of row-->
         </div>
-        <!--end of container-->
-    </section>
-    <section class="image-bg parallax overlay">
-        <div class="background-image-holder">
-            <img alt="Background Image" class="background-image" src="img/home2.jpg">
-        </div>
-        <div class="container">
-            <div class="row mb64 mb-xs-24">
-                <div class="col-sm-6 col-md-5 text-right text-center-xs">
-                    <h1 class="large mb8">10,000+</h1>
-                    <h6 class="uppercase">Customers using our templates</h6>
-                </div>
-                <div class="col-md-2 text-center hidden-sm hidden-xs">
-                    <i class="ti-infinite icon icon-lg mt8 mt-xs-0"></i>
-                </div>
-                <div class="col-sm-6 col-md-5 text-center-xs">
-                    <h1 class="large mb8">Limitless</h1>
-                    <h6 class="uppercase">Layout potential using Foundry</h6>
-                </div>
-            </div>
-            <!--end of row-->
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <h3 class="mb40 mb-xs-24">Authentic, handcrafted design that gives your
-                        <br /> site subtle, confident appeal.</h3>
-                    <a class="btn btn-lg btn-filled" href="chooser.html">Check Out The Demos</a>
-                </div>
-            </div>
-            <!--end of row-->
-        </div>
-        <!--end of container-->
-    </section>
+        <!--end of row-->
+    </div>
+    <!--end of container-->
+</section>
