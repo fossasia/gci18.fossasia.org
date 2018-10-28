@@ -8,7 +8,7 @@ var mr_firstSectionHeight,
     mr_floatingProjectSections,
     mr_scrollTop = 0;
 
-$(document).ready(function() { 
+$(document).ready(function() {
     "use strict";
 
     // Smooth scroll to inner links
@@ -28,7 +28,7 @@ $(document).ready(function() {
                 offset = $('body').attr('data-smooth-scroll-offset');
                 offset = offset*1;
             }
-            
+
             smoothScroll.init({
                 selector: '.inner-link',
                 selectorHeader: null,
@@ -163,22 +163,22 @@ $(document).ready(function() {
         if (!e) e = window.event;
         e.stopPropagation();
     });
-    
+
     // Offscreen Nav
-    
+
     if($('.offscreen-toggle').length){
     	$('body').addClass('has-offscreen-nav');
     }
     else{
         $('body').removeClass('has-offscreen-nav');
     }
-    
+
     $('.offscreen-toggle').click(function(){
     	$('.main-container').toggleClass('reveal-nav');
     	$('nav').toggleClass('reveal-nav');
     	$('.offscreen-container').toggleClass('reveal-nav');
     });
-    
+
     $('.main-container').click(function(){
     	if($(this).hasClass('reveal-nav')){
     		$(this).removeClass('reveal-nav');
@@ -186,7 +186,7 @@ $(document).ready(function() {
     		$('nav').removeClass('reveal-nav');
     	}
     });
-    
+
     $('.offscreen-container a').click(function(){
     	$('.offscreen-container').removeClass('reveal-nav');
     	$('.main-container').removeClass('reveal-nav');
@@ -194,7 +194,7 @@ $(document).ready(function() {
     });
 
     // Populate filters
-    
+
     $('.projects').each(function() {
 
         var filters = "";
@@ -274,19 +274,19 @@ $(document).ready(function() {
                         directionNav: false,
                         controlNav: false
                     });
-                }       
+                }
                return html;
            }
            twitterFetcher.fetch(TweetConfig);
       });
 
     // Instagram Feed
-    
+
     if($('.instafeed').length){
     	jQuery.fn.spectragram.accessData = {
 			accessToken: '1406933036.dc95b96.2ed56eddc62f41cbb22c1573d58625a2',
 			clientID: '87e6d2b8a0ef4c7ab8bc45e80ddd0c6a'
-		};	
+		};
 
         $('.instafeed').each(function() {
             var feedID = $(this).attr('data-user-name');
@@ -295,9 +295,9 @@ $(document).ready(function() {
                 max: 12
             });
         });
-    }   
+    }
 
-   
+
 
     // Flickr Feeds
 
@@ -305,11 +305,11 @@ $(document).ready(function() {
         $('.flickr-feed').each(function(){
             var userID = $(this).attr('data-user-id');
             var albumID = $(this).attr('data-album-id');
-            $(this).flickrPhotoStream({ id: userID, setId: albumID, container: '<li class="masonry-item" />' });   
+            $(this).flickrPhotoStream({ id: userID, setId: albumID, container: '<li class="masonry-item" />' });
             setTimeout(function(){
                 initializeMasonry();
                 window.dispatchEvent(new Event('resize'));
-            }, 1000); 
+            }, 1000);
         });
 
     }
@@ -319,7 +319,7 @@ $(document).ready(function() {
         $('.slider-all-controls').flexslider({
             start: function(slider){
                 if(slider.find('.slides li:first-child').find('.fs-vid-background video').length){
-                   slider.find('.slides li:first-child').find('.fs-vid-background video').get(0).play(); 
+                   slider.find('.slides li:first-child').find('.fs-vid-background video').get(0).play();
                 }
             },
             after: function(slider){
@@ -362,9 +362,9 @@ $(document).ready(function() {
             controlNav: false
         });
     }
-    
+
     // Lightbox gallery titles
-    
+
     $('.lightbox-grid li a').each(function(){
     	var galleryTitle = $(this).closest('.lightbox-grid').attr('data-gallery-title');
     	$(this).attr('data-lightbox', galleryTitle);
@@ -388,9 +388,9 @@ $(document).ready(function() {
             console.log('Only Vimeo and Youtube videos are supported at this time');
         }
     });
-    
+
     // Multipurpose Modals
-    
+
     jQuery('.foundry_modal[modal-link]').remove();
 
     if($('.foundry_modal').length && (!jQuery('.modal-screen').length)){
@@ -404,10 +404,10 @@ $(document).ready(function() {
     });
 
     jQuery(document).on('wheel mousewheel scroll', '.foundry_modal, .modal-screen', function(evt){
-        $(this).get(0).scrollTop += (evt.originalEvent.deltaY); 
+        $(this).get(0).scrollTop += (evt.originalEvent.deltaY);
         return false;
     });
-    
+
     $('.modal-container:not([modal-link])').each(function(index) {
         if(jQuery(this).find('iframe[src]').length){
         	jQuery(this).find('.foundry_modal').addClass('iframe-modal');
@@ -423,7 +423,7 @@ $(document).ready(function() {
             jQuery(this).find('.foundry_modal').clone().appendTo('body').attr('modal-link', index).prepend(jQuery('<i class="ti-close close-modal">'));
         }
     });
-    
+
     $('.btn-modal').unbind('click').click(function(){
     	var linkedModal = jQuery('.foundry_modal[modal-link="' + jQuery(this).attr('modal-link') + '"]'),
             autoplayMsg = "";
@@ -438,11 +438,11 @@ $(document).ready(function() {
             linkedModal.find('video').get(0).play();
         }
         linkedModal.toggleClass('reveal-modal');
-        return false; 
+        return false;
     });
-    
+
     // Autoshow modals
-	
+
 	$('.foundry_modal[data-time-delay]').each(function(){
 		var modal = $(this);
 		var delay = modal.attr('data-time-delay');
@@ -497,7 +497,7 @@ $(document).ready(function() {
                     modal.removeClass('reveal-modal');
                     $('.modal-screen').removeClass('reveal-modal');
                 }
-                },delay); 
+                },delay);
             }
         }else{
             setTimeout(function(){
@@ -505,10 +505,10 @@ $(document).ready(function() {
                     modal.removeClass('reveal-modal');
                     $('.modal-screen').removeClass('reveal-modal');
                 }
-            },delay); 
+            },delay);
         }
     });
-    
+
     jQuery('.close-modal:not(.modal-strip .close-modal)').unbind('click').click(function(){
     	var modal = jQuery(this).closest('.foundry_modal');
         modal.toggleClass('reveal-modal');
@@ -520,7 +520,7 @@ $(document).ready(function() {
         }
         jQuery('.modal-screen').removeClass('reveal-modal');
     });
-    
+
     jQuery('.modal-screen').unbind('click').click(function(){
         if(jQuery('.foundry_modal.reveal-modal').find('iframe').length){
             jQuery('.foundry_modal.reveal-modal').find('iframe').attr('src', '');
@@ -528,7 +528,7 @@ $(document).ready(function() {
     	jQuery('.foundry_modal.reveal-modal').toggleClass('reveal-modal');
     	jQuery(this).toggleClass('reveal-modal');
     });
-    
+
     jQuery(document).keyup(function(e) {
 		 if (e.keyCode == 27) { // escape key maps to keycode `27`
             if(jQuery('.foundry_modal').find('iframe').length){
@@ -538,9 +538,9 @@ $(document).ready(function() {
 			jQuery('.modal-screen').removeClass('reveal-modal');
 		}
 	});
-    
+
     // Modal Strips
-    
+
     jQuery('.modal-strip').each(function(){
     	if(!jQuery(this).find('.close-modal').length){
     		jQuery(this).append(jQuery('<i class="ti-close close-modal">'));
@@ -548,7 +548,7 @@ $(document).ready(function() {
     	var modal = jQuery(this);
 
         if(typeof modal.attr('data-cookie') != "undefined"){
-           
+
             if(!mr_cookies.hasItem(modal.attr('data-cookie'))){
             	setTimeout(function(){
             		modal.addClass('reveal-modal');
@@ -560,7 +560,7 @@ $(document).ready(function() {
             },1000);
         }
     });
-    
+
     jQuery('.modal-strip .close-modal').click(function(){
         var modal = jQuery(this).closest('.modal-strip');
         if(typeof modal.attr('data-cookie') != "undefined"){
@@ -688,7 +688,7 @@ $(document).ready(function() {
     $('.map-holder').click(function() {
         $(this).addClass('interact');
     });
-    
+
     if($('.map-holder').length){
     	$(window).scroll(function() {
 			if ($('.map-holder.interact').length) {
@@ -696,7 +696,7 @@ $(document).ready(function() {
 			}
 		});
     }
-    
+
     // Countdown Timers
 
     if ($('.countdown').length) {
@@ -709,7 +709,7 @@ $(document).ready(function() {
             });
         });
     }
-    
+
     //                                                            //
     //                                                            //
     // Contact form code                                          //
@@ -769,7 +769,7 @@ $(document).ready(function() {
                 formError.fadeOut(200);
                 // Create a new loading spinner in the submit button.
                 submitButton.html(jQuery('<div />').addClass('form-loading')).attr('disabled', 'disabled');
-                
+
                 try{
                     $.ajax({
                         url: preparedForm.attr('action'),
@@ -782,7 +782,7 @@ $(document).ready(function() {
                         success: function(data){
                             // Request was a success, what was the response?
                             if (data.result != "success" && data.Status != 200) {
-                                
+
                                 // Error from Mail Chimp or Campaign Monitor
 
                                 // Keep the current error text in a data attribute on the form
@@ -793,9 +793,9 @@ $(document).ready(function() {
 
                                 submitButton.html(submitButton.attr('data-text')).removeAttr('disabled');
                             } else {
-                                
+
                                 // Got Success from Mail Chimp
-                                
+
                                 submitButton.html(submitButton.attr('data-text')).removeAttr('disabled');
 
                                 successRedirect = thisForm.attr('success-redirect');
@@ -828,9 +828,9 @@ $(document).ready(function() {
 
                     submitButton.html(submitButton.attr('data-text')).removeAttr('disabled');
                 }
-            
 
-                
+
+
             } else {
                 formError.fadeIn(1000);
                 setTimeout(function() {
@@ -857,7 +857,7 @@ $(document).ready(function() {
 
                 // Hide the error if one was shown
                 formError.fadeOut(200);
-                
+
                 // Create a new loading spinner in the submit button.
                 submitButton.html(jQuery('<div />').addClass('form-loading')).attr('disabled', 'disabled');
 
@@ -961,13 +961,13 @@ $(document).ready(function() {
         }
 
     //
-    //    
+    //
     // End contact form code
     //
     //
 
 
-    // Get referrer from URL string 
+    // Get referrer from URL string
     if (getURLParameter("ref")) {
         $('form.form-email').append('<input type="text" name="referrer" class="hidden" value="' + getURLParameter("ref") + '"/>');
     }
@@ -981,9 +981,9 @@ $(document).ready(function() {
     if ((/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
         $('section').removeClass('parallax');
     }
-    
+
     // Disqus Comments
-    
+
     if($('.disqus-comments').length){
 		/* * * CONFIGURATION VARIABLES * * */
 		var disqus_shortname = $('.disqus-comments').attr('data-shortname');
@@ -1004,24 +1004,24 @@ $(document).ready(function() {
             script.type = 'text/javascript';
             script.src = 'https://maps.googleapis.com/maps/api/js?key='+apiKey+'&callback=initializeMaps';
             script.className = 'gMapsAPI';
-            document.body.appendChild(script);  
-        } 
+            document.body.appendChild(script);
+        }
     }
 
-}); 
+});
 
-$(window).load(function() { 
+$(window).load(function() {
     "use strict";
 
     // Initialize Masonry
 
     setTimeout(initializeMasonry, 1000);
-   
+
 
     mr_firstSectionHeight = $('.main-container section:nth-of-type(1)').outerHeight(true);
 
 
-}); 
+});
 function updateNav() {
 
     var scrollY = mr_scrollTop;
@@ -1216,12 +1216,12 @@ window.initializeMaps = function(){
                     if(address != undefined && address[0] != ""){
                             geocoder.geocode( { 'address': address[0].replace('[nomarker]','')}, function(results, status) {
                                 if (status == google.maps.GeocoderStatus.OK) {
-                                var map = new google.maps.Map(mapInstance, mapOptions); 
+                                var map = new google.maps.Map(mapInstance, mapOptions);
                                 map.setCenter(results[0].geometry.location);
-                                
+
                                 address.forEach(function(address){
                                     var markerGeoCoder;
-                                    
+
                                     markerImage = {url: window.mr_variant == undefined ? 'img/mapmarker.png' : '../img/mapmarker.png', size: new google.maps.Size(50,50), scaledSize: new google.maps.Size(50,50)};
                                     if(/(\-?\d+(\.\d+)?),\s*(\-?\d+(\.\d+)?)/.test(address) ){
                                         var latlong = address.split(','),
@@ -1256,7 +1256,7 @@ window.initializeMaps = function(){
                     }
                     else if(latitude != undefined && latitude != "" && latitude != false && longitude != undefined && longitude != "" && longitude != false ){
                         mapOptions.center   = { lat: latitude, lng: longitude};
-                        map = new google.maps.Map(mapInstance, mapOptions); 
+                        map = new google.maps.Map(mapInstance, mapOptions);
                         marker              = new google.maps.Marker({
                                                     position: { lat: latitude, lng: longitude },
                                                     map: map,
@@ -1266,7 +1266,7 @@ window.initializeMaps = function(){
 
                     }
 
-                }); 
+                });
         }
     }
 }
@@ -1306,14 +1306,14 @@ function prepareSignup(iFrame){
     // Set action on the form
     form.attr('action', action);
 
-    // Clone form input fields from 
+    // Clone form input fields from
     jQuery(div).find('input, select, textarea').not('input[type="submit"]').each(function(){
         jQuery(this).clone().appendTo(form);
 
     });
 
     return form;
-        
+
 
 }
 
@@ -1387,3 +1387,26 @@ var mr_cookies = {
 \*/
 
 
+// Contributors
+$(document).ready(function(){
+    $.ajax({
+        url: "https://api.github.com/repos/fossasia/gci18.fossasia.org/contributors?per_page=100&page=1"
+      }).done(function(data){
+        data.forEach(function(contributors){
+          var html = '<div class="col-xs-6 col-sm-3 col-md-2 col-lg-2 text-center"> <div class="card hvr-hang single-mentor">';
+          html += `<img src="https://github.com/${contributors.login}.png?size=120x120" height="120" width="120" style="width: auto">`;
+          html += '<br>';
+          html += '<p class="person-name">'+contributors.login+' <br>('+contributors.contributions;
+          if (contributors.contributions === 1) {
+            html += ' contribution)</p><br>';
+          } else {
+            html += ' contributions)</p><br>';
+          }
+          html += '<ul class="list-inline social-list social-overlay-list">';
+          html += '<a href="'+contributors.html_url+'" class="icon-a">';
+          html += '<i class="icon-i fa fa-github fa-2x" aria-hidden="true"></i>';
+          html += '</a></ul></div></div>';
+          $("#contributors").append(html);
+        });
+      });
+});
