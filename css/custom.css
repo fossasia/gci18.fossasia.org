@@ -91,7 +91,7 @@ p.person-name {
   transition: all .6s;
 }
 
-#app{
+.thank_you{
   background-color: #000;
   color: #fff;
   font-size: 50px;
