@@ -1,4 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Prompt:900);
+html{
+  font-family: 'Prompt', sans-serif;
+  background-color:#000;
+  color:#fff;
+  font-size:5vw;
+}
 container{
   display: flex;
   align-items: center;
