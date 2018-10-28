@@ -177,7 +177,8 @@ layout: default
                 <p>
                     The video is made is by one of our students during the competition itself!
                 </p>
-                <a class="btn btn-lg" href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ" target="_blank">Our Youtube
+                <a class="btn btn-lg" href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ" target="_blank">Our
+                    Youtube
                     Channel</a>
             </div>
         </div>
@@ -188,40 +189,40 @@ layout: default
 
 <!--Videos Section-->
 <section class="bg-secondary pb0">
-        <div class="container">
-            <div class="row mb64 mb-xs-24">
-                <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
-                    <h3> Videos </h3>
+    <div class="container">
+        <div class="row mb64 mb-xs-24">
+            <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
+                <h3> Videos </h3>
+            </div>
+        </div>
+        <!--end of row-->
+        <div class="row masonry masonryFlyIn">
+            <div class="col-md-12 col-sm-12 masonry-item mb30">
+
+                <div class="col-sm-12 text-center spread-children-large">
+                    {% for video in site.data.videos %}
+                    <a href="{{ video.link }}">
+                        <div class="card single-mentor" id="video">
+                            {% if video.image %}
+                            <img src="img/videos/{{ video.image }}" width="200px" height="200px" />
+                            {% endif %}
+                            <br>
+                            <h4 class="person-name">
+                                <b>{{ video.name }}</b>
+                            </h4>
+                            <br>
+                            <h5 class="person-name">{{ video.user }}</h6>
+                        </div>
+                    </a>
+                    {% endfor %}
                 </div>
             </div>
             <!--end of row-->
-            <div class="row masonry masonryFlyIn">
-                <div class="col-md-12 col-sm-12 masonry-item mb30">
-
-                    <div class="col-sm-12 text-center spread-children-large">
-                        {% for video in site.data.videos %}
-                        <a href="{{ video.link }}">
-                            <div class="card single-mentor" id="video">
-                                {% if video.image %}
-                                   <img src="img/videos/{{ video.image }}" width="200px" height="200px"/>
-                                {% endif %}
-                                <br>
-                                <h4 class="person-name">
-                                    <b>{{ video.name }}</b>
-                                </h4>
-                                <br>
-                                <h5 class="person-name">{{ video.user }}</h6>
-                            </div>
-                        </a>
-                        {% endfor %}
-                    </div>
-                </div>
-                <!--end of row-->
-            </div>
-            <!--end of container-->
-            </li>
-            </ul>
-    </section>
+        </div>
+        <!--end of container-->
+        </li>
+        </ul>
+</section>
 <!--/Videos section-->
 <section class="bg-secondary">
     <div class="container">
@@ -391,7 +392,7 @@ layout: default
         <div class="row">
             {% for mentor in site.data.mentors limit:30 %}
 
-            <div class="col-lg-3 col-md-4 col-sm-12 text-center">
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 text-center">
 
                 <div class="card single-mentor">
                     {% if mentor.image %}
@@ -438,93 +439,3 @@ layout: default
     </div>
     <!--end of container-->
 </section>
-<!-- <section class="image-bg parallax overlay">
-    <div class="background-image-holder">
-        <img alt="Background Image" class="background-image" src="img/home2.jpg">
-    </div>
-    <div class="container">
-        <div class="row mb64 mb-xs-24">
-            <div class="col-sm-6 col-md-5 text-right text-center-xs">
-                <h1 class="large mb8">10,000+</h1>
-                <h6 class="uppercase">Customers using our templates</h6>
-            </div>
-            <div class="col-md-2 text-center hidden-sm hidden-xs">
-                <i class="ti-infinite icon icon-lg mt8 mt-xs-0"></i>
-            </div>
-            <div class="col-sm-6 col-md-5 text-center-xs">
-                <h1 class="large mb8">Limitless</h1>
-                <h6 class="uppercase">Layout potential using Foundry</h6>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <h3 class="mb40 mb-xs-24">Authentic, handcrafted design that gives your
-                    <br /> site subtle, confident appeal.</h3>
-                <a class="btn btn-lg btn-filled" href="chooser.html">Check Out The Demos</a>
-            </div>
-        </div>
-    </div>
-</section> -->
-<section class="bg-secondary" id="social_media">
-        <div class="container">
-            <div class="row mb64 mb-xs-24">
-                <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
-                    <h3>Join Our Community...😊</h3>
-                </div>
-            </div>
-            <!--end of row-->
-            <div class="row">
-                <div class="col-md-3 col-sm-6 text-center">
-                    <div class="feature">
-                        <div class="text-center">
-                            <i class="ti-youtube icon-lg mb40 mb-xs-24 inline-block color-primary"></i>
-                            <h5 class="uppercase">Youtube</h5>
-                        </div>
-                        <p>
-                            The official Fossasia Youtube Site 
-                        </p>
-                        <a class="btn btn-lg" href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ">Fossasia Youtube</a>
-                    </div>
-                    <!--end of feature-->
-                </div>
-                <div class="col-md-3 col-sm-6 text-center">
-                    <div class="feature">
-                        <div class="text-center">
-                            <i class="ti-instagram icon-lg mb40 mb-xs-24 inline-block color-primary"></i>
-                            <h5 class="uppercase">Instagram</h5>
-                        </div>
-                        <p>
-                           The official Instagram Account
-                        </p>
-                        <a class="btn btn-lg" href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ">Fossasia Instagram 📸</a>
-                    </div>
-                    <!--end of feature-->
-                </div>
-                <div class="col-md-3 col-sm-6 text-center">
-                        <div class="feature">
-                            <div class="text-center">
-                                <i class="ti-facebook icon-lg mb40 mb-xs-24 inline-block color-primary"></i>
-                                <h5 class="uppercase">Facebook</h5>
-                            </div>
-                            <p>
-                                The offcial Facebook Page
-                            </p>
-                            <a class="btn btn-lg" href="https://www.facebook.com/fossasia/">Fossasia Facebook</a>
-                        </div>
-                        <!--end of feature-->
-                </div>
-                <div class="col-md-3 col-sm-6 text-center">
-                        <div class="feature">
-                            <div class="text-center">
-                                <i class="ti-twitter icon-lg mb40 mb-xs-24 inline-block color-primary"></i>
-                                <h5 class="uppercase">Twitter</h5>
-                            </div>
-                            <p>
-                                The Official Twitter Account
-                            </p>
-                            <a class="btn btn-lg" href="https://twitter.com/fossasia?lang=en">Fossasia Twitter 🕊</a>
-                        </div>
-                        <!--end of feature-->
-                </div>
-            </div>
-        </section>
