@@ -9,6 +9,10 @@
 #   facebook: Mentor's Facebook ID
 #   lat: Mentor's Latitude
 #   lng: Mentor's Longitude
+- name: Akshat Garg
+  github: akshatnitd
+  image: akshatnitd.jpg
+
 - name: Shubham Kumar
   github: sk9331657
   image: shubham.png
