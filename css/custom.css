@@ -90,3 +90,7 @@ p.person-name {
   filter: brightness(50%);
   transition: all .6s;
 }
+
+.mentor-img {
+  width: 240px;
+}
