@@ -454,9 +454,6 @@ a {
   color: #fff;
   opacity: .9;
 }
-.bg-light a {
-  color: #47b475;
-}
 .bg-light a:hover {
   color: #47b475;
   opacity: 1;
@@ -634,7 +631,7 @@ footer.bg-dark li,
   top: 0;
   left: 0;
   background: #292929;
-  opacity: 0.5 !important;
+  opacity: 0.7 !important;
   z-index: 2;
 }
 .overlay-heavy:before {
@@ -723,8 +720,8 @@ footer.bg-dark li,
 }
 /*!---------- 6. BUTTONS ----------*/
 .btn {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  border: 2px solid #47b475;
+  font-family: roboto !important;
+  border: 2px solid #3844b3;
   padding: 0 26px;
   height: 40px;
   min-width: 150px;
@@ -733,8 +730,8 @@ footer.bg-dark li,
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border-radius: 0;
-  color: #47b475;
+  border-radius:4px;
+  color: #261f1f;
   text-align: center;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
@@ -747,8 +744,8 @@ footer.bg-dark li,
   margin-right: 0;
 }
 .btn:hover {
-  background: #47b475;
-  color: #fff;
+  background:#2f488d !important;
+  color: #fff !important;
 }
 .btn-icon {
   width: 40px;
@@ -783,9 +780,8 @@ footer.bg-dark li,
   font-size: 11px;
   line-height: 27px;
   min-width: 0;
-}
+}/*
 .btn-filled {
-  background: #47b475;
   color: #fff;
 }
 .btn-white,
@@ -799,10 +795,6 @@ footer.bg-dark li,
 .image-bg .btn:visited:hover {
   background: #fff;
   color: #222;
-}
-.image-bg .btn.btn-filled,
-.image-bg .btn-filled:visited {
-  border-color: #47b475;
 }
 .image-bg .btn-filled:hover {
   border-color: #fff;
@@ -853,6 +845,7 @@ body.btn-rounded .btn {
   background: #fff;
   color: #47b475;
 }
+*/
 /*!---------- 7. NAVIGATION ----------*/
 .nav-container {
   -webkit-backface-visibility: hidden;
@@ -951,9 +944,10 @@ nav.bg-dark .logo-dark {
   width: auto;
 }
 .menu li a {
-  font-size: 12px;
+  font-size: 14px;
   text-transform: uppercase;
   font-weight: 600;
+  font-family: roboto !important;
   letter-spacing: 1px;
   color: #292929;
   opacity: 0.5;
