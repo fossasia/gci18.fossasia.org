@@ -91,8 +91,21 @@ p.person-name {
   transition: all .6s;
 }
 
+.thank_you{
+  background-color: #1F75AD;
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+  height: 9vh;
+  width: 1200px;
+  margin-top: 40px;
+  padding: 100px;
+  margin-right: 100px;
+  margin-bottom: 100px;
+
 .mentor-img {
   width: 240px;
+
 }
 
 #studentproject:hover > img {
