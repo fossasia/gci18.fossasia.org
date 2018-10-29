@@ -32,6 +32,10 @@
 - name: Saurabh Srivastava
   image: simsausaurabh.png
   github: simsausaurabh
+  
+- name: Hong Phuc Dang
+  image: hpdang.jpg
+  github: hpdang
 
 - name: Sanskar Jethi
   image: sanskar.jpg
@@ -40,3 +44,4 @@
 - name: Mohit Sharma
   image: ms.jpg
   github: ms10398
+
