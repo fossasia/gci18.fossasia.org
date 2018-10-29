@@ -1,0 +1,26 @@
+# Please add your entries to a random position in the file.
+# This is to remove conflicts with other people adding entries.
+
+# The Format is :
+# - name: Student's project name
+#   image: Student's project image/logo
+#   author: the author of the project (student's name)
+#   desc: a short description of the project
+#   github: link to student's project github repo (copy the whole link)
+#   link: link to student's project website
+
+- name: gci18.fossasia.org
+  author: gci18 fossasia students
+  desc: A website made for the Google Code-In 2018 contest. Contributed to both by fossasia students and mentors.
+  link: gci18.fossasia.org
+  github: https://github.com/fossasia/gci18.fossasia.org
+
+- name: TestProject
+  author: author
+  desc: This is a test student project description. The description should be only few lines short and tell something about your project. 
+  link: https://applec4t.github.io/ACgci18fossasia/
+
+- name: TestProject
+  author: author
+  desc: This is a test student project description. The description should be only few lines short and tell something about your project. 
+  link: https://applec4t.github.io/ACgci18fossasia/

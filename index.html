@@ -106,6 +106,8 @@ layout: default
                     </div>
                 </div>
             </div>
+	<br>
+	<br>
 	<!--end of container-->
 	</section>
 	<section>
@@ -114,6 +116,9 @@ layout: default
             <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
                 <h2> Students </h2>
             </div>
+			<br>
+			<br>
+			<br>
             <!--end of row-->
             <div class="row masonry masonryFlyIn">
                 <div class="col-md-12 col-sm-12 masonry-item mb30">
@@ -158,6 +163,62 @@ layout: default
             <!--end of container-->
             </li>
             </ul>
+		</div>
+</section>
+<section>
+	<div class="bg-secondary">
+    <div class="container" id="student-projects">
+        <div class="row mb64 mb-md-24" style="margin-top: 50px">
+            <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
+                <h2> Student Projects </h2>
+            	</div>
+		<br>
+		<br>
+		<br>
+            <!--end of row-->
+	   		<div class="row masonry masonryFlyIn">
+                <div class="col-md-12 col-lg-12 masonry-item mb30">
+                    <div class="row-lg-12 text-center spread-children-large">
+                        {% for sproj in site.data.student-projects limit: 30%}
+
+                        <div id="studentproject" class="col-xs-12 col-sm-3 col-md-3 col-lg-3 text-center">
+                            {% if sproj.image %}
+                            <img src="img/studentsprojects/{{sproj.image}}" alt="{{ sproj.name }}" align="middle">
+                            {% else %}
+                            <img src="img/studentprojects/spdeafult.png" alt="{{ sproj.name }}" align="middle">
+                            {% endif %}
+                            <br>
+                            <p class="person-name">{{ sproj.name }}</p><br>
+			    {% if sproj.author %}
+                            <p>by<strong>{{ sproj.author }}</strong></p>
+                            {% endif %}
+			    <br>
+			    {% if sproj.desc %}
+                            <p class="spdesc">{{ sproj.desc }}</p>
+                            {% endif %}
+			    <br>
+                            <ul>
+                            {% if sproj.github %}
+                            <a href="https://github.com/{{student.github}}" class="icon-a" target="_blank">
+                            <i class="ti-github"></i>
+                            </a>
+                            {% endif %}                               
+                   	    {% if sproj.link %}
+                            <a href="{{ sproj.link }}" class="icon-a" target="_blank">
+                            <i class="ti-world"></i>
+			    </a>
+                            {% endif %}
+                            </ul>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <!--end of row-->
+            </div>
+            <!--end of container-->
+            </li>
+            </ul>
+	</div>
 </section>
 <section>
     <div class="container" id="social_box">

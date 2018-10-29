@@ -94,3 +94,26 @@ p.person-name {
 .mentor-img {
   width: 240px;
 }
+
+#studentproject:hover > img {
+	filter: brightness(100%);
+}
+
+.sproj-list{
+  position: relative;
+  top: -165px;
+  background: transparent;
+  padding: 5px 10px;
+  width: 50%;
+
+}
+
+#sprojcont{
+	width: 90%;
+}
+
+#sprojlist{
+	width: 100%;
+}
+
+
