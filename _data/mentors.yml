@@ -9,6 +9,10 @@
 #   facebook: Mentor's Facebook ID
 #   lat: Mentor's Latitude
 #   lng: Mentor's Longitude
+- name: Akshat Garg
+  github: akshatnitd
+  image: akshatnitd.jpg
+
 - name: Shubham Kumar
   github: sk9331657
   image: shubham.png
@@ -28,7 +32,16 @@
 - name: Saurabh Srivastava
   image: simsausaurabh.png
   github: simsausaurabh
-
+  
 - name: Hong Phuc Dang
   image: hpdang.jpg
   github: hpdang
+
+- name: Sanskar Jethi
+  image: sanskar.jpg
+  github: stealthanthrax
+
+- name: Mohit Sharma
+  image: ms.jpg
+  github: ms10398
+

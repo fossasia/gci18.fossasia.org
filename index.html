@@ -62,7 +62,6 @@ layout: default
                 </div>
                 <!--end of row-->
             </div>
-            <!--end of container-->
         </li>
         <li class="overlay image-bg">
             <div class="background-image-holder">
@@ -83,57 +82,82 @@ layout: default
                 </div>
                 <!--end of container-->
 </section>
-<section class="bg-secondary pb0">
-    <div class="container">
-        <div class="row mb64 mb-xs-24">
-            <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
-                <h3> Students </h3>
-            </div>
-        </div>
-        <!--end of row-->
-        <div class="row masonry masonryFlyIn">
-            <div class="col-md-12 col-sm-12 masonry-item mb30">
-                <div class="col-sm-12 text-center spread-children-large">
-                    {% for student in site.data.students limit:30 %}
-                    <div class="card single-mentor">
-                        {% if student.image %}
-                        <img src="img/students/{{student.image}}" alt="{{ student.name }}">
-                        {% else %}
-                        <img src="img/students/member.png" alt="{{ student.name }}">
-                        {% endif %}
-                        <br>
-                        <p class="person-name">{{ student.name }}</p><br>
-                        <ul>
-                            {% if student.github %}
-                            <a href="https://github.com/{{student.github}}" class="icon-a" target="_blank">
-                                <i class="ti-github"></i>
-                            </a>
-                            {% endif %}
-                            {% if student.twitter %}
-                            <a href="https://twitter.com/{{ student.twitter }}" class="icon-a" target="_blank">
-                                <i class="ti-twitter-alt"></i>
-                            </a>
-                            {% endif %}
-                            {% if student.blog %}
-                            <a href="https://{{ student.blog }}" class="icon-a" target="_blank">
-                                <i class="ti-rss"></i>
-                            </a>
-                            {% endif %}
-                            {% if student.facebook %}
-                            <a href="https://facebook.com/{{ student.facebook }}" class="icon-a" target="_blank">
-                                <i class="ti-facebook"></i>
-                            </a>
-                            {% endif %}
-                        </ul>
+<section class="bg-secondary pb0" id="welcome">
+        <div class="container">
+                <div class="row mb80 mb-xs-0">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <h1>What is open source?</h1>
+                        <p>
+                                In general, open source refers to any program whose source code is made available for use or modification as users or other developers see fit. Open source software is usually developed as a public collaboration and made freely available.
+                        </p>
                     </div>
-                    {% endfor %}
+                </div>
+                <!--end of row-->
+                <div class="row v-align-children">
+                    <div class="col-md-7 col-sm-6 text-center mb-xs-24">
+                        <img class="cast-shadow" alt="Screenshot" src="https://www.ost.agency/wp-content/uploads/2017/12/lg.png" />
+                    </div>
+                    <div class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1">
+                        <h3>What is FOSSASIA?</h3>
+                        <p>
+                                FOSSASIA develops software and hardware and cooperates with Open Tech projects. Please check out our Github and FOSSASIA Labs.
+                            </p>
+                        <a class="btn btn-lg" href="https://fossasia.org/" target="_blank">Explore Fossasia 🌏</a>
+                    </div>
                 </div>
             </div>
+	<!--end of container-->
+	</section>
+	<section>
+    <div class="container" id="students">
+        <div class="row mb64 mb-xs-24" style="margin-top: 50px">
+            <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
+                <h2> Students </h2>
+            </div>
             <!--end of row-->
-        </div>
-        <!--end of container-->
-        </li>
-        </ul>
+            <div class="row masonry masonryFlyIn">
+                <div class="col-md-12 col-sm-12 masonry-item mb30">
+                    <div class="col-sm-12 text-center spread-children-large">
+                        {% for student in site.data.students limit:30 %}
+                        <div class="card single-mentor">
+                            {% if student.image %}
+                            <img src="img/students/{{student.image}}" alt="{{ student.name }}">
+                            {% else %}
+                            <img src="img/students/member.png" alt="{{ student.name }}">
+                            {% endif %}
+                            <br>
+                            <p class="person-name">{{ student.name }}</p><br>
+                            <ul>
+                                {% if student.github %}
+                                <a href="https://github.com/{{student.github}}" class="icon-a" target="_blank">
+                                    <i class="ti-github"></i>
+                                </a>
+                                {% endif %}
+                                {% if student.twitter %}
+                                <a href="https://twitter.com/{{ student.twitter }}" class="icon-a" target="_blank">
+                                    <i class="ti-twitter-alt"></i>
+                                </a>
+                                {% endif %}
+                                {% if student.blog %}
+                                <a href="https://{{ student.blog }}" class="icon-a" target="_blank">
+                                    <i class="ti-rss"></i>
+                                </a>
+                                {% endif %}
+                                {% if student.facebook %}
+                                <a href="https://facebook.com/{{ student.facebook }}" class="icon-a" target="_blank">
+                                    <i class="ti-facebook"></i>
+                                </a>
+                                {% endif %}
+                            </ul>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <!--end of row-->
+            </div>
+            <!--end of container-->
+            </li>
+            </ul>
 </section>
 <section>
     <div class="container" id="social_box">
@@ -151,11 +175,15 @@ layout: default
 			<a href="https://codein.withgoogle.com/organizations/fossasia/" target="_blank" class="ti-settings lgi"></a>
                 </p>
             </div>
-        </div>
+         </div>
+     </div>
+</section>
+<section>
+    <div class="container" id="videos">
         <!--end of row-->
         <div class="row v-align-children">
             <div class="col-md-7 col-sm-6 text-center mb-xs-24">
-                <video controls="">
+                <video controls="" preload="metadata">
                     <source src="video/fossasia.mp4" type="video/mp4">
                 </video>
             </div>
@@ -179,7 +207,7 @@ layout: default
     <div class="container">
         <div class="row mb64 mb-xs-24">
             <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
-                <h3> Videos </h3>
+                <h2> Videos </h2>
             </div>
         </div>
         <!--end of row-->
@@ -211,6 +239,32 @@ layout: default
         </ul>
 </section>
 <!--/Videos section-->
+<!-- Proejct section-->
+<section>
+        <div class="container">
+                <div class="row mb64 mb-xs-24">
+                        <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
+                            <h3> FOSSASIA | Projects </h3>
+                        </div>
+                    </div>
+            <div class="row v-align-children">
+                <div class="col-md-7 col-sm-6 text-center mb-xs-24">
+                    <img class="cast-shadow" alt="Screenshot" src="img/susi.jpg" />
+                </div>
+                <div class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1">
+                    <h3>SUSI.AI</h3>
+                    <p>
+                        Susi is an artificial intelligence system, combining pattern matching, internet data, data flow, and inference engine principles. Through some abilities to reflect, it can remember the user input to produce deductions and personalized feedback. Its purpose is to explore the abilities of an artificial companion and to answer the remaining unanswered questions. The SUSI.AI web chat is a front-end developed for web access of SUSI.
+                    </p>
+                    <a class="btn-filled btn" href="https://github.com/fossasia/chat.susi.ai">Contribute</a>
+                    <a class="btn-filled btn" href="https://chat.susi.ai/">Try</a>
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+<!--/Projects Section-->
 <section class="bg-secondary">
     <div class="container">
         <div class="row mb64 mb-xs-24">
@@ -347,7 +401,7 @@ layout: default
                         <img alt="Background Image" class="background-image" src="img/home3.jpg">
 
                     </div>
-                    <video controls="">
+                    <video controls="" preload="metadata">
                         <source src="video/video.webm" type="video/webm">
                         <source src="video/video.mp4" type="video/mp4">
                         <source src="video/video.ogv" type="video/ogg">
@@ -369,7 +423,7 @@ layout: default
     <!--end of container-->
 </section>
 <section>
-    <div class="container">
+    <div class="container" id="mentors">
         <div class="row mb64 mb-xs-24">
             <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
                 <h3>Our Mentors</h3>
@@ -383,7 +437,7 @@ layout: default
 
                 <div class="card single-mentor">
                     {% if mentor.image %}
-                    <img src="img/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
+                    <img class="mentor-img" src="img/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
                     {% else %}
                     <img src="img/mentors/member.png" alt="{{ mentor.name }}">
                     {% endif %}
@@ -435,8 +489,12 @@ layout: default
             </div>
         </div>
         <!--end of row-->
-        <div class="row" id="contributors">
-        </div>
+          <div class="row" id="contributors">
+          </div>
+        <container>
+          <div id="app" class="thank_you"></div>
+        </container>
+
         <!--end of row-->
     </div>
     <!--end of container-->
