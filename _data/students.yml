@@ -12,7 +12,7 @@
 - name: Sahil Kumar
   github: sahildav
   image: nick.png
-  
+
 - name: Siddharth Sinha
   github: Sid911
   twitter: Sid_Dev_
@@ -25,7 +25,7 @@
 - name: ploypiti
   github: ploypiti
   image: pfp.png
-  
+
 - name: AppleCat
   github: AppleC4T
   image: applecat.png
@@ -34,3 +34,7 @@
   github: STEdirisuriya
   image: supun.png
 
+- name: Nitesh Kumar Niranjan
+  github: niteshkumarniranjan
+  image: niteshkumarniranjan.png
+  twitter: niranjannitesh
