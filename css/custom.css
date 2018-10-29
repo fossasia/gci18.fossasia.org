@@ -109,7 +109,8 @@ p.person-name {
 }
 
 #studentproject:hover > img {
-	filter: brightness(100%);
+  filter: brightness(50%);
+  transition: all .6s;
 }
 
 .sproj-list{
