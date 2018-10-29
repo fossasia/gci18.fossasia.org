@@ -3,6 +3,8 @@ var items = [
 'Merci pour vos contributions!',
 'आपके योगदानों के लिए धन्यवाद',
 'Danke für Ihre Beiträge!'
+'谢谢你的贡献'
+'Grazie per aver contribuito'
 ];
 
 var app = document.getElementById('app');
