@@ -102,8 +102,33 @@ p.person-name {
   padding: 100px;
   margin-right: 100px;
   margin-bottom: 100px;
+}
 
 .mentor-img {
   width: 240px;
 
+}
+
+.student_section_anchor{
+  margin:2px; 
+  padding:0px;
+}
+.student_icon{
+  padding: 0px;
+  margin: 2px ;
+  font-size: 12px;
+}
+.student_section_card{
+  text-align: center; 
+  width: 180px;
+}
+.student_section_image{
+  margin-left: 0px;
+  width: 180;
+  height: 180px;
+}
+#social_box{
+  display: block !important;
+  padding:4% !important;
+  width: 100% !important;
 }

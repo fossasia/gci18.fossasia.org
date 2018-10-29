@@ -108,44 +108,44 @@ layout: default
             </div>
 	<!--end of container-->
 	</section>
-	<section>
-    <div class="container" id="students">
-        <div class="row mb64 mb-xs-24" style="margin-top: 50px">
+	<section id="students">
+    <div class="container">
+        <div class="row mb64 mb-xs-24" >
             <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
                 <h2> Students </h2>
             </div>
             <!--end of row-->
-            <div class="row masonry masonryFlyIn">
+            <div class="row masonry masonryFlyIn" style="padding-top: 10%;">
                 <div class="col-md-12 col-sm-12 masonry-item mb30">
-                    <div class="col-sm-12 text-center spread-children-large">
+                    <div class="col-sm-12 text-center spread-children-large"> 
                         {% for student in site.data.students limit:30 %}
-                        <div class="card single-mentor">
+                        <div class="card single-mentor  student_section_card">
                             {% if student.image %}
-                            <img src="img/students/{{student.image}}" alt="{{ student.name }}">
+                            <img  class="student_section_image" src="img/students/{{student.image}}" alt="{{ student.name }}" >
                             {% else %}
-                            <img src="img/students/member.png" alt="{{ student.name }}">
+                            <img  src="img/students/member.png" alt="{{ student.name }}">
                             {% endif %}
                             <br>
                             <p class="person-name">{{ student.name }}</p><br>
                             <ul>
                                 {% if student.github %}
-                                <a href="https://github.com/{{student.github}}" class="icon-a" target="_blank">
-                                    <i class="ti-github"></i>
+                                <a class="student_section_anchor icon-a" href="https://github.com/{{student.github}}"  target="_blank" >
+                                    <i class="ti-github student_icon"></i>
                                 </a>
                                 {% endif %}
                                 {% if student.twitter %}
-                                <a href="https://twitter.com/{{ student.twitter }}" class="icon-a" target="_blank">
-                                    <i class="ti-twitter-alt"></i>
+                                <a class="student_section_anchor icon-a" href="https://twitter.com/{{ student.twitter }}"  target="_blank" >
+                                    <i class="ti-twitter-alt student_icon"></i>
                                 </a>
                                 {% endif %}
                                 {% if student.blog %}
-                                <a href="https://{{ student.blog }}" class="icon-a" target="_blank">
-                                    <i class="ti-rss"></i>
+                                <a class="icon-a student_section_anchor"  href="https://{{ student.blog }}" target="_blank" >
+                                    <i class="ti-rss student_icon"></i>
                                 </a>
                                 {% endif %}
                                 {% if student.facebook %}
-                                <a href="https://facebook.com/{{ student.facebook }}" class="icon-a" target="_blank">
-                                    <i class="ti-facebook"></i>
+                                <a class="icon-a student_section_anchor"href="https://facebook.com/{{ student.facebook }}" target="_blank" >
+                                    <i class="ti-facebook student_icon"></i>
                                 </a>
                                 {% endif %}
                             </ul>
@@ -160,7 +160,7 @@ layout: default
             </ul>
 </section>
 <section>
-    <div class="container" id="social_box">
+    <div class="container bg-secondary" id="social_box" >
         <div class="row mb80 mb-xs-0">
             <div class="col-md-8 col-md-offset-2 text-center">
                 <h1>Connect with Fossasia on Social Media</h1>
@@ -182,8 +182,8 @@ layout: default
     <div class="container" id="videos">
         <!--end of row-->
         <div class="row v-align-children">
-            <div class="col-md-7 col-sm-6 text-center mb-xs-24">
-                <video controls="" preload="metadata">
+            <div class="col-md-7 col-sm-6  mb-xs-24" >
+                <video controls="" preload="metadata" >
                     <source src="video/fossasia.mp4" type="video/mp4">
                 </video>
             </div>
@@ -219,7 +219,7 @@ layout: default
                     <a href="{{ video.link }}">
                         <div class="card single-mentor" id="video">
                             {% if video.image %}
-                            <img src="img/videos/{{ video.image }}" width="200px" height="200px" />
+                            <img src="img/videos/{{ video.image }}" width="200px" height="200px" style="margin-left: 0px;" />
                             {% endif %}
                             <br>
                             <h4 class="person-name">
@@ -240,8 +240,8 @@ layout: default
 </section>
 <!--/Videos section-->
 <!-- Proejct section-->
-<section>
-        <div class="container">
+<section id="project">
+        <div class="container" >
                 <div class="row mb64 mb-xs-24">
                         <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
                             <h3> FOSSASIA | Projects </h3>
@@ -483,7 +483,7 @@ layout: default
 <!-- Contributors  -->
 <section class="bg-secondary">
     <div class="container">
-        <div class="row mb-xs-24 mb16">
+        <div class="row mb-xs-24 mb16.">
             <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
                 <h3>Contributors</h3>
             </div>
