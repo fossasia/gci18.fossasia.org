@@ -82,7 +82,8 @@ p.person-name {
 }
 
 .single-mentor img {
-  width: 100%;
+  width: 240px;
+  height: 240px;
   max-width: 300px;
 }
 
