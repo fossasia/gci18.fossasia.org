@@ -13,6 +13,28 @@
   github: sahildav
   image: nick.png
 
+- name: Siddharth Sinha
+  github: Sid911
+  twitter: Sid_Dev_
+  image: sid.png
+
+- name: Kartik Singhal
+  github: KSNINJA
+  image: student_nick.png
+
 - name: ploypiti
   github: ploypiti
   image: pfp.png
+
+- name: AppleCat
+  github: AppleC4T
+  image: applecat.png
+
+- name: Supun Tharinda
+  github: STEdirisuriya
+  image: supun.png
+
+- name: Nitesh Kumar Niranjan
+  github: niteshkumarniranjan
+  image: niteshkumarniranjan.png
+  twitter: niranjannitesh
