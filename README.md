@@ -20,6 +20,21 @@ This is the repository for Fossasia's website for Google Code-In 2018, we at Fos
 - Help to resolve merge conflicts (especially if there are several PRs at the same time, merge conflicts are common. Help the reviewers and solve merge conflicts to speed up the process.).
 - Merging Pull Requests should only happen if at least two contributors reviewed the PR and approved it.
 
+## How to run locally?
+- It is easy to run locally. Don't be afraid! :D
+- If you have Git already installed, skip the step 3. If you have cloned your fork already skip steps 4 and 5. 
+1. First of all you need to complete some requirements. Install them if you don't have things in [this documentation](https://jekyllrb.com/docs/installation/).
+2. Open your terminal and install jekyll `gem install jekyll bundler`.
+3. Download and install git on your pc.
+4. Go to [gci18.fossasia.org site](https://github.com/fossasia/gci18.fossasia.org) make a fork if you haven't already.
+5. Open Git Bash and clone your repository into your pc. `git clone https://github.com/<_your-name-here_>/gci18.fossasia.org`.
+6. Go inside to your cloned repo, and open Git Bash.(If you have done 5th step do this `cd gci18.fossasia.org`).
+7. Type `bundle install` to install dependencies.
+8. Type `bundle exec jekyll serve`. 
+9. You will see a server address. To view gci18.fossasia.org site, go to `localhost:4000` from your favourite browser.
+
+- Now the work is done.
+
 ## How to add your Photo Nick to the website:
 - Choose a photo(or representation like a "nick" image) and set the size to 240x240 px
 - Upload your photo to the img/students folder, with an acceptable name :)
@@ -45,3 +60,4 @@ This is the repository for Fossasia's website for Google Code-In 2018, we at Fos
 - Choose a language(probably one you're familiar with)
 - Pick the phrase "Thank you for your contributions" or "Thank you for contributing" and translate it
 - Add the translation to the `var items = [];` in the js/thankyou.js file
+
