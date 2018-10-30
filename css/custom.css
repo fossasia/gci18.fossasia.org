@@ -106,7 +106,12 @@ p.person-name {
 
 .mentor-img {
   width: 240px;
+}
 
+.contribute_buttons{
+  align-items: center;
+  align: center;
+  align-content: center;
 }
 
 .student_section_anchor{
