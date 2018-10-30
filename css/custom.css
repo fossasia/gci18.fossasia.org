@@ -101,6 +101,11 @@ p.person-name {
   top: 40px;
 }
 
+.contributor {
+  margin-bottom: 3%;
+  font-size: 16px;
+}
+
 .thank_you{
   background-color: #1F75AD;
   color: #fff;
