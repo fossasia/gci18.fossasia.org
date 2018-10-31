@@ -19,3 +19,29 @@ This is the repository for Fossasia's website for Google Code-In 2018, we at Fos
 - Always ensure CI and tests are successful.
 - Help to resolve merge conflicts (especially if there are several PRs at the same time, merge conflicts are common. Help the reviewers and solve merge conflicts to speed up the process.).
 - Merging Pull Requests should only happen if at least two contributors reviewed the PR and approved it.
+
+## How to add your Photo Nick to the website:
+- Choose a photo(or representation like a "nick" image) and set the size to 240x240 px
+- Upload your photo to the img/students folder, with an acceptable name :)
+- Add yourself to the _data/students.yml file as shown below
+```yaml
+- name: Student's name
+  github: Student's Github username
+  image: Your image (or representation like a "nick" image) - the name must match the one you uploaded to the folder
+```
+
+## How to add a mentor to the website:
+- Choose a current GCI mentor and seek permission before adding him/her
+- Ask for a picture or take it from github and set the size to 240x240 px
+- Upload the picture to the img/mentors folder - with a suitable name
+- Add the mentor to the _data/metors.yml file as shown below
+```yaml
+- name: Mentor's name
+  github: Mentor's Github username
+  image: Mentor's image
+```
+
+## How to add a language to the Thank you section:
+- Choose a language(probably one you're familiar with)
+- Pick the phrase "Thank you for your contributions" or "Thank you for contributing" and translate it
+- Add the translation to the `var items = [];` in the js/thankyou.js file

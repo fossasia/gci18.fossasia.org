@@ -73,7 +73,8 @@ p.person-name {
 }
 /*
 .single-mentor img {
-  width: 100%;
+  width: 240px;
+  height: 240px;
   max-width: 300px;
 }
 */
@@ -87,6 +88,20 @@ p.person-name {
   border-radius: 100%;
 }
 
+#contributors .single-mentor img {
+  height: 120px;
+}
+
+#contributors .social-overlay-list {
+  position: absolute;
+  top: 40px;
+}
+
+.contributor {
+  margin-bottom: 3%;
+  font-size: 16px;
+}
+
 .thank_you{
   background-color: #1F75AD;
   color: #fff;
@@ -98,9 +113,27 @@ p.person-name {
   padding: 100px;
   margin-right: 100px;
   margin-bottom: 100px;
+}
 
 .mentor-img {
   width: 240px;
+}
 
+.contribute_buttons{
+  align-items: center;
+  align: center;
+  align-content: center;
+}
+
+.equal-row {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+}
+
+@media all and (max-width: 767px) {
+  br {
+    display: inline;
+  }
 }
 
