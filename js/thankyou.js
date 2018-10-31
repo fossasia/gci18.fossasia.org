@@ -2,7 +2,7 @@ var items = [
 'Thank you for your contributions!',
 'Merci pour vos contributions!',
 'आपके योगदानों के लिए धन्यवाद',
- 'Dziękujemy za Wasz wkład!',
+ 'Dziękujemy za Twój wkład!',
 'Danke für Ihre Beiträge!',
 'Gracias por sus aportaciones!', 
 'तपाइको योगदानको लागि धन्यवाद'
