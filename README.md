@@ -31,7 +31,7 @@ This is the repository for Fossasia's website for Google Code-In 2018, we at Fos
   image: Your image (or representation like a "nick" image) - the name must match the one you uploaded to the folder
 ```
 
-## How to add a mentor to the website:
+## How to add a mentor to the website
 - Choose a current GCI mentor and seek permission before adding him/her
 - Ask for a picture or take it from github and set the size to 240x240 px
 - Upload the picture to the img/mentors folder - with a suitable name
