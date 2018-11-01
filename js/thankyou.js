@@ -5,7 +5,8 @@ var items = [
  'Dziękujemy za Twój wkład!',
 'Danke für Ihre Beiträge!',
 'Gracias por sus aportaciones!', 
-'तपाइको योगदानको लागि धन्यवाद'
+'तपाइको योगदानको लागि धन्यवाद',
+'شكرا للمساهمة'
 ];
 
 var app = document.getElementById('app');

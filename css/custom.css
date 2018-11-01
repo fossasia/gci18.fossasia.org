@@ -92,6 +92,20 @@ p.person-name {
   transition: all .6s;
 }
 
+#contributors .single-mentor img {
+  height: 120px;
+}
+
+#contributors .social-overlay-list {
+  position: absolute;
+  top: 40px;
+}
+
+.contributor {
+  margin-bottom: 3%;
+  font-size: 16px;
+}
+
 .thank_you{
   background-color: #1F75AD;
   color: #fff;
@@ -103,6 +117,7 @@ p.person-name {
   padding: 100px;
   margin-right: 100px;
   margin-bottom: 100px;
+}
 
 .mentor-img {
   width: 240px;
@@ -112,4 +127,53 @@ p.person-name {
   align-items: center;
   align: center;
   align-content: center;
+}
+
+.equal-row {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+}
+
+@media all and (max-width: 767px) {
+  br {
+    display: inline;
+  }
+}
+
+#backtotop_button {
+  display: inline-block;
+  background-color: #1A86CC;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s,
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#backtotop_button::after {
+  content: "\f148";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#backtotop_button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#backtotop_button:active {
+  background-color: #555;
+}
+#backtotop_button.show {
+  opacity: 1;
+  visibility: visible;
 }
