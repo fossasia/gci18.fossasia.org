@@ -34,7 +34,7 @@
   background-repeat: no-repeat;
   padding: 0 16px;
   padding-top: 0px;
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 .seperator {
@@ -85,6 +85,7 @@ p.person-name {
   width: 240px;
   height: 240px;
   max-width: 300px;
+  border-radius: 100%;
 }
 
 .single-mentor:hover > img {

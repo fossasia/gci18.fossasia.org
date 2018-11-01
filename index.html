@@ -201,8 +201,6 @@ layout: default
                                 <!--end of row-->
                             </div>
                             <!--end of container-->
-                        </li>
-                    </ul>
                 </section>
 
                 <!--Videos Section-->
@@ -220,7 +218,7 @@ layout: default
                                 <div class="col-sm-12 text-center spread-children-large">
                                     {% for video in site.data.videos %}
                                     <a href="{{ video.link }}">
-                                        <div class="card single-mentor" id="video">
+                                        <div class="card" id="video">
                                             {% if video.image %}
                                             <img src="img/videos/{{ video.image }}" style="width:150px; height:150px;"/>
                                             {% endif %}
@@ -229,7 +227,7 @@ layout: default
                                                 <b>{{ video.name }}</b>
                                             </h4>
                                             <br>
-                                            <h5 class="person-name">{{ video.user }}</h6>
+                                            <h5 class="person-name">{{ video.user }}</h5>
                                             </div>
                                         </a>
                                         {% endfor %}
@@ -238,8 +236,6 @@ layout: default
                                 <!--end of row-->
                             </div>
                             <!--end of container-->
-                        </li>
-                    </ul>
                 </section>
                 <!--/Videos section-->
                 <!-- Proejct section-->
