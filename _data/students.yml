@@ -9,6 +9,12 @@
 #   facebook: Student's Facebook ID
 #   lat: Student's Latitude
 #   lng: Student's Longitude
+
+- name: Vishal Kumar
+  github: vishalx360
+  image: vishalx360.jpeg
+  twitter: vishalx360
+
 - name: Sahil Kumar
   github: sahildav
   image: nick.png
@@ -42,3 +48,8 @@
 - name: Arjun Pandey
   github: arjunpandey2003
   image: arjun.jpg
+
+- name: Jeewal Kunwar 
+  github: Jeewal
+  image: JK.jpg
+  twitter: jeewalkunwar1

@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+<a id="backtotop_button"></a>
 <section class="cover fullscreen image-slider slider-all-controls controls-inside parallax">
     <ul class="slides">
         <li class="overlay image-bg bg-light">
@@ -248,7 +249,7 @@ layout: default
                         <div class="row mb80 mb-xs-0">
                             <div class="col-md-8 col-md-offset-2 text-center">
                                 <h1>Connect with Fossasia on Social Media</h1>
-                                <p> Be sure to follow us on our social media! </p>
+                                <p> Be sure to follow us on social media! </p>
                                 <p class="large">
                                    <a href="https://www.facebook.com/fossasia/" class="ti-facebook lgi" target="_blank"></a>
                                    <a href="https://twitter.com/fossasia" class="ti-twitter lgi" target="_blank"></a>
@@ -296,10 +297,9 @@ layout: default
                                 <h2> Students </h2>
                             </div>
                             <!--end of row-->
-                            <div class="row masonry masonryFlyIn">
-                                <div class="col-md-12 col-sm-12 masonry-item mb30">
-                                    <div class="col-sm-12 text-center spread-children-large">
-                                        {% for student in site.data.students limit:30 %}
+                            <div class="row">
+                                {% for student in site.data.students limit:30 %}
+                                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center">
                                         <div class="card single-mentor">
                                             {% if student.image %}
                                             <img src="img/students/{{student.image}}" alt="{{ student.name }}">
@@ -308,7 +308,7 @@ layout: default
                                             {% endif %}
                                             <br>
                                             <p class="person-name">{{ student.name }}</p><br>
-                                            <ul>
+                                            <ul class="list-inline social-list social-overlay-list">
                                                 {% if student.github %}
                                                 <a href="https://github.com/{{student.github}}" class="icon-a" target="_blank">
                                                     <i class="ti-github"></i>
@@ -331,9 +331,8 @@ layout: default
                                                 {% endif %}
                                             </ul>
                                         </div>
-                                        {% endfor %}
                                     </div>
-                                </div>
+                                {% endfor %}
                                 <!--end of row-->
                             </div>
                             <!--end of container-->
@@ -358,7 +357,7 @@ layout: default
                                     <a href="{{ video.link }}">
                                         <div class="card single-mentor" id="video">
                                             {% if video.image %}
-                                            <img src="img/videos/{{ video.image }}" style="width:150px; height:150px;"" />
+                                            <img src="img/videos/{{ video.image }}" style="width:150px; height:150px;"/>
                                             {% endif %}
                                             <br>
                                             <h4 class="person-name">
@@ -403,9 +402,9 @@ layout: default
                     </div>
                     <!--end of container-->
                 </section>
-                
-                
-                
+
+
+
                             <section>
                                 <div class="container" id="mentors">
                                     <div class="row mb64 mb-xs-24">
@@ -502,7 +501,7 @@ layout: default
 
                                     </div>
                                     <!--end of row-->
-                                    <div class="row" id="contributors">
+                                    <div class="row equal-row" id="contributors">
                                     </div>
                                     <container>
                                       <div id="app" class="thank_you"></div>
