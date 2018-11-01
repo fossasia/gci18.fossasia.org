@@ -45,7 +45,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 13px;
   line-height: 24px;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "nova mono", Helvetica, Arial, sans-serif;
   color: #666;
   overflow-x: hidden;
 }
@@ -413,7 +413,7 @@ span {
   font-weight: 400;
 }
 p.lead {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 28px;
 }
@@ -453,9 +453,6 @@ a {
 .bg-primary a:hover {
   color: #fff;
   opacity: .9;
-}
-.bg-light a {
-  color: #47b475;
 }
 .bg-light a:hover {
   color: #47b475;
@@ -554,7 +551,7 @@ ul.lead li {
   background: #fff;
 }
 .bg-dark {
-  background: #292929;
+  background: #673ab7;
 }
 .color-body {
   color: #666;
@@ -634,7 +631,7 @@ footer.bg-dark li,
   top: 0;
   left: 0;
   background: #292929;
-  opacity: 0.3;
+  opacity: 0.7 !important;
   z-index: 2;
 }
 .overlay-heavy:before {
@@ -647,7 +644,8 @@ footer.bg-dark li,
   height: 100%;
   top: 0;
   left: 0;
-  background: #ffffff;
+  bac
+ /* background: #ffffff;*/
   opacity: 0.1;
   z-index: 2;
 }
@@ -723,8 +721,8 @@ footer.bg-dark li,
 }
 /*!---------- 6. BUTTONS ----------*/
 .btn {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  border: 2px solid #47b475;
+  font-family: roboto !important;
+  border: 2px solid #3844b3;
   padding: 0 26px;
   height: 40px;
   min-width: 150px;
@@ -733,8 +731,8 @@ footer.bg-dark li,
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border-radius: 0;
-  color: #47b475;
+  border-radius:4px;
+  color: #261f1f;
   text-align: center;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
@@ -747,8 +745,8 @@ footer.bg-dark li,
   margin-right: 0;
 }
 .btn:hover {
-  background: #47b475;
-  color: #fff;
+  background:#2f488d !important;
+  color: #fff !important;
 }
 .btn-icon {
   width: 40px;
@@ -783,9 +781,8 @@ footer.bg-dark li,
   font-size: 11px;
   line-height: 27px;
   min-width: 0;
-}
+}/*
 .btn-filled {
-  background: #47b475;
   color: #fff;
 }
 .btn-white,
@@ -799,10 +796,6 @@ footer.bg-dark li,
 .image-bg .btn:visited:hover {
   background: #fff;
   color: #222;
-}
-.image-bg .btn.btn-filled,
-.image-bg .btn-filled:visited {
-  border-color: #47b475;
 }
 .image-bg .btn-filled:hover {
   border-color: #fff;
@@ -853,6 +846,7 @@ body.btn-rounded .btn {
   background: #fff;
   color: #47b475;
 }
+*/
 /*!---------- 7. NAVIGATION ----------*/
 .nav-container {
   -webkit-backface-visibility: hidden;
@@ -901,6 +895,7 @@ nav .btn,
   max-height: 55px;
   line-height: 53px;
   border-bottom: 1px solid #ccc;
+  background-color: #162a9b;
 }
 .nav-bar .module,
 .nav-bar .module-group {
@@ -951,9 +946,10 @@ nav.bg-dark .logo-dark {
   width: auto;
 }
 .menu li a {
-  font-size: 11px;
+  font-size: 14px;
   text-transform: uppercase;
   font-weight: 600;
+  font-family: roboto !important;
   letter-spacing: 1px;
   color: #292929;
   opacity: 0.5;
@@ -4996,6 +4992,7 @@ footer.bg-dark a {
 }
 .footer-1 .logo {
   max-height: 30px;
+  background-color: #162a9b;
 }
 .footer-1 .sub {
   opacity: .5;
@@ -5052,6 +5049,7 @@ footer.bg-dark a {
 }
 .mb16 {
   margin-bottom: 16px;
+  font-size: 2em;
 }
 .mb24 {
   margin-bottom: 24px;
@@ -5740,11 +5738,13 @@ div.desc {
 }
 
 #video {
-  border: 1px solid #72d199;
+  border: 2px solid grey;
   padding: 5px;
   transition: 1s;
+  background-color: white;
+  box-shadow: 3px 4px #1b1919
 }
 
 #video:hover {
-  border: 2px solid #47b475;
+  border: 2px solid grey;
 }
