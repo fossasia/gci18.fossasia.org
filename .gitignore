@@ -2,3 +2,5 @@ _site/
 .sass-cache/
 Gemfile.lock
 CNAME
+.DS_Store
+img/.DS_Store
