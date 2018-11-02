@@ -36,6 +36,10 @@
   github: AppleC4T
   image: applecat.png
 
+- name: Mikołaj Hojda
+  github: mikolajhojda
+  image: mhojda.png
+
 - name: Supun Tharinda
   github: STEdirisuriya
   image: supun.png
@@ -53,3 +57,12 @@
   github: Jeewal
   image: JK.jpg
   twitter: jeewalkunwar1
+
+- name: Filip Michalak
+  github: Rekjef
+  image: RekjefAvatar.png
+
+- name: Maciej Synowski
+  github: Shizerq
+  image: Shizerq.jpg
+  twitter: maciej_synowski
