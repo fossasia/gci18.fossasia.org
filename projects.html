@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<a id="backtotop_button"></a>
+<section class="page-title page-title-4 bg-secondary">
+  <div class="container">
+    <h3 class="uppercase mb0">Student Projects</h3>
+  </div>
+</section>
+
+<section class="projects pt48">
+  <div class="container">
+    <!-- Loader -->
+    <div class="row masonry-loader fadeOut">
+      <div class="col-sm-12 text-center">
+        <div class="spinner"></div>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="row masonry masonryFlyIn fadeIn">
+      {% for item in site.data.projects %}
+      <div class="col-md-3 col-sm-6 masonry-item project fadeIn">
+        <div class="image-tile inner-title hover-reveal text-center">
+          <a href="{{item.link}}">
+            <img src="./img/projects/{{item.img}}" id="img_project">
+            <div class="title">
+              <h4>{{ item.name }}</h4>
+              <h5>{{ item.creator }}</h5>
+            </div>
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

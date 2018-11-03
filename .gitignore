@@ -1,0 +1,6 @@
+_site/
+.sass-cache/
+Gemfile.lock
+CNAME
+.vscode
+.DS_Store

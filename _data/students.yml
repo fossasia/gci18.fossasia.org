@@ -1,0 +1,73 @@
+# Please add your entries to a random position in the file.
+# This is to remove conflicts with other people adding entries.
+
+# The Format is :
+# - name: Student's name
+#   github: Student's Github Username
+#   image: Student's image (or representation like a "nick" image)
+#   twitter: Student's Twitter ID
+#   facebook: Student's Facebook ID
+#   lat: Student's Latitude
+#   lng: Student's Longitude
+
+- name: Vishal Kumar
+  github: vishalx360
+  image: vishalx360.jpeg
+  twitter: vishalx360
+
+- name: Sahil Kumar
+  github: sahildav
+  image: nick.png
+
+- name: Siddharth Sinha
+  github: Sid911
+  twitter: Sid_Dev_
+  image: sid.png
+
+- name: Kartik Singhal
+  github: KSNINJA
+  image: student_nick.png
+
+- name: ploypiti
+  github: ploypiti
+  image: pfp.png
+
+- name: AppleCat
+  github: AppleC4T
+  image: applecat.png
+
+- name: Mikołaj Hojda
+  github: mikolajhojda
+  image: mhojda.png
+
+- name: Supun Tharinda
+  github: STEdirisuriya
+  image: supun.png
+
+- name: Nitesh Kumar Niranjan
+  github: niteshkumarniranjan
+  image: niteshkumarniranjan.png
+  twitter: niranjannitesh
+
+- name: Arjun Pandey
+  github: arjunpandey2003
+  image: arjun.jpg
+
+- name: Jeewal Kunwar 
+  github: Jeewal
+  image: JK.jpg
+  twitter: jeewalkunwar1
+
+- name: Filip Michalak
+  github: Rekjef
+  image: RekjefAvatar.png
+
+- name: Maciej Synowski
+  github: Shizerq
+  image: Shizerq.jpg
+  twitter: maciej_synowski
+  
+- name: Jakub Pawlina
+  github: jakubpawlina
+  image: jakubpawlina.png
+  
