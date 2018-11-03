@@ -31,4 +31,5 @@ If you have not completely fixed an issue but only some part of it, then remove 
 
 - - - - - - - - - - - -
 <!-- [preview link url]: https://<github_username>.github.io/<name_of_repository> -->
-<!-- [squash]: https://stackoverflow.com/questions/5189560/squash-my-last-x-commits-together-using-git] -->
+<!-- [squash]:https://stackoverflow.com/questions/5189560/squash-my-last-x-commits-together-using-git-->
+<!--[squash2]https://davidwalsh.name/squash-commits-git-->
