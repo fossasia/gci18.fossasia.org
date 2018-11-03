@@ -1419,10 +1419,10 @@ $(document).ready(function(){
             }
             html += '</p><br>';
             html += '<ul class="list-inline social-list social-overlay-list">';
-            html += '<a href="'+contributors.html_url+'" class="icon-a">';
+            html += '<a href="'+contributors.html_url+'" target="_blank" class="icon-a">';
             html += '<i class="icon-i fa fa-github fa-2x" aria-hidden="true"></i>';
             html += '</a></ul></div>'
-            html += '<a contributor href="https://github.com/fossasia/gci18.fossasia.org/commits?author='+contributors.login+'" ';
+            html += '<a contributor href="https://github.com/fossasia/gci18.fossasia.org/commits?author='+contributors.login+'" target="_blank" ';
             html += 'class="align-bottom">';
             html += '('+contributors.contributions;
             if (contributors.contributions === 1) {
