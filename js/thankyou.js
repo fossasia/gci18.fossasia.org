@@ -2,11 +2,13 @@
 'Thank you for your contributions!',
 'Merci pour vos contributions!',
 'आपके योगदानों के लिए धन्यवाद',
- 'Dziękujemy za Twój wkład!',
+'Dziękujemy za Twój wkład!',
 'Danke für Ihre Beiträge!',
 'Gracias por sus aportaciones!', 
 'तपाइको योगदानको लागि धन्यवाद',
-'شكرا للمساهمة','공헌 해 주셔서 감사합니다'
+'شكرا للمساهمة',
+'공헌 해 주셔서 감사합니다',
+'ඔබගේ දායකත්වයට ස්තූතියි!'
 ];
 
 var app = document.getElementById('app');
@@ -26,7 +28,7 @@ var typingEffect = function typingEffect() {
    setTimeout(function () {
      app.innerHTML = '';
      typingEffect();
-   }, 1500);
+   }, 1000);
  }
 };
 
