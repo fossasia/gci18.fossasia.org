@@ -17,8 +17,8 @@
   text-align: center;
   text-decoration: none;
 }
+.large .ti-twitter{
 
-.large .ti-twitter {
   width: 20px;
   padding: 20px;
   font-size: 30px;
@@ -177,4 +177,8 @@ p.person-name {
 }
 #img_project{
   height: 400px;
+}
+#map { 
+  height: 600px;
+  width: 1200px;
 }
