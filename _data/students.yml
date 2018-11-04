@@ -32,9 +32,11 @@
   github: ploypiti
   image: pfp.png
 
-- name: AppleCat
+- name: Hubert Zimny
   github: AppleC4T
-  image: applecat.png
+  image: hzimny.jpg
+  lat: 50.094861
+  lng: 18.541205
 
 - name: Mikołaj Hojda
   github: mikolajhojda

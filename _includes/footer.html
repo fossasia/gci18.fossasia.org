@@ -124,6 +124,23 @@
 <script src="js/scripts.js"></script>
 <script  src="js/thankyou.js"></script>
 <script  src="js/backtotop.js"></script>
+
+{% for student in site.data.students %}
+{% if student.lat and student.lng %}
+<script>
+	L.marker([{{student.lat}}, {{student.lng}}], {icon: studentIcon}).addTo(map).bindPopup("<b>{{student.name}}</b>");
+</script>
+{% endif %}
+{% endfor %}
+
+{% for mentor in site.data.mentors %}
+{% if mentor.lat and mentor.lng %}
+<script>
+	L.marker([{{mentor.lat}}, {{mentor.lng}}], {icon: mentorIcon}).addTo(map).bindPopup("<b>{{mentor.name}}</b>");
+</script>
+{% endif %}
+{% endfor %}
+
 </body>
 
 </html>
