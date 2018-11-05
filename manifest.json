@@ -3,22 +3,22 @@
     "name": "FOSSASIA",
     "description": "FOSSASIA develops software and hardware and cooperates with Open Tech projects.",
     "icons": [{
-            "src": "/img/icons/icon-32.png",
+            "src": "img/icons/icon-32.png",
             "type": "image/png",
             "sizes": "32x32"
         },
         {
-            "src": "/img/icons/icon-48.png",
+            "src": "img/icons/icon-48.png",
             "type": "image/png",
             "sizes": "48x48"
         },
         {
-            "src": "/img/icons/icon-192.png",
+            "src": "img/icons/icon-192.png",
             "type": "image/png",
             "sizes": "192x192"
         },
         {
-            "src": "/img/icons/icon-512.png",
+            "src": "img/icons/icon-512.png",
             "type": "image/png",
             "sizes": "512x512"
         }
