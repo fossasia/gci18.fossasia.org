@@ -22,7 +22,7 @@ layout: default
       {% for item in site.data.projects %}
       <div class="col-md-3 col-sm-6 masonry-item project fadeIn">
         <div class="image-tile inner-title hover-reveal text-center">
-          <a href="{{item.link}}">
+          <a href="{{item.link}}" target="_blank">
             <img src="./img/projects/{{item.img}}" id="img_project">
             <div class="title">
               <h4>{{ item.name }}</h4>
@@ -33,5 +33,10 @@ layout: default
       </div>
       {% endfor %}
     </div>
-  </div>
+ </div>
+	<div class="row mb80 mb-xs-0">
+		<div align="center">
+			<a class="btn btn-lg" href="./">Back to the main page</a>
+		</div>
+	</div>
 </section>
