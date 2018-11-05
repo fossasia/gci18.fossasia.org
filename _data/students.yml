@@ -32,9 +32,15 @@
   github: ploypiti
   image: pfp.png
 
-- name: AppleCat
+- name: Hubert Zimny
   github: AppleC4T
-  image: applecat.png
+  image: hzimny.jpg
+  lat: 50.094861
+  lng: 18.541205
+
+- name: Mikołaj Hojda
+  github: mikolajhojda
+  image: mhojda.png
 
 - name: Supun Tharinda
   github: STEdirisuriya
@@ -53,3 +59,25 @@
   github: Jeewal
   image: JK.jpg
   twitter: jeewalkunwar1
+
+- name: Filip Michalak
+  github: Rekjef
+  image: RekjefAvatar.png
+
+- name: Maciej Synowski
+  github: Shizerq
+  image: Shizerq.jpg
+  twitter: maciej_synowski
+  
+- name: Jakub Pawlina
+  github: jakubpawlina
+  image: jakubpawlina.png
+  
+- name: Srihari Unnikrishnan
+  github: pythongiant
+  image: sr.png
+  
+- name: Shreesh Kumar Jha
+  github: shreeshjha
+  image: shreeshjha.png
+  

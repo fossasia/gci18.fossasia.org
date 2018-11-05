@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-
+<a id="backtotop_button"></a>
 <section class="page-title page-title-4 bg-secondary">
   <div class="container">
     <h3 class="uppercase mb0">Student Projects</h3>
@@ -23,9 +23,10 @@ layout: default
       <div class="col-md-3 col-sm-6 masonry-item project fadeIn">
         <div class="image-tile inner-title hover-reveal text-center">
           <a href="{{item.link}}">
-            <img src="./img/projects/{{item.img}}">
+            <img src="./img/projects/{{item.img}}" id="img_project">
             <div class="title">
-              <h5>{{ item.name }}</h5>
+              <h4>{{ item.name }}</h4>
+              <h5>{{ item.creator }}</h5>
             </div>
           </a>
         </div>

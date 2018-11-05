@@ -5748,3 +5748,16 @@ div.desc {
 #video:hover {
   border: 2px solid #47b475;
 }
+
+.slides .row div #new_text{
+  text-shadow: 1px 1px 2px black, 0 0 25px rgb(43, 43, 43), 0 0 5px rgb(0, 0, 0);
+}
+
+.background-image-holder img{
+  opacity: 0.5;
+}
+
+.background-image-holder{
+  background-color: black;
+}
+
