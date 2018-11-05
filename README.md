@@ -4,6 +4,16 @@ https://gci18.fossasia.org
 
 This is the repository for Fossasia's website for Google Code-In 2018, we at Fossasia intend to develop it collaboratively during the course of this competition by participating students themselves. Fork the repository before making changes and make sure you read [Fossasia Best Practices](https://blog.fossasia.org/open-source-developer-guide-and-best-practices-at-fossasia/)
 
+## Communication
+
+- Please join our **[mailing list](https://groups.google.com/forum/#!forum/fossasia)** to discuss questions regarding the project.
+
+  > https://groups.google.com/forum/#!forum/fossasia
+
+- Our chat channel is on **[Gitter](https://gitter.im/fossasia/gci16.fossasia.org)**
+
+  > [gitter.im/fossasia/gci16.fossasia.org](https://gitter.im/fossasia/gci16.fossasia.org)
+
 ## Things you should know before contributing:
 - All pull requests need to be associated to an issue.
 - All PRs need to be assigned to the person working on it.
