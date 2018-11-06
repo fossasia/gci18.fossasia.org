@@ -134,6 +134,11 @@ p.person-name {
   flex-wrap: wrap;
 }
 
+.social-media-widget {
+  margin-bottom: 5%;
+  height: 300px;
+}
+
 @media all and (max-width: 767px) {
   br {
     display: inline;
