@@ -181,4 +181,5 @@ p.person-name {
 #map { 
   height: 600px;
   width: 1200px;
+  pointer-events: none;
 }
