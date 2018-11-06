@@ -694,18 +694,12 @@ $(document).ready(function() {
     }
 
     // Interact with Map once the user has clicked (to prevent scrolling the page = zooming the map
-
-    $('.map-holder').click(function() {
-        $(this).addClass('interact');
+    $('#map-overlay').click(function() {
+        $('#map').css("pointer-events", "auto");
     });
-
-    if($('.map-holder').length){
-    	$(window).scroll(function() {
-			if ($('.map-holder.interact').length) {
-				$('.map-holder.interact').removeClass('interact');
-			}
-		});
-    }
+    $("#map-overlay").mouseleave(function() {
+        $('#map').css("pointer-events", "none");
+    });
 
     // Countdown Timers
 
