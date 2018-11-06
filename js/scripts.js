@@ -694,18 +694,12 @@ $(document).ready(function() {
     }
 
     // Interact with Map once the user has clicked (to prevent scrolling the page = zooming the map
-
-    $('.map-holder').click(function() {
-        $(this).addClass('interact');
+    $('#map-overlay').click(function() {
+        $('#map').css("pointer-events", "auto");
     });
-
-    if($('.map-holder').length){
-    	$(window).scroll(function() {
-			if ($('.map-holder.interact').length) {
-				$('.map-holder.interact').removeClass('interact');
-			}
-		});
-    }
+    $("#map-overlay").mouseleave(function() {
+        $('#map').css("pointer-events", "none");
+    });
 
     // Countdown Timers
 
@@ -1404,7 +1398,7 @@ $(document).ready(function(){
       }).done(function(data){
         data.forEach(function(contributors){
           var html = '<div class="col-xs-6 col-sm-3 col-md-2 col-lg-2 text-center contributor"> <div class="card hvr-hang single-mentor">';
-          html += `<img src="https://github.com/${contributors.login}.png?size=120x120" height="120" width="120" style="width: auto">`;
+          html += '<img src="https://github.com/'+contributors.login+'.png?size=120x120" height="120" width="120" style="width: auto">';
           html += '<br>';
           $.ajax({
               url: "https://api.github.com/users/"+contributors.login
