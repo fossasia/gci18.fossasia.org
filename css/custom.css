@@ -114,7 +114,7 @@ p.person-name {
   background-image: linear-gradient(62deg, #47b475 0%, #e0c3fc 100%);
   color: rgb(255, 255, 255);
   line-height: 1.5;
-  min-height: 195px;
+  height: 195px;
   text-shadow: 2px 2px #47b475;
 }
 
