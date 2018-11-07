@@ -134,11 +134,6 @@ p.person-name {
   flex-wrap: wrap;
 }
 
-.social-media-widget {
-  margin-bottom: 5%;
-  height: 300px;
-}
-
 @media all and (max-width: 767px) {
   br {
     display: inline;
@@ -184,8 +179,32 @@ p.person-name {
   height: 400px;
 }
 #map { 
-  height: 0;
-  width: 100%;
-  padding-bottom: 55%;
-  pointer-events: none;
+  height: 600px;
+  width: 1200px;
 }
+
+.student_name{
+  font-size: 16px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+.team_member_name{
+  font-size: 18px;
+  margin-top: 5px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.team_member_designation{
+  font-size: 13px;
+  margin-top: -45px;
+  color: #fff;
+  filter: brightness(100%) !important;
+  font-weight: bold;
+}
+.team_ul{
+  max-width: 240px !important;
+  display: inline-block !important;
+}
+
+
+
