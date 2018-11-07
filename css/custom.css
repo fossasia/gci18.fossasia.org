@@ -1,8 +1,7 @@
 /****** PLACE YOUR CUSTOM STYLES HERE ******/
 
-
 .icon-a {
-  zoom:1.5;
+  zoom: 1.5;
 }
 
 #new_text {
@@ -18,8 +17,8 @@
   text-align: center;
   text-decoration: none;
 }
+.large .ti-twitter{
 
-.large .ti-twitter {
   width: 20px;
   padding: 20px;
   font-size: 30px;
@@ -50,10 +49,10 @@ p.person-name {
   margin: 10px 0;
 }
 
-.single-mentor [class^="ti-"], [class*=" ti-"] {
+.single-mentor [class^="ti-"],
+[class*=" ti-"] {
   font-size: 16px;
 }
-
 
 .single-mentor {
   position: relative;
@@ -66,7 +65,7 @@ p.person-name {
   padding: 5px 10px;
   width: 100%;
   opacity: 0;
-  transition: all .6s;
+  transition: all 0.6s;
 }
 
 .single-mentor .social-overlay-list a {
@@ -82,33 +81,111 @@ p.person-name {
 }
 
 .single-mentor img {
-  width: 100%;
+  width: 240px;
+  height: 240px;
   max-width: 300px;
 }
 
 .single-mentor:hover > img {
   filter: brightness(50%);
-  transition: all .6s;
+  transition: all 0.6s;
 }
 
-.thank_you{
-  background-color: #1F75AD;
-  color: #fff;
-  font-size: 50px;
+#contributors .single-mentor img {
+  height: 120px;
+}
+
+#contributors .social-overlay-list {
+  position: absolute;
+  top: 40px;
+}
+
+.contributor {
+  margin-bottom: 3%;
+  font-size: 16px;
+}
+
+.thank_you {
+  width: 100%;
+  font-family: inherit;
+  font-size: calc(2rem + 1vw);
+  padding: 80px 4.5%;
   text-align: center;
-  height: 9vh;
-  width: 1200px;
-  margin-top: 40px;
-  padding: 100px;
-  margin-right: 100px;
-  margin-bottom: 100px;
+  background-image: linear-gradient(62deg, #47b475 0%, #e0c3fc 100%);
+  color: rgb(255, 255, 255);
+  line-height: 1.5;
+  min-height: 195px;
+  text-shadow: 2px 2px #47b475;
+}
 
 .mentor-img {
   width: 240px;
 }
 
-.contribute_buttons{
+.contribute_buttons {
   align-items: center;
   align: center;
   align-content: center;
+}
+
+.equal-row {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+}
+
+.social-media-widget {
+  margin-bottom: 5%;
+  height: 300px;
+}
+
+@media all and (max-width: 767px) {
+  br {
+    display: inline;
+  }
+}
+
+#backtotop_button {
+  display: inline-block;
+  background-color: #1a86cc;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#backtotop_button::after {
+  content: "\f148";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#backtotop_button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#backtotop_button:active {
+  background-color: #555;
+}
+#backtotop_button.show {
+  opacity: 1;
+  visibility: visible;
+}
+#img_project{
+  height: 400px;
+}
+#map { 
+  height: 0;
+  width: 100%;
+  padding-bottom: 55%;
+  pointer-events: none;
 }

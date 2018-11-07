@@ -1,0 +1,536 @@
+---
+layout: default
+---
+<section class="cover fullscreen image-slider slider-all-controls controls-inside parallax">
+    <ul class="slides">
+        <li class="overlay image-bg bg-light">
+            <div class="background-image-holder">
+                <img alt="image" class="background-image" src="img/home23.jpg" />
+            </div>
+            <div class="container v-align-transform">
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1 text-center" id="new_text">
+                        <h1 class="mb40 mb-xs-16 large" id="new_text">We are
+                            <br />FOSSASIA</h1>
+                            <h6 class="uppercase mb16" id="new_text">Creating collaborative open-source technologies.</h6>
+                            <p class="lead mb40" id="new_text">
+                                Connecting Open Tech Communities all over Asia with Developers and Creators
+                                <br /> in the FOSSASIA Network.
+                            </p>
+                            <a class="btn btn-lg btn-filled" href="https://fossasia.org">Start Exploring</a>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </li>
+            <li class="overlay image-bg">
+                <div class="background-image-holder">
+                    <img alt="image" class="background-image" src="img/home22.jpg" />
+                </div>
+                <div class="container v-align-transform">
+                    <div clhttps://github.com/fossasia/gci18.fossasia.org.gitass="row">
+                        <div class="col-sm-offset-1 text-center col-sm-10">
+                            <h1 class="mb40 mb-xs-16 large">Google Code-In with FOSSASIA 2018</h1>
+                            <h6 class="uppercase mb16">Offering a range of exciting tasks involving</h6>
+                            <p class="lead mb40">
+                                Coding, Documentation, Outreach, Design, Quality Control
+                                <br />and much more!
+                            </p>
+                            <a class="btn btn-lg btn-white" href="https://codein.withgoogle.com/organizations/fossasia/">Participate</a>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </li>
+            <li class="overlay image-bg">
+                <div class="background-image-holder">
+                    <img alt="image" class="background-image" src="img/home21.jpg" />
+                </div>
+                <div class="container v-align-transform">
+                    <div class="row">
+                        <div class="col-sm-offset-1 text-center col-sm-10">
+                            <h1 class="mb40 mb-xs-16 large" id="new_text">FOSSASIA builds exciting Projects</h1>
+                            <h6 class="uppercase mb16">All open source</h6>
+                            <p class="lead mb40">
+                                Even you can contribute
+                                <br />
+                            </p>
+                            <a class="btn btn-lg btn-white" href="https://github.com/fossasia">Explore Projects</a>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+            </li>
+            <li class="overlay image-bg">
+                <div class="background-image-holder">
+                    <img alt="image" class="background-image" src="img/home20.jpg" />
+                </div>
+                <div class="container v-align-transform">
+                    <div class="row">
+                        <div class="col-sm-offset-1 text-center col-sm-10">
+                            <h1 class="mb40 mb-xs-16 large" id="new_text">Last Year, we broke Google Code-In records</h1>
+                            <h6 class="uppercase mb16" id="new_text">With over 900 students and 90 mentors</h6>
+                            <p class="lead mb40" id="new_text">
+                                FOSSASIA had over 1500 completed tasks... stunning isn't it?!
+                                <br />
+                            </p>
+                            <a class="btn btn-lg btn-white" href="https://opensource.googleblog.com/2018/01/google-code-in-2017-winners.html">Learn
+                            More</a>
+                        </div>
+                    </div>
+                    <!--end of container-->
+                </section>
+                <section class="bg-secondary pb0" id="welcome">
+                    <div class="container">
+                        <div class="row mb80 mb-xs-0">
+                            <div class="col-md-8 col-md-offset-2 text-center">
+                                <h1>What is open source?</h1>
+                                <p>
+                                    In general, open source refers to any program whose source code is made available for use or modification as users or other developers see fit. Open source software is usually developed as a public collaboration and made freely available.
+                                </p>
+                            </div>
+                        </div>
+                        <!--end of row-->
+                        <div class="row v-align-children">
+                            <div class="col-md-7 col-sm-6 text-center mb-xs-24">
+                                <img class="cast-shadow" alt="Screenshot" src="https://www.ost.agency/wp-content/uploads/2017/12/lg.png" />
+                            </div>
+                            <div class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1">
+                                <h3>What is FOSSASIA?</h3>
+                                <p>
+                                    FOSSASIA develops software and hardware and cooperates with Open Tech projects. Please check out our Github and FOSSASIA Labs.
+                                </p>
+                                <a class="btn btn-lg" href="https://fossasia.org/" target="_blank">Explore Fossasia 🌏</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end of container-->
+                </section>
+                <section>
+                    <div class="container" id="students">
+                        <div class="row mb64 mb-xs-24" style="margin-top: 50px">
+                            <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
+                                <h2> Students </h2>
+                            </div>
+                            <!--end of row-->
+                            <div class="row masonry masonryFlyIn">
+                                <div class="col-md-12 col-sm-12 masonry-item mb30">
+                                    <div class="col-sm-12 text-center spread-children-large">
+                                        {% for student in site.data.students limit:30 %}
+                                        <div class="card single-mentor">
+                                            {% if student.image %}
+                                            <img src="img/students/{{student.image}}" alt="{{ student.name }}">
+                                            {% else %}
+                                            <img src="img/students/member.png" alt="{{ student.name }}">
+                                            {% endif %}
+                                            <br>
+                                            <p class="person-name">{{ student.name }}</p><br>
+                                            <ul>
+                                                {% if student.github %}
+                                                <a href="https://github.com/{{student.github}}" class="icon-a" target="_blank">
+                                                    <i class="ti-github"></i>
+                                                </a>
+                                                {% endif %}
+                                                {% if student.twitter %}
+                                                <a href="https://twitter.com/{{ student.twitter }}" class="icon-a" target="_blank">
+                                                    <i class="ti-twitter-alt"></i>
+                                                </a>
+                                                {% endif %}
+                                                {% if student.blog %}
+                                                <a href="https://{{ student.blog }}" class="icon-a" target="_blank">
+                                                    <i class="ti-rss"></i>
+                                                </a>
+                                                {% endif %}
+                                                {% if student.facebook %}
+                                                <a href="https://facebook.com/{{ student.facebook }}" class="icon-a" target="_blank">
+                                                    <i class="ti-facebook"></i>
+                                                </a>
+                                                {% endif %}
+                                            </ul>
+                                        </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                                <!--end of row-->
+                            </div>
+                            <!--end of container-->
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <div class="container" id="social_box">
+                        <div class="row mb80 mb-xs-0">
+                            <div class="col-md-8 col-md-offset-2 text-center">
+                                <h1>Connect with Fossasia on Social Media</h1>
+                                <p> Be sure to follow us on our social media! </p>
+                                <p class="large">
+                                   <a href="https://www.facebook.com/fossasia/" class="ti-facebook" target="_blank"></a>
+                                   <a href="https://twitter.com/fossasia" class="ti-twitter" target="_blank"></a>
+                                   <a href="https://www.instagram.com/fossasia/" target="_blank" class="ti-instagram lgi"></a>
+                                   <a href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ" target="_blank" class="ti-youtube lgi"></a>
+                                   <a href="https://github.com/fossasia" target="_blank" class="ti-github lgi"></a>
+                                   <a href="https://fossasia.org/" target="_blank" class="ti-world lgi"></a>
+                                   <a href="https://codein.withgoogle.com/organizations/fossasia/" target="_blank" class="ti-settings lgi"></a>
+                               </p>
+                           </div>
+                       </div>
+                   </div>
+               </section>
+               <section>
+                <div class="container" id="videos">
+                    <!--end of row-->
+                    <div class="row v-align-children">
+                        <div class="col-md-7 col-sm-6 text-center mb-xs-24">
+                            <video controls="" preload="metadata">
+                                <source src="video/fossasia.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1">
+                                <h3>Fossasia Attracting Students</h3>
+                                <p>
+                                    The video is made is by one of our students during the competition itself!
+                                </p>
+                                <a class="btn btn-lg" href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ" target="_blank">Our
+                                    Youtube
+                                Channel</a>
+                            </div>
+                        </div>
+                        <!--end of row-->
+                    </div>
+                    <!--end of container-->
+                </section>
+
+                <!--Videos Section-->
+                <section class="bg-secondary pb0">
+                    <div class="container">
+                        <div class="row mb64 mb-xs-24">
+                            <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
+                                <h2> Videos </h2>
+                            </div>
+                        </div>
+                        <!--end of row-->
+                        <div class="row masonry masonryFlyIn">
+                            <div class="col-md-12 col-sm-12 masonry-item mb30">
+
+                                <div class="col-sm-12 text-center spread-children-large">
+                                    {% for video in site.data.videos %}
+                                    <a href="{{ video.link }}">
+                                        <div class="card single-mentor" id="video">
+                                            {% if video.image %}
+                                            <img src="img/videos/{{ video.image }}" width="200px" height="200px" />
+                                            {% endif %}
+                                            <br>
+                                            <h4 class="person-name">
+                                                <b>{{ video.name }}</b>
+                                            </h4>
+                                            <br>
+                                            <h5 class="person-name">{{ video.user }}</h6>
+                                            </div>
+                                        </a>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                                <!--end of row-->
+                            </div>
+                            <!--end of container-->
+                        </li>
+                    </ul>
+                </section>
+                <!--/Videos section-->
+                <!-- Proejct section-->
+                <section>
+                    <div class="container">
+                        <div class="row mb64 mb-xs-24">
+                            <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
+                                <h3> FOSSASIA | Projects </h3>
+                            </div>
+                        </div>
+                        <div class="row v-align-children">
+                            <div class="col-md-7 col-sm-6 text-center mb-xs-24">
+                                <img class="cast-shadow" alt="Screenshot" src="img/susi.jpg" />
+                            </div>
+                            <div class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1">
+                                <h3>SUSI.AI</h3>
+                                <p>
+                                    Susi is an artificial intelligence system, combining pattern matching, internet data, data flow, and inference engine principles. Through some abilities to reflect, it can remember the user input to produce deductions and personalized feedback. Its purpose is to explore the abilities of an artificial companion and to answer the remaining unanswered questions. The SUSI.AI web chat is a front-end developed for web access of SUSI.
+                                </p>
+                                <a class="btn-filled btn" href="https://github.com/fossasia/chat.susi.ai">Contribute</a>
+                                <a class="btn-filled btn" href="https://chat.susi.ai/">Try</a>
+                            </div>
+                        </div>
+                        <!--end of row-->
+                    </div>
+                    <!--end of container-->
+                </section>
+                <!--/Projects Section-->
+                <section class="bg-secondary">
+                    <div class="container">
+                        <div class="row mb64 mb-xs-24">
+                            <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
+                                <h3>Foundry gives you the flexibility to build your site using purpose-made content blocks.</h3>
+                            </div>
+                        </div>
+                        <!--end of row-->
+                        <div class="row">
+                            <div class="col-sm-6 text-center">
+                                <div class="feature">
+                                    <div class="text-center">
+                                        <i class="ti-layout-grid2 icon-lg mb40 mb-xs-24 inline-block color-primary"></i>
+                                        <h5 class="uppercase">Expert, Modular Design</h5>
+                                    </div>
+                                    <p>
+                                        Customers love our block-based approach to template building,
+                                        <br class="hidden-sm" />it makes assembling beautiful pages fast and enjoyable, leaving
+                                        <br class="hidden-sm" /> more time to craft your perfect layout.
+                                    </p>
+                                </div>
+                                <!--end of feature-->
+                            </div>
+                            <div class="col-sm-6 text-center">
+                                <div class="feature">
+                                    <div class="text-center">
+                                        <i class="ti-heart icon-lg mb40 mb-xs-24 inline-block color-primary"></i>
+                                        <h5 class="uppercase">Flexibility for Developers</h5>
+                                    </div>
+                                    <p>
+                                        We haven't forgotten developers, that's why we've built Foundry
+                                        <br class="hidden-sm" /> from the ground-up as a powerful, easy to understand framework
+                                        <br class="hidden-sm" /> with a particular focus on code readability.
+                                    </p>
+                                </div>
+                                <!--end of feature-->
+                            </div>
+                        </div>
+                        <!--end of row-->
+                    </div>
+                    <!--end of container-->
+                </section>
+                <section class="image-edge pt120 pb120 pt-xs-40 pb-xs-40">
+                    <div class="col-md-6 col-sm-4 p0 col-md-push-6 col-sm-push-8">
+                        <img alt="Screenshot" class="cast-shadow mb-xs-24" src="img/home1.jpg" />
+                    </div>
+                    <div class="container">
+                        <div class="col-md-5 col-md-pull-0 col-sm-7 col-sm-pull-4 v-align-transform">
+                            <h3 class="mb40 mb-xs-16">Get started fast with one of our unique, pre-built concepts.</h3>
+                            <p class="lead mb40">
+                                We've built 10 fresh and distinct concepts to showcase Foundry's adaptability for almost any purpose.
+                            </p>
+                            <div class="feature boxed">
+                                <p>
+                                    &ldquo;Stunning design, prompt support with an easy to use site builder make this and outstanding
+                                    product. Well done Medium Rare!&rdquo;
+                                </p>
+                                <div class="spread-children">
+                                    <img alt="Pic" class="image-xs" src="img/avatar2.png" />
+                                    <span>James Jardine - Themeforest</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end of container-->
+                </section>
+                <section class="image-bg overlay parallax pt120 pb120 pt-xs-40 pb-xs-40">
+                    <div class="background-image-holder">
+                        <img alt="image" class="background-image" src="img/home7.jpg" />
+                    </div>
+                    <div class="container">
+                        <div class="row mb40 mb-xs-24">
+                            <div class="col-sm-12 text-center spread-children">
+                                <img class="image-xs" alt="Pic" src="img/avatar5.png" />
+                                <img class="image-xs" alt="Pic" src="img/avatar2.png" />
+                                <img class="image-xs" alt="Pic" src="img/avatar3.png" />
+                                <img class="image-xs" alt="Pic" src="img/avatar6.png" />
+                                <img class="image-xs" alt="Pic" src="img/avatar4.png" />
+                            </div>
+                        </div>
+                        <!--end of row-->
+                        <div class="row mb16 mb-xs-0">
+                            <div class="col-sm-12 text-center">
+                                <h3>People just like you are already loving Foundry</h3>
+                            </div>
+                        </div>
+                        <!--end of row-->
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                                <div class="text-slider slider-arrow-controls text-center relative">
+                                    <ul class="slides">
+                                        <li>
+                                            <p class="lead">It's clear to see just how seriously these guys take design. I've never
+                                                come across a template with the level of polish as this - and don't even get me started
+                                            on the page builder, there is simply NO competition. Customer for life.</p>
+                                            <div class="quote-author">
+                                                <h6 class="uppercase mb0">Anna Thompson</h6>
+                                                <span>Themeforest Customer</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p class="lead">I love the ease-of-use the builder provides - I can quickly test different
+                                                combinations and experiment with font and color combinations to find that sweet spot.
+                                            Kudos for the amazing support too, really quick turnaround!</p>
+                                            <div class="quote-author">
+                                                <h6 class="uppercase mb0">Rick Dempsey</h6>
+                                                <span>Themeforest Customer</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p class="lead">A fine example of atomic design brought to life. As a seasoned template
+                                                user, I really appreciate the consistent styling for all common tags, it makes
+                                            customising the sections that much easier. 5 stars as always for an amazing template.</p>
+                                            <div class="quote-author">
+                                                <h6 class="uppercase mb0">Gill Sans</h6>
+                                                <span>Themeforest Customer</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end of row-->
+                    </div>
+                    <!--end of container-->
+                </section>
+
+                <section class="bg-secondary">
+                    <div class="container">
+                        <div class="row v-align-children">
+                            <div class="col-md-7 col-sm-6 text-center mb-xs-24">
+                                <div class="local-video-container">
+                                    <div class="background-image-holder">
+                                        <img alt="Background Image" class="background-image" src="img/home3.jpg">
+
+                                    </div>
+                                    <video controls="" preload="metadata">
+                                        <source src="video/video.webm" type="video/webm">
+                                            <source src="video/video.mp4" type="video/mp4">
+                                                <source src="video/video.ogv" type="video/ogg">
+                                                </video>
+                                                <div class="play-button"></div>
+                                            </div>
+                                            <!--end of local inline video-->
+                                        </div>
+                                        <div class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1">
+                                            <h3>Design that looks less 'theme' and more you.</h3>
+                                            <p>
+                                                Foundry offers you the modularity and ease-of-use of a template with the style and aesthetic of
+                                                contemporary, bespoke web design.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!--end of row-->
+                                </div>
+                                <!--end of container-->
+                            </section>
+                            <section>
+                                <div class="container" id="mentors">
+                                    <div class="row mb64 mb-xs-24">
+                                        <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
+                                            <h3>Our Mentors</h3>
+                                        </div>
+                                    </div>
+                                    <!--end of row-->
+                                    <div class="row">
+                                        {% for mentor in site.data.mentors limit:30 %}
+
+                                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 text-center">
+
+                                            <div class="card single-mentor">
+                                                {% if mentor.image %}
+                                                <img class="mentor-img" src="img/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
+                                                {% else %}
+                                                <img src="img/mentors/member.png" alt="{{ mentor.name }}">
+                                                {% endif %}
+                                                <p class="person-name">{{ mentor.name }}</p>
+
+                                                <ul class="list-inline social-list social-overlay-list">
+                                                    {% if mentor.github %}
+                                                    <a href="https://github.com/{{mentor.github}}" class="icon-a" target="_blank" rel="noopener">
+
+                                                        <i class="ti-github"></i>
+                                                    </a>
+                                                    {% endif %}
+                                                    {% if mentor.twitter %}
+
+                                                    <a href="https://twitter.com/{{ mentor.twitter }}" class="icon-a" target="_blank">
+
+                                                        <i class="ti-twitter-alt"></i>
+                                                    </a>
+                                                    {% endif %}
+                                                    {% if mentor.blog %}
+
+                                                    <a href="https://{{ mentor.blog }}" class="icon-a" target="_blank">
+
+                                                        <i class="ti-rss"></i>
+                                                    </a>
+                                                    {% endif %}
+                                                    {% if mentor.facebook %}
+
+                                                    <a href="https://facebook.com/{{ mentor.facebook }}" class="icon-a" target="_blank">
+
+                                                        <i class="ti-facebook"></i>
+                                                    </a>
+                                                    {% endif %}
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        {% endfor %}
+                                    </div>
+                                    <!--end of row-->
+                                </div>
+                                <!--end of container-->
+                            </section>
+                            <!-- Contributors  -->
+                            <section class="bg-secondary">
+                                <div class="container">
+                                    <div class="row mb-xs-24 mb16">
+                                        <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
+                                            <h3>Contributors</h3>
+                                            <a class="btn btn-lg" href="https://github.com/fossasia/gci18.fossasia.org" target="_blank">Repository</a>
+                                            <a class="btn btn-lg" href="https://github.com/fossasia/gci18.fossasia.org/pulse" target="_blank">View Activity</a>
+                                            <a class="btn btn-lg" href="https://github.com/fossasia/gci18.fossasia.org/graphs/contributors" target="_blank">Details of Our Contributors</a>
+                                            <a class="btn btn-lg" href="https://blog.fossasia.org/open-source-developer-guide-and-best-practices-at-fossasia/" target="_blank">How to contribute?</a>
+                                        </div>
+
+                                    </div>
+                                    <!--end of row-->
+                                    <div class="row" id="contributors">
+                                    </div>
+                                    <container>
+                                      <div id="app" class="thank_you"></div>
+                                  </container>
+
+                                  <!--end of row-->
+                              </div>
+                              <!--end of container-->
+                          </section>
+                          <section class="image-bg parallax overlay">
+                            <div class="background-image-holder">
+                                <img alt="Background Image" class="background-image" src="img/home2.jpg">
+                            </div>
+                            <div class="container">
+                                <div class="row mb64 mb-xs-24">
+                                    <div class="col-sm-6 col-md-5 text-right text-center-xs">
+                                        <h1 class="large mb8">10,000+</h1>
+                                        <h6 class="uppercase">Customers using our templates</h6>
+                                    </div>
+                                    <div class="col-md-2 text-center hidden-sm hidden-xs">
+                                        <i class="ti-infinite icon icon-lg mt8 mt-xs-0"></i>
+                                    </div>
+                                    <div class="col-sm-6 col-md-5 text-center-xs">
+                                        <h1 class="large mb8">Limitless</h1>
+                                        <h6 class="uppercase">Layout potential using Foundry</h6>
+                                    </div>
+                                </div>
+                                <!--end of row-->
+                                <div class="row">
+                                    <div class="col-sm-12 text-center">
+                                        <h3 class="mb40 mb-xs-24">Authentic, handcrafted design that gives your
+                                            <br /> site subtle, confident appeal.</h3>
+                                            <a class="btn btn-lg btn-filled" href="chooser.html">Check Out The Demos</a>
+                                        </div>
+                                    </div>
+                                    <!--end of row-->
+                                </div>
+                                <!--end of container-->
+                            </section>
