@@ -113,6 +113,53 @@ layout: default
     </div>
     <!--end of container-->
 </section>
+<section id="team" >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <h1>Team</h1>
+            </div>
+        </div>
+        <!--end of row-->
+        <div class="row text-center" style="margin-top: 60px;">
+                {% for team in site.data.team limit:30 %}
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="card single-mentor text-center"  >
+                        {% if team.image %}
+                        <img src="img/team/{{team.image}}" alt="{{ team.name }}">
+                        {% else %}
+                        <img src="img/students/member.png" alt="{{ team.name }}">
+                        {% endif %}
+                        
+                        <p class="team_member_name">{{ team.name }}</p>
+                        
+                        <ul class="list-inline social-list social-overlay-list team_ul" >
+                            <p class="team_member_designation">{{ team.designation }}</p>
+                            {% if team.github %}
+                            <a href="https://github.com/{{team.github}}" class="icon-a" target="_blank">
+                                <i class="ti-github"></i>
+                            </a>
+                            {% endif %}
+                            {% if team.twitter %}
+                            <a href="https://twitter.com/{{ team.twitter }}" class="icon-a" target="_blank">
+                                <i class="ti-twitter-alt"></i>
+                            </a>
+                            {% endif %}
+                            {% if team.linkedin %}
+                            <a href="https://linkedin.com/in/{{ team.linkedin }}" class="icon-a" target="_blank">
+                                <i class="ti-linkedin"></i>
+                            </a>
+                            {% endif %}
+                        </ul>
+                    </div>
+                </div>
+                {% endfor %}
+                <!--end of row-->
+            </div>
+    </div>
+    <!--end of container-->
+</section>
+
 <section id="connect">
     <div class="container" id="social_box">
         <div class="row mb80 mb-xs-0">
@@ -133,7 +180,7 @@ layout: default
             </div>
         </div>
         <div class="container">
-            <div class="row equal-row">
+            <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-4 h-100 social-media-widget">
                     <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffossasia%2F&tabs=timeline&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
                         width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
@@ -155,7 +202,7 @@ layout: default
     </div>
 </section>
 <hr>
-<section>
+<section class="bg-secondary">
     <div class="container" id="videos">
         <!--end of row-->
         <div class="row v-align-children">
@@ -179,96 +226,8 @@ layout: default
     <!--end of container-->
 </section>
 
-<section>
-    <div class="container" id="students">
-        <div class="row mb64 mb-xs-24" style="margin-top: 50px">
-            <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
-                <h2> Students </h2>
-            </div>
-            <!--end of row-->
-            <div class="row">
-                {% for student in site.data.students limit:30 %}
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center">
-                    <div class="card single-mentor">
-                        {% if student.image %}
-                        <img src="img/students/{{student.image}}" alt="{{ student.name }}">
-                        {% else %}
-                        <img src="img/students/member.png" alt="{{ student.name }}">
-                        {% endif %}
-                        <br>
-                        <p class="person-name">{{ student.name }}</p><br>
-                        <ul class="list-inline social-list social-overlay-list">
-                            {% if student.github %}
-                            <a href="https://github.com/{{student.github}}" class="icon-a" target="_blank">
-                                <i class="ti-github"></i>
-                            </a>
-                            {% endif %}
-                            {% if student.twitter %}
-                            <a href="https://twitter.com/{{ student.twitter }}" class="icon-a" target="_blank">
-                                <i class="ti-twitter-alt"></i>
-                            </a>
-                            {% endif %}
-                            {% if student.blog %}
-                            <a href="https://{{ student.blog }}" class="icon-a" target="_blank">
-                                <i class="ti-rss"></i>
-                            </a>
-                            {% endif %}
-                            {% if student.facebook %}
-                            <a href="https://facebook.com/{{ student.facebook }}" class="icon-a" target="_blank">
-                                <i class="ti-facebook"></i>
-                            </a>
-                            {% endif %}
-                        </ul>
-                    </div>
-                </div>
-                {% endfor %}
-                <!--end of row-->
-            </div>
-            <!--end of container-->
-            </li>
-            </ul>
-</section>
 
-<!--Videos Section-->
-<section class="bg-secondary pb0">
-    <div class="container">
-        <div class="row mb64 mb-xs-24">
-            <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
-                <h2> Videos </h2>
-            </div>
-        </div>
-        <!--end of row-->
-
-        <div class="row masonry masonryFlyIn">
-            <div class="col-md-12 col-sm-12 masonry-item mb30">
-
-                <div class="col-sm-12 text-center spread-children-large">
-                    {% for video in site.data.videos %}
-                    <a href="{{ video.link }}">
-                        <div class="card single-mentor" id="video">
-                            {% if video.image %}
-                            <img src="img/videos/{{ video.image }}" style="width:150px; height:150px;" />
-                            {% endif %}
-                            <br>
-                            <h4 class="person-name">
-                                <b>{{ video.name }}</b>
-                            </h4>
-                            <br>
-                            <h5 class="person-name">{{ video.user }}</h6>
-                        </div>
-                    </a>
-                    {% endfor %}
-
-                </div>
-            </div>
-            <!--end of row-->
-        </div>
-        <!--end of container-->
-        </li>
-        </ul>
-</section>
-<!--/Videos section-->
-<!-- Proejct section-->
+<!-- Project section-->
 <section>
     <div class="container">
         <div class="row mb64 mb-xs-24">
@@ -337,7 +296,45 @@ layout: default
     <!--end of container-->
 </section>
 
+<!--Videos Section-->
+<section class="bg-secondary pb0">
+    <div class="container">
+        <div class="row mb64 mb-xs-24">
+            <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
+                <h2> Videos </h2>
+            </div>
+        </div>
+        <!--end of row-->
 
+        <div class="row masonry masonryFlyIn">
+            <div class="col-md-12 col-sm-12 masonry-item mb30">
+
+                <div class="col-sm-12 text-center spread-children-large">
+                    {% for video in site.data.videos %}
+                    <a href="{{ video.link }}">
+                        <div class="card single-mentor" id="video">
+                            {% if video.image %}
+                            <img src="img/videos/{{ video.image }}" style="width:150px; height:150px;" />
+                            {% endif %}
+                            <br>
+                            <h4 class="person-name">
+                                <b>{{ video.name }}</b>
+                            </h4>
+                            <br>
+                            <h5 class="person-name">{{ video.user }}</h6>
+                        </div>
+                    </a>
+                    {% endfor %}
+
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+        </li>
+        </ul>
+</section>
+<!--/Videos section-->
 
 <section>
     <div class="container" id="mentors">
@@ -397,6 +394,67 @@ layout: default
     </div>
     <!--end of container-->
 </section>
+
+<section>
+    <div class="container" id="students">
+        <div class="row mb64 mb-xs-24">
+            <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
+                <h1>Students</h1>
+            </div>
+        </div>
+        <!--end of row-->
+        <div class="row">
+            {% for student in site.data.students limit:30 %}
+
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 text-center">
+
+                <div class="card single-mentor">
+                    {% if student.image %}
+                    <img class="mentor-img" src="img/students/{{student.image}}" alt="{{ student.name }}">
+                    {% else %}
+                    <img src="img/mentors/member.png" alt="{{ student.name }}">
+                    {% endif %}
+                    <p class="student_name">{{ student.name }}</p>
+
+                    <ul class="list-inline social-list social-overlay-list">
+                        {% if student.github %}
+                        <a href="https://github.com/{{student.github}}" class="icon-a" target="_blank" rel="noopener">
+
+                            <i class="ti-github"></i>
+                        </a>
+                        {% endif %}
+                        {% if student.twitter %}
+
+                        <a href="https://twitter.com/{{ student.twitter }}" class="icon-a" target="_blank">
+
+                            <i class="ti-twitter-alt"></i>
+                        </a>
+                        {% endif %}
+                        {% if student.blog %}
+
+                        <a href="https://{{ student.blog }}" class="icon-a" target="_blank">
+
+                            <i class="ti-rss"></i>
+                        </a>
+                        {% endif %}
+                        {% if student.facebook %}
+
+                        <a href="https://facebook.com/{{ student.facebook }}" class="icon-a" target="_blank">
+
+                            <i class="ti-facebook"></i>
+                        </a>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <!--end of row-->
+    </div>
+    <!--end of container-->
+</section>
+
+
 <!-- Map -->
 	<section>
 	<div class="container">
