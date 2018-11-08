@@ -251,6 +251,43 @@ p.person-name {
   max-width: 240px !important;
   display: inline-block !important;
 }
+.memories_img{
+  width: 20%;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  filter: brightness(50%);
+  float: left;
+  display: inline;
+}
+.memories_img:hover{
+  filter: brightness(100%);
+  transition: 0.6s;
+}
+#memories_div{
+  display: inline;
+  position: relative;
+  top: -420px;
+  z-index: 1 ;
+  margin-left: 15%;
+  line-height: 70px;
+}
+#memories_icon{
+  color: #fff;
+  font-size: 50px;
+}
+#memories_heading{
+  margin-left: 15%;
+  font-size: 50px;
+  color: #ffffff;
+  text-decoration: bold;
+  font-weight: bold;
+}
+#memories_link{
+  font-size: 30px;
+  margin-left : 15%;
+  color: #fff;
+}
 
 
 
