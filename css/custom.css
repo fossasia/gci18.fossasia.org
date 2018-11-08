@@ -46,7 +46,14 @@
 
 p.person-name {
   font-size: 16px;
-  margin: 10px 0;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.person-username {
+  color: #8A8A8A;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
 .single-mentor [class^="ti-"],
