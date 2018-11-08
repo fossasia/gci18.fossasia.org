@@ -134,6 +134,52 @@ p.person-name {
   flex-wrap: wrap;
 }
 
+.social-media-widget {
+  margin-bottom: 5%;
+  height: 300px;
+  overflow: hidden;
+}
+ .social-media-title {
+  margin-bottom: 1%;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: black;
+}
+ .social-media-title:hover {
+  color: rgb(88, 88, 88);
+}
+ .view-profile {
+  background-color: #3897f0;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+}
+ .view-profile:hover {
+  background-color: #083d72;
+  color: white;
+}
+ .location-link-container {
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+  text-align: center;
+  width: 50%;
+}
+ .location-link {
+  color: grey;
+  font-size: 14px;
+  text-align: left;
+}
+ .location-link:hover {
+  color: darkgray;
+}
+
 @media all and (max-width: 767px) {
   br {
     display: inline;
