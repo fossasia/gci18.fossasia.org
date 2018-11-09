@@ -1,0 +1,14 @@
+# Please add your entries to a random position in the file.
+# This is to remove conflicts with other people adding entries.
+
+# The Format is :
+# - name: Student's name
+#   github: Student's Github Username
+#   image: Student's image (or representation like a "nick" image)
+#   twitter: Student's Twitter ID
+#   facebook: Student's Facebook ID
+#   lat: Student's Latitude
+#   lng: Student's Longitud
+- name: Rahul Metre 
+ github: RahulMetre03
+   image: icon.png
