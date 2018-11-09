@@ -32,7 +32,7 @@
 - name: Saurabh Srivastava
   image: simsausaurabh.png
   github: simsausaurabh
-  
+
 - name: Hong Phuc Dang
   image: hpdang.jpg
   github: hpdang
@@ -44,7 +44,7 @@
 - name: Mohit Sharma
   image: ms.jpg
   github: ms10398
-  
+
 - name: Yash Kumar Verma
   image: YKV.jpg
   github: YashKumarVerma
@@ -64,3 +64,7 @@
 - name: Abishek V Ashok
   image: AbishekVAshok.png
   github: abishekvashok
+
+- name: Nikit Bhandari
+  image: nikitbhandari.jpeg
+  github: nikit19
