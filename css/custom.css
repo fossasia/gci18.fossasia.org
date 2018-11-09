@@ -225,8 +225,11 @@ p.person-name {
   height: 400px;
 }
 #map { 
-  height: 600px;
-  width: 1200px;
+  height: 0;
+  width: 95%;
+  margin-left: 2.5%;
+  padding-bottom: 50%;
+  pointer-events: none;
 }
 
 .student_name{
