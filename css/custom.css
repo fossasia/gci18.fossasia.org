@@ -226,9 +226,9 @@ p.person-name {
 }
 #map { 
   height: 600px;
-  width: 1200px;
+  max-width: 1000px;
+  margin: auto;
 }
-
 .student_name{
   font-size: 16px;
   margin-top: 5px;
