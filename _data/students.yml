@@ -55,7 +55,7 @@
   github: arjunpandey2003
   image: arjun.jpg
 
-- name: Jeewal Kunwar 
+- name: Jeewal Kunwar
   github: Jeewal
   image: JK.jpg
   twitter: jeewalkunwar1
@@ -68,19 +68,19 @@
   github: Shizerq
   image: Shizerq.jpg
   twitter: maciej_synowski
-  
+
 - name: Jakub Pawlina
   github: jakubpawlina
   image: jakubpawlina.png
-  
+
 - name: Srihari Unnikrishnan
   github: pythongiant
   image: sr.png
-  
+
 - name: Shreesh Kumar Jha
   github: shreeshjha
   image: shreeshjha.png
-  
+
 - name: Sitaraman Subramanian
   github: Hackerbone
   image: sitaraman.jpg
@@ -100,3 +100,9 @@
 - name: Rahul Metre
   github: RahulMetre03
   image: icon.png
+  
+- name: Saarthak Chaturvedi
+  github: saarthakchats
+  image: saarthak.JPG
+  twitter: SaarthakChats41
+
