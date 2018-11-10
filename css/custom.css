@@ -224,14 +224,12 @@ p.person-name {
 #img_project{
   height: 400px;
 }
-#map { 
-  height: 0;
-  width: 95%;
-  margin-left: 2.5%;
-  padding-bottom: 50%;
+#map{ 
+  height: 600px;
+  max-width: 1000px;
+  margin: auto 7.5%;
   pointer-events: none;
 }
-
 .student_name{
   font-size: 16px;
   margin-top: 5px;
