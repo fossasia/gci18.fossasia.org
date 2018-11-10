@@ -65,6 +65,9 @@ body.boxed-layout,
   left: 0;
   right: 0;
 }
+.extra_padding_b{
+  padding-bottom: 30px
+}
 ul {
   list-style: none;
 }
