@@ -1,4 +1,4 @@
-# Please add your entries to a random position in the file.
+﻿# Please add your entries to a random position in the file.
 # This is to remove conflicts with other people adding entries.
 
 # The Format is :
@@ -55,7 +55,7 @@
   github: arjunpandey2003
   image: arjun.jpg
 
-- name: Jeewal Kunwar 
+- name: Jeewal Kunwar
   github: Jeewal
   image: JK.jpg
   twitter: jeewalkunwar1
@@ -68,19 +68,19 @@
   github: Shizerq
   image: Shizerq.jpg
   twitter: maciej_synowski
-  
+
 - name: Jakub Pawlina
   github: jakubpawlina
   image: jakubpawlina.png
-  
+
 - name: Srihari Unnikrishnan
   github: pythongiant
   image: sr.png
-  
+
 - name: Shreesh Kumar Jha
   github: shreeshjha
   image: shreeshjha.png
-  
+
 - name: Sitaraman Subramanian
   github: Hackerbone
   image: sitaraman.jpg
@@ -88,6 +88,23 @@
 - name: Aryan Kedare
   github: aryankedare
   image: aryankedare.jpeg
+
+- name: Reza Juliandri
+  github: ppabcd
+  image: Reza.jpeg
+
+- name: Kartikeya Singh
+  github: kartikeya23
+  image: kart.png
+
+- name: Saarthak Chaturvedi
+  github: saarthakchats
+  image: saarthak.JPG
+  twitter: SaarthakChats41
+
+- name: Akshit Goyal
+  github: akshit15013
+  image: AkshitGoyal.jpg
 
 - name: Arihant Bansal
   github: arihantbansal
