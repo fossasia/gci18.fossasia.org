@@ -73,6 +73,9 @@ ul.bullets {
 .main-container {
   clear: both;
 }
+.extra_padding_b{
+  margin-bottom: 30px;
+}
 hr {
   border: none;
   border-top: 1px solid #ccc;
@@ -110,6 +113,34 @@ hr.short-thick {
 .list-inline > li:first-child {
   padding-left: 0;
 }
+
+/*GRADIENTS  */
+.gradient-pink-light{
+  background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+}
+.gradient-pink{
+  background: linear-gradient(#ff758c, #ff7eb3);
+}
+.gradient-cyan-light{
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+.gradient-cyan{
+  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+}
+.gradient-blue-light{
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+.gradient-blue{
+  background: linear-gradient(#4facfe,#00f2fe);
+}
+.gradient-multi-cool{
+background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
+}
+.gradient-multi-hot{
+  background-image: linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%);
+}
+
+/*END GRADIENTS*/
 .bg-primary .list-inline i {
   color: #ee788a;
 }
