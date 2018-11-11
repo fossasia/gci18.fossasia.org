@@ -1,8 +1,7 @@
 /****** PLACE YOUR CUSTOM STYLES HERE ******/
 
-
 .icon-a {
-  zoom:1.5;
+  zoom: 1.5;
 }
 
 #new_text {
@@ -18,8 +17,8 @@
   text-align: center;
   text-decoration: none;
 }
+.large .ti-twitter{
 
-.large .ti-twitter {
   width: 20px;
   padding: 20px;
   font-size: 30px;
@@ -50,10 +49,10 @@ p.person-name {
   margin: 10px 0;
 }
 
-.single-mentor [class^="ti-"], [class*=" ti-"] {
+.single-mentor [class^="ti-"],
+[class*=" ti-"] {
   font-size: 16px;
 }
-
 
 .single-mentor {
   position: relative;
@@ -66,7 +65,7 @@ p.person-name {
   padding: 5px 10px;
   width: 100%;
   opacity: 0;
-  transition: all .6s;
+  transition: all 0.6s;
 }
 
 .single-mentor .social-overlay-list a {
@@ -89,7 +88,7 @@ p.person-name {
 
 .single-mentor:hover > img {
   filter: brightness(50%);
-  transition: all .6s;
+  transition: all 0.6s;
 }
 
 #contributors .single-mentor img {
@@ -106,24 +105,24 @@ p.person-name {
   font-size: 16px;
 }
 
-.thank_you{
-  background-color: #1F75AD;
-  color: #fff;
-  font-size: 50px;
+.thank_you {
+  width: 100%;
+  font-family: inherit;
+  font-size: calc(2rem + 1vw);
+  padding: 80px 4.5%;
   text-align: center;
-  height: 9vh;
-  width: 1200px;
-  margin-top: 40px;
-  padding: 100px;
-  margin-right: 100px;
-  margin-bottom: 100px;
+  background-image: linear-gradient(62deg, #47b475 0%, #e0c3fc 100%);
+  color: rgb(255, 255, 255);
+  line-height: 1.5;
+  height: 195px;
+  text-shadow: 2px 2px #47b475;
 }
 
 .mentor-img {
   width: 240px;
 }
 
-.contribute_buttons{
+.contribute_buttons {
   align-items: center;
   align: center;
   align-content: center;
@@ -135,6 +134,52 @@ p.person-name {
   flex-wrap: wrap;
 }
 
+.social-media-widget {
+  margin-bottom: 5%;
+  height: 300px;
+  overflow: hidden;
+}
+ .social-media-title {
+  margin-bottom: 1%;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: black;
+}
+ .social-media-title:hover {
+  color: rgb(88, 88, 88);
+}
+ .view-profile {
+  background-color: #3897f0;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+}
+ .view-profile:hover {
+  background-color: #083d72;
+  color: white;
+}
+ .location-link-container {
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+  text-align: center;
+  width: 50%;
+}
+ .location-link {
+  color: grey;
+  font-size: 14px;
+  text-align: left;
+}
+ .location-link:hover {
+  color: darkgray;
+}
+
 @media all and (max-width: 767px) {
   br {
     display: inline;
@@ -143,7 +188,7 @@ p.person-name {
 
 #backtotop_button {
   display: inline-block;
-  background-color: #1A86CC;
+  background-color: #1a86cc;
   width: 50px;
   height: 50px;
   text-align: center;
@@ -151,8 +196,7 @@ p.person-name {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  transition: background-color .3s,
-    opacity .5s, visibility .5s;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
   opacity: 0;
   visibility: hidden;
   z-index: 1000;
@@ -177,3 +221,79 @@ p.person-name {
   opacity: 1;
   visibility: visible;
 }
+#img_project{
+  height: 400px;
+}
+#map{ 
+  height: 600px;
+  max-width: 1000px;
+  margin: auto 7.5%;
+  pointer-events: none;
+}
+.student_name{
+  font-size: 16px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+.team_member_name{
+  font-size: 18px;
+  margin-top: 5px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.team_member_designation{
+  font-size: 13px;
+  margin-top: -45px;
+  color: #fff;
+  filter: brightness(100%) !important;
+  font-weight: bold;
+}
+.team_ul{
+  max-width: 240px !important;
+  display: inline-block !important;
+}
+.memories_img{
+  width: 20%;
+  height: 200px;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  filter: brightness(50%);
+  float: left;
+}
+.memories_img:hover{
+  filter: brightness(100%);
+  transition: 0.6s;
+}
+#memories_div{
+  position: relative;
+  top: -420px;
+  z-index: 1 ;
+  margin-left: 15%;
+  line-height: 70px;
+  display: inline;
+}
+#memories_icon{
+  color: #fff;
+  font-size: 50px;
+}
+#memories_heading{
+  margin-left: 15%;
+  font-size: 50px;
+  color: #ffffff;
+  text-decoration: bold;
+  font-weight: bold;
+}
+#memories_link{
+  font-size: 30px;
+  margin-left : 15%;
+  color: #fff;
+}
+#flickr{
+  color: #47B474;
+}
+#flickr:hover{
+  color: #398F5D;
+}
+
+

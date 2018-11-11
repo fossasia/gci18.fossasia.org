@@ -4,6 +4,16 @@ https://gci18.fossasia.org
 
 This is the repository for Fossasia's website for Google Code-In 2018, we at Fossasia intend to develop it collaboratively during the course of this competition by participating students themselves. Fork the repository before making changes and make sure you read [Fossasia Best Practices](https://blog.fossasia.org/open-source-developer-guide-and-best-practices-at-fossasia/)
 
+## Communication
+
+- Please join our **[mailing list](https://groups.google.com/forum/#!forum/fossasia)** to discuss questions regarding the project.
+
+  > https://groups.google.com/forum/#!forum/fossasia
+
+- Our chat channel is on **[Gitter](https://gitter.im/fossasia/gci16.fossasia.org)**
+
+  > [gitter.im/fossasia/gci16.fossasia.org](https://gitter.im/fossasia/gci16.fossasia.org)
+
 ## Things you should know before contributing:
 - All pull requests need to be associated to an issue.
 - All PRs need to be assigned to the person working on it.
@@ -61,3 +71,44 @@ This is the repository for Fossasia's website for Google Code-In 2018, we at Fos
 - Pick the phrase "Thank you for your contributions" or "Thank you for contributing" and translate it
 - Add the translation to the `var items = [];` in the js/thankyou.js file
 
+## Available Gradients
+- `gradient-pink-light` =  #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%
+<img src="https://webgradients.com/public/webgradients_png/001%20Warm%20Flame.png"
+     alt="Warm Flame"
+     width = 100%
+     height= 50px/>
+- `gradient-pink` = #ff758c, #ff7eb3
+<img src="https://webgradients.com/public/webgradients_png/080%20Passionate%20Bed.png"
+     alt="Ripe Malinka"
+     width= 100%
+     height= 50px/>
+- `gradient-cyan-light` = #84fab0 0%, #8fd3f4 100%
+<img src="https://webgradients.com/public/webgradients_png/012%20Tempting%20Azure.png"
+     alt="Tempting Azure"
+     width = 100%
+     height= 50px/>
+- `gradient-cyan` = #43e97b 0%, #38f9d7 100%
+<img src="https://webgradients.com/public/webgradients_png/020%20New%20Life.png"
+     alt="New Life"
+     width= 100%
+     height= 50px/>
+- `gradient-blue-light` = #a1c4fd 0%, #c2e9fb 100%
+<img src="https://webgradients.com/public/webgradients_png/010%20Winter%20Neva.png"
+     alt="Winter Neva"
+     width= 100%
+     height = 50px/>
+- `gradient-blue` = #4facfe,#00f2fe
+<img src="https://webgradients.com/public/webgradients_png/019%20Malibu%20Beach.png"
+     alt="Malibu Beach"
+     width= 100%
+     height = 50px />
+- `gradient-multi-cool` =  #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%
+<img src="https://webgradients.com/public/webgradients_png/152%20Sea%20Lord.png"
+     alt="Sea Lord"
+     width= 100%
+     height = 100px />
+- `gradient-multi-hot` = #FFE29F 0%, #FFA99F 48%, #FF719A 100%
+<img src="https://webgradients.com/public/webgradients_png/158%20Angel%20Care.png"
+     alt="Angel Care"
+     width= 100%
+     height = 100px />

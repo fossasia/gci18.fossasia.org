@@ -14,6 +14,10 @@
   github: vishalx360
   image: vishalx360.jpeg
   twitter: vishalx360
+  
+- name: Sahil Saha
+  github: sahilsaha7773
+  image: SahilSaha.jpg
 
 - name: Sahil Kumar
   github: sahildav
@@ -32,9 +36,11 @@
   github: ploypiti
   image: pfp.png
 
-- name: AppleCat
+- name: Hubert Zimny
   github: AppleC4T
-  image: applecat.png
+  image: hzimny.jpg
+  lat: 50.094861
+  lng: 18.541205
 
 - name: Mikołaj Hojda
   github: mikolajhojda
@@ -53,7 +59,7 @@
   github: arjunpandey2003
   image: arjun.jpg
 
-- name: Jeewal Kunwar 
+- name: Jeewal Kunwar
   github: Jeewal
   image: JK.jpg
   twitter: jeewalkunwar1
@@ -66,8 +72,40 @@
   github: Shizerq
   image: Shizerq.jpg
   twitter: maciej_synowski
-  
+
 - name: Jakub Pawlina
   github: jakubpawlina
   image: jakubpawlina.png
-  
+
+- name: Srihari Unnikrishnan
+  github: pythongiant
+  image: sr.png
+
+- name: Shreesh Kumar Jha
+  github: shreeshjha
+  image: shreeshjha.png
+
+- name: Sitaraman Subramanian
+  github: Hackerbone
+  image: sitaraman.jpg
+
+- name: Aryan Kedare
+  github: aryankedare
+  image: aryankedare.jpeg
+
+- name: Reza Juliandri
+  github: ppabcd
+  image: Reza.jpeg
+
+- name: Kartikeya Singh
+  github: kartikeya23
+  image: kart.png
+
+- name: Saarthak Chaturvedi
+  github: saarthakchats
+  image: saarthak.JPG
+  twitter: SaarthakChats41
+
+- name: Akshit Goyal
+  github: akshit15013
+  image: AkshitGoyal.jpg
