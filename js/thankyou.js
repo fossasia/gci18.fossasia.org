@@ -1,6 +1,7 @@
 ﻿var items = [
 'Thank you for your contributions!',
 'Merci pour vos contributions!',
+'Kea le leboha ka menehelo ea hau!',
 'आपके योगदानों के लिए धन्यवाद',
 'Dziękujemy za Twój wkład!',
 'Danke für Ihre Beiträge!',

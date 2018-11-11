@@ -224,10 +224,11 @@ p.person-name {
 #img_project{
   height: 400px;
 }
-#map { 
+#map{ 
   height: 600px;
   max-width: 1000px;
-  margin: auto;
+  margin: auto 7.5%;
+  pointer-events: none;
 }
 .student_name{
   font-size: 16px;
