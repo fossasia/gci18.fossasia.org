@@ -75,7 +75,7 @@ ul.bullets {
   clear: both;
 }
 .extra_padding_b{
-  padding-bottom: 30px
+  margin-bottom: 32px;
 }
 hr {
   border: none;
