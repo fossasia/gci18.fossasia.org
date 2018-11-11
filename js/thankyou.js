@@ -6,6 +6,7 @@
 'Dziękujemy za Twój wkład!',
 'Danke für Ihre Beiträge!',
 'Gracias por sus aportaciones!', 
+'Bedankt voor uw bijdragen!',
 'तपाइको योगदानको लागि धन्यवाद',
 'شكرا للمساهمة',
 '공헌 해 주셔서 감사합니다',
