@@ -42,14 +42,18 @@ String.prototype.hashCode = function() {
     return hash
 }
 
-
 function getTextNodes() {
   var strings = []
   var all = document.getElementsByTagName("*")
   for(var i=0; i < all.length; i++) {
      if(all[i].children.length == 0 && all[i].innerHTML != "") {
-       let text = all[i].getAttribute('tljs_original') || all[i].innerHTML
-       all[i].setAttribute('tljs_hash', text.hashCode())
+       if(all[i].getAttribute('tljs_original') == null) {
+         all[i].setAttribute('tljs_original', all[i].innerHTML)
+       }
+       if(all[i].getAttribute('tljs_hash') == null) {
+         let text = all[i].getAttribute('tljs_original')
+         all[i].setAttribute('tljs_hash', text.hashCode())
+       }
        strings.push(all[i])
      }
   }
@@ -59,7 +63,7 @@ function getTextNodes() {
 function translatable() {
   var textNodes = getTextNodes()
   for (var i=0; i<textNodes.length; i++) {
-    let text = textNodes[i].getAttribute('tljs_original') || textNodes[i].innerHTML
+    let text = textNodes[i].getAttribute('tljs_original')
     let hash = text.hashCode()
     console.log(text, hash)
   }
@@ -69,16 +73,12 @@ function translate(lang) {
   console.log("[translate.js] translating to "+lang)
   var textNodes = getTextNodes()
   for (var i=0; i<textNodes.length; i++) {
-    if(textNodes[i].getAttribute('tljs_original') == null) {
-      textNodes[i].setAttribute('tljs_original', textNodes[i].innerHTML)
-    }
     let original = textNodes[i].getAttribute('tljs_original')
     let hash = original.hashCode()
     if (translations.hasOwnProperty(hash)) {
       if (translations[hash].hasOwnProperty(lang)) {
         textNodes[i].innerHTML = translations[hash][lang]
       } else {
-        console.log("oops")
         textNodes[i].innerHTML = original
       }
     }
