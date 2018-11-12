@@ -1,15 +1,15 @@
 - name: Hong Phuc Dang
   designation: FOSSASIA Founder
   github: hpdang
-  twitter: mariobehling
-  linkedin: mariobehling
+  twitter: hpdang
+  linkedin: hongphucdang
   image:  hongphucdang.png
 
 - name: Mario Behling
   designation: AI
   github: mariobehling
-  twitter: hpdang
-  linkedin: hongphucdang
+  twitter: mariobehling
+  linkedin: mariobehling
   image: mariobehling.png
 
 - name: Harish Pillay

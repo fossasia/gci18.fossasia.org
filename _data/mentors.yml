@@ -72,3 +72,11 @@
 - name: Rohit Potter
   image: RohitPotter.jpg
   github: rpotter12
+  lat: 30.733315
+  lng: 76.779419
+
+- name: Nicco Kunzmann
+  image: Nicco Kunzmann.png
+  github: niccokunzmann
+  lat: 52.3863
+  lng: 13.0983

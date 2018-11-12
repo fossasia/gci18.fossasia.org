@@ -65,6 +65,9 @@ body.boxed-layout,
   left: 0;
   right: 0;
 }
+.extra_padding_b{
+  padding-bottom: 30px
+}
 ul {
   list-style: none;
 }
@@ -73,6 +76,9 @@ ul.bullets {
 }
 .main-container {
   clear: both;
+}
+.extra_padding_b{
+  margin-bottom: 32px;
 }
 hr {
   border: none;
