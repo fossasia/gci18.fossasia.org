@@ -1,5 +1,6 @@
 ﻿var items = [
 'Thank you for your contributions!',
+'আপনার অবদানের জন্য আপনাকে ধন্যবাদ!',
 'Merci pour vos contributions!',
 'Kea le leboha ka menehelo ea hau!',
 'आपके योगदानों के लिए धन्यवाद',
