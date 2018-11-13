@@ -1,7 +1,17 @@
 ---
 layout: default-pages
 ---
+<style>
+    #back {
+      background-color: #ea1010;
+      }
+  </style>
 <a id="backtotop_button"></a>
+<section id=back class="row">
+  <div class="container">
+    <h3 align="center" class="uppercase mb0"><font color="white" size="20">Students Projects</font></h3>
+  </div>
+</section>
 
 
 <section class="projects pt48">
@@ -14,11 +24,7 @@ layout: default-pages
     </div>
 
     <!-- Projects -->
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2 text-center">
-          <h1>Students Projects</h1>
-        </div>
-      </div>
+    
     <div class="row masonry masonryFlyIn fadeIn">
       {% for project in site.data.projects %}
       <div class="col-md-3 col-sm-6 masonry-item project fadeIn">
