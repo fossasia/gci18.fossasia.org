@@ -1,0 +1,48 @@
+---
+layout: default-pages
+---
+<a id="backtotop_button"></a>
+
+
+<section class="projects pt48">
+  <div class="container">
+    <!-- Loader -->
+    <div class="row masonry-loader fadeOut">
+      <div class="col-sm-12 text-center">
+        <div class="spinner"></div>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2 text-center">
+          <h1>Students Projects</h1>
+        </div>
+      </div>
+    <div class="row masonry masonryFlyIn fadeIn">
+      {% for project in site.data.projects %}
+      <div class="col-md-3 col-sm-6 masonry-item project fadeIn">
+        <div class="image-tile inner-title hover-reveal text-center">
+          <a href="{{project.link}}" target="_blank">
+            <img src="./img/projects/{{project.img}}" id="img_project">
+            <div class="title">
+              <h4>{{ project.name }}</h4>
+              <h5>{{ project.creator }}</h5>
+              {% if project.github %}
+              <a href="https://github.com/{{project.github}}" class="icon-a" target="_blank">
+                <i class="ti-github"></i>
+              </a>
+              {% endif %}
+            </div>
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+ </div>
+	<div class="row mb80 mb-xs-0">
+		<div align="center">
+			<a class="btn btn-lg" href="./">Back to the main page</a>
+		</div>
+	</div>
+</section>

@@ -1392,10 +1392,17 @@ var mr_cookies = {
 
 
 // Contributors
+
+//Custom Comparator
+function contribution_sort(a, b){
+	return a.contributions > b.contributions;
+}
+
 $(document).ready(function(){
     $.ajax({
         url: "https://api.github.com/repos/fossasia/gci18.fossasia.org/contributors?per_page=100&page=1"
       }).done(function(data){
+      	data.sort(contribution_sort);
         data.forEach(function(contributors){
           var html = '<div class="col-xs-6 col-sm-3 col-md-2 col-lg-2 text-center contributor"> <div class="card hvr-hang single-mentor">';
           html += '<img src="https://github.com/'+contributors.login+'.png?size=120x120" height="120" width="120" style="width: auto">';

@@ -92,6 +92,11 @@
 - name: Aryan Kedare
   github: aryankedare
   image: aryankedare.jpeg
+  
+- name: Gaurang
+  github: gaurang7goel
+  image: Gaurang.png
+  
 
 - name: Reza Juliandri
   github: ppabcd
@@ -113,3 +118,7 @@
 - name: Ryan Chang
   github: ryan10145
   image: rchang.jpg
+
+- name: Rahul Metre
+  github: RahulMetre03
+  image: RahulMetre.png
