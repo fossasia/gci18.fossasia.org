@@ -370,76 +370,28 @@ layout: default
   <div class="container">
     <div class="row mb64 mb-xs-24">
       <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
-        <h3>FOSSASIA | Projects</h3>
+        <h3>FOSSASIA | Projects</h3><br>
+          <a class="btn-filled btn" href="https://github.com/fossasia/">All our projects</a>
+
       </div>
     </div>
+
+    {% for projects in site.data.orgprojects %}
     <div class="row v-align-children extra_padding_b">
       <div class="col-md-7 col-sm-6 text-center mb-xs-24">
-        <img class="cast-shadow" alt="Screenshot" src="img/susi.jpg" />
+        <img class="cast-shadow" alt="Screenshot" src="img/{{projects.img}}" />
       </div>
       <div class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1">
-        <h3>SUSI.AI</h3>
+        <h3>{{projects.title}}</h3>
         <p>
-          Susi is an artificial intelligence system, combining pattern matching,
-          internet data, data flow, and inference engine principles. Through
-          some abilities to reflect, it can remember the user input to produce
-          deductions and personalized feedback. Its purpose is to explore the
-          abilities of an artificial companion and to answer the remaining
-          unanswered questions. The SUSI.AI web chat is a front-end developed
-          for web access of SUSI.
+          {{projects.desc}}
         </p>
-        <a class="btn-filled btn" href="https://github.com/fossasia/chat.susi.ai">Contribute</a>
-        <a class="btn-filled btn" href="https://chat.susi.ai/">Try</a>
+        <a class="btn-filled btn" href="{{projects.github}}">Contribute</a>
+        <a class="btn-filled btn" href="{{projects.try}}">Try</a>
       </div>
     </div>
-    <div class="row v-align-children extra_padding_b">
-      <div class="col-md-7 col-sm-6 text-center mb-xs-24">
-        <img class="cast-shadow" alt="logo" src="img/meil_s.png" />
-      </div>
-      <div class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1">
-        <h3>Meilix</h3>
-        <p>
-          Meilix is a beautiful and customizable Linux build for out of the box
-          features for an Internet Kiosk. You can use the Meilix Generator (Web
-          app) to make a Linux for your own brand/event, also add apps and
-          features you need pre-installed, it will create an ISO Image of your
-          Linux, which you can use as a live boot or install on PCs.
-        </p>
-        <a class="btn-filled btn" href="https://github.com/fossasia/meilix">Contribute</a>
-        <a class="btn-filled btn" href="https://meilix.fossasia.org/">Try</a>
-      </div>
-    </div>
-    <div class="row v-align-children extra_padding_b">
-      <div class="col-md-7 col-sm-6 text-center mb-xs-24">
-        <img class="cast-shadow" alt="logo" src="img/lok_s.png" />
-      </div>
-      <div class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1">
-        <h3>Loklak</h3>
-        <p>
-          loklak is a server application which is able to collect messages from
-          various sources, including twitter. The server contains a search index
-          and a peer-to-peer index sharing interface. All messages are stored in
-          an elasticsearch index.
-        </p>
-        <a class="btn-filled btn" href="https://github.com/loklak/loklak_server">Contribute</a>
-        <a class="btn-filled btn" href="https://loklak-server-api.herokuapp.com">Try</a>
-      </div>
-    </div>
-    <br />
-    <div class="row v-align-children extra_padding_b">
-      <div class="col-md-7 col-sm-6 text-center mb-xs-24">
-        <img class="cast-shadow" alt="Screenshot" src="img/susper.png" />
-      </div>
-      <div class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1">
-        <h3>SUSPER</h3>
-        <p>
-          Susper is a decentralized Search Engine that uses the peer to peer
-          system yacy and Apache Solr to crawl and index search results.
-        </p>
-        <a class="btn-filled btn" href="https://github.com/fossasia/susper.com">Contribute</a>
-        <a class="btn-filled btn" href="https://susper.com">Try</a>
-      </div>
-    </div>
+    {% endfor %}
+    
     <br />
     <!-- end of row -->
   </div>
