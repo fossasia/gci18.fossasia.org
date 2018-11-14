@@ -1,12 +1,8 @@
 ---
-layout: default
+layout: default-pages
 ---
 <a id="backtotop_button"></a>
-<section class="page-title page-title-4 bg-secondary">
-  <div class="container">
-    <h3 class="uppercase mb0">Student Projects</h3>
-  </div>
-</section>
+
 
 <section class="projects pt48">
   <div class="container">
@@ -18,15 +14,25 @@ layout: default
     </div>
 
     <!-- Projects -->
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2 text-center">
+          <h1>Students Projects</h1>
+        </div>
+      </div>
     <div class="row masonry masonryFlyIn fadeIn">
-      {% for item in site.data.projects %}
+      {% for project in site.data.projects %}
       <div class="col-md-3 col-sm-6 masonry-item project fadeIn">
         <div class="image-tile inner-title hover-reveal text-center">
-          <a href="{{item.link}}" target="_blank">
-            <img src="./img/projects/{{item.img}}" id="img_project">
+          <a href="{{project.link}}" target="_blank">
+            <img src="./img/projects/{{project.img}}" id="img_project">
             <div class="title">
-              <h4>{{ item.name }}</h4>
-              <h5>{{ item.creator }}</h5>
+              <h4>{{ project.name }}</h4>
+              <h5>{{ project.creator }}</h5>
+              {% if project.github %}
+              <a href="https://github.com/{{project.github}}" class="icon-a" target="_blank">
+                <i class="ti-github"></i>
+              </a>
+              {% endif %}
             </div>
           </a>
         </div>
