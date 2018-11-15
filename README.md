@@ -57,9 +57,22 @@ This is the repository for Fossasia's website for Google Code-In 2018, we at Fos
 
 ## How to add a mentor to the website:
 - Choose a current GCI mentor and seek permission before adding him/her
+- Ask for a picture or take it from github and set the size to 240x240 px
+- Upload the picture to the img/mentors folder - with a suitable name
+-  Add the mentor to the _data/metors.yml file as shown below
+```yaml
+- name: Mentor's name
+  github: Mentor's github link
+  img: Mentor's img 
+  
+```
+## How to add a New Project to the website
+-  Choose a FOSSASIA project
+
 - Ask for a picture or take it from github and set the size to 1366x566 px
 - Upload the picture to the img folder - with a suitable name
 - Add the mentor to the _data/orgprojects.yml file as shown below
+
 ```yaml
 - title: Project name
   img: Project screenshot
@@ -67,12 +80,6 @@ This is the repository for Fossasia's website for Google Code-In 2018, we at Fos
   github: Project github link
   try: URL where project is hosted 
 ```
-## How to add a New Project to the website
--  Choose a FOSSASIA project
-- Ask for a picture or take it from github and set the size to 240x240 px
-- Upload the picture to the img/mentors folder - with a suitable name
--  Add the mentor to the _data/metors.yml file as shown below
-
 ## How to add a language to the Thank you section:
 - Choose a language(probably one you're familiar with)
 - Pick the phrase "Thank you for your contributions" or "Thank you for contributing" and translate it
