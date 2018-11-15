@@ -1,0 +1,26 @@
+sudo: required
+dist: trusty
+
+language: ruby
+
+script:
+  - bash ./scripts/travis_build.sh
+
+cache:
+  bundler: true
+
+env:
+  matrix:
+    - JOB=BUILD
+    - JOB=TEST
+
+rvm:
+  - 2.3.3
+
+install:
+  - bundle install
+
+branches:
+  only:
+    - master
+    - /./
