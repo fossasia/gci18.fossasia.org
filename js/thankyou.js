@@ -19,7 +19,8 @@
 'Շնորհակալություն, նպաստելու համար',
 'благодарю вас за вклад',
 'உங்கள் பங்களிப்பிற்கு நன்றி',
-'Salamat sa iyong kontribusyon!'
+'Salamat sa iyong kontribusyon!',
+'ਯੋਗਦਾਨ ਪਾਉਣ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ'
 ];
 
 var app = document.getElementById('app');
