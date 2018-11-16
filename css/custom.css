@@ -224,7 +224,7 @@ p.person-name {
 #img_project{
   height: 400px;
 }
-#map{
+#map{ 
   height: 600px;
   max-width: 1000px;
   margin: auto 7.5%;
@@ -242,7 +242,7 @@ p.person-name {
   padding-bottom: 20px;
 }
 .team_member_designation{
-  font-size: 20px;
+  font-size: 13px;
   margin-top: -45px;
   color: #fff;
   filter: brightness(100%) !important;
@@ -302,3 +302,4 @@ p.person-name {
     display: none;
   }
 }
+

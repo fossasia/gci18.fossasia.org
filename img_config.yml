@@ -13,7 +13,3 @@
 - directory: ./img/students/*.*
   width: 240
   height: 240
-
-- directory: ./img/team/*.*
-  width: 240
-  height: 240
