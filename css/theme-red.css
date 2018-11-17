@@ -1101,7 +1101,7 @@ nav.bg-dark .logo-dark {
 }
 .module.widget-handle {
   border-left: 1px solid #ccc;
-  padding: 0 24px;
+  padding: 0 0;
   cursor: pointer;
   position: relative;
   -webkit-touch-callout: none;
