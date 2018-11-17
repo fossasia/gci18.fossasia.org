@@ -12,7 +12,7 @@
 - name: Akshat Garg
   github: akshatnitd
   image: akshatnitd.jpg
-  
+
 - name: Divyanshu N Singh
   github: DNS-404
   image: DNS-404.PNG
@@ -92,7 +92,11 @@
 - name: Isuru Abeywardana
   image: isuruAb.jpg
   github: Isuru Abeywardana
-  
+
 - name: Saurav Vishal
   image: Saurav Vishal.jpg
   github: sauravvishal8797
+
+- name: Mohit Kumar
+  image: mohitkumar.png
+  github: batbrain7
