@@ -22,8 +22,8 @@
 'Salamat sa iyong kontribusyon!',
 'ਯੋਗਦਾਨ ਪਾਉਣ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ',
 'તમારા યોગદાન બદલ આભાર!'
+'Grazie per il tuo contributo!'  
 ];
-
 var app = document.getElementById('app');
 var count = 0;
 var index = 0;
