@@ -21,7 +21,8 @@
 'உங்கள் பங்களிப்பிற்கு நன்றி',
 'Salamat sa iyong kontribusyon!',
 'ਯੋਗਦਾਨ ਪਾਉਣ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ',
-'તમારા યોગદાન બદલ આભાર!'
+'તમારા યોગદાન બદલ આભાર!',
+'Terima kasih atas kontribusi anda!'
 ];
 
 var app = document.getElementById('app');
