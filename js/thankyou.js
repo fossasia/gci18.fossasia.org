@@ -3,6 +3,7 @@
 'আপনার অবদানের জন্য আপনাকে ধন্যবাদ!',
 'Merci pour vos contributions!',
 'Kea le leboha ka menehelo ea hau!',
+'Tänan teid panuse eest!',
 'आपके योगदानों के लिए धन्यवाद',
 'Dziękujemy za Twój wkład!',
 'Danke für Ihre Beiträge!',
@@ -17,7 +18,13 @@
 'आपल्या योगदानाबद्दल धन्यवाद!',
 'Շնորհակալություն, նպաստելու համար',
 'благодарю вас за вклад',
-'உங்கள் பங்களிப்பிற்கு நன்றி'
+'உங்கள் பங்களிப்பிற்கு நன்றி',
+'Salamat sa iyong kontribusyon!',
+'ਯੋਗਦਾਨ ਪਾਉਣ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ',
+'તમારા યોગદાન બદલ આભાર!',
+'Tak for dine bidrag!',
+'Grazie per aver contribuito!',
+'Go raibh maith agat as do chuid ranníocaíochtaí!'
 ];
 
 var app = document.getElementById('app');

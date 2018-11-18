@@ -4,6 +4,8 @@ https://gci18.fossasia.org
 
 This is the repository for Fossasia's website for Google Code-In 2018, we at Fossasia intend to develop it collaboratively during the course of this competition by participating students themselves. Fork the repository before making changes and make sure you read [Fossasia Best Practices](https://blog.fossasia.org/open-source-developer-guide-and-best-practices-at-fossasia/)
 
+Read in **[German](https://github.com/Ritzing/gci18.fossasia.org/blob/master/translations/GermanReadme.md)**
+
 ## Communication
 
 - Please join our **[mailing list](https://groups.google.com/forum/#!forum/fossasia)** to discuss questions regarding the project.
@@ -59,13 +61,27 @@ This is the repository for Fossasia's website for Google Code-In 2018, we at Fos
 - Choose a current GCI mentor and seek permission before adding him/her
 - Ask for a picture or take it from github and set the size to 240x240 px
 - Upload the picture to the img/mentors folder - with a suitable name
-- Add the mentor to the _data/metors.yml file as shown below
+-  Add the mentor to the _data/metors.yml file as shown below
 ```yaml
 - name: Mentor's name
-  github: Mentor's Github username
-  image: Mentor's image
+  github: Mentor's github link
+  img: Mentor's img 
+  
 ```
+## How to add a New Project to the website
+-  Choose a FOSSASIA project
 
+- Ask for a picture or take it from github and set the size to 1366x566 px
+- Upload the picture to the img folder - with a suitable name
+- Add the mentor to the _data/orgprojects.yml file as shown below
+
+```yaml
+- title: Project name
+  img: Project screenshot
+  desc: Project description
+  github: Project github link
+  try: URL where project is hosted 
+```
 ## How to add a language to the Thank you section:
 - Choose a language(probably one you're familiar with)
 - Pick the phrase "Thank you for your contributions" or "Thank you for contributing" and translate it
@@ -112,3 +128,5 @@ This is the repository for Fossasia's website for Google Code-In 2018, we at Fos
      alt="Angel Care"
      width= 100%
      height = 100px />
+
+

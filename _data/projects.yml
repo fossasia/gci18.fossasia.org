@@ -1,20 +1,52 @@
 - name: Nitesh's Portfolio
   img: niteshkumarniranjan.png
-  link: https://niteshkumarniranjan.github.io/
+  link: https://github.com/niteshkumarniranjan/niteshkumarniranjan.github.io/
   creator: Nitesh Kumar Niranjan
+  email: niteshkumarniranjan@gmail.com
+  github: niteshkumarniranjan 
+  info: My name is Nitesh Kumar Niranjan. I am a 16-year-old designer, developer and thinker based in India . I design and build full-stack-web applications. 
+  
+- name: Help Our Mother
+  img: sahilsahaproject.png
+  link: http://helpourmother.dx.am/
+  creator: Sahil Saha
+  email: helpourmother1103@gmail.com 
+  github: sahilsaha7773
+  info: Organization which will prevent pollution in India. It will make the people united to fight against the devil of pollution.
 
 - name: Spark
   img: spark.png
-  link: https://github.com/IgniteInYou/spark-website-2018
+  link: https://github.com/IgniteInYou/spark-website-2018/
   creator: Saarthak Chaturvedi
+  email: saarthakchats05@gmail.com
+  github: saarthakchats
+  info: Spark is a plethora of innovation and excitement. It is the pre-eminent platform to express, explore and excel.
   
 - name: Tick
   img: Tick..png
-  link: https://github.com/pythongiant/tick
+  link: https://github.com/pythongiant/tick/
   creator: Srihari Unnikrishnan
+  email: srihari.unnikrishnan@gmail.com
+  github: pythongiant
+  info: Tick is a Version Control System for Linux and is an alternative to git and subversion . 
+  
+  
 
 - name: AI based systems around us
   img: ai.jpg
-  link: https://stedirisuriya.github.io/AI-based-systems-around-us/
+  link: https://github.com/stedirisuriya/AI-based-systems-around-us/
   creator: Supun Tharinda Edirisuriya
+  email: supunedirisuriya2002@gmail.com
   github: STEdirisuriya
+  info: Artificial intelligence (AI) is intelligence demonstrated by machines, in contrast to the natural intelligence displayed by humans.
+  
+
+- name: FriendlyChat
+  img: friendlychat.png
+  link: https://github.com/KSNINJA/FriendlyChat-Lv.2/
+  creator: Kartik Singhal
+  email: kartiksinghal122@gmail.com
+  github: KSNINJA
+  info: Friendlychat is chat application for android devices that provides its users to create chat rooms using Firebase . 
+  
+
