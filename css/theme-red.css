@@ -603,6 +603,7 @@ ul.lead li {
 section,
 footer {
   padding: 96px 0;
+  padding-bottom: 0;
   position: relative;
   overflow: hidden;
 }
