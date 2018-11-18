@@ -177,7 +177,6 @@ background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%
   margin-right: 12px;
 }
 .spread-children-large * {
-  display: inline-block;
   margin-left: 24px;
   margin-right: 24px;
 }
