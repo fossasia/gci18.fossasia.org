@@ -111,7 +111,7 @@ p.person-name {
   font-size: calc(2rem + 1vw);
   padding: 80px 4.5%;
   text-align: center;
-  background-color: red;
+  background: linear-gradient(90deg, rgba(227,29,59,1) 0%, rgba(41,41,41,1) 93%);
   color: rgb(255, 255, 255);
   line-height: 1.5;
   height: 195px;
