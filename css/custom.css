@@ -115,7 +115,7 @@ p.person-name {
   color: rgb(255, 255, 255);
   line-height: 1.5;
   height: 195px;
-  text-shadow: 2px 2px #47b475;
+  text-shadow: 2px 2px #000000;
 }
 
 .mentor-img {
