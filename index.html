@@ -437,6 +437,7 @@ $(document).ready(function(){
     <div class="row masonry masonryFlyIn">
       <div class="col-md-12 col-sm-12 masonry-item mb30">
         <div class="col-sm-12 text-center spread-children-large">
+          {% for video in site.data.videos %}
             <div class="card single-mentor" id="video">
               <iframe width="150" height="150" src="https://www.youtube.com/embed/qF9tV_nEUb4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               <h4 class="person-name">
@@ -445,6 +446,7 @@ $(document).ready(function(){
               <br />
               <h5 class="person-name">{{ video.user }}</h5>
             </div>
+          {% endfor %}
         </div>
       </div>
     </div>
