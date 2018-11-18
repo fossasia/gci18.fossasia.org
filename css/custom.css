@@ -380,3 +380,25 @@ p.person-name {
   width:100% !important;
   display: inline;
 }
+.goog-te-gadget-simple{
+  border-left: 0px !important;
+  border-right: 0px !important;
+  border-top: 0px !important;
+  border-bottom: 0px !important;
+}
+.goog-te-menu-value{
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+.goog-te-menu-value span{
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #292929 !important;
+  max-width: 100%;
+  white-space: normal;
+}
+.goog-te-gadget-icon{
+  display: none;
+}
