@@ -23,7 +23,8 @@
 'ਯੋਗਦਾਨ ਪਾਉਣ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ',
 'તમારા યોગદાન બદલ આભાર!',
 'Tak for dine bidrag!',
-'Grazie per aver contribuito!'  
+'Grazie per aver contribuito!',
+'Go raibh maith agat as do chuid ranníocaíochtaí!'
 ];
 
 var app = document.getElementById('app');
