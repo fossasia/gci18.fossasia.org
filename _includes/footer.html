@@ -121,6 +121,11 @@
 <script src="js/scripts.js"></script>
 <script  src="js/thankyou.js"></script>
 <script  src="js/backtotop.js"></script>
+<script>
+  $(document).ready(function(){
+      $('[data-toggle="popover"]').popover(); 
+  });
+</script>
 
 {% for student in site.data.students %}
 {% if student.lat and student.lng %}

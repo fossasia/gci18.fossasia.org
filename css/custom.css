@@ -222,9 +222,9 @@ p.person-name {
   visibility: visible;
 }
 #img_project{
-  height: 400px;
+  display: none;
 }
-#map{
+#map{ 
   height: 600px;
   max-width: 1000px;
   margin: auto 7.5%;
@@ -242,7 +242,7 @@ p.person-name {
   padding-bottom: 20px;
 }
 .team_member_designation{
-  font-size: 20px;
+  font-size: 13px;
   margin-top: -45px;
   color: #fff;
   filter: brightness(100%) !important;
@@ -301,4 +301,82 @@ p.person-name {
   #memory5,#memory6,#memory11,#memory12,#memory17,#memory18{
     display: none;
   }
+}
+
+.student-project{
+  padding: 16px;
+  align-content: stretch;
+  align-items: stretch;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow:  0 1px 2px 0 rgba(60,64,67,0.3);
+  width: 295px;
+  height: 260px;
+  text-align: left;
+  position: relative;
+}
+
+.project_btn{
+  color: #fff; 
+  border: none;
+  width: 50% !important;
+  float: left; 
+}
+.project_btn:visited{
+  color: #fff !important; 
+}
+.student_project_name{
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #000 !important; 
+  display: inline;
+}
+.student_project_info{
+  font-size: 14px; 
+  color: rgba(0, 0, 0, 0.54) !important;
+  display: inline;
+}
+.student_project_footer{
+  position: absolute;
+  bottom: 10px;
+  float: left;
+  width: 90%;
+}
+.student_project_hr{
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+}
+.student_project_footer_container{
+  display: block;
+  height: 30px;
+}
+.popover{
+  margin
+}
+@media screen and (max-width: 650px)
+{
+  .student-project{
+    width: 100% !important;
+  }
+}
+#skewed_bg{
+  -ms-transform: skewX(20deg); /* IE 9 */
+  -webkit-transform: skewX(20deg); /* Safari */
+  transform: skewY(5deg); /* Standard syntax */
+  background-color: #e31d3b;
+  width:100%;
+  padding:400px;
+  opacity: 0.5;
+  position: fixed;
+  z-index: -2;
+  width: 100%;
+  margin-top: 270px; 
+}
+.student-project-creator-img{
+  height: 30px;
+}
+.student-project-btn{
+  width:100% !important;
+  display: inline;
 }

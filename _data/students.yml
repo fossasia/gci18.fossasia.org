@@ -14,10 +14,6 @@
   github: vishalx360
   image: vishalx360.jpeg
   twitter: vishalx360
-
-  - name: Mochammad Rafi
-  github: kol4k
-  image: rafi.jpg
   
 - name: Sahil Saha
   github: sahilsaha7773
@@ -138,3 +134,7 @@
 - name: Rahul Arora
   github: rahulaarora
   image: Rahul Arora.jpg 
+
+- name: Mochammad Rafi
+  github: kol4k
+  image: rafi.jpg
