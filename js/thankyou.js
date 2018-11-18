@@ -22,7 +22,9 @@
 'Salamat sa iyong kontribusyon!',
 'ਯੋਗਦਾਨ ਪਾਉਣ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ',
 'તમારા યોગદાન બદલ આભાર!',
-'Terima kasih atas kontribusi anda!'
+'Terima kasih atas kontribusi anda!',
+'Tak for dine bidrag!',
+'Grazie per aver contribuito!'
 ];
 
 var app = document.getElementById('app');

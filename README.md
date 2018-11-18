@@ -4,6 +4,8 @@ https://gci18.fossasia.org
 
 This is the repository for Fossasia's website for Google Code-In 2018, we at Fossasia intend to develop it collaboratively during the course of this competition by participating students themselves. Fork the repository before making changes and make sure you read [Fossasia Best Practices](https://blog.fossasia.org/open-source-developer-guide-and-best-practices-at-fossasia/)
 
+Read in **[German](https://github.com/Ritzing/gci18.fossasia.org/blob/master/translations/GermanReadme.md)**
+
 ## Communication
 
 - Please join our **[mailing list](https://groups.google.com/forum/#!forum/fossasia)** to discuss questions regarding the project.
@@ -126,3 +128,5 @@ This is the repository for Fossasia's website for Google Code-In 2018, we at Fos
      alt="Angel Care"
      width= 100%
      height = 100px />
+
+
