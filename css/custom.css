@@ -111,11 +111,10 @@ p.person-name {
   font-size: calc(2rem + 1vw);
   padding: 80px 4.5%;
   text-align: center;
-  background-image: linear-gradient(62deg, #47b475 0%, #e0c3fc 100%);
   color: rgb(255, 255, 255);
   line-height: 1.5;
   height: 195px;
-  text-shadow: 2px 2px #47b475;
+  text-shadow: 2px 2px #ff758c;
 }
 
 .mentor-img {
