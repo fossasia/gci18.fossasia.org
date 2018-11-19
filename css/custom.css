@@ -115,6 +115,48 @@ p.person-name {
   line-height: 1.5;
   height: 195px;
   text-shadow: 2px 2px #ff758c;
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
 }
 
 .mentor-img {
@@ -151,7 +193,8 @@ p.person-name {
   color: rgb(88, 88, 88);
 }
  .view-profile {
-  background-color: #3897f0;
+  background-color: #e31d3b;
+  text-transform: uppercase;
   color: white;
   padding: 5px 12px;
   border-radius: 3px;
@@ -159,8 +202,7 @@ p.person-name {
   bottom: 5%;
   right: 10%;
 }
- .view-profile:hover {
-  background-color: #083d72;
+.view-profile:hover {
   color: white;
 }
  .location-link-container {
@@ -302,64 +344,68 @@ p.person-name {
   }
 }
 
-.student-project{
-  padding: 16px;
-  align-content: stretch;
-  align-items: stretch;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow:  0 1px 2px 0 rgba(60,64,67,0.3);
-  width: 295px;
-  height: 260px;
-  text-align: left;
-  position: relative;
-}
-
-.project_btn{
+/* Student Projects*/
+.project-btn{
   color: #fff; 
   border: none;
   width: 50% !important;
   float: left; 
+  margin-bottom: 14px;
 }
-.project_btn:visited{
+
+.project-btn:visited{
   color: #fff !important; 
 }
-.student_project_name{
+
+
+@media screen and (max-width: 650px)
+{
+  .flip-card {
+    width: 100% !important;
+  }
+  .flip-card-inner {
+    width: 100% !important;
+  }
+}
+
+.student-project-img{
+  height: 200px;
+  width: 120px;
+  display: inline-block;
+}
+
+.student-project-name{
   font-weight: bold;
-  margin-bottom: 5px;
   font-size: 20px;
   color: #000 !important; 
   display: inline;
 }
-.student_project_info{
+
+.student-project-info{
   font-size: 14px; 
   color: rgba(0, 0, 0, 0.54) !important;
-  display: inline;
-}
-.student_project_footer{
-  position: absolute;
-  bottom: 10px;
-  float: left;
-  width: 90%;
-}
-.student_project_hr{
-  margin-bottom: 0px;
+  display: inline-block;
   padding-bottom: 10px;
 }
-.student_project_footer_container{
+
+.student-project-footer{
+  position: absolute;
+  bottom: 25px;
+  float: left;
+  width: 100%;
+}
+
+.student-project-hr{
+  margin-bottom: 0px;
+  padding-bottom: 7px;
+}
+
+.student-project-footer-container{
   display: block;
   height: 30px;
 }
-.popover{
-  margin
-}
-@media screen and (max-width: 650px)
-{
-  .student-project{
-    width: 100% !important;
-  }
-}
-#skewed_bg{
+
+#skewed-bg{
   -ms-transform: skewX(20deg); /* IE 9 */
   -webkit-transform: skewX(20deg); /* Safari */
   transform: skewY(5deg); /* Standard syntax */
@@ -372,10 +418,98 @@ p.person-name {
   width: 100%;
   margin-top: 270px; 
 }
+
 .student-project-creator-img{
   height: 30px;
+  float: left;
+  margin-left: 20px;
 }
+
 .student-project-btn{
-  width:100% !important;
   display: inline;
+}
+.flip-card {
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  width: 295px;
+  height: 260px;
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow:  0 1px 2px 0 rgba(60,64,67,0.3);
+  margin: auto;
+}
+.flip-card-inner-flip {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden !important;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  transform: rotateY(180deg);
+  background-color: #fff;
+  height: 240px;
+}
+/*Activities section*/
+.latest-issues {
+  margin-top: 50px;
+}
+.latest-issues h2 {
+  background: transparent;
+  width: 260px;
+  margin-bottom: 10px;
+}
+.issue {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #bbb;
+  margin-bottom: 10px;
+}
+.issue:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+.issues-wrapper span {
+  margin-right: 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.issues-wrapper a {
+  color: #e31d3b;
+}
+.issues-wrapper .user {
+  position: absolute;
+  margin-top: -48px;
+  margin-left: 74px;
+}
+.issues-wrapper .right-side {
+  float: right;
+  text-align: right;
+  margin-top: -55px;
+}
+.issues-wrapper i {
+  margin-right: 5px;
+}
+.leaflet-bottom{
+  z-index: 500 !important;
 }

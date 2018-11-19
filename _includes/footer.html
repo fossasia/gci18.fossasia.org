@@ -51,53 +51,73 @@
       <div class="col-sm-6 text-right">
         <ul class="list-inline social-list">
           <li>
-            <a href="https://fossasia.org/" target="_blank">
-              <i class="ti-world"></i>
+            <a href="https://fossasia-slack.herokuapp.com/" target="_blank" rel="noopener">
+              <i class="fa-slack ti-slack" style="font-family: FontAwesome"></i>
             </a>
           </li>
           <li>
-            <a href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ" target="_blank">
-              <i class="ti-youtube"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/fossasia/" target="_blank">
-              <i class="ti-instagram"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/fossasia" target="_blank">
-              <i class="ti-twitter-alt"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/fossasia/" target="_blank">
-              <i class="ti-facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://codein.withgoogle.com/organizations/fossasia/" target="_blank">
-              <i class="ti-settings"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/fossasia" target="_blank">
+            <a href="https://github.com/fossasia" target="_blank" rel="noopener">
               <i class="ti-github"></i>
             </a>
           </li>
           <li>
-            <a href="https://flickr.com/photos/fossasia" target="_blank">
+            <a href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ" target="_blank" rel="noopener">
+              <i class="ti-youtube"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://flickr.com/photos/fossasia" target="_blank" rel="noopener">
               <i class="ti-flickr"></i>
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/groups/FOSSASIA-3762811" target="_blank">
+            <a href="https://www.facebook.com/fossasia/" target="_blank" rel="noopener">
+              <i class="ti-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/fossasia" target="_blank" rel="noopener">
+              <i class="ti-twitter-alt"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/fossasia/" target="_blank" rel="noopener">
+              <i class="ti-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/groups/FOSSASIA-3762811" target="_blank" rel="noopener">
               <i class="ti-linkedin"></i>
             </a>
           </li>
           <li>
-            <a href="https://plus.google.com/108920596016838318216" target="_blank">
+            <a href="https://plus.google.com/108920596016838318216" target="_blank" rel="noopener">
               <i class="ti-google"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://codein.withgoogle.com/organizations/fossasia/" target="_blank" rel="noopener">
+              <i class="ti-settings"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://gitter.im/fossasia/fossasia" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-gitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://fossasia-slack.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-slack"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.weibo.com/u/5784920339" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-weibo"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://vk.com/fossasia" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-vk"></i>
             </a>
           </li>
         </ul>
@@ -121,11 +141,7 @@
 <script src="js/scripts.js"></script>
 <script  src="js/thankyou.js"></script>
 <script  src="js/backtotop.js"></script>
-<script>
-  $(document).ready(function(){
-      $('[data-toggle="popover"]').popover(); 
-  });
-</script>
+<script  src="js/custom.js"></script>
 
 {% for student in site.data.students %}
 {% if student.lat and student.lng %}

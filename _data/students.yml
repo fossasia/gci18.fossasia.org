@@ -28,6 +28,10 @@
   twitter: Sid_Dev_
   image: sid.png
 
+- name: Kua Le Yi
+  github: kuaLeYi
+  image: dxa_kly.png
+
 - name: Kartik Singhal
   github: KSNINJA
   image: student_nick.png
@@ -54,6 +58,8 @@
   github: niteshkumarniranjan
   image: niteshkumarniranjan.png
   twitter: niranjannitesh
+  lat: 24.191351
+  lng: 86.299637
 
 - name: Arjun Pandey
   github: arjunpandey2003
@@ -134,6 +140,10 @@
 - name: Rahul Arora
   github: rahulaarora
   image: Rahul Arora.jpg 
+
+- name: Tushar Kumar
+  github: awesometushar000
+  image: tushar.png
   
 - name: coco
   github: cocox33x
@@ -142,3 +152,11 @@
 - name: Mochammad Rafi
   github: kol4k
   image: rafi.jpeg
+  
+- name: Navan Chauhan
+  github: navanchauhan
+  image: n3v0n.png
+
+- name: Yash Garg
+  github: Yash-Garg
+  image: yashg.png

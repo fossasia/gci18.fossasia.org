@@ -2,7 +2,7 @@
 FOSSASIA Google Code-In Website 2018
 https://gci18.fossasia.org
 
-This is the repository for Fossasia's website for Google Code-In 2018, we at Fossasia intend to develop it collaboratively during the course of this competition by participating students themselves. Fork the repository before making changes and make sure you read [Fossasia Best Practices](https://blog.fossasia.org/open-source-developer-guide-and-best-practices-at-fossasia/)
+This is the repository for FOSSASIA's website for Google Code-In 2018, we at FOSSASIA intend to develop it collaboratively during the course of this competition by participating students themselves. Fork the repository before making changes and make sure you read [FOSSASIA Best Practices](https://blog.fossasia.org/open-source-developer-guide-and-best-practices-at-fossasia/)
 
 Read in **[German](https://github.com/Ritzing/gci18.fossasia.org/blob/master/translations/GermanReadme.md)**
 
@@ -73,7 +73,7 @@ Read in **[German](https://github.com/Ritzing/gci18.fossasia.org/blob/master/tra
 
 - Ask for a picture or take it from github and set the size to 1366x566 px
 - Upload the picture to the img folder - with a suitable name
-- Add the mentor to the _data/orgprojects.yml file as shown below
+- Add the project to the _data/orgprojects.yml file as shown below
 
 ```yaml
 - title: Project name
@@ -128,5 +128,4 @@ Read in **[German](https://github.com/Ritzing/gci18.fossasia.org/blob/master/tra
      alt="Angel Care"
      width= 100%
      height = 100px />
-
 
