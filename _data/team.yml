@@ -41,7 +41,7 @@
 - name: Daniel Blueman
   designation: Infrastructure Manager
   linkedin: danielblueman
-  image: danielblueman.png
+  image: danielblueman.jpeg
 
 - name: Noah Chen
   designation: FOSSASIA Taiwan
@@ -60,20 +60,20 @@
   designation: Program and Event Manager
   twitter: edenyay
   linkedin: dangphuchau
-  image: EdenDang.png
+  image: EdenDang.jpeg
 
 - name: Darrel Chua
   designation: Business Development
   twitter: darrelchua
   linkedin: darrelchua
-  image: DarrelChua.png
+  image: DarrelChua.jpeg
 
 - name: Christopher Adams
   designation: Blockchain
   twitter: christopheradam
-  image: christopheradam.png
+  image: christopheradam.jpeg
 
 - name: Philip Paeps
   designation: The FreeBSD Foundation
   github: ppaeps
-  image: PhilipPaeps.png
+  image: PhilipPaeps.jpeg
