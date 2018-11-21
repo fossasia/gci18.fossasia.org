@@ -24,7 +24,8 @@
 'તમારા યોગદાન બદલ આભાર!',
 'Tak for dine bidrag!',
 'Grazie per aver contribuito!',
-'Go raibh maith agat as do chuid ranníocaíochtaí!'
+'Go raibh maith agat as do chuid ranníocaíochtaí!',
+'Terimakasih atas kontribusi anda!'
 ];
 
 var app = document.getElementById('app');
