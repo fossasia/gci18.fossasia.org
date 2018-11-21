@@ -73,7 +73,7 @@ Read in **[German](https://github.com/Ritzing/gci18.fossasia.org/blob/master/tra
 
 - Ask for a picture or take it from github and set the size to 1366x566 px
 - Upload the picture to the img folder - with a suitable name
-- Add the mentor to the _data/orgprojects.yml file as shown below
+- Add the project to the _data/orgprojects.yml file as shown below
 
 ```yaml
 - title: Project name
