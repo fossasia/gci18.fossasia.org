@@ -36,4 +36,15 @@
           system yacy and Apache Solr to crawl and index search results.
 
   github: https://github.com/fossasia/susper.com
-  try: https://susper.com             
+  try: https://susper.com      
+
+- title: PSlab
+  img: pslab.png
+  desc:   PSLab is a tiny pocket science lab that provides an array of test and 
+          measurement instruments for doing science and engineering experiments.
+          It can function like an oscilloscope, waveform generator, frequency 
+          counter, programmable voltage and current source and also as a data logger.   
+  
+github: https://github.com/fossasia/pslab-hardware
+  try: https://pslab.io/
+       
