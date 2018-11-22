@@ -1437,3 +1437,46 @@ $(document).ready(function(){
         });
       });
 });
+//Latest activities
+$(function(){
+    $.ajax({
+        url: "https://api.github.com/repos/fossasia/gci18.fossasia.org/issues?state=open"
+    }).done(function(data){
+        var index = 0;
+        data.forEach(function(issue){
+            if (index > 6) {
+                return false;
+            }
+            index++;
+            var html = "<div class='issue'>Issue - <span>#"+issue.number+"</span>";
+            html += "<a href='"+issue.html_url+"' target='_blank'>"+issue.title+"</a>";
+            html += "<p>Opened by </p>";
+            html += "<a href='"+issue.user.html_url+"' target='_blank' class='user'>";
+            html += issue.user.login+"</a><div class='right-side'>";
+            html += "<a href='"+issue.html_url+"' target='_blank'>";
+            html += "<i class='fa fa-eye'></i>See";
+            html += "</a></div></div>";
+            $(".issues-wrapper").append(html);
+        });
+    });
+    $.ajax({
+        url: "https://api.github.com/repos/fossasia/gci18.fossasia.org/pulls?state=merged"
+    }).done(function(data){
+        var index = 0;
+        data.forEach(function(pull){
+            if (index > 6) {
+                return false;
+            }
+            index++;
+            var html = "<div class='issue'>Pull Request - <span>#"+pull.number+"</span>";
+            html += "<a href='"+pull.html_url+"' target='_blank'>"+pull.title+"</a>";
+            html += "<p>Opened by </p>";
+            html += "<a href='"+pull.user.html_url+"' target='_blank' class='user'>";
+            html += pull.user.login+"</a><div class='right-side'>";
+            html += "<a href='"+pull.html_url+"' target='_blank'>";
+            html += "<i class='fa fa-eye'></i>See";
+            html += "</a></div></div>";
+            $(".issues-wrapper").append(html);
+        });
+    });
+});
