@@ -202,6 +202,9 @@ p.person-name {
   bottom: 5%;
   right: 10%;
 }
+.view-profile:hover {
+  color: white;
+}
  .location-link-container {
   position: absolute;
   bottom: 20px;
