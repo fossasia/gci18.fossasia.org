@@ -15,5 +15,5 @@
   height: 240
 
 - directory: ./img/team/*.*
-  width: 300
-  height: 300
+  width: 240
+  height: 240
