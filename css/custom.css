@@ -229,7 +229,7 @@ p.person-name {
 
 #backtotop_button {
   display: inline-block;
-  background-color: #1a86cc;
+  background-color: #e31d3b;
   width: 50px;
   height: 50px;
   text-align: center;
@@ -437,4 +437,45 @@ p.person-name {
 
 .student-project-btn{
   display: inline;
+}
+
+/*Activities section*/
+.latest-issues {
+  margin-top: 50px;
+}
+.latest-issues h2 {
+  background: transparent;
+  width: 260px;
+  margin-bottom: 10px;
+}
+.issue {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #bbb;
+  margin-bottom: 10px;
+}
+.issue:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+.issues-wrapper span {
+  margin-right: 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.issues-wrapper a {
+  color: #e31d3b;
+}
+.issues-wrapper .user {
+  position: absolute;
+  margin-top: -48px;
+  margin-left: 74px;
+}
+.issues-wrapper .right-side {
+  float: right;
+  text-align: right;
+  margin-top: -55px;
+}
+.issues-wrapper i {
+  margin-right: 5px;
 }
