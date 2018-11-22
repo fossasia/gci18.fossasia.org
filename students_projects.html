@@ -23,29 +23,33 @@ layout: default-pages
         </div>
         <div class="row masonry masonryFlyIn fadeIn text-center">
             {% for project in site.data.projects %}
-            <div class="col-md-4 col-sm-6 masonry-item fadeIn text-center"  >
-                <a href="#" class="student-project" data-toggle="popover" data-placement="bottom"  data-trigger="hover click" data-html="true" data-container="body" data-content=
-                    "<img class='student-project-img' src='./img/projects/{{ project.img }}'>">
-                    <div>
-                        <div class="student-project-name">{{ project.name }}</div>
-                        <br>
-                        <div class="student-project-info" >{{ project.info }}</div>
-                    </div>
-                    <div class="student-project-footer">
-                        <div class="btn-group student-project-btn">
-                            <button onclick="location.href='{{project.link}}'" type="button" class="btn-md btn-primary project-btn"> Source </button>
-                            <button onclick="location.href='mailto:{{project.email}}'" type="button" class="btn-md btn-success project-btn"> Review </button>            
-                        </div>
-                        <div style="width: 90%;">
-                        <hr class="student-project-hr">
-                            <div class="student-project-footer-container">
-                                <img src="https://github.com/{{project.github}}.png" class="img-circle student-project-creator-img">
-                                <div class="pull-right">{{project.creator}}</div>
+            <div class="col-md-4 col-sm-6 masonry-item fadeIn text-center flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <div>
+                         <div class="flip-toggle-region">
+                            <div class="student-project-name">{{ project.name }}</div>
+                            <div class="student-project-info" >{{ project.info }}</div>
+                         </div>
+                         <div class="student-project-footer">
+                            <div class="btn-group student-project-btn">
+                               <button onclick="location.href='{{project.link}}'" type="button" class="btn-md btn-primary project-btn"> Source </button>
+                               <button onclick="location.href='mailto:{{project.email}}'" type="button" class="btn-md btn-success project-btn"> Review </button>            
                             </div>
-                        </div>
-                    </div>
-                </a> 
-
+                            <div>
+                               <hr class="student-project-hr">
+                               <div class="student-project-footer-container">
+                                  <img src="https://github.com/{{project.github}}.png" class="img-circle student-project-creator-img">
+                                  <a href="https://github.com//{{project.github}}" target="_blank" class="pull-right">{{project.creator}}</a>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                   <div class="flip-card-back">
+                       <img class='student-project-img' src='./img/projects/{{ project.img }}' >
+                   </div>
+                </div>
             </div>
             {% endfor %}
         </div>
@@ -58,5 +62,3 @@ layout: default-pages
         </div>
     </div>
 </section>
-
-

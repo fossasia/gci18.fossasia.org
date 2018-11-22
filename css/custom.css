@@ -116,47 +116,47 @@ p.person-name {
   height: 195px;
   text-shadow: 2px 2px #ff758c;
   background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-	background-size: 400% 400%;
-	-webkit-animation: Gradient 15s ease infinite;
-	-moz-animation: Gradient 15s ease infinite;
-	animation: Gradient 15s ease infinite;
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
 
 }
 
 @-webkit-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
 }
 
 @-moz-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
 }
 
 @keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
 }
 
 .mentor-img {
@@ -344,18 +344,6 @@ p.person-name {
   }
 }
 
-.student-project{
-  padding: 16px;
-  align-content: stretch;
-  align-items: stretch;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow:  0 1px 2px 0 rgba(60,64,67,0.3);
-  width: 295px;
-  height: 260px;
-  text-align: left;
-  position: relative;
-}
 
 .project-btn{
   color: #fff; 
@@ -369,9 +357,6 @@ p.person-name {
   color: #fff !important; 
 }
 
-.student-project{
-  display: inline-block;
-}
 
 @media screen and (max-width: 650px)
 {
@@ -402,14 +387,14 @@ p.person-name {
 
 .student-project-footer{
   position: absolute;
-  bottom: 10px;
+  bottom: 25px;
   float: left;
   width: 90%;
 }
 
 .student-project-hr{
   margin-bottom: 0px;
-  padding-bottom: 10px;
+  padding-bottom: 7px;
 }
 
 .student-project-footer-container{
@@ -433,8 +418,50 @@ p.person-name {
 
 .student-project-creator-img{
   height: 30px;
+  float: left;
+  margin-left: 20px;
 }
 
 .student-project-btn{
   display: inline;
+}
+.flip-card {
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  width: 295px;
+  height: 260px;
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow:  0 1px 2px 0 rgba(60,64,67,0.3);
+}
+.flip-card-inner-flip {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  transform: rotateY(180deg);
+  background-color: #fff;
+  height: 240px;
 }
