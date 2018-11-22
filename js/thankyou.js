@@ -26,7 +26,8 @@
 'Grazie per aver contribuito!',
 'Go raibh maith agat as do chuid ranníocaíochtaí!',
 'Terimakasih atas kontribusi anda!',
-'Köszönjük a hozzájárulást!'
+'Köszönjük a hozzájárulást!',
+'Takk fyrir þitt framlag!'
 ];
 
 var app = document.getElementById('app');
