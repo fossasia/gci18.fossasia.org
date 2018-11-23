@@ -4,30 +4,30 @@ layout: default
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+  $(document).ready(function () {
+    // Add smooth scrolling to all links
+    $("a").on('click', function (event) {
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
 
-      // Store hash
-      var hash = this.hash;
+        // Store hash
+        var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 2000, function(){
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 2000, function () {
 
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
   });
-});
 </script>
 <a id="backtotop_button"></a>
 <section class="cover fullscreen image-slider slider-all-controls controls-inside parallax">
@@ -103,7 +103,7 @@ $(document).ready(function(){
     </li>
     <li class="overlay image-bg">
       <div class="background-image-holder">
-        <img alt="image" class="background-image" src="img/home20.webp" />
+        <img alt="image" class="background-image" src="img/home20.webp" onerror="this.onerror=null; this.src='img/home20.jpg'" />
       </div>
       <div class="container v-align-transform">
         <div class="row">
@@ -266,96 +266,96 @@ $(document).ready(function(){
     <div class="row">
       <div class="col-xs-4 col-sm-3 col-md-2 spacing-0">
         <a href="img/PastMemories/1.webp" data-lightbox="Gallery">
-          <img id="memory1" class="memories_img img-fluid" src="img/PastMemories/1.webp">
+          <img id="memory1" class="memories_img img-fluid" src="img/PastMemories/1.webp" onerror="this.onerror=null; this.src='img/PastMemories/1.jpg'">
         </a>
       </div>
       <div class="col-xs-4 col-sm-3 col-md-2 spacing-0">
         <a href="img/PastMemories/2.webp" data-lightbox="Gallery">
-          <img id="memory2" class="memories_img img-fluid" src="img/PastMemories/2.webp">
+          <img id="memory2" class="memories_img img-fluid" src="img/PastMemories/2.webp" onerror="this.onerror=null; this.src='img/PastMemories/2.jpg'">
         </a>
       </div>
       <div class="col-xs-4 col-sm-3 col-md-2 spacing-0">
         <a href="img/PastMemories/3.webp" data-lightbox="Gallery">
-          <img id="memory3" class="memories_img img-fluid" src="img/PastMemories/3.webp">
+          <img id="memory3" class="memories_img img-fluid" src="img/PastMemories/3.webp" onerror="this.onerror=null; this.src='img/PastMemories/3.jpg'">
         </a>
       </div>
       <div class="col-sm-3 col-md-2 spacing-0">
         <a href="img/PastMemories/4.webp" data-lightbox="Gallery">
-          <img id="memory4" class="memories_img img-fluid" src="img/PastMemories/4.webp">
+          <img id="memory4" class="memories_img img-fluid" src="img/PastMemories/4.webp" onerror="this.onerror=null; this.src='img/PastMemories/4.jpg'">
         </a>
       </div>
       <div class="col-md-2 spacing-0">
         <a href="img/PastMemories/5.webp" data-lightbox="Gallery">
-          <img id="memory5" class="memories_img img-fluid" src="img/PastMemories/5.webp">
+          <img id="memory5" class="memories_img img-fluid" src="img/PastMemories/5.webp" onerror="this.onerror=null; this.src='img/PastMemories/5.jpg'">
         </a>
       </div>
       <div class="col-md-2 spacing-0">
         <a href="img/PastMemories/6.webp" data-lightbox="Gallery">
-          <img id="memory6" class="memories_img img-fluid" src="img/PastMemories/6.webp">
+          <img id="memory6" class="memories_img img-fluid" src="img/PastMemories/6.webp" onerror="this.onerror=null; this.src='img/PastMemories/6.jpg'">
         </a>
       </div>
     </div>
     <div class="row">
       <div class="col-xs-4 col-sm-3 col-md-2 spacing-0">
         <a href="img/PastMemories/7.webp" data-lightbox="Gallery">
-          <img id="memory7" class="memories_img img-fluid" src="img/PastMemories/7.webp">
+          <img id="memory7" class="memories_img img-fluid" src="img/PastMemories/7.webp" onerror="this.onerror=null; this.src='img/PastMemories/7.jpg'">
         </a>
       </div>
       <div class="col-xs-4 col-sm-3 col-md-2 spacing-0">
         <a href="img/PastMemories/8.webp" data-lightbox="Gallery">
-          <img id="memory8" class="memories_img" src="img/PastMemories/8.webp">
+          <img id="memory8" class="memories_img" src="img/PastMemories/8.webp" onerror="this.onerror=null; this.src='img/PastMemories/8.jpg'">
         </a>
       </div>
       <div class="col-xs-4 col-sm-3 col-md-2 spacing-0">
         <a href="img/PastMemories/9.webp" data-lightbox="Gallery">
-          <img id="memory9" class="memories_img" src="img/PastMemories/9.webp">
+          <img id="memory9" class="memories_img" src="img/PastMemories/9.webp" onerror="this.onerror=null; this.src='img/PastMemories/9.jpg'">
         </a>
       </div>
       <div class="col-sm-3 col-md-2 spacing-0">
         <a href="img/PastMemories/10.webp" data-lightbox="Gallery">
-          <img id="memory10" class="memories_img" src="img/PastMemories/10.webp">
+          <img id="memory10" class="memories_img" src="img/PastMemories/10.webp" onerror="this.onerror=null; this.src='img/PastMemories/10.jpg'">
         </a>
       </div>
       <div class="col-md-2 spacing-0">
         <a href="img/PastMemories/11.webp" data-lightbox="Gallery">
-          <img id="memory11" class="memories_img" src="img/PastMemories/11.webp">
+          <img id="memory11" class="memories_img" src="img/PastMemories/11.webp" onerror="this.onerror=null; this.src='img/PastMemories/11.jpg'">
         </a>
       </div>
       <div class="col-md-2 spacing-0">
         <a href="img/PastMemories/12.webp" data-lightbox="Gallery">
-          <img id="memory12" class="memories_img" src="img/PastMemories/12.webp">
+          <img id="memory12" class="memories_img" src="img/PastMemories/12.webp" onerror="this.onerror=null; this.src='img/PastMemories/12.jpg'">
         </a>
       </div>
     </div>
     <div class="row">
       <div class="col-xs-4 col-sm-3 col-md-2 spacing-0">
         <a href="img/PastMemories/13.webp" data-lightbox="Gallery">
-          <img id="memory13" class="memories_img" src="img/PastMemories/13.webp">
+          <img id="memory13" class="memories_img" src="img/PastMemories/13.webp" onerror="this.onerror=null; this.src='img/PastMemories/13.jpg'">
         </a>
       </div>
       <div class="col-xs-4 col-sm-3 col-md-2 spacing-0">
         <a href="img/PastMemories/14.webp" data-lightbox="Gallery">
-          <img id="memory14" class="memories_img" src="img/PastMemories/14.webp">
+          <img id="memory14" class="memories_img" src="img/PastMemories/14.webp" onerror="this.onerror=null; this.src='img/PastMemories/14.jpg'">
         </a>
       </div>
       <div class="col-xs-4 col-sm-3 col-md-2 spacing-0">
         <a href="img/PastMemories/15.webp" data-lightbox="Gallery">
-          <img id="memory15" class="memories_img" src="img/PastMemories/15.webp">
+          <img id="memory15" class="memories_img" src="img/PastMemories/15.webp" onerror="this.onerror=null; this.src='img/PastMemories/15.jpg'">
         </a>
       </div>
       <div class="col-sm-3 col-md-2 spacing-0">
         <a href="img/PastMemories/16.webp" data-lightbox="Gallery">
-          <img id="memory16" class="memories_img" src="img/PastMemories/16.webp">
+          <img id="memory16" class="memories_img" src="img/PastMemories/16.webp" onerror="this.onerror=null; this.src='img/PastMemories/16.jpg'">
         </a>
       </div>
       <div class="col-md-2 spacing-0">
         <a href="img/PastMemories/17.webp" data-lightbox="Gallery">
-          <img id="memory17" class="memories_img" src="img/PastMemories/17.webp">
+          <img id="memory17" class="memories_img" src="img/PastMemories/17.webp" onerror="this.onerror=null; this.src='img/PastMemories/17.jpg'">
         </a>
       </div>
       <div class="col-md-2 spacing-0">
         <a href="img/PastMemories/18.webp" data-lightbox="Gallery">
-          <img id="memory18" class="memories_img" src="img/PastMemories/18.webp">
+          <img id="memory18" class="memories_img" src="img/PastMemories/18.webp" onerror="this.onerror=null; this.src='img/PastMemories/18.jpg'">
         </a>
       </div>
     </div>
@@ -401,7 +401,7 @@ $(document).ready(function(){
     <div class="row mb64 mb-xs-24">
       <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
         <h3>FOSSASIA | Projects</h3><br>
-          <a class="btn-filled btn" href="https://github.com/fossasia/">All our projects</a>
+        <a class="btn-filled btn" href="https://github.com/fossasia/">All our projects</a>
 
       </div>
     </div>
@@ -421,7 +421,7 @@ $(document).ready(function(){
       </div>
     </div>
     {% endfor %}
-    
+
     <br />
     <!-- end of row -->
   </div>
@@ -617,4 +617,4 @@ $(document).ready(function(){
   </div>
 </section>
 <!-- thank you section -->
-  <div id="app" class="thank_you gradient-multi-hot"></div>
+<div id="app" class="thank_you gradient-multi-hot"></div>
