@@ -193,7 +193,8 @@ p.person-name {
   color: rgb(88, 88, 88);
 }
  .view-profile {
-  background-color: #3897f0;
+  background-color: #e31d3b;
+  text-transform: uppercase;
   color: white;
   padding: 5px 12px;
   border-radius: 3px;
@@ -201,8 +202,7 @@ p.person-name {
   bottom: 5%;
   right: 10%;
 }
- .view-profile:hover {
-  background-color: #083d72;
+.view-profile:hover {
   color: white;
 }
  .location-link-container {
