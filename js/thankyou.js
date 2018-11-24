@@ -27,7 +27,7 @@
 'Go raibh maith agat as do chuid ranníocaíochtaí!',
 'Terimakasih atas kontribusi anda!',
 'Köszönjük a hozzájárulást!',
-'സംഭാവന ചെയ്തതിന് നന്ദി',
+'ചെയ്തത്തിന്',
 'Takk fyrir þitt framlag!'
 ];
 
