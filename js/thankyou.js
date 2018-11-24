@@ -28,7 +28,7 @@
 'Terimakasih atas kontribusi anda!',
 'Köszönjük a hozzájárulást!',
 'Takk fyrir þitt framlag!'
-'ನಿಮ್ಮ ಕೊಡುಗೆಗೆ ಧನ್ಯವಾದಗಳು!'
+'ನಿಮ್ಮ ಕೊಡುಗೆಗೆ ಧನ್ಯವಾದಗಳು!',
 ];
 
 var app = document.getElementById('app');
