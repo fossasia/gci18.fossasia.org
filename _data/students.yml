@@ -137,10 +137,6 @@
   github: arihantbansal
   image: arihant.jpg
 
-- name: Navan Chauhan
-  github: navanchauhan
-  image: n3v0n.png
-
 - name: Rahul Arora
   github: rahulaarora
   image: Rahul Arora.jpg 
@@ -157,3 +153,6 @@
   github: kol4k
   image: rafi.jpeg
   
+- name: Navan Chauhan
+  github: navanchauhan
+  image: n3v0n.png
