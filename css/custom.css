@@ -510,3 +510,6 @@ p.person-name {
 .issues-wrapper i {
   margin-right: 5px;
 }
+.leaflet-bottom{
+  z-index: 500 !important;
+}
