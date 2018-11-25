@@ -29,6 +29,9 @@
 'Köszönjük a hozzájárulást!',
 'Takk fyrir þitt framlag!',
 'ನಿಮ್ಮ ಕೊಡುಗೆಗೆ ಧನ್ಯವಾದಗಳು!',
+'സംഭാവന ചെയ്തത്തിന് നന്ദി',
+'Takk fyrir þitt framlag!'
+
 ];
 
 var app = document.getElementById('app');
