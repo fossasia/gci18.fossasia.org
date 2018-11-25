@@ -1,33 +1,6 @@
 ---
 layout: default
 ---
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 2000, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
 <a id="backtotop_button"></a>
 <section class="cover fullscreen image-slider slider-all-controls controls-inside parallax">
   <ul class="slides">
@@ -102,7 +75,7 @@ $(document).ready(function(){
     </li>
     <li class="overlay image-bg">
       <div class="background-image-holder">
-        <img alt="image" class="background-image" src="img/home20.webp" />
+        <img alt="image" class="background-image" src="img/home20.webp" onerror="this.onerror=null; this.src='img/home20.jpg'" />
       </div>
       <div class="container v-align-transform">
         <div class="row">
@@ -151,7 +124,7 @@ $(document).ready(function(){
           FOSSASIA develops software and hardware and cooperates with Open Tech
           projects. Please check out our Github and FOSSASIA Labs.
         </p>
-        <a class="btn btn-lg" href="https://fossasia.org/" target="_blank" rel="noopener">Explore Fossasia 🌏</a>
+        <a class="btn btn-lg" href="https://fossasia.org/" target="_blank" rel="noopener">Explore FOSSASIA 🌏</a>
       </div>
     </div>
   </div>
@@ -205,20 +178,52 @@ $(document).ready(function(){
   <div class="container" id="social_box">
     <div class="row mb80 mb-xs-0">
       <div class="col-md-8 col-md-offset-2 text-center">
-        <h1>Connect with Fossasia on Social Media</h1>
+        <h1>Connect with FOSSASIA on Social Media</h1>
         <p>Be sure to follow us on social media!</p>
-        <p class="large">
-          <a href="https://www.facebook.com/fossasia/" class="ti-facebook lgi" target="_blank" rel="noopener"></a>
-          <a href="https://twitter.com/fossasia" class="ti-twitter lgi" target="_blank" rel="noopener"></a>
-          <a href="https://www.instagram.com/fossasia/" target="_blank" rel="noopener" class="ti-instagram lgi"></a>
-          <a href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ" target="_blank" rel="noopener" class="ti-youtube lgi"></a>
-          <a href="https://github.com/fossasia" target="_blank" class="ti-github lgi" rel="noopener"></a>
-          <a href="https://flickr.com/photos/fossasia" target="_blank" class="ti-flickr lgi" rel="noopener"></a>
-          <a href="https://www.linkedin.com/groups/FOSSASIA-3762811" target="_blank" class="ti-linkedin lgi" rel="noopener"></a>
-          <a href="https://plus.google.com/108920596016838318216" target="_blank" class="ti-google lgi" rel="noopener"></a>
-          <a href="https://codein.withgoogle.com/organizations/fossasia/" target="_blank" class="ti-settings lgi" rel="noopener"></a>
-          <a href="https://fossasia-slack.herokuapp.com/" target="_blank" class="fa fa-slack lgi" rel="noopener"></a>
-        </p>
+        <div id="social_icons">
+            <a href="https://www.facebook.com/fossasia/" class="ti-facebook lgi" target="_blank" rel="noopener noreferrer">
+                <div>Facebook</div>
+            </a>
+            <a href="https://twitter.com/fossasia" class="ti-twitter lgi" target="_blank" rel="noopener noreferrer">
+                <div>Twitter</div>
+            </a>
+            <a href="https://www.instagram.com/fossasia/" target="_blank" class="ti-instagram lgi" rel="noopener noreferrer">
+                <div>Instagram</div>
+            </a>
+            <a href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ" target="_blank" class="ti-youtube lgi" rel="noopener noreferrer">
+                <div>YouTube</div>
+            </a>
+            <a href="https://github.com/fossasia" target="_blank" class="ti-github lgi">
+                <div>Github</div>
+            </a>
+            <a href="https://www.linkedin.com/groups/FOSSASIA-3762811" target="_blank" class="ti-linkedin lgi" rel="noopener noreferrer">
+                <div>LinkedIn</div>
+            </a>
+            <a href="https://plus.google.com/108920596016838318216" target="_blank" class="ti-google lgi" rel="noopener noreferrer">
+                <div>Google+</div>
+            </a>
+            <a href="https://flickr.com/photos/fossasia" target="_blank" class="ti-flickr lgi" rel="noopener noreferrer">
+                <div>Flickr</div>
+            </a>
+            <a href="https://codein.withgoogle.com/organizations/fossasia/" target="_blank" class="ti-settings lgi" rel="noopener noreferrer">
+                <div>Code-In Page</div>
+            </a>
+            <a href="https://fossasia.org" target="_blank" class="ti-world lgi" rel="noopener noreferrer">
+                <div>Website</div>
+            </a>
+            <a href="https://gitter.im/fossasia/fossasia" target="_blank" class="fab fa-gitter lgi" rel="noopener noreferrer">
+                <div>Gitter</div>
+            </a>
+            <a href="https://fossasia-slack.herokuapp.com/" target="_blank" class="fab fa-slack lgi" rel="noopener noreferrer">
+                <div>Slack</div>
+            </a>
+            <a href="https://www.weibo.com/u/5784920339" target="_blank" class="fab fa-weibo lgi" rel="noopener noreferrer">
+                <div>Weibo</div>
+            </a>
+            <a href="https://vk.com/fossasia" target="_blank" class="fab fa-vk lgi" rel="noopener noreferrer">
+                <div>VK</div>
+            </a>
+        </div>
       </div>
     </div>
     <div class="container">
@@ -231,7 +236,7 @@ $(document).ready(function(){
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4 h-100 social-media-widget">
           <a class="twitter-timeline actual" data-width="100%" data-height="100%" data-theme="dark" data-link-color="#E81C4F"
-            href="https://twitter.com/fossasia?ref_src=twsrc%5Etfw">Tweets by fossasia</a>
+            href="https://twitter.com/fossasia?ref_src=twsrc%5Etfw">Tweets by FOSSASIA</a>
           <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4 h-100 social-media-widget">
@@ -240,7 +245,7 @@ $(document).ready(function(){
           </iframe>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4 h-100 social-media-widget">
-          <a href="https://www.instagram.com/fossasia/" class="social-media-title">Fossasia on Instagram</a>
+          <a href="https://www.instagram.com/fossasia/" class="social-media-title">FOSSASIA on Instagram</a>
           <iframe src="https://www.powr.io/plugins/instagram-feed/view?unique_label=b6088ce2_1541626926&external_type=iframe"
             width="100%" height="68%" frameborder="0"></iframe>
           <a href="https://www.instagram.com/fossasia/" class="view-profile">View Profile</a>
@@ -256,108 +261,108 @@ $(document).ready(function(){
 
 
 
-<!--Fossasia Album-->
+<!--FOSSASIA Album-->
 <section class="bg-secondary spacing-0">
   <div class="container-fluid" id="memories">
     <div class="row">
       <div class="col-xs-4 col-sm-3 col-md-2 spacing-0">
         <a href="img/PastMemories/1.webp" data-lightbox="Gallery">
-          <img id="memory1" class="memories_img img-fluid" src="img/PastMemories/1.webp">
+          <img id="memory1" class="memories_img img-fluid" src="img/PastMemories/1.webp" onerror="this.onerror=null; this.src='img/PastMemories/1.jpg'">
         </a>
       </div>
       <div class="col-xs-4 col-sm-3 col-md-2 spacing-0">
         <a href="img/PastMemories/2.webp" data-lightbox="Gallery">
-          <img id="memory2" class="memories_img img-fluid" src="img/PastMemories/2.webp">
+          <img id="memory2" class="memories_img img-fluid" src="img/PastMemories/2.webp" onerror="this.onerror=null; this.src='img/PastMemories/2.jpg'">
         </a>
       </div>
       <div class="col-xs-4 col-sm-3 col-md-2 spacing-0">
         <a href="img/PastMemories/3.webp" data-lightbox="Gallery">
-          <img id="memory3" class="memories_img img-fluid" src="img/PastMemories/3.webp">
+          <img id="memory3" class="memories_img img-fluid" src="img/PastMemories/3.webp" onerror="this.onerror=null; this.src='img/PastMemories/3.jpg'">
         </a>
       </div>
       <div class="col-sm-3 col-md-2 spacing-0">
         <a href="img/PastMemories/4.webp" data-lightbox="Gallery">
-          <img id="memory4" class="memories_img img-fluid" src="img/PastMemories/4.webp">
+          <img id="memory4" class="memories_img img-fluid" src="img/PastMemories/4.webp" onerror="this.onerror=null; this.src='img/PastMemories/4.jpg'">
         </a>
       </div>
       <div class="col-md-2 spacing-0">
         <a href="img/PastMemories/5.webp" data-lightbox="Gallery">
-          <img id="memory5" class="memories_img img-fluid" src="img/PastMemories/5.webp">
+          <img id="memory5" class="memories_img img-fluid" src="img/PastMemories/5.webp" onerror="this.onerror=null; this.src='img/PastMemories/5.jpg'">
         </a>
       </div>
       <div class="col-md-2 spacing-0">
         <a href="img/PastMemories/6.webp" data-lightbox="Gallery">
-          <img id="memory6" class="memories_img img-fluid" src="img/PastMemories/6.webp">
+          <img id="memory6" class="memories_img img-fluid" src="img/PastMemories/6.webp" onerror="this.onerror=null; this.src='img/PastMemories/6.jpg'">
         </a>
       </div>
     </div>
     <div class="row">
       <div class="col-xs-4 col-sm-3 col-md-2 spacing-0">
         <a href="img/PastMemories/7.webp" data-lightbox="Gallery">
-          <img id="memory7" class="memories_img img-fluid" src="img/PastMemories/7.webp">
+          <img id="memory7" class="memories_img img-fluid" src="img/PastMemories/7.webp" onerror="this.onerror=null; this.src='img/PastMemories/7.jpg'">
         </a>
       </div>
       <div class="col-xs-4 col-sm-3 col-md-2 spacing-0">
         <a href="img/PastMemories/8.webp" data-lightbox="Gallery">
-          <img id="memory8" class="memories_img" src="img/PastMemories/8.webp">
+          <img id="memory8" class="memories_img" src="img/PastMemories/8.webp" onerror="this.onerror=null; this.src='img/PastMemories/8.jpg'">
         </a>
       </div>
       <div class="col-xs-4 col-sm-3 col-md-2 spacing-0">
         <a href="img/PastMemories/9.webp" data-lightbox="Gallery">
-          <img id="memory9" class="memories_img" src="img/PastMemories/9.webp">
+          <img id="memory9" class="memories_img" src="img/PastMemories/9.webp" onerror="this.onerror=null; this.src='img/PastMemories/9.jpg'">
         </a>
       </div>
       <div class="col-sm-3 col-md-2 spacing-0">
         <a href="img/PastMemories/10.webp" data-lightbox="Gallery">
-          <img id="memory10" class="memories_img" src="img/PastMemories/10.webp">
+          <img id="memory10" class="memories_img" src="img/PastMemories/10.webp" onerror="this.onerror=null; this.src='img/PastMemories/10.jpg'">
         </a>
       </div>
       <div class="col-md-2 spacing-0">
         <a href="img/PastMemories/11.webp" data-lightbox="Gallery">
-          <img id="memory11" class="memories_img" src="img/PastMemories/11.webp">
+          <img id="memory11" class="memories_img" src="img/PastMemories/11.webp" onerror="this.onerror=null; this.src='img/PastMemories/11.jpg'">
         </a>
       </div>
       <div class="col-md-2 spacing-0">
         <a href="img/PastMemories/12.webp" data-lightbox="Gallery">
-          <img id="memory12" class="memories_img" src="img/PastMemories/12.webp">
+          <img id="memory12" class="memories_img" src="img/PastMemories/12.webp" onerror="this.onerror=null; this.src='img/PastMemories/12.jpg'">
         </a>
       </div>
     </div>
     <div class="row">
       <div class="col-xs-4 col-sm-3 col-md-2 spacing-0">
         <a href="img/PastMemories/13.webp" data-lightbox="Gallery">
-          <img id="memory13" class="memories_img" src="img/PastMemories/13.webp">
+          <img id="memory13" class="memories_img" src="img/PastMemories/13.webp" onerror="this.onerror=null; this.src='img/PastMemories/13.jpg'">
         </a>
       </div>
       <div class="col-xs-4 col-sm-3 col-md-2 spacing-0">
         <a href="img/PastMemories/14.webp" data-lightbox="Gallery">
-          <img id="memory14" class="memories_img" src="img/PastMemories/14.webp">
+          <img id="memory14" class="memories_img" src="img/PastMemories/14.webp" onerror="this.onerror=null; this.src='img/PastMemories/14.jpg'">
         </a>
       </div>
       <div class="col-xs-4 col-sm-3 col-md-2 spacing-0">
         <a href="img/PastMemories/15.webp" data-lightbox="Gallery">
-          <img id="memory15" class="memories_img" src="img/PastMemories/15.webp">
+          <img id="memory15" class="memories_img" src="img/PastMemories/15.webp" onerror="this.onerror=null; this.src='img/PastMemories/15.jpg'">
         </a>
       </div>
       <div class="col-sm-3 col-md-2 spacing-0">
         <a href="img/PastMemories/16.webp" data-lightbox="Gallery">
-          <img id="memory16" class="memories_img" src="img/PastMemories/16.webp">
+          <img id="memory16" class="memories_img" src="img/PastMemories/16.webp" onerror="this.onerror=null; this.src='img/PastMemories/16.jpg'">
         </a>
       </div>
       <div class="col-md-2 spacing-0">
         <a href="img/PastMemories/17.webp" data-lightbox="Gallery">
-          <img id="memory17" class="memories_img" src="img/PastMemories/17.webp">
+          <img id="memory17" class="memories_img" src="img/PastMemories/17.webp" onerror="this.onerror=null; this.src='img/PastMemories/17.jpg'">
         </a>
       </div>
       <div class="col-md-2 spacing-0">
         <a href="img/PastMemories/18.webp" data-lightbox="Gallery">
-          <img id="memory18" class="memories_img" src="img/PastMemories/18.webp">
+          <img id="memory18" class="memories_img" src="img/PastMemories/18.webp" onerror="this.onerror=null; this.src='img/PastMemories/18.jpg'">
         </a>
       </div>
     </div>
     <div class="align-middle" id="memories_div">
       <i class="glyphicon glyphicon-camera" id="memories_icon"></i><br>
-      <h1 id="memories_heading">Fossasia Album</h1><br>
+      <h1 id="memories_heading">FOSSASIA Album</h1><br>
       <h3 id="memories_link">Follow our photostream on
         <a id="flickr" href="https://www.flickr.com/photos/fossasia/" target="_blank" rel="noopener">flickr</a>
       </h3>
@@ -377,7 +382,7 @@ $(document).ready(function(){
         </video>
       </div>
       <div class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1">
-        <h3>Fossasia Attracting Students</h3>
+        <h3>FOSSASIA Attracting Students</h3>
         <p>
           The video is made is by one of our students during the competition
           itself!
@@ -397,7 +402,7 @@ $(document).ready(function(){
     <div class="row mb64 mb-xs-24">
       <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
         <h3>FOSSASIA | Projects</h3><br>
-          <a class="btn-filled btn" href="https://github.com/fossasia/">All our projects</a>
+        <a class="btn-filled btn" href="https://github.com/fossasia/">All our projects</a>
 
       </div>
     </div>
@@ -417,7 +422,7 @@ $(document).ready(function(){
       </div>
     </div>
     {% endfor %}
-    
+
     <br />
     <!-- end of row -->
   </div>
@@ -613,4 +618,4 @@ $(document).ready(function(){
   </div>
 </section>
 <!-- thank you section -->
-  <div id="app" class="thank_you gradient-multi-hot"></div>
+<div id="app" class="thank_you gradient-multi-hot"></div>

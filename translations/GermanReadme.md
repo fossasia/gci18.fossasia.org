@@ -2,7 +2,7 @@
 FOSSASIA Google Code-In Website 2018
 https://gci18.fossasia.org
 
-Dies ist das Repository für die Website von Fossasia für Google Code-In 2018, Wir von Fossasia beabsichtigen, es im Verlauf dieses Wettbewerbs gemeinsam zu entwickeln, indem die Schüler selbst teilnehmen . Forken Sie das Repository, bevor Sie Änderungen vornehmen, und stellen Sie sicher, dass Sie es lesen [Fossasia Best Practices](https://blog.fossasia.org/open-source-developer-guide-and-best-practices-at-fossasia/)
+Dies ist das Repository für die Website von FOSSASIA für Google Code-In 2018, Wir von FOSSASIA beabsichtigen, es im Verlauf dieses Wettbewerbs gemeinsam zu entwickeln, indem die Schüler selbst teilnehmen . Forken Sie das Repository, bevor Sie Änderungen vornehmen, und stellen Sie sicher, dass Sie es lesen [FOSSASIA Best Practices](https://blog.fossasia.org/open-source-developer-guide-and-best-practices-at-fossasia/)
 
 ## Kommunikation
 

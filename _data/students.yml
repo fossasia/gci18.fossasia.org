@@ -58,6 +58,8 @@
   github: niteshkumarniranjan
   image: niteshkumarniranjan.png
   twitter: niranjannitesh
+  lat: 24.191351
+  lng: 86.299637
 
 - name: Arjun Pandey
   github: arjunpandey2003
@@ -155,3 +157,12 @@
   github: NishithP2004
   image: NishithP.png
   twitter: nishithp10
+  
+- name: Navan Chauhan
+  github: navanchauhan
+  image: n3v0n.png
+
+- name: Yash Garg
+  github: Yash-Garg
+  image: yashg.png
+
