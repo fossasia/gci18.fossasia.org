@@ -9,6 +9,7 @@
           for web access of SUSI.
   github: https://github.com/fossasia/chat.susi.ai
   try: https://chat.susi.ai/   
+  url: https://chat.susi.ai/
 
 - title: Meilix
   img: meil_s.png
@@ -18,7 +19,8 @@
           features you need pre-installed, it will create an ISO Image of your
           Linux, which you can use as a live boot or install on PCs.
   github: https://github.com/fossasia/meilix
-  try: https://meilix.fossasia.org/          
+  try: https://meilix.fossasia.org/  
+  url: https://meilix-generator.herokuapp.com/
 
 - title: Loklak
   img: lok_s.png
@@ -28,7 +30,8 @@
           an elasticsearch index.
 
   github: https://github.com/loklak/loklak_server
-  try: https://loklak-server-api.herokuapp.com         
+  try: https://loklak-server-api.herokuapp.com  
+  url: http://api.loklak.org/
              
 - title: SUSPER
   img: susper.png
@@ -37,6 +40,7 @@
 
   github: https://github.com/fossasia/susper.com
   try: https://susper.com      
+  url: https://susper.com/
 
 - title: PSlab
   img: pslab.png
@@ -47,4 +51,5 @@
   
   github: https://github.com/fossasia/pslab-hardware
   try: https://pslab.io/
+  url: https://pslab.io/
        
