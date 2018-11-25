@@ -410,7 +410,9 @@ layout: default
     {% for projects in site.data.orgprojects %}
     <div class="row v-align-children extra_padding_b">
       <div class="col-md-7 col-sm-6 text-center mb-xs-24">
+        <a href="{{projects.url}}">
         <img class="cast-shadow" alt="Screenshot" src="img/{{projects.img}}" />
+        </a>
       </div>
       <div class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1">
         <h3>{{projects.title}}</h3>
