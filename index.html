@@ -473,14 +473,14 @@ layout: default
     </div>
     <!-- end of row -->
     <div class="row">
-      {% for mentor in site.data.mentors limit:30 %}
+      {% for mentor in site.data.mentors %}
 
       <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 text-center">
         <div class="card single-mentor">
           {% if mentor.image %}
           <img class="mentor-img" src="img/mentors/{{mentor.image}}" alt="{{ mentor.name }}" />
           {% else %}
-          <img src="img/mentors/member.png" alt="{{ mentor.name }}" /> {% endif
+          <img src="img/mentors/mentor.png" alt="{{ mentor.name }}" /> {% endif
           %}
           <p class="person-name">{{ mentor.name }}</p>
 
@@ -524,14 +524,13 @@ layout: default
     </div>
     <!-- end of row -->
     <div class="row">
-      {% for student in site.data.students limit:30 %}
-
+	{% for student in site.data.students %}
       <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 text-center">
         <div class="card single-mentor">
           {% if student.image %}
           <img class="mentor-img" src="img/students/{{student.image}}" alt="{{ student.name }}" />
           {% else %}
-          <img src="img/mentors/member.png" alt="{{ student.name }}" /> {% endif
+          <img src="img/students/member.png" alt="{{ student.name }}" /> {% endif
           %}
           <p class="student_name">{{ student.name }}</p>
 
@@ -559,7 +558,7 @@ layout: default
           </ul>
         </div>
       </div>
-      {% endfor %}
+	  {% endfor %}
     </div>
     <!-- end of row -->
   </div>

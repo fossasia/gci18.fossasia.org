@@ -118,7 +118,7 @@ layout: default
                             <div class="row masonry masonryFlyIn">
                                 <div class="col-md-12 col-sm-12 masonry-item mb30">
                                     <div class="col-sm-12 text-center spread-children-large">
-                                        {% for student in site.data.students limit:30 %}
+										{% for student in site.data.students %}
                                         <div class="card single-mentor">
                                             {% if student.image %}
                                             <img src="img/students/{{student.image}}" alt="{{ student.name }}">
@@ -150,7 +150,7 @@ layout: default
                                                 {% endif %}
                                             </ul>
                                         </div>
-                                        {% endfor %}
+										{% endfor %}
                                     </div>
                                 </div>
                                 <!--end of row-->
@@ -431,7 +431,7 @@ layout: default
                                     </div>
                                     <!--end of row-->
                                     <div class="row">
-                                        {% for mentor in site.data.mentors limit:30 %}
+                                        {% for mentor in site.data.mentors %}
 
                                         <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 text-center">
 
@@ -439,7 +439,7 @@ layout: default
                                                 {% if mentor.image %}
                                                 <img class="mentor-img" src="img/mentors/{{mentor.image}}" alt="{{ mentor.name }}">
                                                 {% else %}
-                                                <img src="img/mentors/member.png" alt="{{ mentor.name }}">
+                                                <img src="img/mentors/mentor.png" alt="{{ mentor.name }}">
                                                 {% endif %}
                                                 <p class="person-name">{{ mentor.name }}</p>
 
