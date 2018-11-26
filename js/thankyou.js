@@ -27,7 +27,10 @@
 'Go raibh maith agat as do chuid ranníocaíochtaí!',
 'Terimakasih atas kontribusi anda!',
 'Köszönjük a hozzájárulást!',
+'ನಿಮ್ಮ ಕೊಡುಗೆಗೆ ಧನ್ಯವಾದಗಳು!',
+'സംഭാവന ചെയ്തത്തിന് നന്ദി',
 'Takk fyrir þitt framlag!'
+
 ];
 
 var app = document.getElementById('app');

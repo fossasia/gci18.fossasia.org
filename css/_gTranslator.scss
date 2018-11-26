@@ -1,0 +1,35 @@
+.goog-te-gadget-simple {
+  background-color: transparent !important;
+  border-left: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  border-right: none !important;
+  font-size: 11pt !important;
+  display: inline-block !important;
+  padding-top: 1px !important;
+  padding-bottom: 2px !important;
+  cursor: pointer !important;
+  zoom: 1 !important;
+}
+.goog-te-gadget-icon {
+  visibility: hidden;
+  background-position: -65px 0px;
+  background-img: transparent !important ;
+}
+
+.goog-te-gadget-simple .goog-te-menu-value span {
+  text-decoration: none;
+}
+.goog-te-menu-value span {
+  text-decoration: underline;
+}
+.goog-te-gadget-simple .goog-te-menu-value {
+  color: #292929 !important;
+  font-weight: 600 !important;
+  letter-spacing: 1px !important;
+  opacity: 0.5 !important;
+  -moz-transition: all 0.3s ease !important;
+  max-width: 100% !important;
+  white-space: normal !important;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
