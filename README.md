@@ -1,4 +1,7 @@
-# gci18.fossasia.org
+![fossasia](img/Logo/fossasia_logo.png)
+
+![gci18.fossasia.org](img/Logo/gci_fossasia_logo.png)
+
 FOSSASIA Google Code-In Website 2018
 https://gci18.fossasia.org
 
