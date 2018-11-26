@@ -17,8 +17,7 @@
   text-align: center;
   text-decoration: none;
 }
-.large .ti-twitter{
-
+.large .ti-twitter {
   width: 20px;
   padding: 20px;
   font-size: 30px;
@@ -115,47 +114,46 @@ p.person-name {
   line-height: 1.5;
   height: 195px;
   text-shadow: 2px 2px #ff758c;
-  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   -webkit-animation: Gradient 15s ease infinite;
   -moz-animation: Gradient 15s ease infinite;
   animation: Gradient 15s ease infinite;
-
 }
 
 @-webkit-keyframes Gradient {
   0% {
-    background-position: 0% 50%
+    background-position: 0% 50%;
   }
   50% {
-    background-position: 100% 50%
+    background-position: 100% 50%;
   }
   100% {
-    background-position: 0% 50%
+    background-position: 0% 50%;
   }
 }
 
 @-moz-keyframes Gradient {
   0% {
-    background-position: 0% 50%
+    background-position: 0% 50%;
   }
   50% {
-    background-position: 100% 50%
+    background-position: 100% 50%;
   }
   100% {
-    background-position: 0% 50%
+    background-position: 0% 50%;
   }
 }
 
 @keyframes Gradient {
   0% {
-    background-position: 0% 50%
+    background-position: 0% 50%;
   }
   50% {
-    background-position: 100% 50%
+    background-position: 100% 50%;
   }
   100% {
-    background-position: 0% 50%
+    background-position: 0% 50%;
   }
 }
 
@@ -180,7 +178,7 @@ p.person-name {
   height: 300px;
   overflow: hidden;
 }
- .social-media-title {
+.social-media-title {
   margin-bottom: 1%;
   display: inline-block;
   text-align: center;
@@ -189,10 +187,10 @@ p.person-name {
   font-family: Helvetica, Arial, sans-serif;
   color: black;
 }
- .social-media-title:hover {
+.social-media-title:hover {
   color: rgb(88, 88, 88);
 }
- .view-profile {
+.view-profile {
   background-color: #e31d3b;
   text-transform: uppercase;
   color: white;
@@ -205,19 +203,19 @@ p.person-name {
 .view-profile:hover {
   color: white;
 }
- .location-link-container {
+.location-link-container {
   position: absolute;
   bottom: 20px;
   left: 10%;
   text-align: center;
   width: 50%;
 }
- .location-link {
+.location-link {
   color: grey;
   font-size: 14px;
   text-align: left;
 }
- .location-link:hover {
+.location-link:hover {
   color: darkgray;
 }
 
@@ -262,41 +260,41 @@ p.person-name {
   opacity: 1;
   visibility: visible;
 }
-#img_project{
+#img_project {
   display: none;
 }
-#map{ 
+#map {
   height: 600px;
   max-width: 1000px;
   margin: auto 7.5%;
   pointer-events: none;
 }
-.student_name{
+.student_name {
   font-size: 16px;
   margin-top: 5px;
   font-weight: bold;
 }
-.team_member_name{
+.team_member_name {
   font-size: 18px;
   margin-top: 5px;
   font-weight: bold;
   padding-bottom: 20px;
 }
-.team_member_designation{
+.team_member_designation {
   font-size: 13px;
   margin-top: -45px;
   color: #fff;
   filter: brightness(100%) !important;
   font-weight: bold;
 }
-.team_ul{
+.team_ul {
   max-width: 240px !important;
   display: inline-block !important;
 }
-#memories{
+#memories {
   position: relative;
 }
-.memories_img{
+.memories_img {
   border: none;
   padding: 0px;
   margin: 0px;
@@ -304,62 +302,73 @@ p.person-name {
   float: left;
   width: 100%;
 }
-.memories_img:hover{
+.memories_img:hover {
   filter: brightness(100%);
   transition: 0.6s;
 }
-#memories_div{
-  z-index: 1 ;
+#memories_div {
+  z-index: 1;
   position: absolute;
   top: 10%;
   left: 20%;
   display: inline;
 }
-#memories_icon{
+#memories_icon {
   color: #fff;
   font-size: 4vw;
 }
-#memories_heading{
+#memories_heading {
   color: #fff;
   font-weight: bold;
 }
-#memories_link{
-  color: #fff ;
+#memories_link {
+  color: #fff;
 }
-.spacing-0{
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 0px;
-    margin: 0px;
-    margin-top: 0px;
+.spacing-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  margin: 0px;
+  margin-top: 0px;
 }
-@media screen and (max-width: 768px){
-  #memory4,#memory5,#memory6,#memory10,#memory11,#memory12,#memory16,#memory17,#memory18{
+@media screen and (max-width: 768px) {
+  #memory4,
+  #memory5,
+  #memory6,
+  #memory10,
+  #memory11,
+  #memory12,
+  #memory16,
+  #memory17,
+  #memory18 {
     display: none;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 992px){
-  #memory5,#memory6,#memory11,#memory12,#memory17,#memory18{
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #memory5,
+  #memory6,
+  #memory11,
+  #memory12,
+  #memory17,
+  #memory18 {
     display: none;
   }
 }
 
 /* Student Projects*/
-.project-btn{
-  color: #fff; 
+.project-btn {
+  color: #fff;
   border: none;
   width: 50% !important;
-  float: left; 
+  float: left;
   margin-bottom: 14px;
 }
 
-.project-btn:visited{
-  color: #fff !important; 
+.project-btn:visited {
+  color: #fff !important;
 }
 
-
-@media screen and (max-width: 650px)
-{
+@media screen and (max-width: 650px) {
   .flip-card {
     width: 100% !important;
   }
@@ -368,64 +377,64 @@ p.person-name {
   }
 }
 
-.student-project-img{
+.student-project-img {
   height: 200px;
   width: 120px;
   display: inline-block;
 }
 
-.student-project-name{
+.student-project-name {
   font-weight: bold;
   font-size: 20px;
-  color: #000 !important; 
+  color: #000 !important;
   display: inline;
 }
 
-.student-project-info{
-  font-size: 14px; 
+.student-project-info {
+  font-size: 14px;
   color: rgba(0, 0, 0, 0.54) !important;
   display: inline-block;
   padding-bottom: 10px;
 }
 
-.student-project-footer{
+.student-project-footer {
   position: absolute;
   bottom: 25px;
   float: left;
   width: 100%;
 }
 
-.student-project-hr{
+.student-project-hr {
   margin-bottom: 0px;
   padding-bottom: 7px;
 }
 
-.student-project-footer-container{
+.student-project-footer-container {
   display: block;
   height: 30px;
 }
 
-#skewed-bg{
+#skewed-bg {
   -ms-transform: skewX(20deg); /* IE 9 */
   -webkit-transform: skewX(20deg); /* Safari */
   transform: skewY(5deg); /* Standard syntax */
   background-color: #e31d3b;
-  width:100%;
-  padding:400px;
+  width: 100%;
+  padding: 400px;
   opacity: 0.5;
   position: fixed;
   z-index: -2;
   width: 100%;
-  margin-top: 270px; 
+  margin-top: 270px;
 }
 
-.student-project-creator-img{
+.student-project-creator-img {
   height: 30px;
   float: left;
   margin-left: 20px;
 }
 
-.student-project-btn{
+.student-project-btn {
   display: inline;
 }
 .flip-card {
@@ -443,7 +452,7 @@ p.person-name {
   background-color: #fff;
   padding: 16px;
   border-radius: 8px;
-  box-shadow:  0 1px 2px 0 rgba(60,64,67,0.3);
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3);
   margin: auto;
 }
 .flip-card-inner-flip {
@@ -451,7 +460,8 @@ p.person-name {
 }
 
 /* Position the front and back side */
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 90%;
   height: 100%;
@@ -512,4 +522,80 @@ p.person-name {
 }
 .leaflet-bottom{
   z-index: 500 !important;
+}
+
+#social_icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.lgi {
+  min-width: 120px;
+  padding: 20px 0;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.lgi div {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  opacity: 0.8;
+  margin-top: 1.2em;
+  transition:
+    opacity 100ms ease-in-out,
+    transform 100ms ease-in-out;
+}
+
+footer .social-list {
+  padding-right: 8vw;
+}
+
+@media
+  (min-width: 992px) and (orientation: landscape),
+  (min-width: 720px) and (orientation: portrait)
+{
+
+  #social_icons {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .lgi {
+    flex: 1;
+    min-width: 0 !important;
+    white-space: nowrap;
+  }
+
+  .lgi div {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  .lgi:hover div,
+  .lgi:focus div {
+    opacity: 0.8;
+    transform: none;
+  }
+  .lgi:focus-within div {
+    opacity: 0.8;
+    transform: none;
+  }
+
+  /* If different elements have focus and hover,
+    show label only on hovered one
+    Progressive enhancement, compatible browsers:
+    https://caniuse.com/#search=focus-within */
+  #social_icons:focus-within:hover .lgi:not(:hover) div {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
 }
