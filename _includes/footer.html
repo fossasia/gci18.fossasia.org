@@ -126,8 +126,8 @@
   </div>
   <!--end of container-->
 </footer>
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="js/flickr.js"></script>
 <script src="js/flexslider.min.js"></script>
 <script src="js/lightbox.min.js"></script>
@@ -136,28 +136,26 @@
 <script src="js/spectragram.min.js"></script>
 <script src="js/ytplayer.min.js"></script>
 <script src="js/countdown.min.js"></script>
-<script src="js/smooth-scroll.min.js"></script>
+<!-- <script src="js/smooth-scroll.min.js"></script> -->
 <script src="js/parallax.js"></script>
 <script src="js/scripts.js"></script>
 <script  src="js/thankyou.js"></script>
 <script  src="js/backtotop.js"></script>
 <script  src="js/custom.js"></script>
 
-{% for student in site.data.students %}
-{% if student.lat and student.lng %}
 <script>
-	L.marker([{{student.lat}}, {{student.lng}}], {icon: studentIcon}).addTo(map).bindPopup("<b>{{student.name}}</b>");
-</script>
-{% endif %}
-{% endfor %}
+  {% for student in site.data.students %}
+  {% if student.lat and student.lng %}
+	  L.marker([{{student.lat}}, {{student.lng}}], {icon: studentIcon}).addTo(map).bindPopup("<b>{{student.name}}</b>");
+  {% endif %}
+  {% endfor %}
 
-{% for mentor in site.data.mentors %}
-{% if mentor.lat and mentor.lng %}
-<script>
-	L.marker([{{mentor.lat}}, {{mentor.lng}}], {icon: mentorIcon}).addTo(map).bindPopup("<b>{{mentor.name}}</b>");
+  {% for mentor in site.data.mentors %}
+  {% if mentor.lat and mentor.lng %}
+	  L.marker([{{mentor.lat}}, {{mentor.lng}}], {icon: mentorIcon}).addTo(map).bindPopup("<b>{{mentor.name}}</b>");
+  {% endif %}
+  {% endfor %}
 </script>
-{% endif %}
-{% endfor %}
 
 </body>
 
