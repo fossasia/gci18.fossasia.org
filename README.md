@@ -1,4 +1,4 @@
-![fossasia](img/Logo/fossasia_logo.png)
+![fossasia](img/fossasia-dark.png)
 
 ![gci18.fossasia.org](img/Logo/gci_fossasia_logo.png)
 
