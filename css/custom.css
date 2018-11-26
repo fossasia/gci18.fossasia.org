@@ -265,7 +265,7 @@ p.person-name {
 #img_project{
   display: none;
 }
-#map{ 
+#map{
   height: 600px;
   max-width: 1000px;
   margin: auto 7.5%;
@@ -346,15 +346,15 @@ p.person-name {
 
 /* Student Projects*/
 .project-btn{
-  color: #fff; 
+  color: #fff;
   border: none;
   width: 50% !important;
-  float: left; 
+  float: left;
   margin-bottom: 14px;
 }
 
 .project-btn:visited{
-  color: #fff !important; 
+  color: #fff !important;
 }
 
 
@@ -377,12 +377,12 @@ p.person-name {
 .student-project-name{
   font-weight: bold;
   font-size: 20px;
-  color: #000 !important; 
+  color: #000 !important;
   display: inline;
 }
 
 .student-project-info{
-  font-size: 14px; 
+  font-size: 14px;
   color: rgba(0, 0, 0, 0.54) !important;
   display: inline-block;
   padding-bottom: 10px;
@@ -416,7 +416,7 @@ p.person-name {
   position: fixed;
   z-index: -2;
   width: 100%;
-  margin-top: 270px; 
+  margin-top: 270px;
 }
 
 .student-project-creator-img{
@@ -512,4 +512,9 @@ p.person-name {
 }
 .leaflet-bottom{
   z-index: 500 !important;
+}
+
+#opensource_image{
+  padding-bottom: 20px;
+  margin-top: 20px;
 }
