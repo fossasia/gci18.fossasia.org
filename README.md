@@ -128,5 +128,3 @@ Read in **[German](https://github.com/Ritzing/gci18.fossasia.org/blob/master/tra
      alt="Angel Care"
      width= 100%
      height = 100px />
-
-
