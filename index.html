@@ -131,49 +131,6 @@ layout: default
   </div>
   <!-- end of container -->
 </section>
-<section class="notranslate" id="team">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2 text-center">
-        <h1>Team</h1>
-      </div>
-    </div>
-    <!-- end of row -->
-    <div class="row text-center" style="margin-top: 60px;">
-      {% for team in site.data.team limit:30 %}
-      <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
-        <div class="card single-mentor text-center">
-          {% if team.image %}
-          <img src="img/team/{{team.image}}" alt="{{ team.name }}" /> {% else %}
-          <img src="img/students/member.png" alt="{{ team.name }}" /> {% endif
-          %}
-
-          <p class="team_member_name">{{ team.name }}</p>
-
-          <ul class="list-inline social-list social-overlay-list team_ul">
-            <p class="team_member_designation">{{ team.designation }}</p>
-            {% if team.github %}
-            <a href="https://github.com/{{team.github}}" class="icon-a" target="_blank" rel="noopener">
-              <i class="ti-github"></i>
-            </a>
-            {% endif %} {% if team.twitter %}
-            <a href="https://twitter.com/{{ team.twitter }}" class="icon-a" target="_blank" rel="noopener">
-              <i class="ti-twitter-alt"></i>
-            </a>
-            {% endif %} {% if team.linkedin %}
-            <a href="https://linkedin.com/in/{{ team.linkedin }}" class="icon-a" target="_blank" rel="noopener">
-              <i class="ti-linkedin"></i>
-            </a>
-            {% endif %}
-          </ul>
-        </div>
-      </div>
-      {% endfor %}
-      <!-- end of row -->
-    </div>
-  </div>
-  <!-- end of container -->
-</section>
 
 <section id="connect">
   <div class="container" id="social_box">
