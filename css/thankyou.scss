@@ -1,19 +1,19 @@
-container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height:8vh;
-  color: #fff;
-  font-size:2vw;
+.effect {
+  font-family: 'Raleway', sans-serif;
+  padding: 1em 2em;
+  font-size: 18px;
+   background-image: linear-gradient(to bottom right,#9999ff, #8c1aff);
+  color: white;
+  width: 1390px ;
+  height:142px
 }
 
-#app{
-  letter-spacing:0.25em;
-  text-transform:uppercase;
-  background-color: #000;
-  color: #fff;
-  font-size: 30px;
-  height: 80px;
-  width: 100%;
-  text-align: center;
+h1,h2 {
+  font-weight: 200;
+  margin: 0.4em 0;
+}
+h1 { font-size:54px; }
+h2 {
+  color: white;
+  font-size: 32px;
 }
