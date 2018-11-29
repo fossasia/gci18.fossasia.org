@@ -116,3 +116,5 @@
 - name: Sarnava Konar
   image: Sarnava.jpg
   github: sarnava1
+  lat: 22.6982
+  lng: 88.3895
