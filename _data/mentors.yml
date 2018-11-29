@@ -64,7 +64,9 @@
 - name: Jogendra Kumar
   image: jogendra.png
   github: jogendra
-
+  lat: 25.2665185
+  lng: 82.984087
+  
 - name: Abishek V Ashok
   image: AbishekVAshok.png
   github: abishekvashok
