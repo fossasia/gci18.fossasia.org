@@ -106,6 +106,8 @@
 - name: Akshat Jain
   image: rsz_akshat_jain.png
   github: Akshat-Jain
+  lat: 25.540780
+  lng: 84.851131
 
 - name: Tarun Kumar
   image: Tarun Kumar.jpg
