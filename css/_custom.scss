@@ -604,3 +604,7 @@ footer .social-list {
   padding-bottom: 20px;
   margin-top: 20px;
 }
+
+nav.fixed {
+  z-index: 9999;
+}
