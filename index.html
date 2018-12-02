@@ -426,7 +426,13 @@ layout: default
       <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 text-center">
         <div class="card single-mentor">
           {% if mentor.image %}
-          <img class="mentor-img" src="img/mentors/{{mentor.image}}" alt="{{ mentor.name }}" />
+          <picture>
+              {% if mentor.imagewebp %}
+            <img class="mentor-img" src="img/mentors/{{mentor.imagewebp}}" alt="{{ mentor.name }}" onerror="this.onerror=null; this.src='img/mentors/{{mentor.image}}'" />
+              {% else %}
+            <img class="mentor-img" src="img/mentors/{{mentor.image}}" alt="{{ mentor.name }}" />
+            {% endif %}
+          </picture>
           {% else %}
           <img src="img/mentors/member.png" alt="{{ mentor.name }}" /> {% endif
           %}
