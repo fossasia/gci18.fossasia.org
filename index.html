@@ -386,32 +386,19 @@ layout: default
       </div>
     </div>
     <!-- end of row -->
-
-    <div class="row masonry masonryFlyIn">
-      <div class="col-md-12 col-sm-12 masonry-item mb30">
-        <div class="col-sm-12 text-center spread-children-large">
-          {% for video in site.data.videos %}
-          <a href="{{ video.link }}">
-            <div class="card single-mentor" id="video">
-              {% if video.image %}
-              <img src="img/videos/{{ video.image }}" style="width:150px; height:150px;" />
-              {% endif %} <br />
-              <h4 class="person-name">
-                <b>{{ video.name }}</b>
-              </h4>
-              <br />
-              <h5 class="person-name">{{ video.user }}</h5>
-            </div>
-          </a>
-          {% endfor %}
-        </div>
+    <div class="row v-align-children extra_padding_b">
+	{% for video in site.data.videos %}
+		<div class="col text-center">
+		<h4><b>{{video.name}}</b> by <b>{{video.user}}</b></h4>	
+        <div class="card single-mentor ytvideo" id="{{video.name}}" align="center">
       </div>
+		</div>
+          {% endfor %}
+		</div>
       <!-- end of row -->
-    </div>
-  </div>
+	  </div>
 </section>
 <!-- Videos section -->
-
 <section>
   <div class="container" id="mentors">
     <div class="row mb64 mb-xs-24">
