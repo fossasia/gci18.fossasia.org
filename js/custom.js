@@ -32,4 +32,10 @@ $(document).ready(function(){
       });
     } // End if
   });
+
+});
+$('.code-in-nav li').hover(function(){
+  $(this).css('background-color','#e12b00');
+},function(){
+  $(this).css('background-color','#fff');
 });

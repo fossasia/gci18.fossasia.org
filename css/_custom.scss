@@ -608,3 +608,28 @@ footer .social-list {
 nav.fixed {
   z-index: 9999;
 }
+.nav-container{
+  position: fixed;
+  z-index: 1020;
+  transition-duration: 0.3s;
+}
+.menu>li ul{
+  background-color: #fff !important;
+}
+.menu>li ul li{
+  transition-duration: 0.3s;
+}
+.menu>li>ul li a{
+  color: #000 !important;
+  border: none !important
+}
+.ti-menu{
+  color: #fff;
+} 
+.nav-bar .has-dropdown:after{
+  top: 5px;
+}
+.changeToWhite{
+  color: #fff;
+  transition-duration: 0.3s ease;
+}
