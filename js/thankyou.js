@@ -29,7 +29,8 @@
 'Köszönjük a hozzájárulást!',
 'ನಿಮ್ಮ ಕೊಡುಗೆಗೆ ಧನ್ಯವಾದಗಳು!',
 'സംഭാവന ചെയ്തത്തിന് നന്ദി',
-'Takk fyrir þitt framlag!'
+'Takk fyrir þitt framlag!',
+'Tibi gratias ago pro tui contributions!'
 
 ];
 
