@@ -1,18 +1,16 @@
-// PLace your custom code here .
+// Place your custom code here .
 
-
-$(".flip-toggle-region").click(function(){
-        $(this).parent().parent().parent().toggleClass("flip-card-inner-flip");
+$(".flip-toggle-region").click(function() {
+  $(this).parent().parent().parent().toggleClass("flip-card-inner-flip");
 });
 
 $(".flip-card-back").click(function(){
-        $(this).parent().toggleClass("flip-card-inner-flip");
+  $(this).parent().toggleClass("flip-card-inner-flip");
 });
 
-$(document).ready(function(){
+$(document).ready(function() {
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
-
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior
@@ -26,7 +24,6 @@ $(document).ready(function(){
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 2000, function(){
-
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
