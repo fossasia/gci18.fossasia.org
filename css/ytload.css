@@ -5,6 +5,7 @@
   width: 100%;
   padding-bottom: 56.25%; 
   height: 0;
+  float: none;
   }
 .ytvideo iframe{
   position: absolute;
@@ -14,4 +15,5 @@
   height: 100%;
   padding-left: 3%;
   padding-right: 3%;
+  float: none;
 }
