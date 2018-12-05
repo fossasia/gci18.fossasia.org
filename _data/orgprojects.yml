@@ -11,7 +11,7 @@
   try: https://chat.susi.ai/   
 
 - title: Meilix
-  img: meil_s.png
+  img: meil_s.jpg
   desc:    Meilix is a beautiful and customizable Linux build for out of the box
           features for an Internet Kiosk. You can use the Meilix Generator (Web
           app) to make a Linux for your own brand/event, also add apps and
@@ -21,7 +21,7 @@
   try: https://meilix.fossasia.org/          
 
 - title: Loklak
-  img: lok_s.png
+  img: lok_s.jpg
   desc:   loklak is a server application which is able to collect messages from
           various sources, including twitter. The server contains a search index
           and a peer-to-peer index sharing interface. All messages are stored in
@@ -31,7 +31,7 @@
   try: https://loklak-server-api.herokuapp.com         
              
 - title: SUSPER
-  img: susper.png
+  img: susper.jpg
   desc:   Susper is a decentralized Search Engine that uses the peer to peer
           system yacy and Apache Solr to crawl and index search results.
 
@@ -39,7 +39,7 @@
   try: https://susper.com      
 
 - title: PSlab
-  img: pslab.png
+  img: pslab.jpg
   desc:   PSLab is a tiny pocket science lab that provides an array of test and 
           measurement instruments for doing science and engineering experiments.
           It can function like an oscilloscope, waveform generator, frequency 

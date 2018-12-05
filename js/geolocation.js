@@ -23,8 +23,8 @@ map.on('drag', function() {
 });
 
 var studentIcon = L.icon({
-    iconUrl: 'img/studentMarker.png',
-    shadowUrl: 'img/markerShadow.png',
+    iconUrl: 'img/studentMarker.jpg',
+    shadowUrl: 'img/markerShadow.jpg',
 
     iconSize:     [32, 32],
     shadowSize:   [32, 32], 
@@ -34,8 +34,8 @@ var studentIcon = L.icon({
 });
 
 var mentorIcon = L.icon({
-    iconUrl: 'img/mentorMarker.png',
-    shadowUrl: 'img/markerShadow.png',
+    iconUrl: 'img/mentorMarker.jpg',
+    shadowUrl: 'img/markerShadow.jpg',
 
     iconSize:     [32, 32],
     shadowSize:   [32, 32], 

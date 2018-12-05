@@ -36,3 +36,47 @@ $('.code-in-nav li').hover(function(){
 },function(){
   $(this).css('background-color','#fff');
 });
+// Lazy Loading
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyloadSections ;    // Stores the elements for lazy loading
+  var lazyloadImages ;   // stores the img in the element
+  var lazyloadThrottleTimeout;
+  var scrollTop ;
+  
+  function lazyload () {
+    lazyloadSections = document.querySelectorAll(".lazy-section");
+    if(lazyloadThrottleTimeout) {
+      clearTimeout(lazyloadThrottleTimeout);
+    }    
+    
+    lazyloadThrottleTimeout = setTimeout(function() {
+        scrollTop = window.pageYOffset;
+        lazyloadSections.forEach(function(section) {
+            if($(section).offset().top -500 < (window.innerHeight + scrollTop)  && $(section).height() + $(section).offset().top + 500 > scrollTop ) {
+              lazyloadImages = section.querySelectorAll('img.lazy');
+              lazyloadImages.forEach(function(img){
+                img.src = img.dataset.src;
+                img.classList.remove('lazy');
+              });
+              section.classList.remove('lazy-section');
+            }
+        });
+            //Map
+         if($('.map').offset().top -500 < (window.innerHeight + scrollTop)) {
+           $.getScript("js/geolocation.js",function(){
+            showMapPeople();
+           });
+           $('.map').removeClass('hid');
+         }
+    }, 0);
+        if(lazyloadSections.length == 0 && !$('.map').hasClass('hid')) { 
+          document.removeEventListener("scroll", lazyload);
+          window.removeEventListener("resize", lazyload);
+          window.removeEventListener("orientationChange", lazyload);
+        }
+   }
+  
+  document.addEventListener("scroll", lazyload);
+  window.addEventListener("resize", lazyload);
+  window.addEventListener("orientationChange", lazyload);
+});

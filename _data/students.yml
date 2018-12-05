@@ -25,24 +25,24 @@
 
 - name: Sahil Kumar
   github: sahildav
-  image: nick.png
+  image: nick.jpg
 
 - name: Siddharth Sinha
   github: Sid911
   twitter: Sid_Dev_
-  image: sid.png
+  image: sid.jpg
 
 - name: Kua Le Yi
   github: kuaLeYi
-  image: dxa_kly.png
+  image: dxa_kly.jpg
 
 - name: Kartik Singhal
   github: KSNINJA
-  image: student_nick.png
+  image: student_nick.jpg
 
 - name: ploypiti
   github: ploypiti
-  image: pfp.png
+  image: pfp.jpg
 
 - name: Hubert Zimny
   github: AppleC4T
@@ -52,15 +52,15 @@
 
 - name: Mikołaj Hojda
   github: mikolajhojda
-  image: mhojda.png
+  image: mhojda.jpg
 
 - name: Supun Tharinda
   github: STEdirisuriya
-  image: supun.png
+  image: supun.jpg
 
 - name: Nitesh Kumar Niranjan
   github: niteshkumarniranjan
-  image: niteshkumarniranjan.png
+  image: niteshkumarniranjan.jpg
   twitter: niranjannitesh
   lat: 24.191351
   lng: 86.299637
@@ -76,7 +76,7 @@
 
 - name: Filip Michalak
   github: Rekjef
-  image: RekjefAvatar.png
+  image: RekjefAvatar.jpg
   
 - name: Joel Leo
   github: t0336000d
@@ -89,15 +89,15 @@
 
 - name: Jakub Pawlina
   github: jakubpawlina
-  image: jakubpawlina.png
+  image: jakubpawlina.jpg
 
 - name: Srihari Unnikrishnan
   github: pythongiant
-  image: sr.png
+  image: sr.jpg
 
 - name: Shreesh Kumar Jha
   github: shreeshjha
-  image: shreeshjha.png
+  image: shreeshjha.jpg
 
 - name: Sitaraman Subramanian
   github: Hackerbone
@@ -109,7 +109,7 @@
   
 - name: Gaurang
   github: gaurang7goel
-  image: Gaurang.png
+  image: Gaurang.jpg
   
 
 - name: Reza Juliandri
@@ -118,7 +118,7 @@
 
 - name: Kartikeya Singh
   github: kartikeya23
-  image: kart.png
+  image: kart.jpg
 
 - name: Saarthak Chaturvedi
   github: saarthakchats
@@ -135,11 +135,11 @@
  
 - name: Arjun Loomba
   github: arjunloomba1311
-  image: arjunloomba1311.png
+  image: arjunloomba1311.jpg
 
 - name: Rahul Metre
   github: RahulMetre03
-  image: RahulMetre.png
+  image: RahulMetre.jpg
 
 - name: Arihant Bansal
   github: arihantbansal
@@ -151,11 +151,11 @@
 
 - name: Tushar Kumar
   github: awesometushar000
-  image: tushar.png
+  image: tushar.jpg
   
 - name: coco
   github: cocox33x
-  image: coco.png
+  image: coco.jpg
 
 - name: Mochammad Rafi
   github: kol4k
@@ -163,15 +163,15 @@
 
 - name: Nishith P
   github: NishithP2004
-  image: NishithP.png
+  image: NishithP.jpg
   
 - name: Navan Chauhan
   github: navanchauhan
-  image: n3v0n.png
+  image: n3v0n.jpg
 
 - name: Yash Garg
   github: Yash-Garg
-  image: yashg.png
+  image: yashg.jpg
 
 - name: Ensanguined Scythe
   github: namphong124563
@@ -179,8 +179,8 @@
 
 - name: Hồ Đức Hiếu
   github: hoduchieu01
-  image: hoduchieu01.png
+  image: hoduchieu01.jpg
   
   name: Rasagnath Reddy
   github: rathindra3376
-  image: Rasagnath.png
+  image: Rasagnath.jpg
