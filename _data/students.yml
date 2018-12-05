@@ -5,6 +5,7 @@
 # - name: Student's name
 #   github: Student's Github Username
 #   image: Student's image (or representation like a "nick" image)
+#   imagewebp: Student's image (or representation like a "nick" image)
 #   twitter: Student's Twitter ID
 #   facebook: Student's Facebook ID
 #   lat: Student's Latitude
@@ -38,7 +39,8 @@
 
 - name: ploypiti
   github: ploypiti
-  image: pfp.png
+  image: pfp.jpg
+  iamgewebp: pfp.webp
 
 - name: Hubert Zimny
   github: AppleC4T
@@ -49,6 +51,7 @@
 - name: Mikołaj Hojda
   github: mikolajhojda
   image: mhojda.png
+  imagewebp: mhojda.webp
 
 - name: Supun Tharinda
   github: STEdirisuriya
@@ -64,6 +67,7 @@
 - name: Arjun Pandey
   github: arjunpandey2003
   image: arjun.jpg
+  imagewebp: arjung.webp
 
 - name: Jeewal Kunwar
   github: Jeewal
@@ -73,10 +77,12 @@
 - name: Filip Michalak
   github: Rekjef
   image: RekjefAvatar.png
+  imagewebp: RekjefAvatar.webp
   
 - name: Joel Leo
   github: t0336000d
   image: TheRed.jpg
+  imagewebp: TheRed.webp
 
 - name: Maciej Synowski
   github: Shizerq
@@ -90,10 +96,12 @@
 - name: Srihari Unnikrishnan
   github: pythongiant
   image: sr.png
+  imagewebp: sr.webp
 
 - name: Shreesh Kumar Jha
   github: shreeshjha
-  image: shreeshjha.png
+  image: shreeshjha.jpg
+  imagewebp: shreeshjha.webp
 
 - name: Sitaraman Subramanian
   github: Hackerbone
@@ -102,23 +110,25 @@
 - name: Aryan Kedare
   github: aryankedare
   image: aryankedare.jpeg
+  imagewebp: aryankedare.webp
   
 - name: Gaurang
   github: gaurang7goel
-  image: Gaurang.png
-  
+  image: Gaurang.jpg
+  imagewebp: Gaurang.webp
 
 - name: Reza Juliandri
   github: ppabcd
-  image: Reza.jpeg
+  image: Reza.jpg
 
 - name: Kartikeya Singh
   github: kartikeya23
   image: kart.png
+  imagewebp: kart.webp
 
 - name: Saarthak Chaturvedi
   github: saarthakchats
-  image: saarthak.JPG
+  image: saarthak.jpg
   twitter: SaarthakChats41
 
 - name: Akshit Goyal
@@ -128,10 +138,12 @@
 - name: Ryan Chang
   github: ryan10145
   image: rchang.jpg
+  imagewebp: rchang.webp
  
 - name: Arjun Loomba
   github: arjunloomba1311
   image: arjunloomba1311.png
+  imagewebp: arjunloomba1311.webp
 
 - name: Rahul Metre
   github: RahulMetre03
@@ -140,35 +152,43 @@
 - name: Arihant Bansal
   github: arihantbansal
   image: arihant.jpg
+  imagewebp: arihant.webp
 
 - name: Rahul Arora
   github: rahulaarora
-  image: Rahul Arora.jpg 
+  image: Rahul Arora.jpg
+  imagewebp: Rahul Arora.webp 
 
 - name: Tushar Kumar
   github: awesometushar000
   image: tushar.png
+  imagewebp: tushar.webp
   
 - name: coco
   github: cocox33x
   image: coco.png
+  imagewebp: coco.webp
 
 - name: Mochammad Rafi
   github: kol4k
-  image: rafi.jpeg
+  image: rafi.jpg
 
 - name: Nishith P
   github: NishithP2004
   image: NishithP.png
+  imagewebp: NishithP.webp
   
 - name: Navan Chauhan
   github: navanchauhan
   image: n3v0n.png
+  imagewebp: n3v0n.webp
 
 - name: Yash Garg
   github: Yash-Garg
-  image: yashg.png
+  image: yashg.jpg
+  imagewebp: yashg.webp
 
 - name: Ensanguined Scythe
   github: namphong124563
-  image: namphong124563.jpeg
+  image: namphong124563.jpg
+  imagewebp: namphong124563.webp

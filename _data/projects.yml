@@ -1,5 +1,5 @@
 - name: Nitesh's Portfolio
-  img: niteshkumarniranjan.png
+  img: niteshkumarniranjan.jpg
   link: https://github.com/niteshkumarniranjan/niteshkumarniranjan.github.io/
   creator: Nitesh Kumar Niranjan
   email: niteshkumarniranjan@gmail.com
@@ -7,7 +7,8 @@
   info: My name is Nitesh Kumar Niranjan. I am a 16-year-old designer, developer and thinker based in India . I design and build full-stack-web applications. 
   
 - name: Help Our Mother
-  img: sahilsahaproject.png
+  img: sahilsahaproject.jpg
+  imgwebp: sahilsahaproject.webp
   link: http://helpourmother.dx.am/
   creator: Sahil Saha
   email: helpourmother1103@gmail.com 
@@ -15,7 +16,8 @@
   info: Organization which will prevent pollution in India. It will make the people united to fight against the devil of pollution.
 
 - name: Spark
-  img: spark.png
+  img: spark.jpg
+  imgwebp: spark.webp
   link: https://github.com/IgniteInYou/spark-website-2018/
   creator: Saarthak Chaturvedi
   email: saarthakchats05@gmail.com
@@ -23,26 +25,26 @@
   info: Spark is a plethora of innovation and excitement. It is the pre-eminent platform to express, explore and excel.
   
 - name: Tick
-  img: Tick..png
+  img: Tick.jpg
+  webp: Tick.webp
   link: https://github.com/pythongiant/tick/
   creator: Srihari Unnikrishnan
   email: srihari.unnikrishnan@gmail.com
   github: pythongiant
   info: Tick is a Version Control System for Linux and is an alternative to git and subversion . 
   
-  
-
 - name: AI based systems around us
   img: ai.jpg
+  imgwebp: ai.webp
   link: https://github.com/stedirisuriya/AI-based-systems-around-us/
   creator: Supun Tharinda Edirisuriya
   email: supunedirisuriya2002@gmail.com
   github: STEdirisuriya
   info: Artificial intelligence (AI) is intelligence demonstrated by machines, in contrast to the natural intelligence displayed by humans.
   
-
 - name: FriendlyChat
   img: friendlychat.png
+  imgwebp: friendlychat.webp
   link: https://github.com/KSNINJA/FriendlyChat-Lv.2/
   creator: Kartik Singhal
   email: kartiksinghal122@gmail.com
@@ -51,9 +53,9 @@
   
 - name: Arihant's Personal Website
   img: arihantbansal.jpg
+  imagewebp: arihantbansal.webp
   link: https://github.com/arihantbansal/arihantbansal.github.io
   creator: Arihant Bansal
   email: arihant.bansal@gmail.com
-  github: arihantbansal 
+  github: arihantbansal
   info: I'm Arihant Bansal, a 16-year-old student who's got a knack for programming and problem solving. I build websites to kill boredom. 
-  
