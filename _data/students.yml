@@ -10,6 +10,10 @@
 #   lat: Student's Latitude
 #   lng: Student's Longitude
 
+- name: Ashwanth Kumar
+  github: Ashwanth7230
+  image: Ashwanth.jpg
+  
 - name: Vishal Kumar
   github: vishalx360
   image: vishalx360.jpeg
