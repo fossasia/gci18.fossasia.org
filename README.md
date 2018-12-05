@@ -1,8 +1,10 @@
 # gci18.fossasia.org
 FOSSASIA Google Code-In Website 2018
-https://gci18.fossasia.org
+[gci18.fossasia.org](https://gci18.fossasia.org)
 
-This is the repository for Fossasia's website for Google Code-In 2018, we at Fossasia intend to develop it collaboratively during the course of this competition by participating students themselves. Fork the repository before making changes and make sure you read [Fossasia Best Practices](https://blog.fossasia.org/open-source-developer-guide-and-best-practices-at-fossasia/)
+This is the repository for FOSSASIA's website for Google Code-In 2018, we at FOSSASIA intend to develop it collaboratively during the course of this competition by participating students themselves. Fork the repository before making changes and make sure you read [FOSSASIA Best Practices](https://blog.fossasia.org/open-source-developer-guide-and-best-practices-at-fossasia/)
+
+Read in **[German](https://github.com/Ritzing/gci18.fossasia.org/blob/master/translations/GermanReadme.md)**
 
 ## Communication
 
@@ -59,15 +61,104 @@ This is the repository for Fossasia's website for Google Code-In 2018, we at Fos
 - Choose a current GCI mentor and seek permission before adding him/her
 - Ask for a picture or take it from github and set the size to 240x240 px
 - Upload the picture to the img/mentors folder - with a suitable name
-- Add the mentor to the _data/metors.yml file as shown below
+-  Add the mentor to the _data/metors.yml file as shown below
 ```yaml
 - name: Mentor's name
-  github: Mentor's Github username
-  image: Mentor's image
+  github: Mentor's github link
+  img: Mentor's img 
+  
 ```
+
+## How to add location marker to the map
+**Student's location:**
+- Get your geographic coordinates using a [geolocation finder](https://fossasia.github.io/geolocation/) (if you don't want to provide your exact coordinates you can use [this one](https://www.latlong.net/) to get general coordinates for your city or country) 
+- Copy your latitude and longitude and paste them into the respective lines in your student profile in the _data/students.yml file
+```yaml
+  lat: your latitude
+  lng: your longitude 
+```
+- The marker should appear in the given location containing your name/nickname you provided in your student profile
+
+**Mentor's location:**
+- Choose a GCI mentor and contact them asking for their permission before adding his/her location
+- Ask the mentor for their coordinates (latitude and longitude)
+- Paste their latitude and longitude and paste them into the respective lines in their mentor profile in the _data/mentors.yml file
+```yaml
+  lat: mentor's latitude
+  lng: mentor's longitude 
+```
+- The marker should appear in the given location containing the mentor's name
+
+## How to add a New Project to the website
+-  Choose a FOSSASIA project
+
+- Ask for a picture or take it from github and set the size to 1366x566 px
+- Upload the picture to the img folder - with a suitable name
+- Add the project to the _data/orgprojects.yml file as shown below
+
+```yaml
+- title: Project name
+  img: Project screenshot
+  desc: Project description
+  github: Project github link
+  try: URL where project is hosted 
+```
+
+## How to add your video to the Videos section:
+- Make your video, you can search for open-source video editing software
+- Once your video is ready, post it on your YouTube channel (if don't have one - create it!)
+- After uploading the video to your channel add it to the _data/videos.yml file as shown below:
+
+```yaml
+- name: Title you want to be shown on the gci18.fossasia.org website (it's recommended to use the same as the video's youtube title, but you can choose a different one)
+  id: The YouTube ID of your video , it's the 11 characters after the v= in your video's link (e.g. for this link: https://www.youtube.com/watch?v=NFCcqIq84UI the id is: NFCcqIq84UI )
+  user: Your name that will be displayed on the page
+```
+Note: Your video must be uploaded after the 1st of January 2018 in order to display properly on the gci18.fossasia.org page
 
 ## How to add a language to the Thank you section:
 - Choose a language(probably one you're familiar with)
 - Pick the phrase "Thank you for your contributions" or "Thank you for contributing" and translate it
 - Add the translation to the `var items = [];` in the js/thankyou.js file
 
+## Available Gradients
+- `gradient-pink-light` =  #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%
+<img src="https://webgradients.com/public/webgradients_png/001%20Warm%20Flame.png"
+     alt="Warm Flame"
+     width = 100%
+     height= 50px/>
+- `gradient-pink` = #ff758c, #ff7eb3
+<img src="https://webgradients.com/public/webgradients_png/080%20Passionate%20Bed.png"
+     alt="Ripe Malinka"
+     width= 100%
+     height= 50px/>
+- `gradient-cyan-light` = #84fab0 0%, #8fd3f4 100%
+<img src="https://webgradients.com/public/webgradients_png/012%20Tempting%20Azure.png"
+     alt="Tempting Azure"
+     width = 100%
+     height= 50px/>
+- `gradient-cyan` = #43e97b 0%, #38f9d7 100%
+<img src="https://webgradients.com/public/webgradients_png/020%20New%20Life.png"
+     alt="New Life"
+     width= 100%
+     height= 50px/>
+- `gradient-blue-light` = #a1c4fd 0%, #c2e9fb 100%
+<img src="https://webgradients.com/public/webgradients_png/010%20Winter%20Neva.png"
+     alt="Winter Neva"
+     width= 100%
+     height = 50px/>
+- `gradient-blue` = #4facfe,#00f2fe
+<img src="https://webgradients.com/public/webgradients_png/019%20Malibu%20Beach.png"
+     alt="Malibu Beach"
+     width= 100%
+     height = 50px />
+- `gradient-multi-cool` =  #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%
+<img src="https://webgradients.com/public/webgradients_png/152%20Sea%20Lord.png"
+     alt="Sea Lord"
+     width= 100%
+     height = 100px />
+- `gradient-multi-hot` = #FFE29F 0%, #FFA99F 48%, #FF719A 100%
+<img src="https://webgradients.com/public/webgradients_png/158%20Angel%20Care.png"
+     alt="Angel Care"
+     width= 100%
+     height = 100px />

@@ -1,2 +1,8 @@
 baseurl: ""
 
+sass:
+    sass_dir: css
+    style: compressed
+
+plugins:
+    - jekyll-gzip

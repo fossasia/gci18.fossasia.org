@@ -19,6 +19,10 @@
   github: akshatnitd
   image: akshatnitd.jpg
 
+- name: Divyanshu N Singh
+  github: DNS-404
+  image: DNS-404.PNG
+
 - name: Shubham Kumar
   github: sk9331657
   image: shubham.png
@@ -38,7 +42,7 @@
 - name: Saurabh Srivastava
   image: simsausaurabh.png
   github: simsausaurabh
-  
+
 - name: Hong Phuc Dang
   image: hpdang.jpg
   github: hpdang
@@ -50,7 +54,7 @@
 - name: Mohit Sharma
   image: ms.jpg
   github: ms10398
-  
+
 - name: Yash Kumar Verma
   image: YKV.jpg
   github: YashKumarVerma
@@ -58,3 +62,71 @@
 - name: Arundhati Gupta
   image: agupta.jpg
   github: arundhati24
+
+- name: Shubham Gupta
+  image: ShubhamGupta.png
+  github: fragm3
+
+- name: Jogendra Kumar
+  image: jogendra.png
+  github: jogendra
+  lat: 25.2665185
+  lng: 82.984087
+  
+- name: Abishek V Ashok
+  image: AbishekVAshok.png
+  github: abishekvashok
+  lat: 9.8974123
+  lng: 76.3253836
+
+- name: Nikit Bhandari
+  image: nikitbhandari.jpeg
+  github: nikit19
+
+- name: Rohit Potter
+  image: RohitPotter.jpg
+  github: rpotter12
+  lat: 30.733315
+  lng: 76.779419
+
+- name: Nicco Kunzmann
+  image: Nicco Kunzmann.png
+  github: niccokunzmann
+  lat: 52.3863
+  lng: 13.0983
+
+- name: Anshuman Verma
+  image: Anshuman Verma.jpg
+  github: anshumanv
+
+- name: Isuru Abeywardana
+  image: isuruAb.jpg
+  github: Isuru Abeywardana
+
+- name: Saurav Vishal
+  image: Saurav Vishal.jpg
+  github: sauravvishal8797
+
+- name: Mohit Kumar
+  image: mohitkumar.png
+  github: batbrain7
+
+- name: Akshat Jain
+  image: rsz_akshat_jain.png
+  github: Akshat-Jain
+  lat: 25.540780
+  lng: 84.851131
+
+- name: Tarun Kumar
+  image: Tarun Kumar.jpg
+  github: meets2tarun
+
+- name: Prateek Chanda
+  image: prateekiiest.jpg
+  github: prateekiiest
+
+- name: Sarnava Konar
+  image: Sarnava.jpg
+  github: sarnava1
+  lat: 22.6982
+  lng: 88.3895

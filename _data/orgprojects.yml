@@ -1,0 +1,50 @@
+- title: SUSI.AI
+  img: susi.jpg
+  desc:   Susi is an artificial intelligence system, combining pattern matching,
+          internet data, data flow, and inference engine principles. Through
+          some abilities to reflect, it can remember the user input to produce
+          deductions and personalized feedback. Its purpose is to explore the
+          abilities of an artificial companion and to answer the remaining
+          unanswered questions. The SUSI.AI web chat is a front-end developed
+          for web access of SUSI.
+  github: https://github.com/fossasia/chat.susi.ai
+  try: https://chat.susi.ai/   
+
+- title: Meilix
+  img: meil_s.png
+  desc:    Meilix is a beautiful and customizable Linux build for out of the box
+          features for an Internet Kiosk. You can use the Meilix Generator (Web
+          app) to make a Linux for your own brand/event, also add apps and
+          features you need pre-installed, it will create an ISO Image of your
+          Linux, which you can use as a live boot or install on PCs.
+  github: https://github.com/fossasia/meilix
+  try: https://meilix.fossasia.org/          
+
+- title: Loklak
+  img: lok_s.png
+  desc:   loklak is a server application which is able to collect messages from
+          various sources, including twitter. The server contains a search index
+          and a peer-to-peer index sharing interface. All messages are stored in
+          an elasticsearch index.
+
+  github: https://github.com/loklak/loklak_server
+  try: https://loklak-server-api.herokuapp.com         
+             
+- title: SUSPER
+  img: susper.png
+  desc:   Susper is a decentralized Search Engine that uses the peer to peer
+          system yacy and Apache Solr to crawl and index search results.
+
+  github: https://github.com/fossasia/susper.com
+  try: https://susper.com      
+
+- title: PSlab
+  img: pslab.png
+  desc:   PSLab is a tiny pocket science lab that provides an array of test and 
+          measurement instruments for doing science and engineering experiments.
+          It can function like an oscilloscope, waveform generator, frequency 
+          counter, programmable voltage and current source and also as a data logger.   
+  
+  github: https://github.com/fossasia/pslab-hardware
+  try: https://pslab.io/
+       
