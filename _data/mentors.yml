@@ -10,11 +10,7 @@
 #   lat: Mentor's Latitude
 #   lng: Mentor's Longitude
 
-- name: Chetan Kaushik
-  github: dynamitechetan
-  image: Chetan Kaushik.jpg
-  
-- name: Akshat Garg
+  - name: Akshat Garg
   github: akshatnitd
   image: akshatnitd.jpg
 
