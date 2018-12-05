@@ -1,7 +1,8 @@
 <script>
-function tplawesome(e,t){res=e;for(var n=0;n<t.length;n++){res=res.replace(/\{\{(.*?)\}\}/g,function(e,r){return t[n][r]})}return res}	
-function loadVideos(){
-	{% for video in site.data.videos %}
+function tplawesome(e,t){res=e;for(var n=0;n<t.length;n++){res=res.replace(/\{\{(.*?)\}\}/g,function(e,r){return t[n][r]})}return res}
+var videoLoaders = [];
+{% for video in site.data.videos %}	
+function loadVideo{{video.id}}(){
        // prepare the request
        var request = gapi.client.youtube.search.list({
             part: "snippet",
@@ -13,19 +14,20 @@ function loadVideos(){
        }); 
        request.execute(function(response) {
           var results = response.result;
-          $("#{{video.name}}").html("");
+          $("#{{video.id}}").html("");
           $.each(results.items, function(index, item) {
             $.get("tpl/item.html", function(data) {
-                $("#{{video.name}}").append(tplawesome(data, [{"title":"{{video.name}} - {{video.user}}", "videoid":item.id.videoId}]));
+                $("#{{video.id}}").append(tplawesome(data, [{"title":"", "videoid":item.id.videoId}]));
             });
           });
           resetVideoHeight();
        });
     }
+ 	videoLoaders.push(loadVideo{{video.id}});
 		{% endfor %}
     $(window).on("resize", resetVideoHeight);
 function resetVideoHeight() {
-    $(".video").css($("#{{video.name}}").height(), $("#{{video.name}}").width() * 9/16);
+    $(".video").css($("#{{video.id}}").height(), $("#{{video.id}}").width() * 9/16);
 }
 
 function init() {
@@ -33,7 +35,11 @@ function init() {
     gapi.client.load("youtube", "v3", function() {
         // yt api is ready
         console.log("YouTube API ready");
-		setTimeout(loadVideos, 2000);
+		setTimeout(function(){
+			for (var i=0; i < videoLoaders.length; i++){
+				videoLoaders[i]();
+			}
+		}, 2000);
     });
 	
 }

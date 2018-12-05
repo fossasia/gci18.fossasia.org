@@ -11,6 +11,10 @@
 #   lat: Student's Latitude
 #   lng: Student's Longitude
 
+- name: Ashwanth Kumar
+  github: Ashwanth7230
+  image: Ashwanth.jpg
+  
 - name: Vishal Kumar
   github: vishalx360
   image: vishalx360.jpeg
@@ -59,7 +63,8 @@
 
 - name: Nitesh Kumar Niranjan
   github: niteshkumarniranjan
-  image: niteshkumarniranjan.png
+  image: niteshkumarniranjan.jpg
+  iamgewebp: niteshkumarniranjan.webp
   twitter: niranjannitesh
   lat: 24.191351
   lng: 86.299637
@@ -76,7 +81,7 @@
 
 - name: Filip Michalak
   github: Rekjef
-  image: RekjefAvatar.png
+  image: RekjefAvatar.jpg
   imagewebp: RekjefAvatar.webp
   
 - name: Joel Leo
@@ -95,7 +100,7 @@
 
 - name: Srihari Unnikrishnan
   github: pythongiant
-  image: sr.png
+  image: sr.jpg
   imagewebp: sr.webp
 
 - name: Shreesh Kumar Jha
@@ -192,3 +197,13 @@
   github: namphong124563
   image: namphong124563.jpg
   imagewebp: namphong124563.webp
+
+- name: Hồ Đức Hiếu
+  github: hoduchieu01
+  image: hoduchieu01.jpg
+  imagewebp: hoduchieu01.webp  
+
+  name: Rasagnath Reddy
+  github: rathindra3376
+  image: Rasagnath.jpg
+  imgwebp: Rasagnath.webp

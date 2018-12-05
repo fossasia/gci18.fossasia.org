@@ -16,7 +16,7 @@
   info: Organization which will prevent pollution in India. It will make the people united to fight against the devil of pollution.
 
 - name: Spark
-  img: spark.jpg
+  img: spark.png
   imgwebp: spark.webp
   link: https://github.com/IgniteInYou/spark-website-2018/
   creator: Saarthak Chaturvedi
@@ -43,7 +43,7 @@
   info: Artificial intelligence (AI) is intelligence demonstrated by machines, in contrast to the natural intelligence displayed by humans.
   
 - name: FriendlyChat
-  img: friendlychat.png
+  img: friendlychat.jpg
   imgwebp: friendlychat.webp
   link: https://github.com/KSNINJA/FriendlyChat-Lv.2/
   creator: Kartik Singhal
@@ -57,5 +57,22 @@
   link: https://github.com/arihantbansal/arihantbansal.github.io
   creator: Arihant Bansal
   email: arihant.bansal@gmail.com
-  github: arihantbansal
-  info: I'm Arihant Bansal, a 16-year-old student who's got a knack for programming and problem solving. I build websites to kill boredom. 
+  github: arihantbansal 
+  info: I'm Arihant Bansal, a 16-year-old student who's got a knack for programming and problem solving. I build websites to kill boredom.
+
+- name: Shreesh Jha Personal Portfolio
+  img: shreeshjha.jpg
+  link: https://github.com/shreeshjha/shreeshjha.github.io
+  creator: Shreesh Jha
+  email: shreeshkumar2@gmail.com
+  github: shreeshjha
+  info: I am a Student currently in 11th standard and Begineer in Python and C++, Interested in Embedded Sytems and Artificial intelligence.
+ 
+- name: Nishith's Portfolio
+  img: NishithP.jpg
+  link: https://github.com/nishithp2004/nishithp2004.github.io
+  creator: Nishith P
+  email: nishithp11@gmail.com
+  github: NishithP2004
+  info: This is the official Portfolio of Nishith P.
+  
