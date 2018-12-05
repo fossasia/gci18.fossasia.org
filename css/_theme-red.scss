@@ -887,9 +887,10 @@ body.btn-rounded .btn {
 .nav-container {
   -webkit-backface-visibility: hidden;
   max-width: 100%;
+  min-width: 100%;
+  background: rgba(255,255,255,0.9);
 }
 nav {
-  background: #fff;
   -webkit-backface-visibility: hidden;
   max-width: 100%;
 }
@@ -927,18 +928,19 @@ nav .btn,
   top: 1px;
 }
 .nav-bar {
-  height: 55px;
-  max-height: 55px;
+  height: 64px;
+  max-height: 64px;
   line-height: 53px;
   border-bottom: 1px solid #ccc;
 }
 .nav-bar .module,
 .nav-bar .module-group {
-  height: 55px;
+  height: 64px;
 }
 .nav-bar a {
   display: inline-block;
-  height: 55px;
+  height: 64px;
+  max-height: 64px;
 }
 .logo {
   max-height: 60%;
@@ -974,7 +976,7 @@ nav.bg-dark .logo-dark {
 }
 .menu {
   width: 100%;
-  height: 55px;
+  height: 64px;
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .menu.inline-block {
@@ -986,15 +988,16 @@ nav.bg-dark .logo-dark {
   font-weight: 600;
   letter-spacing: 1px;
   color: #292929;
-  opacity: 0.5;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   max-width: 100%;
   white-space: normal;
+  border-top: 5px solid transparent;
+  border-bottom: 2px solid transparent;
 }
-.menu li a:hover {
-  opacity: 1 !important;
+.menu > li a:hover {
+  border-bottom: 2px solid #333;
 }
 .menu > li {
   margin-right: 32px;
@@ -1122,7 +1125,6 @@ nav.nav-centered .module.widget-handle {
 .module.widget-handle i {
   font-size: 20px;
   line-height: 53px;
-  opacity: 0.5;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -1597,10 +1599,6 @@ nav.transparent.fixed .menu > .has-dropdown:after {
 }
 nav.transparent.fixed .module.widget-handle {
   border-left: 1px solid #ccc;
-}
-nav.transparent.fixed .menu > li > a,
-nav.transparent.fixed .module.widget-handle i {
-  opacity: .5;
 }
 nav.bg-dark .menu > li > a,
 nav.bg-dark .module.widget-handle i,

@@ -98,18 +98,8 @@ $(document).ready(function() {
     $(this).css('width', $(this).attr('data-progress') + '%');
   });
 
-  // Navigation
-
-  if (!$('nav').hasClass('fixed') && !$('nav').hasClass('absolute')) {
-    // Make nav container height of nav
-
-    $('.nav-container').css('min-height', $('nav').outerHeight(true));
-
-    $(window).resize(function() {
-      $('.nav-container').css('min-height', $('nav').outerHeight(true));
-    });
-
-    // Compensate the height of parallax element for inline nav
+  
+     // Compensate the height of parallax element for inline nav
 
     if ($(window).width() > 768) {
       $('.parallax:nth-of-type(1) .background-image-holder').css(
@@ -126,9 +116,6 @@ $(document).ready(function() {
         $(window).height() - $('nav').outerHeight(true)
       );
     }
-  } else {
-    $('body').addClass('nav-is-overlay');
-  }
 
   if ($('nav').hasClass('bg-dark')) {
     $('.nav-container').addClass('bg-dark');
@@ -142,7 +129,6 @@ $(document).ready(function() {
     typeof mr_nav.attr('data-fixed-at') !== typeof undefined
       ? parseInt(mr_nav.attr('data-fixed-at').replace('px', ''))
       : parseInt($('section:nth-of-type(1)').outerHeight());
-  window.addEventListener('scroll', updateNav, false);
 
   // Menu dropdown positioning
 
@@ -1280,66 +1266,6 @@ $(window).load(function() {
     '.main-container section:nth-of-type(1)'
   ).outerHeight(true);
 });
-function updateNav() {
-  var scrollY = mr_scrollTop;
-
-  if (scrollY <= 0) {
-    if (mr_navFixed) {
-      mr_navFixed = false;
-      mr_nav.removeClass('fixed');
-    }
-    if (mr_outOfSight) {
-      mr_outOfSight = false;
-      mr_nav.removeClass('outOfSight');
-    }
-    if (mr_navScrolled) {
-      mr_navScrolled = false;
-      mr_nav.removeClass('scrolled');
-    }
-    return;
-  }
-
-  if (scrollY > mr_navOuterHeight + mr_fixedAt) {
-    if (!mr_navScrolled) {
-      mr_nav.addClass('scrolled');
-      mr_navScrolled = true;
-      return;
-    }
-  } else {
-    if (scrollY > mr_navOuterHeight) {
-      if (!mr_navFixed) {
-        mr_nav.addClass('fixed');
-        mr_navFixed = true;
-      }
-
-      if (scrollY > mr_navOuterHeight + 10) {
-        if (!mr_outOfSight) {
-          mr_nav.addClass('outOfSight');
-          mr_outOfSight = true;
-        }
-      } else {
-        if (mr_outOfSight) {
-          mr_outOfSight = false;
-          mr_nav.removeClass('outOfSight');
-        }
-      }
-    } else {
-      if (mr_navFixed) {
-        mr_navFixed = false;
-        mr_nav.removeClass('fixed');
-      }
-      if (mr_outOfSight) {
-        mr_outOfSight = false;
-        mr_nav.removeClass('outOfSight');
-      }
-    }
-
-    if (mr_navScrolled) {
-      mr_navScrolled = false;
-      mr_nav.removeClass('scrolled');
-    }
-  }
-}
 
 function capitaliseFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
