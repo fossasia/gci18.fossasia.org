@@ -20,26 +20,26 @@
 
 - name: Divyanshu N Singh
   github: DNS-404
-  image: DNS-404.PNG
+  image: DNS-404.jpg
 
 - name: Shubham Kumar
   github: sk9331657
-  image: shubham.png
+  image: shubham.jpg
 
 - name: Harshit Khandelwal
-  image: 27783786.png
+  image: 27783786.jpg
   github: liveHarshit
 
 - name: tabesin
-  image: tabesin.png
+  image: tabesin.jpg
   github: tabesin
 
 - name: Shashank Kumar
-  image: realslimshanky.png
+  image: realslimshanky.jpg
   github: realslimshanky
 
 - name: Saurabh Srivastava
-  image: simsausaurabh.png
+  image: simsausaurabh.jpg
   github: simsausaurabh
 
 - name: Hong Phuc Dang
@@ -63,17 +63,17 @@
   github: arundhati24
 
 - name: Shubham Gupta
-  image: ShubhamGupta.png
+  image: ShubhamGupta.jpg
   github: fragm3
 
 - name: Jogendra Kumar
-  image: jogendra.png
+  image: jogendra.jpg
   github: jogendra
   lat: 25.2665185
   lng: 82.984087
   
 - name: Abishek V Ashok
-  image: AbishekVAshok.png
+  image: AbishekVAshok.jpg
   github: abishekvashok
   lat: 9.8974123
   lng: 76.3253836
@@ -89,7 +89,7 @@
   lng: 76.779419
 
 - name: Nicco Kunzmann
-  image: Nicco Kunzmann.png
+  image: Nicco Kunzmann.jpg
   github: niccokunzmann
   lat: 52.3863
   lng: 13.0983
@@ -107,11 +107,11 @@
   github: sauravvishal8797
 
 - name: Mohit Kumar
-  image: mohitkumar.png
+  image: mohitkumar.jpg
   github: batbrain7
 
 - name: Akshat Jain
-  image: rsz_akshat_jain.png
+  image: rsz_akshat_jain.jpg
   github: Akshat-Jain
   lat: 25.540780
   lng: 84.851131

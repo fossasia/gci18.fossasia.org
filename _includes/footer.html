@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-3 col-sm-6">
-        <img alt="Logo" class="logo" src="img/logo-light.png" />
+        <img alt="Logo" class="logo" src="img/logo-light.jpg" />
       </div>
       <div class="col-md-3 col-sm-6">
         <div class="widget">
@@ -144,17 +144,19 @@
 <script  src="js/custom.js"></script>
 <script src="js/nav_theme.js"></script>
 <script>
-  {% for student in site.data.students %}
-  {% if student.lat and student.lng %}
-	  L.marker([{{student.lat}}, {{student.lng}}], {icon: studentIcon}).addTo(map).bindPopup("<b>{{student.name}}</b>");
-  {% endif %}
-  {% endfor %}
+  function showMapPeople(){
+    {% for student in site.data.students %}
+       {% if student.lat and student.lng %}
+           L.marker([{{student.lat}}, {{student.lng}}], {icon: studentIcon}).addTo(map).bindPopup("<b>{{student.name}}</b>");
+       {% endif %}
+    {% endfor %}
 
-  {% for mentor in site.data.mentors %}
-  {% if mentor.lat and mentor.lng %}
-	  L.marker([{{mentor.lat}}, {{mentor.lng}}], {icon: mentorIcon}).addTo(map).bindPopup("<b>{{mentor.name}}</b>");
-  {% endif %}
-  {% endfor %}
+    {% for mentor in site.data.mentors %}
+       {% if mentor.lat and mentor.lng %}
+           L.marker([{{mentor.lat}}, {{mentor.lng}}], {icon: mentorIcon}).addTo(map).bindPopup("<b>{{mentor.name}}</b>");
+       {% endif %}
+    {% endfor %}
+  }
 </script>
 
 </body>
