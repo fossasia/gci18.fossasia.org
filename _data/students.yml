@@ -2,13 +2,20 @@
 # This is to remove conflicts with other people adding entries.
 
 # The Format is :
-# - name: Ashwanth Kumar
-#   github: Ashwanth7230
-#   image: Ashwanth.jpg
-#   twitter: Ashwanth Kumar
-#   facebook: Ashwanth Kumar
+# - name: Student's name
+#   github: Student's Github Username
+#   image: Student's image (or representation like a "nick" image)
+#   twitter: Student's Twitter ID
+#   facebook: Student's Facebook ID
+#   lat: Student's Latitude
+#   lng: Student's Longitude
 
-
+- name: Ashwanth Kumar
+  github: Ashwanth7230
+  image: Ashwanth.jpg
+  twitter: Ashwanth Kumar
+  facebook: Ashwanth Kumar
+  
 - name: Vishal Kumar
   github: vishalx360
   image: vishalx360.jpeg
