@@ -5,6 +5,7 @@
 # - name: Student's name
 #   github: Student's Github Username
 #   image: Student's image (or representation like a "nick" image)
+#   imagewebp: Student's image (or representation like a "nick" image)
 #   twitter: Student's Twitter ID
 #   facebook: Student's Facebook ID
 #   lat: Student's Latitude
@@ -43,6 +44,10 @@
 - name: ploypiti
   github: ploypiti
   image: pfp.jpg
+<<<<<<< HEAD
+  iamgewebp: pfp.webp
+=======
+>>>>>>> upstream/master
 
 - name: Hubert Zimny
   github: AppleC4T
@@ -52,7 +57,12 @@
 
 - name: Mikołaj Hojda
   github: mikolajhojda
+<<<<<<< HEAD
+  image: mhojda.png
+  imagewebp: mhojda.webp
+=======
   image: mhojda.jpg
+>>>>>>> upstream/master
 
 - name: Supun Tharinda
   github: STEdirisuriya
@@ -61,6 +71,10 @@
 - name: Nitesh Kumar Niranjan
   github: niteshkumarniranjan
   image: niteshkumarniranjan.jpg
+<<<<<<< HEAD
+  iamgewebp: niteshkumarniranjan.webp
+=======
+>>>>>>> upstream/master
   twitter: niranjannitesh
   lat: 24.191351
   lng: 86.299637
@@ -68,6 +82,7 @@
 - name: Arjun Pandey
   github: arjunpandey2003
   image: arjun.jpg
+  imagewebp: arjung.webp
 
 - name: Jeewal Kunwar
   github: Jeewal
@@ -77,10 +92,15 @@
 - name: Filip Michalak
   github: Rekjef
   image: RekjefAvatar.jpg
+<<<<<<< HEAD
+  imagewebp: RekjefAvatar.webp
+=======
+>>>>>>> upstream/master
   
 - name: Joel Leo
   github: t0336000d
   image: TheRed.jpg
+  imagewebp: TheRed.webp
 
 - name: Maciej Synowski
   github: Shizerq
@@ -94,10 +114,18 @@
 - name: Srihari Unnikrishnan
   github: pythongiant
   image: sr.jpg
+<<<<<<< HEAD
+  imagewebp: sr.webp
+=======
+>>>>>>> upstream/master
 
 - name: Shreesh Kumar Jha
   github: shreeshjha
   image: shreeshjha.jpg
+<<<<<<< HEAD
+  imagewebp: shreeshjha.webp
+=======
+>>>>>>> upstream/master
 
 - name: Sitaraman Subramanian
   github: Hackerbone
@@ -106,23 +134,33 @@
 - name: Aryan Kedare
   github: aryankedare
   image: aryankedare.jpeg
+  imagewebp: aryankedare.webp
   
 - name: Gaurang
   github: gaurang7goel
   image: Gaurang.jpg
+<<<<<<< HEAD
+  imagewebp: Gaurang.webp
+=======
   
+>>>>>>> upstream/master
 
 - name: Reza Juliandri
   github: ppabcd
-  image: Reza.jpeg
+  image: Reza.jpg
 
 - name: Kartikeya Singh
   github: kartikeya23
+<<<<<<< HEAD
+  image: kart.png
+  imagewebp: kart.webp
+=======
   image: kart.jpg
+>>>>>>> upstream/master
 
 - name: Saarthak Chaturvedi
   github: saarthakchats
-  image: saarthak.JPG
+  image: saarthak.jpg
   twitter: SaarthakChats41
 
 - name: Akshit Goyal
@@ -132,10 +170,16 @@
 - name: Ryan Chang
   github: ryan10145
   image: rchang.jpg
+  imagewebp: rchang.webp
  
 - name: Arjun Loomba
   github: arjunloomba1311
+<<<<<<< HEAD
+  image: arjunloomba1311.png
+  imagewebp: arjunloomba1311.webp
+=======
   image: arjunloomba1311.jpg
+>>>>>>> upstream/master
 
 - name: Rahul Metre
   github: RahulMetre03
@@ -144,43 +188,79 @@
 - name: Arihant Bansal
   github: arihantbansal
   image: arihant.jpg
+  imagewebp: arihant.webp
 
 - name: Rahul Arora
   github: rahulaarora
-  image: Rahul Arora.jpg 
+  image: Rahul Arora.jpg
+  imagewebp: Rahul Arora.webp 
 
 - name: Tushar Kumar
   github: awesometushar000
+<<<<<<< HEAD
+  image: tushar.png
+  imagewebp: tushar.webp
+  
+- name: coco
+  github: cocox33x
+  image: coco.png
+  imagewebp: coco.webp
+=======
   image: tushar.jpg
   
 - name: coco
   github: cocox33x
   image: coco.jpg
+>>>>>>> upstream/master
 
 - name: Mochammad Rafi
   github: kol4k
-  image: rafi.jpeg
+  image: rafi.jpg
 
 - name: Nishith P
   github: NishithP2004
+<<<<<<< HEAD
+  image: NishithP.png
+  imagewebp: NishithP.webp
+  
+- name: Navan Chauhan
+  github: navanchauhan
+  image: n3v0n.png
+  imagewebp: n3v0n.webp
+=======
   image: NishithP.jpg
   
 - name: Navan Chauhan
   github: navanchauhan
   image: n3v0n.jpg
+>>>>>>> upstream/master
 
 - name: Yash Garg
   github: Yash-Garg
   image: yashg.jpg
+<<<<<<< HEAD
+  imagewebp: yashg.webp
+=======
+>>>>>>> upstream/master
 
 - name: Ensanguined Scythe
   github: namphong124563
-  image: namphong124563.jpeg
+  image: namphong124563.jpg
+  imagewebp: namphong124563.webp
 
 - name: Hồ Đức Hiếu
   github: hoduchieu01
   image: hoduchieu01.jpg
+<<<<<<< HEAD
+  imagewebp: hoduchieu01.webp  
+
+  name: Rasagnath Reddy
+  github: rathindra3376
+  image: Rasagnath.jpg
+  imgwebp: Rasagnath.webp
+=======
   
   name: Rasagnath Reddy
   github: rathindra3376
   image: Rasagnath.jpg
+>>>>>>> upstream/master

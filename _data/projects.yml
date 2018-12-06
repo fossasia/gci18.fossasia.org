@@ -8,6 +8,7 @@
   
 - name: Help Our Mother
   img: sahilsahaproject.jpg
+  imgwebp: sahilsahaproject.webp
   link: http://helpourmother.dx.am/
   creator: Sahil Saha
   email: helpourmother1103@gmail.com 
@@ -15,7 +16,8 @@
   info: Organization which will prevent pollution in India. It will make the people united to fight against the devil of pollution.
 
 - name: Spark
-  img: spark.jpg
+  img: spark.png
+  imgwebp: spark.webp
   link: https://github.com/IgniteInYou/spark-website-2018/
   creator: Saarthak Chaturvedi
   email: saarthakchats05@gmail.com
@@ -23,26 +25,26 @@
   info: Spark is a plethora of innovation and excitement. It is the pre-eminent platform to express, explore and excel.
   
 - name: Tick
-  img: Tick..jpg
+  img: Tick.jpg
+  webp: Tick.webp
   link: https://github.com/pythongiant/tick/
   creator: Srihari Unnikrishnan
   email: srihari.unnikrishnan@gmail.com
   github: pythongiant
   info: Tick is a Version Control System for Linux and is an alternative to git and subversion . 
   
-  
-
 - name: AI based systems around us
   img: ai.jpg
+  imgwebp: ai.webp
   link: https://github.com/stedirisuriya/AI-based-systems-around-us/
   creator: Supun Tharinda Edirisuriya
   email: supunedirisuriya2002@gmail.com
   github: STEdirisuriya
   info: Artificial intelligence (AI) is intelligence demonstrated by machines, in contrast to the natural intelligence displayed by humans.
   
-
 - name: FriendlyChat
   img: friendlychat.jpg
+  imgwebp: friendlychat.webp
   link: https://github.com/KSNINJA/FriendlyChat-Lv.2/
   creator: Kartik Singhal
   email: kartiksinghal122@gmail.com
@@ -51,6 +53,7 @@
   
 - name: Arihant's Personal Website
   img: arihantbansal.jpg
+  imagewebp: arihantbansal.webp
   link: https://github.com/arihantbansal/arihantbansal.github.io
   creator: Arihant Bansal
   email: arihant.bansal@gmail.com
@@ -65,7 +68,6 @@
   github: shreeshjha
   info: I am a Student currently in 11th standard and Begineer in Python and C++, Interested in Embedded Sytems and Artificial intelligence.
  
-  
 - name: Nishith's Portfolio
   img: NishithP.jpg
   link: https://github.com/nishithp2004/nishithp2004.github.io

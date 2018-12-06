@@ -4,3 +4,4 @@ Gemfile.lock
 CNAME
 .vscode
 .DS_Store
+node_modules/
