@@ -32,9 +32,6 @@
 'Takk fyrir þitt framlag!',
 'Tibi gratias ago pro tui contributions!'
 'సహకరించినందుకు ధన్యవాదాలు'
-
-
-
 ];
 
 var app = document.getElementById('app');
