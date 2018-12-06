@@ -57,8 +57,8 @@ p.person-name {
 }
 
 .single-mentor .social-overlay-list {
-  position: relative;
-  top: -165px;
+  position: absolute;
+  top: 30%;
   background: transparent;
   padding: 5px 10px;
   width: 100%;
@@ -79,8 +79,7 @@ p.person-name {
 }
 
 .single-mentor img {
-  width: 240px;
-  height: 240px;
+  width: 100%;
   max-width: 300px;
 }
 
