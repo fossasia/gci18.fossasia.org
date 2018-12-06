@@ -9,10 +9,6 @@
 #   facebook: Mentor's Facebook ID
 #   lat: Mentor's Latitude
 #   lng: Mentor's Longitude
-
-- name: Priyanshu Khandelwal
-  github: Masquerade0097
-  image: Priyanshu Khandelwal.jpg
  
 - name: Akshat Garg
   github: akshatnitd
@@ -119,6 +115,11 @@
 - name: Tarun Kumar
   image: Tarun Kumar.jpg
   github: meets2tarun
+  
+  
+- name: Priyanshu Khandelwal
+  image: Priyanshu Khandelwal.jpg
+  github: Masquerade0097
 
 - name: Prateek Chanda
   image: prateekiiest.jpg
