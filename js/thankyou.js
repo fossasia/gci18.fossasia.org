@@ -30,8 +30,8 @@
 'ನಿಮ್ಮ ಕೊಡುಗೆಗಳಿಗೆ ಧನ್ಯವಾದಗಳು!',
 'സംഭാവന ചെയ്തത്തിന് നന്ദി',
 'Takk fyrir þitt framlag!',
-'Tibi gratias ago pro tui contributions!'
-
+'Tibi gratias ago pro tui contributions!',
+'شكرا لمساهماتكم!',
 ];
 
 var app = document.getElementById('app');
