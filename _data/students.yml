@@ -1,4 +1,4 @@
-﻿# Please add your entries to a random position in the file.
+# Please add your entries to a random position in the file.
 # This is to remove conflicts with other people adding entries.
 
 # The Format is :
@@ -184,3 +184,9 @@
   name: Rasagnath Reddy
   github: rathindra3376
   image: Rasagnath.jpg
+
+- name: Howard Zheng
+  github: ycwei982
+  image: ycwei982.jpg
+  lat: 30.701920
+  lng: 111.278070
