@@ -13,14 +13,17 @@
 - name: Ayush Gupta
   github: agbilotia1998
   image: Ayush Gupta.jpg
+  imagewebp: Ayush Gupta.webp
 
 - name: Akshat Garg
   github: akshatnitd
   image: akshatnitd.jpg
+  imagewebp: akshatnitd.webp
 
 - name: Divyanshu N Singh
   github: DNS-404
   image: DNS-404.jpg
+  imagewebp: DNS-404.webp
 
 - name: Shubham Kumar
   github: sk9331657
@@ -28,26 +31,33 @@
 
 - name: Harshit Khandelwal
   image: 27783786.jpg
+  imagewebp: 27783786.webp
   github: liveHarshit
+
 
 - name: Priyanshu Khandelwal
   github: Masquerade0097
   image: Priyanshu Khandelwal.jpg
+  imagewebp: Priyanshu Khandelwal.webp
 
 - name: tabesin
   image: tabesin.jpg
+  imagewebp: tabesin.webp
   github: tabesin
 
 - name: Shashank Kumar
   image: realslimshanky.jpg
+  imagewebp: realslimshanky.webp
   github: realslimshanky
 
 - name: Saurabh Srivastava
   image: simsausaurabh.jpg
+  imagewebp: simsausaurabh.webp
   github: simsausaurabh
 
 - name: Hong Phuc Dang
   image: hpdang.jpg
+  imagewebp: hpdang.webp
   github: hpdang
 
 - name: Sanskar Jethi
@@ -56,58 +66,70 @@
 
 - name: Mohit Sharma
   image: ms.jpg
+  imagewebp: ms.webp
   github: ms10398
 
 - name: Yash Kumar Verma
   image: YKV.jpg
+  imagewebp: YKV.webp
   github: YashKumarVerma
 
 - name: Arundhati Gupta
   image: agupta.jpg
+  imagewebp: agupta.webp
   github: arundhati24
 
 - name: Shubham Gupta
   image: ShubhamGupta.jpg
+  imagewebp: ShubhamGupta.webp
   github: fragm3
 
 - name: Jogendra Kumar
   image: jogendra.jpg
+  imagewebp: jogendra.webp
   github: jogendra
   lat: 25.2665185
   lng: 82.984087
   
 - name: Abishek V Ashok
   image: AbishekVAshok.jpg
+  imagewebp: AbishekVAshok.webp
   github: abishekvashok
   lat: 9.8974123
   lng: 76.3253836
 
 - name: Nikit Bhandari
   image: nikitbhandari.jpeg
+  imagewebp: nikitbhandari.webp
   github: nikit19
 
 - name: Rohit Potter
   image: RohitPotter.jpg
+  imagewebp: RohitPotter.webp
   github: rpotter12
   lat: 30.733315
   lng: 76.779419
 
 - name: Nicco Kunzmann
   image: Nicco Kunzmann.jpg
+  imagewebp: Nicco Kunzmann.webp
   github: niccokunzmann
   lat: 52.3863
   lng: 13.0983
 
 - name: Anshuman Verma
   image: Anshuman Verma.jpg
+  imagewebp: Anshuman Verma.webp
   github: anshumanv
 
 - name: Isuru Abeywardana
   image: isuruAb.jpg
+  imagewebp: isuruAb.webp
   github: Isuru Abeywardana
 
 - name: Saurav Vishal
   image: Saurav Vishal.jpg
+  imagewebp: Saurav Vishal.webp
   github: sauravvishal8797
 
 - name: Mohit Kumar
@@ -122,18 +144,22 @@
 
 - name: Tarun Kumar
   image: Tarun Kumar.jpg
+  imagewebp: Tarun Kumar.webp
   github: meets2tarun
 
 - name: Prateek Chanda
   image: prateekiiest.jpg
+  imagewebp: prateekiiest.webp
   github: prateekiiest
 
 - name: Sarnava Konar
   image: Sarnava.jpg
+  imagewebp: Sarnava.webp
   github: sarnava1
   lat: 22.6982
   lng: 88.3895
   
 - name: Sridhar Jajoo
   image: SridharJ.jpg
+  imagewebp: SridharJ.webp
   github: sridharjajoo

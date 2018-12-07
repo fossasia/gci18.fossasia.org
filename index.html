@@ -415,7 +415,9 @@ layout: default
 
       <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 text-center">
         <div class="card single-mentor">
-          {% if mentor.image %}
+          {% if mentor.imagewebp %}
+          <img class="mentor-img lazy" data-src="img/mentors/{{mentor.imagewebp}}" alt="{{ mentor.name }}" onerror="this.onerror=null; this.src='img/mentors/{{mentor.image}}'"/>
+          {% elsif mentor.image %}
           <img class="mentor-img lazy" data-src="img/mentors/{{mentor.image}}" alt="{{ mentor.name }}" />
           {% else %}
           <img src="img/mentors/member.png" alt="{{ mentor.name }}" /> {% endif
@@ -466,7 +468,9 @@ layout: default
 
       <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 text-center">
         <div class="card single-mentor">
-          {% if student.image %}
+          {% if student.imagewebp %}
+          <img class="mentor-img lazy" data-src="img/students/{{student.imagewebp}}" alt="{{ student.name }}"  onerror="this.onerror=null; this.src='img/students/{{student.image}}'"/>
+          {% elsif student.image %}
           <img class="mentor-img lazy" data-src="img/students/{{student.image}}" alt="{{ student.name }}" />
           {% else %}
           <img src="img/mentors/member.png" alt="{{ student.name }}" /> {% endif
