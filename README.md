@@ -4,8 +4,7 @@ FOSSASIA Google Code-In Website 2018
 
 This is the repository for FOSSASIA's website for Google Code-In 2018, we at FOSSASIA intend to develop it collaboratively during the course of this competition by participating students themselves. Fork the repository before making changes and make sure you read [FOSSASIA Best Practices](https://blog.fossasia.org/open-source-developer-guide-and-best-practices-at-fossasia/)
 
-Read in **[German](https://github.com/Ritzing/gci18.fossasia.org/blob/master/translations/GermanReadme.md)** ,
-**[French](https://github.com/Ritzing/gci18.fossasia.org/blob/master/translations/FrenchReadme.md)**
+Read in **[German](https://github.com/Ritzing/gci18.fossasia.org/blob/master/translations/GermanReadme.md)**,**[French](https://github.com/Ritzing/gci18.fossasia.org/blob/master/translations/FrenchReadme.md)**
 
 ## Communication
 
