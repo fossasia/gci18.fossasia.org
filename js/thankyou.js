@@ -1,4 +1,4 @@
-﻿var items = [
+var items = [
 'Thank you for your contributions!',
 'আপনার অবদানের জন্য আপনাকে ধন্যবাদ!',
 'Merci pour vos contributions!',
@@ -33,6 +33,7 @@
 'Tibi gratias ago pro tui contributions!',
 'شكرا لمساهماتكم!',
 'Salamat sa iyong mga kontribusyon!',
+'貴方の貢献、ありがとう！',
 'Dankie vir u bydrae!'
 ];
 
