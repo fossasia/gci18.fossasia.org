@@ -32,7 +32,8 @@
 'Takk fyrir þitt framlag!',
 'Tibi gratias ago pro tui contributions!',
 'شكرا لمساهماتكم!',
-'Salamat sa iyong mga kontribusyon!'
+'Salamat sa iyong mga kontribusyon!',
+'Dankie vir u bydrae!'
 ];
 
 var app = document.getElementById('app');
