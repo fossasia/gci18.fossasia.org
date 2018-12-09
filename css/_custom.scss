@@ -489,7 +489,7 @@ p.person-name {
 }
 .issue {
   width: 100%;
-  height: 50px;
+  height: 60px;
   border-bottom: 1px solid #bbb;
   margin-bottom: 10px;
 }
@@ -517,6 +517,9 @@ p.person-name {
 }
 .issues-wrapper i {
   margin-right: 5px;
+}
+.issue p{
+  line-height: 24px !important;
 }
 .leaflet-bottom{
   z-index: 500 !important;
@@ -600,8 +603,7 @@ footer .social-list {
 }
 
 #opensource_image{
-  padding-bottom: 20px;
-  margin-top: 20px;
+  width: 100%;
 }
 
 nav.fixed {
@@ -631,4 +633,34 @@ nav.fixed {
 .changeToWhite{
   color: #fff;
   transition-duration: 0.3s ease;
+}
+.reveal-content {
+  opacity: 0 !important;
+  transform: translate3d(0, 80px, 0) !important;
+  transition: opacity 0.5s, transform 0.7s ease !important;
+  
+  &-visible {
+    opacity: 1 !important;
+    transform: translate3d(0, 0, 0) !important;
+  }
+}
+.section-heading{
+  margin: 0px;
+}
+#welcome p{
+    font-size:17px;
+}
+.section-heading{
+  color: #000;
+  font-weight: 650;
+}
+ .section-sub-heading{
+  color: rgb(140,140,140);
+  font-size: 17px !important;
+}
+#connect{
+  padding-top: 70px;
+}
+#latest-activities h2,#contributors h2{
+    margin-bottom: 40px;
 }
