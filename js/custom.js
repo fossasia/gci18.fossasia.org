@@ -80,3 +80,28 @@ document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener("resize", lazyload);
   window.addEventListener("orientationChange", lazyload);
 });
+var reveal_content_elems = document.querySelectorAll('.reveal-content');
+scrollReveal();
+$(window).scroll(scrollReveal);
+function scrollReveal(){
+  var scrollTop = $(window).scrollTop();
+  var win_height = $(window).height();
+  reveal_content_elems.forEach(function(elem){
+    var elemYDistance = $(elem).offset().top;
+    if($(elem).hasClass('reveal-content-visible')){
+      return;
+    }
+    if(elemYDistance <= scrollTop + win_height && elemYDistance + $(elem).height() > scrollTop)
+    {
+      $(elem).toggleClass('reveal-content-visible');
+      $(elem).removeClass('reveal-pending')
+    }
+    else{
+      $(elem).toggleClass('reveal-pending');
+    }
+  })
+}
+//Projects Section
+$('.project-card').hover(function(){
+   $(this).find('.project-btn').toggleClass('project-btn-appear');
+ });

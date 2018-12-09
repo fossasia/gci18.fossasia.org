@@ -33,7 +33,8 @@ var items = [
 'Tibi gratias ago pro tui contributions!',
 'شكرا لمساهماتكم!',
 'Salamat sa iyong mga kontribusyon!',
-'貴方の貢献、ありがとう！'
+'貴方の貢献、ありがとう！',
+'Dankie vir u bydrae!'
 ];
 
 var app = document.getElementById('app');
