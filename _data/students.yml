@@ -5,7 +5,6 @@
 # - name: Student's name
 #   github: Student's Github Username
 #   image: Student's image (or representation like a "nick" image)
-#   imagewebp: Student's image in webp format
 #   twitter: Student's Twitter ID
 #   facebook: Student's Facebook ID
 #   lat: Student's Latitude
@@ -14,18 +13,15 @@
 - name: Ashwanth Kumar
   github: Ashwanth7230
   image: Ashwanth.jpg
-  imagewebp: Ashwanth.webp
   
 - name: Vishal Kumar
   github: vishalx360
   image: vishalx360.jpeg
-  imagewebp: vishalx360.jpeg
   twitter: vishalx360
   
 - name: Sahil Saha
   github: sahilsaha7773
   image: SahilSaha.jpg
-  imagewebp: SahilSaha.webp
 
 - name: Sahil Kumar
   github: sahildav
@@ -39,27 +35,22 @@
   github: Sid911
   twitter: Sid_Dev_
   image: sid.jpg
-  imagewebp: sid.webp
 
 - name: Kua Le Yi
   github: kuaLeYi
   image: dxa_kly.jpg
-  imagewebp: dxa_kly.webp
 
 - name: Kartik Singhal
   github: KSNINJA
   image: student_nick.jpg
-  imagewebp: student_nick.webp
 
 - name: ploypiti
   github: ploypiti
   image: pfp.jpg
-  imagewebp: pfp.webp
 
 - name: Hubert Zimny
   github: AppleC4T
   image: hzimny.jpg
-  imagewebp: hzimny.webp
   lat: 50.094861
   lng: 18.541205
 
@@ -70,12 +61,10 @@
 - name: Supun Tharinda
   github: STEdirisuriya
   image: supun.jpg
-  imagewebp: supun.webp
 
 - name: Nitesh Kumar Niranjan
   github: niteshkumarniranjan
   image: niteshkumarniranjan.jpg
-  imagewebp: niteshkumarniranjan.webp
   twitter: niranjannitesh
   lat: 24.191351
   lng: 86.299637
@@ -83,28 +72,23 @@
 - name: Arjun Pandey
   github: arjunpandey2003
   image: arjun.jpg
-  imagewebp: arjun.webp
 
 - name: Jeewal Kunwar
   github: Jeewal
   image: JK.jpg
-  imagewebp: JK.webp
   twitter: jeewalkunwar1
 
 - name: Filip Michalak
   github: Rekjef
   image: RekjefAvatar.jpg
-  imagewebp: RekjefAvatar.webp
   
 - name: Joel Leo
   github: t0336000d
   image: TheRed.jpg
-  imagewebp: TheRed.webp
 
 - name: Maciej Synowski
   github: Shizerq
   image: Shizerq.jpg
-  imagewebp: Shizerq.webp
   twitter: maciej_synowski
 
 - name: Jakub Pawlina
@@ -114,12 +98,10 @@
 - name: Srihari Unnikrishnan
   github: pythongiant
   image: sr.jpg
-  imagewebp: sr.webp
 
 - name: Shreesh Kumar Jha
   github: shreeshjha
   image: shreeshjha.jpg
-  imagewebp: shreeshjha.webp
 
 - name: Sitaraman Subramanian
   github: Hackerbone
@@ -128,48 +110,39 @@
 - name: Aryan Kedare
   github: aryankedare
   image: aryankedare.jpg
-  imagewebp: aryankedare.webp
   
 - name: Gaurang
   github: gaurang7goel
   image: Gaurang.jpg
-  imagewebp: Gaurang.webp
 
 - name: Reza Juliandri
   github: ppabcd
   image: Reza.jpg
-  imagewebp: Reza.webp
 
 - name: Kartikeya Singh
   github: kartikeya23
   image: kart.jpg
-  imagewebp: kart.webp
 
 - name: Saarthak Chaturvedi
   github: saarthakchats
   image: saarthak.jpg
-  imagewebp: saarthak.webp
   twitter: SaarthakChats41
 
 - name: Akshit Goyal
   github: akshit15013
   image: AkshitGoyal.jpg
-  imagewebp: AkshitGoyal.webp
 
 - name: Ryan Chang
   github: ryan10145
   image: rchang.jpg
-  imagewebp: rchang.webp
  
 - name: Arjun Loomba
   github: arjunloomba1311
   image: arjunloomba1311.jpg
-  imagewebp: arjunloomba1311.webp
 
 - name: Rahul Metre
   github: RahulMetre03
   image: RahulMetre.jpg
-  imagewebp: RahulMetre.webp
 
 - name: Arihant Bansal
   github: arihantbansal
@@ -178,22 +151,18 @@
 - name: Rahul Arora
   github: rahulaarora
   image: Rahul Arora.jpg 
-  imagewebp: Rahul Arora.webp
 
 - name: Tushar Kumar
   github: awesometushar000
   image: tushar.jpg
-  imagewebp: tushar.webp
   
 - name: coco
   github: cocox33x
   image: coco.jpg
-  imagewebp: coco.webp
 
 - name: Mochammad Rafi
   github: kol4k
   image: rafi.jpeg
-  imagewebp: rafi.webp
 
 - name: Nishith P
   github: NishithP2004
@@ -206,33 +175,27 @@
 - name: Yash Garg
   github: Yash-Garg
   image: yashg.jpg
-  imagewebp: yashg.webp
 
 - name: Ensanguined Scythe
   github: namphong124563
   image: namphong124563.jpg
-  imagewebp: namphong124563.webp
 
 - name: Hồ Đức Hiếu
   github: hoduchieu01
   image: hoduchieu01.jpg
-  imagewebp: hoduchieu01.webp
   
 - name: Rasagnath Reddy
   github: rathindra3376
   image: Rasagnath.jpg
-  imagewebp: Rasagnath.webp
 
 - name: Andre Christoga P.
   image: acp.png
-  imagewebp: acp.webp
   github: drepram
   twitter: drepram
 
 - name: Howard Zheng
   github: ycwei982
   image: ycwei982.jpg
-  imagewebp: ycwei1982.webp
   lat: 30.701920
   lng: 111.278070
 

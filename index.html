@@ -367,9 +367,7 @@ layout: default
 
       <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 text-center">
         <div class="card single-mentor">
-          {% if mentor.imagewebp %}
-          <img class="mentor-img lazy reveal-content" data-src="img/mentors/{{mentor.imagewebp}}" alt="{{ mentor.name }}" onerror="this.onerror=null; this.src='img/mentors/{{mentor.image}}'"/>
-          {% elsif mentor.image %}
+          {% if mentor.image %}
           <img class="mentor-img lazy reveal-content" data-src="img/mentors/{{mentor.image}}" alt="{{ mentor.name }}" />
           {% else %}
           <img src="img/mentors/member.png" alt="{{ mentor.name }}" /> {% endif
@@ -421,9 +419,7 @@ layout: default
 
       <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 text-center">
         <div class="card single-mentor">
-          {% if student.imagewebp %}
-          <img class="mentor-img lazy reveal-content" data-src="img/students/{{student.imagewebp}}" alt="{{ student.name }}"  onerror="this.onerror=null; this.src='img/students/{{student.image}}'"/>
-          {% elsif student.image %}
+          {% if student.image %}
           <img class="mentor-img lazy reveal-content" data-src="img/students/{{student.image}}" alt="{{ student.name }}" />
           {% else %}
           <img src="img/mentors/member.png" alt="{{ student.name }}" /> {% endif
