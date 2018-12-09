@@ -136,7 +136,9 @@
 - name: Ryan Chang
   github: ryan10145
   image: rchang.jpg
- 
+  lat: 40.6883231
+  lng: -74.3176762
+
 - name: Arjun Loomba
   github: arjunloomba1311
   image: arjunloomba1311.jpg
