@@ -100,11 +100,11 @@ layout: default
   </ul>
   <!-- end of container -->
 </section>
-<section class="bg-secondary pb0" id="welcome">
-  <div class="container">
+<section class="pb0" id="welcome">
+  <div class="container-fluid">
     <div class="row mb80 mb-xs-0">
-      <div class="col-md-8 col-md-offset-2 text-center">
-        <h1>What is open source?</h1>
+      <div class="col-md-8 col-md-offset-2 text-center reveal-content">
+        <h2>What is open source?</h2>
         <p>
           In general, open source refers to any program whose source code is
           made available for use or modification as users or other developers
@@ -112,20 +112,19 @@ layout: default
           collaboration and made freely available.
         </p>
       </div>
-      <br />
     </div>
     <!-- end of row -->
     <div class="row v-align-children">
-      <div class="col-md-7 col-sm-6 text-center mb-xs-24">
-        <img alt="Screenshot" src="https://www.ost.agency/wp-content/uploads/2017/12/lg.png"/ id="opensource_image">
-      </div>
-      <div class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1">
-        <h3>What is FOSSASIA?</h3>
+      <div class="col-md-6 col-md-offset-1 col-sm-12 col-sm-offset-1 reveal-content">
+        <h2>What is FOSSASIA?</h2>
         <p>
           FOSSASIA develops software and hardware and cooperates with Open Tech
           projects. Please check out our Github and FOSSASIA Labs.
         </p>
         <a class="btn btn-lg" href="https://fossasia.org/" target="_blank" rel="noopener">Explore FOSSASIA 🌏</a>
+      </div>
+      <div class="col-md-6 col-sm-9 text-center mb-xs-24">
+        <img alt="Screenshot" src="img/open-source.jpg" id="opensource_image">
       </div>
     </div>
   </div>
@@ -133,10 +132,12 @@ layout: default
 </section>
 
 <section id="connect">
-  <div class="container" id="social_box">
+  <hr style="padding-bottom: 60px;">
+  <div class="container-fluid" id="social_box">
     <div class="row mb80 mb-xs-0">
-      <div class="col-md-8 col-md-offset-2 text-center">
-        <h1>Connect with FOSSASIA on Social Media</h1>
+      <img src="img/social_icon.jpg" class="col-md-4 col-sm-12">
+      <div class="col-md-7 col-sm-12 text-center reveal-content">
+        <h2>Connect with FOSSASIA on Social Media</h2>
         <p>Be sure to follow us on social media!</p>
         <p id="social_icons" class="large">
           <a href="https://fossasia-slack.herokuapp.com/" title="Slack" target="_blank" class="fa fa-slack lgi" rel="noopener"></a>
@@ -329,7 +330,7 @@ layout: default
           <source src="video/fossasia.mp4" type="video/mp4" />
         </video>
       </div>
-      <div class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1">
+      <div class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1 reveal-content">
         <h3>FOSSASIA Attracting Students</h3>
         <p>
           The video is made is by one of our students during the competition
@@ -349,7 +350,8 @@ layout: default
   <div class="container">
     <div class="row mb64 mb-xs-24">
       <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
-        <h3>FOSSASIA | Projects</h3><br>
+        <h2 class="section-heading">FOSSASIA | Projects</h2>
+        <h2 class="section-sub-heading">Building future</h2>
         <a class="btn-filled btn" href="https://github.com/fossasia/">All our projects</a>
 
       </div>
@@ -360,7 +362,7 @@ layout: default
       <div class="col-md-7 col-sm-6 text-center mb-xs-24">
         <img class="cast-shadow lazy" alt="Screenshot" data-src="img/{{projects.img}}" />
       </div>
-      <div class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1">
+      <div class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1 reveal-content">
         <h3>{{projects.title}}</h3>
         <p>
           {{projects.desc}}
@@ -382,14 +384,15 @@ layout: default
   <div class="container">
     <div class="row mb64 mb-xs-24">
       <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
-        <h2>Videos</h2>
+        <h2 class="section-heading">Videos</h2>
+        <h2 class="section-sub-heading">Discover</h2>
       </div>
     </div>
     <!-- end of row -->
  <div class="row mb80 mb-md-0">
       <div class="col-md-12 text-center w-100 v-align-children">
 	{% for video in site.data.videos %}
-		<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 text-center">
+		<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center">
 		<h4><b>{{video.name}}</b> by <b>{{video.user}}</b></h4>	
         <div class="card single-mentor ytvideo" id="{{video.id}}" align="center">
       </div>
@@ -403,24 +406,25 @@ layout: default
 </section>
 <!-- Videos section -->
 <section class="lazy-section">
-  <div class="container" id="mentors">
+  <div class="container-fluid" id="mentors">
     <div class="row mb64 mb-xs-24">
       <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
-        <h3>Our Mentors</h3>
+        <h2 class="section-heading">Our Mentors</h2>
+        <h2 class="section-sub-heading">Anytime, Anywhere. Just Ask</h2>
       </div>
     </div>
     <!-- end of row -->
-    <div class="row equal-row">
+    <div class="container">
       {% for mentor in site.data.mentors limit:30 %}
 
       <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 text-center">
         <div class="card single-mentor">
           {% if mentor.image %}
-          <img class="mentor-img lazy" data-src="img/mentors/{{mentor.image}}" alt="{{ mentor.name }}" />
+          <img class="mentor-img lazy reveal-content" data-src="img/mentors/{{mentor.image}}" alt="{{ mentor.name }}" />
           {% else %}
           <img src="img/mentors/member.png" alt="{{ mentor.name }}" /> {% endif
           %}
-          <p class="person-name">{{ mentor.name }}</p>
+          <p class="person-name reveal-content">{{ mentor.name }}</p>
 
           <ul class="list-inline social-list social-overlay-list">
             {% if mentor.github %}
@@ -454,24 +458,25 @@ layout: default
 </section>
 
 <section class="lazy-section">
-  <div class="container" id="students">
+  <div class="container-fluid" id="students">
     <div class="row mb64 mb-xs-24">
       <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
-        <h1>Students</h1>
+        <h2 class="section-heading">Students</h2>
+        <h2 class="section-sub-heading">Now a part of lifelong learning institute</h2>
       </div>
     </div>
     <!-- end of row -->
-    <div class="row equal-row">
+    <div class="container">
       {% for student in site.data.students %}
 
       <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 text-center">
         <div class="card single-mentor">
           {% if student.image %}
-          <img class="mentor-img lazy" data-src="img/students/{{student.image}}" alt="{{ student.name }}" />
+          <img class="mentor-img lazy reveal-content" data-src="img/students/{{student.image}}" alt="{{ student.name }}" />
           {% else %}
           <img src="img/mentors/member.png" alt="{{ student.name }}" /> {% endif
           %}
-          <p class="student_name">{{ student.name }}</p>
+          <p class="student_name reveal-content">{{ student.name }}</p>
 
           <ul class="list-inline social-list social-overlay-list">
             {% if student.github %}
@@ -505,23 +510,24 @@ layout: default
 </section>
 <!-- Map -->
 <section class="map hid">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row mb64 mb-xs-24">
       <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
-        <h3>Map of our students and mentors</h3>
+        <h2 class="section-heading">Map</h2>
+        <h2 class="section-sub-heading">Hope to see these markers at one place.</h2>
       </div>
     </div>
-    <div id="map-overlay">
+    <div id="map-overlay" class="container">
       <div id="map" align="center"></div>
     </div>
   </div>
 </section>
 <!-- Contributors -->
-<section class="bg-secondary">
-  <div class="container">
+<section>
+  <div class="container" id="contributors">
     <div class="row mb-xs-24 mb16">
-      <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
-        <h3>Contributors</h3>
+      <div class="col-sm-12 col-md-10 col-md-offset-1 text-center reveal-content">
+        <h2 class="section-heading">Contributors</h2>
         <a class="btn btn-lg" href="https://labs.fossasia.org" target="_blank" rel="noopener">FOSSASIA Projects</a>
         <a class="btn btn-lg" href="https://github.com/fossasia/gci18.fossasia.org" target="_blank" rel="noopener">Repository</a>
         <a class="btn btn-lg" href="https://github.com/fossasia/gci18.fossasia.org/graphs/contributors" target="_blank" rel="noopener">Details
@@ -536,11 +542,11 @@ layout: default
   </div>
   <!-- end of container -->
 </section>
-<section class="bg-secondary">
+<section class="bg-secondary" id="latest-activities">
   <div class="container">
     <div class="row mb-xs-24 mb16">
-      <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
-        <h3>Latest Activites</h3>
+      <div class="col-sm-12 col-md-10 col-md-offset-1 text-center reveal-content">
+        <h2 class="section-heading">Latest Activites</h2>
         <a class="btn btn-lg" href="https://github.com/fossasia/gci18.fossasia.org/issues" target="_blank">All Issues</a>
         <a class="btn btn-lg" href="https://github.com/fossasia/gci18.fossasia.org/pulls" target="_blank">All Pull Requests</a>
         <a class="btn btn-lg" href="https://github.com/fossasia/gci18.fossasia.org/pulse" target="_blank">View More</a>
@@ -556,4 +562,3 @@ layout: default
 </section>
 <!-- thank you section -->
 <div id="app" class="thank_you gradient-multi-hot"></div>
-<script type="text/javascript" src="js/nav_theme.js"></script>
