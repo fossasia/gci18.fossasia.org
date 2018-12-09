@@ -125,7 +125,9 @@
 - name: Tarun Kumar
   image: Tarun Kumar.jpg
   github: meets2tarun
-
+  lat: 25.540956712303636
+  lng: 84.85105172962317
+  
 - name: Prateek Chanda
   image: prateekiiest.jpg
   github: prateekiiest
