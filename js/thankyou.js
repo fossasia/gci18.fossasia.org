@@ -34,7 +34,8 @@ var items = [
 'شكرا لمساهماتكم!',
 'Salamat sa iyong mga kontribusyon!',
 '貴方の貢献、ありがとう！',
-'Dankie vir u bydrae!'
+'Dankie vir u bydrae!',
+'Katkınız için teşekkürler'
 ];
 
 var app = document.getElementById('app');
