@@ -1,4 +1,4 @@
-var items = [
+﻿ items = [
 'Thank you for your contributions!',
 'আপনার অবদানের জন্য আপনাকে ধন্যবাদ!',
 'Merci pour vos contributions!',
@@ -34,7 +34,8 @@ var items = [
 'شكرا لمساهماتكم!',
 'Salamat sa iyong mga kontribusyon!',
 '貴方の貢献、ありがとう！',
-'Dankie vir u bydrae!'
+'Dankie vir u bydrae!',
+'Katkınız için teşekkürler'
 ];
 
 var app = document.getElementById('app');

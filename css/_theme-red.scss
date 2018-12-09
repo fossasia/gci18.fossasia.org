@@ -327,7 +327,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 300;
+  font-weight: 500;
   color: #292929;
 }
 h1,
@@ -442,6 +442,7 @@ h6.uppercase,
 p,
 span {
   font-weight: 400;
+  line-height: 34px;
 }
 p.lead {
   font-size: 16px;
@@ -579,7 +580,7 @@ ul.lead li {
   background: #e31d3b !important;
 }
 .bg-secondary {
-  background: #f8f8f8;
+  background: #fafafa;
 }
 .bg-white {
   background: #fff;
@@ -602,7 +603,7 @@ ul.lead li {
 /*!---------- 5. SECTIONS ----------*/
 section,
 footer {
-  padding: 96px 0;
+  padding: 130px 0;
   position: relative;
   overflow: hidden;
 }
