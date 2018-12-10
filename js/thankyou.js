@@ -1,4 +1,4 @@
-var items = [
+﻿var items = [
 'Thank you for your contributions!',
 'আপনার অবদানের জন্য আপনাকে ধন্যবাদ!',
 'Merci pour vos contributions!',
