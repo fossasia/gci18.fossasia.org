@@ -69,6 +69,8 @@
 - name: Shubham Gupta
   image: ShubhamGupta.jpg
   github: fragm3
+  lat: 28.5575881
+  lng: 77.2019425
 
 - name: Jogendra Kumar
   image: jogendra.jpg
@@ -109,6 +111,8 @@
 - name: Saurav Vishal
   image: Saurav Vishal.jpg
   github: sauravvishal8797
+  lat: 9.0949
+  lng: 76.4896
 
 - name: Mohit Kumar
   image: mohitkumar.jpg
@@ -123,7 +127,9 @@
 - name: Tarun Kumar
   image: Tarun Kumar.jpg
   github: meets2tarun
-
+  lat: 25.540956712303636
+  lng: 84.85105172962317
+  
 - name: Prateek Chanda
   image: prateekiiest.jpg
   github: prateekiiest
