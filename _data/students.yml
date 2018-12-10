@@ -17,7 +17,12 @@
 - name: Christian Scheub
   github: Ch-Developer
   image: ChDev.jpg
-  
+
+- name: Pranav Krishna
+  github: pranavkrish04
+  lat: 10.948485
+  lng: 76.9341007
+
 - name: Vishal Kumar
   github: vishalx360
   image: vishalx360.jpeg
