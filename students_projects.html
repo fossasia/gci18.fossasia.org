@@ -3,7 +3,7 @@ layout: default-pages
 ---
 <a id="backtotop_button"></a>
 
-<div id="skewed-bg" >  
+<div id="skewed-bg">
 </div>
 
 <section class="projects pt48">
@@ -17,38 +17,40 @@ layout: default-pages
 
         <!-- Projects -->
         <div class="row text-center">
-            <div class="col-md-8 col-md-offset-2 text-center" >
+            <div class="col-md-8 col-md-offset-2 text-center">
                 <h1> <strong>Student Projects</strong> </h1>
             </div>
         </div>
         <div class="row masonry masonryFlyIn fadeIn text-center">
             {% for project in site.data.projects %}
-            <div class="col-md-4 col-sm-6 masonry-item fadeIn text-center flip-card">
+            <div class="uk-card uk-hover">
                 <div class="flip-card-inner text-center">
                     <div class="flip-card-front text-center">
-                      <div>
-                         <div class="flip-toggle-region">
-                            <div class="student-project-name">{{ project.name }}</div>
-                            <div class="student-project-info" >{{ project.info }}</div>
-                         </div>
-                         <div class="student-project-footer">
-                            <div class="btn-group student-project-btn">
-                               <button onclick="location.href='{{project.link}}'" type="button" class="btn-md btn-primary project-btn"> Source </button>
-                               <button onclick="location.href='mailto:{{project.email}}'" type="button" class="btn-md btn-success project-btn"> Review </button>            
+                        <div>
+                            <div class="flip-toggle-region">
+                                <div class="student-project-name">{{ project.name }}</div>
+                                <div class="student-project-info">{{ project.info }}</div>
                             </div>
-                            <div>
-                               <hr class="student-project-hr">
-                               <div class="student-project-footer-container">
-                                  <img src="https://github.com/{{project.github}}.png" class="img-circle student-project-creator-img">
-                                  <a href="https://github.com//{{project.github}}" target="_blank" class="pull-right">{{project.creator}}</a>
-                               </div>
+                            <div class="student-project-footer">
+                                <div class="btn-group student-project-btn">
+                                    <button onclick="location.href='{{project.link}}'" type="button" class="btn-md btn-primary project-btn">
+                                        Source </button>
+                                    <button onclick="location.href='mailto:{{project.email}}'" type="button" class="btn-md btn-success project-btn">
+                                        Review </button>
+                                </div>
+                                <div>
+                                    <hr class="student-project-hr">
+                                    <div class="student-project-footer-container">
+                                        <img src="https://github.com/{{project.github}}.png" class="img-circle student-project-creator-img">
+                                        <a href="https://github.com//{{project.github}}" target="_blank" class="pull-right">{{project.creator}}</a>
+                                    </div>
+                                </div>
                             </div>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="flip-card-back text-center">
-                       <img class="student-project-img" src="./img/projects/{{ project.img }}" >
-                   </div>
+                        </div>
+                    </div>
+                    <div class="flip-card-back text-center">
+                        <img class="student-project-img" src="./img/projects/{{ project.img }}">
+                    </div>
                 </div>
             </div>
             {% endfor %}
@@ -62,3 +64,9 @@ layout: default-pages
         </div>
     </div>
 </section>
+<!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/css/uikit.min.css" />
+
+<!-- UIkit JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/js/uikit-icons.min.js"></script>
