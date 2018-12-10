@@ -209,6 +209,10 @@
   image: ezralazuardy.jpg
   lat: -6.966667
   lng: 110.416664
+
+- name: Malik Ammar Faisal
+  github: ammarbinfaisal
+  image: ammar.jpg
   
 - name: Muhammad Bhaska
   github: muhammadbhaska
