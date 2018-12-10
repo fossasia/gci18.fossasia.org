@@ -605,7 +605,10 @@ footer .social-list {
 #opensource_image{
   width: 100%;
 }
-
+nav{
+  -webkit-transition: margin-top 0.7s ease-in-out !important;
+  transition: margin-top 0.7s ease-in-out !important;
+}
 nav.fixed {
   z-index: 9999;
 }

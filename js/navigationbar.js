@@ -41,3 +41,21 @@
         $('.nav-bar .has-dropdown').removeClass('changeToWhite');
     }
     window.addEventListener('scroll', updateNav, false);
+    //Autohide feature
+    var prevScrollpos = window.pageYOffset;
+    $(window).scroll(function() {
+        var currentScrollPos = window.pageYOffset;
+        if ( currentScrollPos < 780) {
+            $('nav').css('margin-top', '0px');
+        } else if(currentScrollPos - prevScrollpos > 3){
+            setTimeout(function(){
+                $('nav').css('margin-top', '-100px');
+            },400)
+        } else if(prevScrollpos - currentScrollPos > 3){
+            setTimeout(function(){
+                $('nav').css('margin-top', '0px');
+            }, 500);
+        }
+        prevScrollpos = currentScrollPos ;
+        $('nav').clearQueue();
+    });
