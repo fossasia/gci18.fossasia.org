@@ -49,7 +49,7 @@
             $('nav').css('margin-top', '0px');
         } else if(currentScrollPos - prevScrollpos > 3){
             setTimeout(function(){
-                $('nav').css('margin-top', '-100px');
+                $('nav').css('margin-top', '-150px');
             },400)
         } else if(prevScrollpos - currentScrollPos > 3){
             setTimeout(function(){
