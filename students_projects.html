@@ -21,42 +21,42 @@ layout: default-pages
                 <h1> <strong>Student Projects</strong> </h1>
             </div>
         </div>
-        <div class="row masonry masonryFlyIn fadeIn text-center">
+        <div class="uk-child-width-expand@s uk-child-width-1-2@m uk-child-width-1-3@l uk-text-center" uk-grid="parallax: 150">
             {% for project in site.data.projects %}
-            <div class="uk-card uk-hover">
-                <div class="flip-card-inner text-center">
-                    <div class="flip-card-front text-center">
-                        <div>
-                            <div class="flip-toggle-region">
-                                <div class="student-project-name">{{ project.name }}</div>
-                                <div class="student-project-info">{{ project.info }}</div>
+            <div>
+                <div class="fadeIn uk-card uk-card-default uk-card-hover">
+                    <div class="uk-card-header">
+                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                            <div class="uk-width-auto">
+                                <img class="uk-border-circle" width="40" height="40" src="https://github.com/{{project.github}}.png">
                             </div>
-                            <div class="student-project-footer">
-                                <div class="btn-group student-project-btn">
-                                    <button onclick="location.href='{{project.link}}'" type="button" class="btn-md btn-primary project-btn">
-                                        Source </button>
-                                    <button onclick="location.href='mailto:{{project.email}}'" type="button" class="btn-md btn-success project-btn">
-                                        Review </button>
-                                </div>
-                                <div>
-                                    <hr class="student-project-hr">
-                                    <div class="student-project-footer-container">
-                                        <img src="https://github.com/{{project.github}}.png" class="img-circle student-project-creator-img">
-                                        <a href="https://github.com//{{project.github}}" target="_blank" class="pull-right">{{project.creator}}</a>
-                                    </div>
-                                </div>
+                            <div class="uk-width-expand">
+                                <a href="https://github.com//{{project.github}}">
+                                    <h3 class="uk-card-title uk-margin-remove-bottom">{{ project.name }}</h3>
+                                </a>
+                                <a href="https://github.com//{{project.github}}">
+                                    <p class="uk-text-meta uk-margin-remove-top">{{project.creator}}</time></p>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="flip-card-back text-center">
-                        <img class="student-project-img" src="./img/projects/{{ project.img }}">
+                    <div class="uk-card-body">
+                        <p>{{ project.info }}</p>
                     </div>
+                    <ul uk-accordion>
+                        <li>
+                            <a class="uk-accordion-title" href="#">Image</a>
+                            <div class="uk-accordion-content">
+                                <img src="./img/projects/{{ project.img }}" alt="Image">
+                            </div>
+                        </li>
+                        <div class="uk-card-footer">
+                            <a href="{{ project.link}}" class="uk-button uk-button-text">Explore</a>
+                        </div>
                 </div>
             </div>
             {% endfor %}
         </div>
-
-
         <div class="row mb80 mb-xs-0">
             <div align="center">
                 <a class="btn btn-lg btn-filled" href="./">Back to the main page</a>
