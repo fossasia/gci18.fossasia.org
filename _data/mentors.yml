@@ -10,6 +10,11 @@
 #   lat: Mentor's Latitude
 #   lng: Mentor's Longitude
 
+- name: Dravit Lochan
+  github: DravitLochan
+  image: Dravit Lochan.jpg
+
+
 - name: Ayush Gupta
   github: agbilotia1998
   image: Ayush Gupta.jpg
