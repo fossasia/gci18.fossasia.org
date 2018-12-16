@@ -74,3 +74,20 @@
   github: NishithP2004
   info: This is the official Portfolio of Nishith P.
   
+
+- name: prettinit
+  img: prettinit.png
+  link: https://npmjs.com/package/prettinit
+  creator: Malik Ammar Faisal
+  email: binfaisal.ammar@gmail.com
+  github: ammarbinfaisal
+  info: a simple cli for setting up .prettierrc file 
+
+- name: Orchidpedia
+  img: orchidpedia.jpg
+  link: https://github.com/ezralazuardy/Orchidpedia
+  creator: Ezra Lazuardy
+  email: ezralucio@gmail.com
+  github: ezralazuardy 
+  info: Orchidpedia is a bite-sized Orchid Encyclopedia for Android App. This app will give you many information about Orchid.
+

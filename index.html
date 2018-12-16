@@ -2,7 +2,14 @@
 layout: default
 ---
 <link href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" rel="stylesheet" type="text/css" media="all"><link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 <a id="backtotop_button"></a>
+<iframe id="susi-chat" data-src="https://chat.susi.ai/">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+<span id="susi-close" >
+  <i class="fa fa-close" style="background-color: rgb(66, 133, 244);color: #fff;font-size: 24px;"></i>
+</span>
 <section class="cover fullscreen image-slider slider-all-controls controls-inside parallax">
   <ul class="slides">
     <li class="overlay image-bg bg-light">
@@ -12,13 +19,13 @@ layout: default
       <div class="container v-align-transform">
         <div class="row">
           <div class="col-sm-10 col-sm-offset-1 text-center" id="new_text">
-            <h1 class="mb40 mb-xs-16 large texts" id="new_text">
+            <h1 class="mb40 mb-xs-16 large texts animated fadeInDown delay-2s" id="new_text">
               Making our way <br> to Greatness 
             </h1>
-            <h6 class="uppercase mb16 texts" id="new_text">
+            <h6 class="uppercase mb16 texts animated fadeInDown delay-2s" id="new_text">
               Creating collaborative open-source technologies.
             </h6>
-            <p class="lead mb40 texts" id="new_text">
+            <p class="lead mb40 texts animated fadeInDown delay-2s" id="new_text">
               Connecting Open Tech Communities all over Asia with Developers and
               Creators <br />
               in the FOSSASIA Network.
@@ -140,7 +147,7 @@ layout: default
         <h2>Connect with FOSSASIA on Social Media</h2>
         <p>Be sure to follow us on social media!</p>
         <p id="social_icons" class="large">
-          <a href="https://fossasia-slack.herokuapp.com/" title="Slack" target="_blank" class="fa fa-slack lgi" rel="noopener"></a>
+          <a href="https://gitter.im/fossasia/fossasia" title="Gitter" target="_blank" class="fab fa-gitter lgi" rel="noopener"></a>
           <a href="https://github.com/fossasia" title="GitHub" target="_blank" class="ti-github lgi" rel="noopener"></a>
           <a href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ" title="YouTube" target="_blank" class="ti-youtube lgi" rel="noopener"></a>
           <a href="https://flickr.com/photos/fossasia" title="Flickr" target="_blank" class="ti-flickr lgi" rel="noopener"></a>
@@ -282,7 +289,7 @@ layout: default
         <h3>FOSSASIA Attracting Students</h3>
         <p>
           The video is made is by one of our students during the competition
-          itself!
+          itblank!
         </p>
         <a class="btn btn-lg" href="https://www.youtube.com/channel/UCQprMsG-raCIMlBudm20iLQ" target="_blank" rel="noopener">Our
           Youtube Channel</a>
@@ -292,7 +299,29 @@ layout: default
   </div>
   <!-- end of container -->
 </section>
-
+<!-- Susi section -->
+<section class="lazy-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
+        <h2>
+          Meet SUSI.AI, Your Artificial Intelligence for Personal Assistants, Robots, Help Desks and Chatbots.
+        </h2>
+        <h2 class="section-sub-heading">Ask it questions. Tell it to do things. Always ready to help.</h2>
+        <div id="start-susi" style="color:#e31d3b;display: block;">
+          <i class='fas fa-play-circle' style='font-size:24px;vertical-align: middle;'></i>
+            Start Chat
+            <br>
+        </div>
+        <div id="susi-loading"><i class='fa fa-circle-o-notch fa-spin'></i>Loading</div>
+        <div style="margin-top: 50px;font-size: 20px;">Visit   <a href="https://chat.susi.ai/overview"><img data-src="img/SUSI.AI.jpg" class="lazy" style="max-width: 80px;margin:0px 5px;"></a>   to see more</div>
+       </div>
+    </div>
+    <!-- end of row -->
+  </div>
+  <!-- end of container -->
+</section>
+<hr style="margin-top: -30px;">
 <!-- Project section -->
 <section class="lazy-section">
   <div class="container">
@@ -472,7 +501,7 @@ layout: default
 </section>
 <!-- Contributors -->
 <section>
-  <div class="container" id="contributors">
+  <div class="container">
     <div class="row mb-xs-24 mb16">
       <div class="col-sm-12 col-md-10 col-md-offset-1 text-center reveal-content">
         <h2 class="section-heading">Contributors</h2>

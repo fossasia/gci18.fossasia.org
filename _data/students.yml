@@ -14,6 +14,10 @@
   github: Ashwanth7230
   image: Ashwanth.jpg
   
+- name: Christian Scheub
+  github: Ch-Developer
+  image: ChDev.jpg
+  
 - name: Vishal Kumar
   github: vishalx360
   image: vishalx360.jpeg
@@ -109,16 +113,15 @@
 
 - name: Aryan Kedare
   github: aryankedare
-  image: aryankedare.jpeg
+  image: aryankedare.jpg
   
 - name: Gaurang
   github: gaurang7goel
   image: Gaurang.jpg
-  
 
 - name: Reza Juliandri
   github: ppabcd
-  image: Reza.jpeg
+  image: Reza.jpg
 
 - name: Kartikeya Singh
   github: kartikeya23
@@ -126,7 +129,7 @@
 
 - name: Saarthak Chaturvedi
   github: saarthakchats
-  image: saarthak.JPG
+  image: saarthak.jpg
   twitter: SaarthakChats41
 
 - name: Akshit Goyal
@@ -179,7 +182,7 @@
 
 - name: Ensanguined Scythe
   github: namphong124563
-  image: namphong124563.jpeg
+  image: namphong124563.jpg
 
 - name: Hồ Đức Hiếu
   github: hoduchieu01
@@ -205,3 +208,14 @@
   image: ezralazuardy.jpg
   lat: -6.966667
   lng: 110.416664
+
+- name: Malik Ammar Faisal
+  github: ammarbinfaisal
+  image: ammar.jpg
+  
+- name: Muhammad Bhaska
+  github: muhammadbhaska
+  image: muhammadbhaska.jpg
+  facebook: mhmdbhsk
+  lat: -7.005145
+  lng: 110.438126

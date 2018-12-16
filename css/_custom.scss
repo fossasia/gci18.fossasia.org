@@ -225,7 +225,7 @@ p.person-name {
 
 #backtotop_button {
   display: inline-block;
-  background-color: #1a86cc;
+  background-color: #e31d3b;
   width: 50px;
   height: 50px;
   text-align: center;
@@ -605,7 +605,10 @@ footer .social-list {
 #opensource_image{
   width: 100%;
 }
-
+nav{
+  -webkit-transition: margin-top 1.2s ease-in-out !important;
+  transition: margin-top 1.2s ease-in-out !important;
+}
 nav.fixed {
   z-index: 9999;
 }
@@ -663,4 +666,67 @@ nav.fixed {
 }
 #latest-activities h2,#contributors h2{
     margin-bottom: 40px;
+}
+#susi-chat{
+  display: none;
+  position: fixed;
+  right: 20px;
+  bottom: 0px;  
+  z-index: 1300;
+  max-height: 450px;
+  width: 300px;
+  height: 100%;
+}
+#susi-close{
+  position: fixed;
+  display: none;
+  right: 20px;
+  bottom: 403px;
+  z-index: 1350;
+  padding: 6px 10px 6px 35px;
+}
+#susi-close i{
+  background-color: rgb(66, 133, 244);
+  color: #fff;
+  font-size: 24px;
+}
+#start-susi{
+  color: #e31d3b;
+  display: block;
+  font-weight: 900
+}
+#start-susi i{
+  font-size: 24px;
+}
+#susi-link{
+  margin-top: 50px;
+  font-size: 18px;
+}
+#susi-img{
+  max-width: 70px;
+  margin:0px 5px;
+}
+#susi-loading{
+  display: none;
+}
+@media screen and (max-width: 500px){
+  #susi-close{
+    top: 0px ;
+    right: 0px; 
+  }
+  #susi-chat{
+    width: 100%;
+    right: 0px;
+    max-height: none;
+  }
+}
+@media screen and (max-height: 450px)
+{
+  #susi-close{
+    top: 0px;
+    right: 0px;
+  }
+  #susi-chat{
+    right: 0px;
+  }
 }
