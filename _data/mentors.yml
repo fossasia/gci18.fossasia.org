@@ -29,12 +29,12 @@
   github: Masquerade0097
   image: Priyanshu Khandelwal.jpg
   imagewebp: Priyanshu Khandelwal.webp
-
+  
 - name: tabesin
   image: tabesin.jpg
   imagewebp: tabesin.webp
   github: tabesin
-
+  
 - name: Hong Phuc Dang
   image: hpdang.jpg
   imagewebp: hpdang.webp
@@ -140,3 +140,79 @@
   image: SridharJ.jpg
   imagewebp: SridharJ.webp
   github: sridharjajoo
+  
+- name: Chung Wei Tat
+  github: cweitat
+  image: ChungWeiTat.jpg
+  
+- name: T Thiyagaraj
+  github: tstreamDOTh
+  image: T Thiyagaraj.jpg
+  
+- name: Rupav Jain
+  github: rupav
+  image: RupavJain.jpg
+  
+- name: Simranpreet Kaur
+  github: SIMRAN1
+  image: Simran.jpg
+  
+- name: Abhijeet Singh
+  github: abhi40308
+  image: AbhijeetSingh.jpg
+  
+- name: Suneet Srivastava
+  github: codedsun
+  image: SuneetSrivastava.jpg
+  
+- name: Anup Kumar Panwar
+  github: AnupKumarPanwar
+  image: AnupKumarPanwar.jpg
+  
+- name: Praveen Ojha
+  github: praveenojha33
+  image: PraveenOjha.jpg
+  
+- name: Chashmeet Singh
+  github: chashmeetsingh
+  image: ChashmeetSingh.jpg
+  
+- name: Mayank Vaidya
+  github: mayank8318
+  image: MayankVaidya.jpg
+  
+- name: Eden Dang
+  github: 
+  image: EdenDang.jpg
+  
+- name: André Rebentisch
+  github:
+  image: AndréRebentisch.jpg
+  
+- name: Madhushanka Padmal
+  github: CloudyPadmal
+  image: CloudyPadmal.jpg
+
+- name: Abhinav Raj
+  github: abinavraj23
+  image: AbhinavRaj.jpg
+  
+- name: Harsh Patel
+  github: harsh-2711
+  image: HarshPatel.jpg
+  
+- name: Praduman Singh
+  github: PrP-11
+  image: PradumanSingh.jpg
+  
+- name: Dilpreet Singh
+  github: geekyd
+  image: DilpreetSingh.jpg
+
+- name: Pranjal Paliwal
+  github: betterclever
+  image: PranjalPaliwal.jpg
+
+- name: Hon Nguyen
+  github: vanhonit
+  image: HonNguyen.jpg
