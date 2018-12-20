@@ -10,24 +10,10 @@
 #   lat: Mentor's Latitude
 #   lng: Mentor's Longitude
 
-- name: Dravit Lochan
-  github: DravitLochan
-  image: Dravit Lochan.jpg
-
-- name: Ayush Gupta
-  github: agbilotia1998
-  image: Ayush Gupta.jpg
-  imagewebp: Ayush Gupta.webp
-
 - name: Akshat Garg
   github: akshatnitd
   image: akshatnitd.jpg
   imagewebp: akshatnitd.webp
-
-- name: Divyanshu N Singh
-  github: DNS-404
-  image: DNS-404.jpg
-  imagewebp: DNS-404.webp
 
 - name: Shubham Kumar
   github: sk9331657
@@ -49,16 +35,6 @@
   imagewebp: tabesin.webp
   github: tabesin
 
-- name: Shashank Kumar
-  image: realslimshanky.jpg
-  imagewebp: realslimshanky.webp
-  github: realslimshanky
-
-- name: Saurabh Srivastava
-  image: simsausaurabh.jpg
-  imagewebp: simsausaurabh.webp
-  github: simsausaurabh
-
 - name: Hong Phuc Dang
   image: hpdang.jpg
   imagewebp: hpdang.webp
@@ -72,11 +48,6 @@
   image: ms.jpg
   imagewebp: ms.webp
   github: ms10398
-
-- name: Yash Kumar Verma
-  image: YKV.jpg
-  imagewebp: YKV.webp
-  github: YashKumarVerma
 
 - name: Arundhati Gupta
   image: agupta.jpg
@@ -139,10 +110,6 @@
   github: sauravvishal8797
   lat: 9.0949
   lng: 76.4896
-
-- name: Mohit Kumar
-  image: mohitkumar.jpg
-  github: batbrain7
 
 - name: Akshat Jain
   image: rsz_akshat_jain.jpg
