@@ -25,7 +25,7 @@ function loadVideo{{video.id}}(){
     }
  	videoLoaders.push(loadVideo{{video.id}});
 		{% endfor %}
-    $(window).on("resize", resetVideoHeight);
+    window.addEventListener("resize", resetVideoHeight);
 function resetVideoHeight() {
     $(".video").css($("#{{video.id}}").height(), $("#{{video.id}}").width() * 9/16);
 }
