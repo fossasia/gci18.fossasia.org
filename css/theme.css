@@ -988,7 +988,7 @@ nav.bg-dark .logo-dark {
 .menu > li ul {
   width: 200px;
   padding: 8px 0;
-  background: #292929;
+  background: #fff;
   position: absolute;
   z-index: 99;
   opacity: 0;
@@ -3283,6 +3283,7 @@ img {
 }
 .image-slider .slides li > img {
   width: 100%;
+	height: 100%;
 }
 .row .image-slider {
   margin-bottom: 24px;
@@ -3647,7 +3648,7 @@ img {
 .cover:first-child .fullscreen {
   max-height: 100%;
 }
-.cover.fullscreen .slides > li {
+.cover.fullscreen > li {
   height: 100vh;
 }
 .cover .slides li .container {

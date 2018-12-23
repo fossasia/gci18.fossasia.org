@@ -10,13 +10,10 @@ Read in **[German](https://github.com/Ritzing/gci18.fossasia.org/blob/master/tra
 
 - Please join our **[mailing list](https://groups.google.com/forum/#!forum/fossasia)** to discuss questions regarding the project.
 
-  > https://groups.google.com/forum/#!forum/fossasia
-
-- Our chat channel is on **[Gitter](https://gitter.im/fossasia/gci16.fossasia.org)**
-
-  > [gitter.im/fossasia/gci16.fossasia.org](https://gitter.im/fossasia/gci16.fossasia.org)
+- The FOSSASIA main chat channel is on **[Gitter](https://gitter.im/fossasia/fossasia)**
 
 ## Things you should know before contributing:
+
 - All pull requests need to be associated to an issue.
 - All PRs need to be assigned to the person working on it.
 - If an issue cannot be completed in less than a day, it should be broken up into multiple issues.
