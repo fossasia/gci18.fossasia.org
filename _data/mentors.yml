@@ -14,45 +14,63 @@
   github: akshatnitd
   image: akshatnitd.jpg
   imagewebp: akshatnitd.webp
+  lat: 17.317701
+  lng: 78.414230
 
 - name: Shubham Kumar
   github: sk9331657
   image: shubham.jpg
+  lat: 28.486327
+  lng: 77.029137
 
 - name: Harshit Khandelwal
   image: 27783786.jpg
   imagewebp: 27783786.webp
   github: liveHarshit
+  lat: 26.892679
+  lng: 76.048294
 
 
 - name: Priyanshu Khandelwal
   github: Masquerade0097
   image: Priyanshu Khandelwal.jpg
   imagewebp: Priyanshu Khandelwal.webp
+  lat: 31.104830
+  lng: 77.173393
   
 - name: tabesin
   image: tabesin.jpg
   imagewebp: tabesin.webp
   github: tabesin
+  lat: 52.520008
+  lng: 13.404954
   
 - name: Hong Phuc Dang
   image: hpdang.jpg
   imagewebp: hpdang.webp
   github: hpdang
+  lat: 1.352083
+  lng: 103.819839
 
 - name: Sanskar Jethi
   image: sanskar.jpg
   github: stealthanthrax
+  lat: 28.616134
+  lng: 77.200637
 
 - name: Mohit Sharma
   image: ms.jpg
   imagewebp: ms.webp
   github: ms10398
+  lat: 25.324530
+  lng: 85.404419
 
 - name: Arundhati Gupta
   image: agupta.jpg
   imagewebp: agupta.webp
   github: arundhati24
+  lat: 25.594095
+  lng: 85.137566
 
 - name: Shubham Gupta
   image: ShubhamGupta.jpg
@@ -79,6 +97,8 @@
   image: nikitbhandari.jpeg
   imagewebp: nikitbhandari.webp
   github: nikit19
+  lat: 28.622463
+  lng: 77.223311
 
 - name: Rohit Potter
   image: RohitPotter.jpg
@@ -98,11 +118,15 @@
   image: Anshuman Verma.jpg
   imagewebp: Anshuman Verma.webp
   github: anshumanv
+  lat: 20.593683
+  lng: 78.962883
 
 - name: Isuru Abeywardana
   image: isuruAb.jpg
   imagewebp: isuruAb.webp
-  github: Isuru Abeywardana
+  github: isuruAb
+  lat: 6.927079
+  lng: 79.861244
 
 - name: Saurav Vishal
   image: Saurav Vishal.jpg
@@ -128,6 +152,8 @@
   image: prateekiiest.jpg
   imagewebp: prateekiiest.webp
   github: prateekiiest
+  lat: 22.572645
+  lng: 88.363892
 
 - name: Sarnava Konar
   image: Sarnava.jpg
@@ -140,79 +166,125 @@
   image: SridharJ.jpg
   imagewebp: SridharJ.webp
   github: sridharjajoo
+  lat: 28.676658
+  lng: 77.203854
   
 - name: Chung Wei Tat
   github: cweitat
   image: ChungWeiTat.jpg
+  lat: 35.861660
+  lng: 104.195396
   
 - name: T Thiyagaraj
   github: tstreamDOTh
   image: T Thiyagaraj.jpg
+  lat: 12.812094
+  lng: 79.388951
   
 - name: Rupav Jain
   github: rupav
   image: RupavJain.jpg
+  lat: 20.593683
+  lng: 78.962883
   
 - name: Simranpreet Kaur
   github: SIMRAN1
   image: Simran.jpg
+  lat: 28.669081
+  lng: 77.430412
   
 - name: Abhijeet Singh
   github: abhi40308
   image: AbhijeetSingh.jpg
+  lat: 24.382460
+  lng: 87.857620
   
 - name: Suneet Srivastava
   github: codedsun
   image: SuneetSrivastava.jpg
+  lat: 28.669155
+  lng: 77.453758
   
 - name: Anup Kumar Panwar
   github: AnupKumarPanwar
   image: AnupKumarPanwar.jpg
+  lat: 25.324530
+  lng: 85.404419
   
 - name: Praveen Ojha
   github: praveenojha33
   image: PraveenOjha.jpg
+  lat: 25.326940
+  lng: 83.004324
   
 - name: Chashmeet Singh
   github: chashmeetsingh
   image: ChashmeetSingh.jpg
+  lat: 31.147129
+  lng: 75.341217
   
 - name: Mayank Vaidya
   github: mayank8318
   image: MayankVaidya.jpg
+  lat: 25.594095
+  lng: 85.137566
   
 - name: Eden Dang
   github: 
   image: EdenDang.jpg
+  lat: 25.032969
+  lng: 121.565414
   
 - name: André Rebentisch
   github:
   image: AndréRebentisch.jpg
+  lat: 52.520008
+  lng: 13.404954
   
 - name: Madhushanka Padmal
   github: CloudyPadmal
   image: CloudyPadmal.jpg
+  lat: 7.873054
+  lng: 80.771797
 
 - name: Abhinav Raj
   github: abinavraj23
   image: AbhinavRaj.jpg
+  lat: 23.022505
+  lng: 72.571365
   
 - name: Harsh Patel
   github: harsh-2711
   image: HarshPatel.jpg
+  lat: 23.223350
+  lng: 72.647710
   
 - name: Praduman Singh
   github: PrP-11
   image: PradumanSingh.jpg
+  lat: 25.594095
+  lng: 85.137566
   
 - name: Dilpreet Singh
   github: geekyd
   image: DilpreetSingh.jpg
+  lat: 12.971599
+  lng: 77.594566
 
 - name: Pranjal Paliwal
   github: betterclever
   image: PranjalPaliwal.jpg
+  lat: 25.435801
+  lng: 81.846313
 
 - name: Hon Nguyen
   github: vanhonit
   image: HonNguyen.jpg
+  lat: 1.352083
+  lng: 103.819839
+  
+- name: Gi Soong Chee
+  github: dhsgisc
+  image: 
+  lat: 1.352083
+  lng: 103.819839
