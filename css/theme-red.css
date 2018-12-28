@@ -73,9 +73,6 @@ ul.bullets {
 .main-container {
   clear: both;
 }
-.extra_padding_b{
-  margin-bottom: 30px;
-}
 hr {
   border: none;
   border-top: 1px solid #ccc;
@@ -113,34 +110,6 @@ hr.short-thick {
 .list-inline > li:first-child {
   padding-left: 0;
 }
-
-/*GRADIENTS  */
-.gradient-pink-light{
-  background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
-}
-.gradient-pink{
-  background: linear-gradient(#ff758c, #ff7eb3);
-}
-.gradient-cyan-light{
-  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-}
-.gradient-cyan{
-  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
-}
-.gradient-blue-light{
-  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-}
-.gradient-blue{
-  background: linear-gradient(#4facfe,#00f2fe);
-}
-.gradient-multi-cool{
-background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
-}
-.gradient-multi-hot{
-  background-image: linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%);
-}
-
-/*END GRADIENTS*/
 .bg-primary .list-inline i {
   color: #ee788a;
 }
@@ -327,7 +296,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 500;
+  font-weight: 300;
   color: #292929;
 }
 h1,
@@ -442,7 +411,6 @@ h6.uppercase,
 p,
 span {
   font-weight: 400;
-  line-height: 34px;
 }
 p.lead {
   font-size: 16px;
@@ -580,7 +548,7 @@ ul.lead li {
   background: #e31d3b !important;
 }
 .bg-secondary {
-  background: #fafafa;
+  background: #f8f8f8;
 }
 .bg-white {
   background: #fff;
@@ -603,7 +571,7 @@ ul.lead li {
 /*!---------- 5. SECTIONS ----------*/
 section,
 footer {
-  padding: 130px 0;
+  padding: 96px 0;
   position: relative;
   overflow: hidden;
 }
@@ -766,6 +734,7 @@ footer.bg-dark li,
   text-transform: uppercase;
   letter-spacing: 1px;
   border-radius: 0;
+  color: #e31d3b;
   text-align: center;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
@@ -888,10 +857,9 @@ body.btn-rounded .btn {
 .nav-container {
   -webkit-backface-visibility: hidden;
   max-width: 100%;
-  min-width: 100%;
-  background: rgba(255,255,255,0.9);
 }
 nav {
+  background: #fff;
   -webkit-backface-visibility: hidden;
   max-width: 100%;
 }
@@ -929,19 +897,18 @@ nav .btn,
   top: 1px;
 }
 .nav-bar {
-  height: 64px;
-  max-height: 64px;
+  height: 55px;
+  max-height: 55px;
   line-height: 53px;
   border-bottom: 1px solid #ccc;
 }
 .nav-bar .module,
 .nav-bar .module-group {
-  height: 64px;
+  height: 55px;
 }
 .nav-bar a {
   display: inline-block;
-  height: 64px;
-  max-height: 64px;
+  height: 55px;
 }
 .logo {
   max-height: 60%;
@@ -977,7 +944,7 @@ nav.bg-dark .logo-dark {
 }
 .menu {
   width: 100%;
-  height: 64px;
+  height: 55px;
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .menu.inline-block {
@@ -989,16 +956,15 @@ nav.bg-dark .logo-dark {
   font-weight: 600;
   letter-spacing: 1px;
   color: #292929;
+  opacity: 0.5;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   max-width: 100%;
   white-space: normal;
-  border-top: 5px solid transparent;
-  border-bottom: 2px solid transparent;
 }
-.menu > li a:hover {
-  border-bottom: 2px solid #333;
+.menu li a:hover {
+  opacity: 1 !important;
 }
 .menu > li {
   margin-right: 32px;
@@ -1104,7 +1070,7 @@ nav.bg-dark .logo-dark {
 }
 .module.widget-handle {
   border-left: 1px solid #ccc;
-  padding: 0 0;
+  padding: 0 24px;
   cursor: pointer;
   position: relative;
   -webkit-touch-callout: none;
@@ -1126,6 +1092,7 @@ nav.nav-centered .module.widget-handle {
 .module.widget-handle i {
   font-size: 20px;
   line-height: 53px;
+  opacity: 0.5;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -1600,6 +1567,10 @@ nav.transparent.fixed .menu > .has-dropdown:after {
 }
 nav.transparent.fixed .module.widget-handle {
   border-left: 1px solid #ccc;
+}
+nav.transparent.fixed .menu > li > a,
+nav.transparent.fixed .module.widget-handle i {
+  opacity: .5;
 }
 nav.bg-dark .menu > li > a,
 nav.bg-dark .module.widget-handle i,
