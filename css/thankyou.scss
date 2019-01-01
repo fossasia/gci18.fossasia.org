@@ -1,0 +1,19 @@
+container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:8vh;
+  color: #fff;
+  font-size:2vw;
+}
+
+#app{
+  letter-spacing:0.25em;
+  text-transform:uppercase;
+  background-color: #000;
+  color: #fff;
+  font-size: 30px;
+  height: 80px;
+  width: 100%;
+  text-align: center;
+}

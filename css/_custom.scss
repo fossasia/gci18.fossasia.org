@@ -1,0 +1,732 @@
+/****** PLACE YOUR CUSTOM STYLES HERE ******/
+
+.icon-a {
+  zoom: 1.5;
+}
+
+#new_text {
+  color: #ffffff;
+  text-decoration: bold;
+  font-weight: bold;
+}
+
+.large .ti-facebook {
+  width: 20px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+.large .ti-twitter {
+  width: 20px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.code-in-nav:before {
+  content: " ";
+  background-image: url("https://raw.githubusercontent.com/fossasia/gci17.fossasia.org/gh-pages/img/gci-logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 0 2px 0 16px;
+  padding-top: 0px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.seperator {
+  border-top: 1px solid #47b475 !important;
+  opacity: 1 !important;
+  height: 1px;
+  width: 60%;
+  margin: 8px auto;
+}
+
+p.person-name {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.single-mentor [class^="ti-"],
+[class*=" ti-"] {
+  font-size: 16px;
+}
+
+.single-mentor {
+  position: relative;
+}
+
+.single-mentor .social-overlay-list {
+  position: absolute;
+  top: 30%;
+  background: transparent;
+  padding: 5px 10px;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.6s;
+}
+
+.single-mentor .social-overlay-list a {
+  color: white;
+}
+
+.single-mentor .social-overlay-list a:hover {
+  opacity: 0.5;
+}
+
+.single-mentor:hover .social-overlay-list {
+  opacity: 1;
+}
+
+.single-mentor img {
+  width: 100%;
+  max-width: 300px;
+}
+
+.single-mentor:hover > img {
+  filter: brightness(50%);
+  transition: all 0.6s;
+}
+
+#contributors .single-mentor img {
+  height: 120px;
+}
+
+#contributors .social-overlay-list {
+  position: absolute;
+  top: 40px;
+}
+
+.contributor {
+  margin-bottom: 3%;
+  font-size: 16px;
+}
+
+.thank_you {
+  width: 100%;
+  font-family: inherit;
+  font-size: calc(2rem + 1vw);
+  padding: 80px 4.5%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  line-height: 1.5;
+  height: 195px;
+  text-shadow: 2px 2px #ff758c;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.mentor-img {
+  width: 240px;
+}
+
+.contribute_buttons {
+  align-items: center;
+  align: center;
+  align-content: center;
+}
+
+.equal-row {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+}
+
+.social-media-widget {
+  margin-bottom: 5%;
+  height: 300px;
+  overflow: hidden;
+}
+.social-media-title {
+  margin-bottom: 1%;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: black;
+}
+.social-media-title:hover {
+  color: rgb(88, 88, 88);
+}
+.view-profile {
+  background-color: #e31d3b;
+  text-transform: uppercase;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+}
+.view-profile:hover {
+  color: white;
+}
+.location-link-container {
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+  text-align: center;
+  width: 50%;
+}
+.location-link {
+  color: grey;
+  font-size: 14px;
+  text-align: left;
+}
+.location-link:hover {
+  color: darkgray;
+}
+
+@media all and (max-width: 767px) {
+  br {
+    display: inline;
+  }
+}
+
+#backtotop_button {
+  display: inline-block;
+  background-color: #e31d3b;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#backtotop_button::after {
+  content: "\f148";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#backtotop_button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#backtotop_button:active {
+  background-color: #555;
+}
+#backtotop_button.show {
+  opacity: 1;
+  visibility: visible;
+}
+#img_project {
+  display: none;
+}
+#map {
+  height: 600px;
+  max-width: 1000px;
+  margin: auto 7.5%;
+  pointer-events: none;
+}
+.student_name {
+  font-size: 16px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+.team_member_name {
+  font-size: 18px;
+  margin-top: 5px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.team_member_designation {
+  font-size: 13px;
+  margin-top: -45px;
+  color: #fff;
+  filter: brightness(100%) !important;
+  font-weight: bold;
+}
+.team_ul {
+  max-width: 240px !important;
+  display: inline-block !important;
+}
+#memories {
+  position: relative;
+}
+.memories_img {
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  filter: brightness(50%);
+  float: left;
+  width: 100%;
+}
+.memories_img:hover {
+  filter: brightness(100%);
+  transition: 0.6s;
+}
+#memories_div {
+  z-index: 1;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  display: inline;
+}
+#memories_icon {
+  color: #fff;
+  font-size: 4vw;
+}
+#memories_heading {
+  color: #fff;
+  font-weight: bold;
+}
+#memories_link {
+  color: #fff;
+}
+.spacing-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  margin: 0px;
+  margin-top: 0px;
+}
+@media screen and (max-width: 768px) {
+  #memory4,
+  #memory5,
+  #memory6,
+  #memory10,
+  #memory11,
+  #memory12,
+  #memory16,
+  #memory17,
+  #memory18 {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #memory5,
+  #memory6,
+  #memory11,
+  #memory12,
+  #memory17,
+  #memory18 {
+    display: none;
+  }
+}
+
+/* Student Projects*/
+.project-btn {
+  color: #fff;
+  border: none;
+  width: 50% !important;
+  float: left;
+  margin-bottom: 14px;
+}
+
+.project-btn:visited {
+  color: #fff !important;
+}
+
+@media screen and (max-width: 650px) {
+  .flip-card {
+    width: 100% !important;
+  }
+  .flip-card-inner {
+    width: 100% !important;
+  }
+}
+
+.student-project-img {
+  height: 200px;
+  width: 120px;
+  display: inline-block;
+}
+
+.student-project-name {
+  font-weight: bold;
+  font-size: 20px;
+  color: #000 !important;
+  display: inline;
+}
+
+.student-project-info {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.54) !important;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.student-project-footer {
+  position: absolute;
+  bottom: 25px;
+  float: left;
+  width: 100%;
+}
+
+.student-project-hr {
+  margin-bottom: 0px;
+  padding-bottom: 7px;
+}
+
+.student-project-footer-container {
+  display: block;
+  height: 30px;
+}
+
+#skewed-bg {
+  -ms-transform: skewX(20deg); /* IE 9 */
+  -webkit-transform: skewX(20deg); /* Safari */
+  transform: skewY(5deg); /* Standard syntax */
+  background-color: #e31d3b;
+  width: 100%;
+  padding: 400px;
+  opacity: 0.5;
+  position: fixed;
+  z-index: -2;
+  width: 100%;
+  margin-top: 270px;
+}
+
+.student-project-creator-img {
+  height: 30px;
+  float: left;
+  margin-left: 20px;
+}
+
+.student-project-btn {
+  display: inline;
+}
+.flip-card {
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  width: 295px;
+  height: 260px;
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3);
+  margin: auto;
+}
+.flip-card-inner-flip {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden !important;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  transform: rotateY(180deg);
+  background-color: #fff;
+  height: 240px;
+}
+/*Activities section*/
+.latest-issues {
+  margin-top: 50px;
+}
+.latest-issues h2 {
+  background: transparent;
+  width: 260px;
+  margin-bottom: 10px;
+}
+.issue {
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #bbb;
+  margin-bottom: 10px;
+}
+.issue:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+.issues-wrapper span {
+  margin-right: 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.issues-wrapper a {
+  color: #e31d3b;
+}
+.issues-wrapper .user {
+  position: absolute;
+  margin-top: -48px;
+  margin-left: 74px;
+}
+.issues-wrapper .right-side {
+  float: right;
+  text-align: right;
+  margin-top: -55px;
+}
+.issues-wrapper i {
+  margin-right: 5px;
+}
+.issue p{
+  line-height: 24px !important;
+}
+.leaflet-bottom{
+  z-index: 500 !important;
+}
+
+#social_icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.lgi {
+  min-width: 120px;
+  padding: 20px 0;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.lgi div {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  opacity: 0.8;
+  margin-top: 1.2em;
+  transition:
+    opacity 100ms ease-in-out,
+    transform 100ms ease-in-out;
+}
+
+footer .social-list {
+  padding-right: 8vw;
+}
+
+@media
+  (min-width: 992px) and (orientation: landscape),
+  (min-width: 720px) and (orientation: portrait)
+{
+
+  #social_icons {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .lgi {
+    flex: 1;
+    min-width: 0 !important;
+    white-space: nowrap;
+  }
+
+  .lgi div {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  .lgi:hover div,
+  .lgi:focus div {
+    opacity: 0.8;
+    transform: none;
+  }
+  .lgi:focus-within div {
+    opacity: 0.8;
+    transform: none;
+  }
+
+  /* If different elements have focus and hover,
+    show label only on hovered one
+    Progressive enhancement, compatible browsers:
+    https://caniuse.com/#search=focus-within */
+  #social_icons:focus-within:hover .lgi:not(:hover) div {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+}
+
+#opensource_image{
+  width: 100%;
+}
+nav{
+  -webkit-transition: margin-top 1.2s ease-in-out !important;
+  transition: margin-top 1.2s ease-in-out !important;
+}
+nav.fixed {
+  z-index: 9999;
+}
+.nav-container{
+  position: fixed;
+  z-index: 1020;
+  transition-duration: 0.3s;
+}
+.menu>li ul{
+  background-color: #fff !important;
+}
+.menu>li ul li{
+  transition-duration: 0.3s;
+}
+.menu>li>ul li a{
+  color: #000 !important;
+  border: none !important
+}
+.ti-menu{
+  color: #fff;
+} 
+.nav-bar .has-dropdown:after{
+  top: 5px;
+}
+.changeToWhite{
+  color: #fff;
+  transition-duration: 0.3s ease;
+}
+.reveal-content {
+  opacity: 0 !important;
+  transform: translate3d(0, 80px, 0) !important;
+  transition: opacity 0.5s, transform 0.7s ease !important;
+  
+  &-visible {
+    opacity: 1 !important;
+    transform: translate3d(0, 0, 0) !important;
+  }
+}
+.section-heading{
+  margin: 0px;
+}
+#welcome p{
+    font-size:17px;
+}
+.section-heading{
+  color: #000;
+  font-weight: 650;
+}
+ .section-sub-heading{
+  color: rgb(140,140,140);
+  font-size: 17px !important;
+}
+#connect{
+  padding-top: 70px;
+}
+#latest-activities h2,#contributors h2{
+    margin-bottom: 40px;
+}
+#susi-chat{
+  display: none;
+  position: fixed;
+  right: 20px;
+  bottom: 0px;  
+  z-index: 1300;
+  max-height: 450px;
+  width: 300px;
+  height: 100%;
+}
+#susi-close{
+  position: fixed;
+  display: none;
+  right: 20px;
+  bottom: 403px;
+  z-index: 1350;
+  padding: 6px 10px 6px 35px;
+}
+#susi-close i{
+  background-color: rgb(66, 133, 244);
+  color: #fff;
+  font-size: 24px;
+}
+#start-susi{
+  color: #e31d3b;
+  display: block;
+  font-weight: 900
+}
+#start-susi i{
+  font-size: 24px;
+}
+#susi-link{
+  margin-top: 50px;
+  font-size: 18px;
+}
+#susi-img{
+  max-width: 70px;
+  margin:0px 5px;
+}
+#susi-loading{
+  display: none;
+}
+@media screen and (max-width: 500px){
+  #susi-close{
+    top: 0px ;
+    right: 0px; 
+  }
+  #susi-chat{
+    width: 100%;
+    right: 0px;
+    max-height: none;
+  }
+}
+@media screen and (max-height: 450px)
+{
+  #susi-close{
+    top: 0px;
+    right: 0px;
+  }
+  #susi-chat{
+    right: 0px;
+  }
+}

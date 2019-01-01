@@ -1,17 +1,10 @@
 ---
 layout: default
 ---
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/ytplayer.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
-        <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+<link href="css/fontawesome/css/all.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/fontawesome/css/fontawesome.min.css" rel="stylesheet" type="text/css" media="all">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-<a id="backtotop_button"></a>
+<a id="backtotop_button"><i class="fas fa-arrow-to-top" style="color: white"></i></a>
 <iframe id="susi-chat" data-src="https://chat.susi.ai/">
   <p>Your browser does not support iframes.</p>
 </iframe>
@@ -115,33 +108,6 @@ layout: default
   </ul>
   <!-- end of container -->
 </section>
-
-<!-- Placeholder -->
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-4">
-        <a href="https://gci18.fossasia.org/students"><h2 class="number">899 students</h2></a>
-        <p>
-          724 students participated in FOSSASIA Google Code-In 2018 and completed tasks successfully. Many students made their way in contributing to Open Source projects for the first time.
-        </p>
-      </div>
-      <div class="col-sm-4">
-        <a href="https://twitter.com/fossasia/status/1073040402268205056"><h2 class="number">1900+ Tasks</h2></a>
-        <p>
-          1927 tasks were completed this year, from contributing to our Android apps like  <a href="https://play.google.com/store/apps/details?id=org.fossasia.phimpme">Phimp.me</a>, <a href="https://pslab.io">Pocket Science</a> experiments to creating AI bots with <a href="https://play.google.com/store/apps/details?id=ai.susi">SUSI.AI</a>.
-        </p>
-      </div>
-      <div class="col-sm-4">
-        <a href="https://github.com/fossasia/gci18.fossasia.org/graphs/contributors"><h2>87 mentors</h2></a>
-        <p>
-          Mentors are developers, engineers, university students, professors, and generally contributors who love to share and be a part of our open source community. They help creating better software for a better and just world.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section class="pb0" id="welcome">
   <div class="container-fluid">
     <div class="row mb80 mb-xs-0">
@@ -519,6 +485,138 @@ layout: default
     <!-- end of row -->
   </div>
   <!-- end of container -->
+</section>
+<!-- Winners, Finalists & Contrinution Winners-->
+<section class="bg-secondary">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+				<h2 class="uppercase mb16">Winners</h2>
+			</div>
+		</div>
+		<div class="col-sm-12 text-center spread-children-large mentor-list">
+			{% for student in site.data.students %}
+			{% if student.winner %}
+			<div class="card single-mentor">
+				{% if student.image %}
+				<img src="img/students/{{student.image}}" alt="{{ student.name }}">
+				{% else %}
+				<img src="img/students/member.png" alt="{{ student.name }}">
+				{% endif %}
+				<br>
+				<p class="person-name">{{ student.name }}</p><br>
+				<ul class="list-inline social-list social-overlay-list ">
+					{% if student.github %}
+					<a href="https://github.com/{{student.github}}" class="icon-a">
+						<i class="icon-i fa fa-github fa-2x" aria-hidden="true"></i>
+					</a>
+					{% endif %}
+					{% if student.twitter %}
+					<a href="https://twitter.com/{{ student.twitter }}" class="icon-a">
+						<i class="icon-i fa fa-twitter fa-2x" aria-hidden="true"></i>
+					</a>
+					{% endif %}
+					{% if student.blog %}
+					<a href="https://{{ student.blog }}" class="icon-a">
+						<i class="icon-i fa fa-rss fa-2x" aria-hidden="true"></i>
+					</a>
+					{% endif %}
+					{% if student.facebook %}
+					<a href="https://facebook.com/{{ student.facebook }}" class="icon-a">
+						<i class="icon-i fa fa-facebook fa-2x" aria-hidden="true"></i>
+					</a>
+					{% endif %}
+				</ul>
+			</div>
+			{% endif %}
+			{% endfor %}
+		</div>
+
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+				<h3 class="uppercase mb16">Finalist Winners</h3>
+			</div>
+		</div>
+		<div class="col-sm-12 text-center spread-children-large mentor-list">
+			{% for student in site.data.students %}
+			{% if student.finalist %}
+			<div class="card single-mentor">
+				{% if student.image %}
+				<img src="img/students/{{student.image}}" alt="{{ student.name }}">
+				{% else %}
+				<img src="img/students/member.png" alt="{{ student.name }}">
+				{% endif %}
+				<br>
+				<p class="person-name">{{ student.name }}</p><br>
+				<ul class="list-inline social-list social-overlay-list ">
+					{% if student.github %}
+					<a href="https://github.com/{{student.github}}" class="icon-a">
+						<i class="icon-i fa fa-github fa-2x" aria-hidden="true"></i>
+					</a>
+					{% endif %}
+					{% if student.twitter %}
+					<a href="https://twitter.com/{{ student.twitter }}" class="icon-a">
+						<i class="icon-i fa fa-twitter fa-2x" aria-hidden="true"></i>
+					</a>
+					{% endif %}
+					{% if student.blog %}
+					<a href="https://{{ student.blog }}" class="icon-a">
+						<i class="icon-i fa fa-rss fa-2x" aria-hidden="true"></i>
+					</a>
+					{% endif %}
+					{% if student.facebook %}
+					<a href="https://facebook.com/{{ student.facebook }}" class="icon-a">
+						<i class="icon-i fa fa-facebook fa-2x" aria-hidden="true"></i>
+					</a>
+					{% endif %}
+				</ul>
+			</div>
+			{% endif %}
+			{% endfor %}
+		</div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+				<h4 class="uppercase mb16">Contribution Winners</h4>
+			</div>
+		</div>
+		<div class="col-sm-12 text-center spread-children-large mentor-list">
+			{% for student in site.data.students %}
+			{% if student.contributionWinner %}
+			<div class="card single-mentor">
+				{% if student.image %}
+				<img src="img/students/{{student.image}}" alt="{{ student.name }}">
+				{% else %}
+				<img src="img/students/member.png" alt="{{ student.name }}">
+				{% endif %}
+				<br>
+				<p class="person-name">{{ student.name }}</p><br>
+				<ul class="list-inline social-list social-overlay-list ">
+					{% if student.github %}
+					<a href="https://github.com/{{student.github}}" class="icon-a">
+						<i class="icon-i fa fa-github fa-2x" aria-hidden="true"></i>
+					</a>
+					{% endif %}
+					{% if student.twitter %}
+					<a href="https://twitter.com/{{ student.twitter }}" class="icon-a">
+						<i class="icon-i fa fa-twitter fa-2x" aria-hidden="true"></i>
+					</a>
+					{% endif %}
+					{% if student.blog %}
+					<a href="https://{{ student.blog }}" class="icon-a">
+						<i class="icon-i fa fa-rss fa-2x" aria-hidden="true"></i>
+					</a>
+					{% endif %}
+					{% if student.facebook %}
+					<a href="https://facebook.com/{{ student.facebook }}" class="icon-a">
+						<i class="icon-i fa fa-facebook fa-2x" aria-hidden="true"></i>
+					</a>
+					{% endif %}
+				</ul>
+			</div>
+			{% endif %}
+			{% endfor %}
+		</div>
+	</div>
 </section>
 <!-- Map -->
 <section class="map hid">
