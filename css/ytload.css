@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+.ytvideo{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+  float: none;
+  }
+.ytvideo iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-left: 3%;
+  padding-right: 3%;
+  float: none;
+}
