@@ -275,6 +275,106 @@ layout: default
   </div>
 </section>
 
+<!-- Winners, Finalists & Contrinution Winners-->
+<section class="lazy-section">
+  <div class="container">
+    <div class="row mb64 mb-xs-24">
+      <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
+        <h2 class="section-heading">Winners</h2>
+      </div>
+    </div>
+    <!-- end of row -->
+    <div class="container col-md-offset-3 text-center">
+      {% for student in site.data.students %}
+      {% if student.winner %}
+      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 text-center">
+        <div class="card single-mentor">
+          {% if student.image %}
+          <img class="mentor-img lazy reveal-content" data-src="img/students/{{student.image}}" alt="{{ student.name }}" />
+          {% else %}
+          <img src="img/mentors/member.png" alt="{{ student.name }}" /> {% endif
+          %}
+          <p class="student_name reveal-content">{{ student.name }}</p>
+
+          <ul class="list-inline social-list social-overlay-list">
+            {% if student.github %}
+            <a href="https://github.com/{{student.github}}" class="icon-a" target="_blank" rel="noopener">
+              <i class="ti-github"></i>
+            </a>
+            {% endif %} {% if student.twitter %}
+
+            <a href="https://twitter.com/{{ student.twitter }}" class="icon-a" target="_blank" rel="noopener">
+              <i class="ti-twitter-alt"></i>
+            </a>
+            {% endif %} {% if student.blog %}
+
+            <a href="https://{{ student.blog }}" class="icon-a" target="_blank" rel="noopener">
+              <i class="ti-rss"></i>
+            </a>
+            {% endif %} {% if student.facebook %}
+
+            <a href="https://facebook.com/{{ student.facebook }}" class="icon-a" target="_blank" rel="noopener">
+              <i class="ti-facebook"></i>
+            </a>
+            {% endif %}
+          </ul>
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+    <!-- end of row -->
+  </div>
+  <!-- end of container -->
+  <div class="container">
+    <div class="row mb64 mb-xs-24">
+      <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
+        <h2 class="section-heading">Finalists</h2>
+      </div>
+    </div>
+    <!-- end of row -->
+    <div class="container text-center">
+      {% for student in site.data.students %}
+      {% if student.finalist %}
+      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 text-center">
+        <div class="card single-mentor">
+          {% if student.image %}
+          <img class="mentor-img lazy reveal-content" data-src="img/students/{{student.image}}" alt="{{ student.name }}" />
+          {% else %}
+          <img src="img/mentors/member.png" alt="{{ student.name }}" /> {% endif
+          %}
+          <p class="student_name reveal-content">{{ student.name }}</p>
+
+          <ul class="list-inline social-list social-overlay-list">
+            {% if student.github %}
+            <a href="https://github.com/{{student.github}}" class="icon-a" target="_blank" rel="noopener">
+              <i class="ti-github"></i>
+            </a>
+            {% endif %} {% if student.twitter %}
+
+            <a href="https://twitter.com/{{ student.twitter }}" class="icon-a" target="_blank" rel="noopener">
+              <i class="ti-twitter-alt"></i>
+            </a>
+            {% endif %} {% if student.blog %}
+
+            <a href="https://{{ student.blog }}" class="icon-a" target="_blank" rel="noopener">
+              <i class="ti-rss"></i>
+            </a>
+            {% endif %} {% if student.facebook %}
+
+            <a href="https://facebook.com/{{ student.facebook }}" class="icon-a" target="_blank" rel="noopener">
+              <i class="ti-facebook"></i>
+            </a>
+            {% endif %}
+          </ul>
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+    <!-- end of row -->
+  </div>
+</section>
 
 
 <section class="bg-secondary">
@@ -485,138 +585,6 @@ layout: default
     <!-- end of row -->
   </div>
   <!-- end of container -->
-</section>
-<!-- Winners, Finalists & Contrinution Winners-->
-<section class="bg-secondary">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
-				<h2 class="uppercase mb16">Winners</h2>
-			</div>
-		</div>
-		<div class="col-sm-12 text-center spread-children-large mentor-list">
-			{% for student in site.data.students %}
-			{% if student.winner %}
-			<div class="card single-mentor">
-				{% if student.image %}
-				<img src="img/students/{{student.image}}" alt="{{ student.name }}">
-				{% else %}
-				<img src="img/students/member.png" alt="{{ student.name }}">
-				{% endif %}
-				<br>
-				<p class="person-name">{{ student.name }}</p><br>
-				<ul class="list-inline social-list social-overlay-list ">
-					{% if student.github %}
-					<a href="https://github.com/{{student.github}}" class="icon-a">
-						<i class="icon-i fa fa-github fa-2x" aria-hidden="true"></i>
-					</a>
-					{% endif %}
-					{% if student.twitter %}
-					<a href="https://twitter.com/{{ student.twitter }}" class="icon-a">
-						<i class="icon-i fa fa-twitter fa-2x" aria-hidden="true"></i>
-					</a>
-					{% endif %}
-					{% if student.blog %}
-					<a href="https://{{ student.blog }}" class="icon-a">
-						<i class="icon-i fa fa-rss fa-2x" aria-hidden="true"></i>
-					</a>
-					{% endif %}
-					{% if student.facebook %}
-					<a href="https://facebook.com/{{ student.facebook }}" class="icon-a">
-						<i class="icon-i fa fa-facebook fa-2x" aria-hidden="true"></i>
-					</a>
-					{% endif %}
-				</ul>
-			</div>
-			{% endif %}
-			{% endfor %}
-		</div>
-
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
-				<h3 class="uppercase mb16">Finalist Winners</h3>
-			</div>
-		</div>
-		<div class="col-sm-12 text-center spread-children-large mentor-list">
-			{% for student in site.data.students %}
-			{% if student.finalist %}
-			<div class="card single-mentor">
-				{% if student.image %}
-				<img src="img/students/{{student.image}}" alt="{{ student.name }}">
-				{% else %}
-				<img src="img/students/member.png" alt="{{ student.name }}">
-				{% endif %}
-				<br>
-				<p class="person-name">{{ student.name }}</p><br>
-				<ul class="list-inline social-list social-overlay-list ">
-					{% if student.github %}
-					<a href="https://github.com/{{student.github}}" class="icon-a">
-						<i class="icon-i fa fa-github fa-2x" aria-hidden="true"></i>
-					</a>
-					{% endif %}
-					{% if student.twitter %}
-					<a href="https://twitter.com/{{ student.twitter }}" class="icon-a">
-						<i class="icon-i fa fa-twitter fa-2x" aria-hidden="true"></i>
-					</a>
-					{% endif %}
-					{% if student.blog %}
-					<a href="https://{{ student.blog }}" class="icon-a">
-						<i class="icon-i fa fa-rss fa-2x" aria-hidden="true"></i>
-					</a>
-					{% endif %}
-					{% if student.facebook %}
-					<a href="https://facebook.com/{{ student.facebook }}" class="icon-a">
-						<i class="icon-i fa fa-facebook fa-2x" aria-hidden="true"></i>
-					</a>
-					{% endif %}
-				</ul>
-			</div>
-			{% endif %}
-			{% endfor %}
-		</div>
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
-				<h4 class="uppercase mb16">Contribution Winners</h4>
-			</div>
-		</div>
-		<div class="col-sm-12 text-center spread-children-large mentor-list">
-			{% for student in site.data.students %}
-			{% if student.contributionWinner %}
-			<div class="card single-mentor">
-				{% if student.image %}
-				<img src="img/students/{{student.image}}" alt="{{ student.name }}">
-				{% else %}
-				<img src="img/students/member.png" alt="{{ student.name }}">
-				{% endif %}
-				<br>
-				<p class="person-name">{{ student.name }}</p><br>
-				<ul class="list-inline social-list social-overlay-list ">
-					{% if student.github %}
-					<a href="https://github.com/{{student.github}}" class="icon-a">
-						<i class="icon-i fa fa-github fa-2x" aria-hidden="true"></i>
-					</a>
-					{% endif %}
-					{% if student.twitter %}
-					<a href="https://twitter.com/{{ student.twitter }}" class="icon-a">
-						<i class="icon-i fa fa-twitter fa-2x" aria-hidden="true"></i>
-					</a>
-					{% endif %}
-					{% if student.blog %}
-					<a href="https://{{ student.blog }}" class="icon-a">
-						<i class="icon-i fa fa-rss fa-2x" aria-hidden="true"></i>
-					</a>
-					{% endif %}
-					{% if student.facebook %}
-					<a href="https://facebook.com/{{ student.facebook }}" class="icon-a">
-						<i class="icon-i fa fa-facebook fa-2x" aria-hidden="true"></i>
-					</a>
-					{% endif %}
-				</ul>
-			</div>
-			{% endif %}
-			{% endfor %}
-		</div>
-	</div>
 </section>
 <!-- Map -->
 <section class="map hid">
